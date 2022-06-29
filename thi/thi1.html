@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Therigatha 1</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small pressed">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+ <h2>Khuddaka Nikaya - The Minor Texts</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for lower Thi sub-navigation -->
+ 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
+ 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
+ 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button">Sutta Nipata</a>
+ 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
+ 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
+ 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
+ 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Therigatha</a>
+ </div><!-- End div for lower Thi sub-navigation -->
+ 
+ <!--     Therigatha content begins here     -->
+ 
+ <div id="content">
+
+
+<h2>Therigatha - The Verses of the Elder Nuns</h2>
+<h3>Chapter 1: Single Verses - Ekakanipāta</h3>
+<div id="metaarea">
+		<ul class="translator">
+				<li>©&nbsp;Translated from the Pali by Bhante Sujato.<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
+		</ul>
+</div>
+
+<section class="raw_sutta">
+<div lang="en">
+<h5>An Unnamed Nun (1st)</h5>
+
+<p id="p1" class="verse"><span class="parno">1</span>
+Sleep softly, little nun, <br>
+wrapped in the cloth you sewed yourself; <br>
+for your desire has been quelled, <br>
+like vegetables boiled dry in a pot.</p>
+
+<h5>Muttā</h5>
+
+<p id="p2" class="verse"><span class="parno">2</span>Get free, Liberta, free e’en as the Moon
+<br>From out the Dragon’s jaws sails clear on high.
+<br>Wipe off the debts that hinder thee, and so,
+<br>With heart at liberty, break thou thy fast.</p>
+
+<h5>Punna</h5>
+
+<p id="p3" class="verse"><span class="parno">3</span>Fill up, Puṇṇā, the orb of holy life,
+<br>E’en as on fifteenth day the full-orb’d moon.
+<br>Fill full the perfect knowledge of the Path,
+<br>And scatter all the gloom of ignorance.</p>
+
+<h5>Tissā</h5>
+
+<p id="p4" class="verse"><span class="parno">4</span>O Tissā! train thyself in the trainings three.
+<br>See that the great conjuncture now at hand
+<br>Pass thee not by! Unloose all other yokes,
+<br>And fare thou forth purged of the deadly Drugs.</p>
+
+<h5>Another Tissā</h5>
+
+<p id="p5" class="verse"><span class="parno">5</span>Tissā! lay well upon thy heart the yoke
+<br>Of noblest culture. See the moment come!
+<br>Let it not pass thee by! for many they
+<br>Who mourn in misery that moment past.</p>
+
+<h5>Dhīrā</h5>
+
+<p id="p6" class="verse"><span class="parno">6</span>Come, O Dhīrā, reach up and touch the goal
+<br>Where all distractions cease, where sense is stilled,
+<br>Where dwelleth bliss; win thou Nibbāna, win
+<br>That sure Salvation which hath no beyond.</p>
+
+<h5>Another Dhīrā</h5>
+
+<p id="p7" class="verse"><span class="parno">7</span>Dhīrā, brave Sister! who hath valiantly
+<br>Thy faculties in noblest culture trained,
+<br>Bear to this end thy last incarnate frame,
+<br>For thou hast conquered Māra and his host.</p>
+
+<h5>Mittā</h5>
+
+<p id="p8" class="verse"><span class="parno">8</span>Mittā, thou Sister friend!94 who camest forth
+<br>Convinced in heart, love thou in thought and deed
+<br>Friends worthy of thy love.95 So train thyself
+<br>In ways of good to win the safe, sure Peace.</p>
+
+<h5>Bhadrā</h5>
+
+<p id="p9" class="verse"><span class="parno">9</span>Bhadrā, who camest forth convinced in heart,
+<br>To sure felicity, O fortunate!
+<br>That heart devote. Develop all that’s good,
+<br>Faring to uttermost Security.</p>
+
+<h5>Upasamā</h5>
+
+<p id="p10" class="verse"><span class="parno">10</span>Upasamā! cross thou serene and calm
+<br>The raging difficult Flood where death doth reign.
+<br>Bear to this end thy last incarnate frame,
+<br>For thou hast vanquished Māra and his host.</p>
+
+<h5>Mutta</h5>
+
+<p id="p11" class="verse"><span class="parno">11</span>O free, indeed! O gloriously free
+<br>Am I in freedom from three crooked things: — 
+<br>From quern, from mortar, from my crookback’d lord!
+<br>Ay, but I’m free from rebirth and from death,
+<br>And all that dragged me back is hurled away.</p>
+
+<h5>Dhammadinnā</h5>
+
+<p id="p12" class="verse"><span class="parno">12</span>In whom desire to reach the final rest
+<br>Is born suffusing all the mind of her,
+<br>Whose heart by lure of sense-desire no more
+<br>Is held — BOUND UPSTREAM: — so shall she be called.</p>
+
+<h5>Visākhā</h5>
+
+<p id="p13" class="verse"><span class="parno">13</span>The Buddha’s will be done! See that ye do
+<br>His will. An ye have done it, never more
+<br>Need ye repent the deed. Wash, then, in haste
+<br>Your feet and sit ye down aloof; alone.
+<br>Thus she admonished others to follow her example.</p>
+
+<h5>Sumanā</h5>
+
+<p id="p14" class="verse"><span class="parno">14</span>Hast thou not seen sorrow and ill in all
+<br>The springs of life? Come thou not back to birth!
+<br>Cast out the passionate desire again to Be.
+<br>So shalt thou go thy ways calm and serene.</p>
+
+<h5>Uttarā</h5>
+
+<p id="p15" class="verse"><span class="parno">15</span>Well have I disciplined myself in act,
+<br>In speech and eke in thought, rapt and intent.
+<br>Craving with root of craving is o’ercome;
+<br>Cool am I now; I know Nibbāna’s peace.</p>
+
+<h5>Vuḍḍhapabba&shy;jitasumanā</h5>
+
+<p id="p16" class="verse"><span class="parno">16</span>Happily rest, thou venerable dame!
+<br>Rest thee, wrapt in the robe thyself hast made.
+<br>Stilled are the passions that have raged within.
+<br>Cool art thou now, knowing Nibbāna’s peace.</p>
+
+<h5>Dhamma</h5>
+
+<p id="p17" class="verse"><span class="parno">17</span>Far had I wandered for my daily food;
+<br>Weary with shaking limbs I reached my rest,
+<br>Leaning upon my staff, when even there
+<br>I fell to earth. — Lo! all the misery
+<br>Besetting this poor mortal frame lay bare
+<br>To inward vision. Prone the body lay;
+<br>The heart of me rose up in liberty.</p>
+
+<h5>Saṇghā</h5>
+
+<p id="p18" class="verse"><span class="parno">18</span>Home have I left, for I have left my world!
+<br>Child have I left, and all my cherish’d herds!
+<br>Lust have I left, and Ill-will, too, is gone,
+<br>And Ignorance have I put far from me;
+<br>Craving and root of Craving overpowered,
+<br>Cool am I now, knowing Nibbāna’s peace.</p>
+
+</div><!--end English-->
+
+<div lang="pi">
+
+<h5>Aññatarātherīgāthā</h5>
+
+<p class="verse"><span class="parno">1</span><a class="pts1" id="pts123"></a>
+<span class="ms">p_19Th2_2</span>"Sukhaṁ supāhi therike,
+<br>Katvā coḷena pārutā;
+<br>Upasanto hi te rāgo,
+<br>Sukkhaḍākaṁ va kumbhiyan"ti.</p>
+
+<h5>Muttātherīgāthā</h5>
+
+<p class="verse"><span class="parno">2</span><span class="ms">p_19Th2_4</span>"Mutte muccassu yogehi,
+<br>cando rāhuggahā iva;
+<br>Vippamuttena cittena,
+<br>anaṇā bhuñja piṇḍakan"ti.</p>
+
+<h5>Puṇṇātherīgāthā</h5>
+
+<p class="verse"><span class="parno">3</span><span class="ms">p_19Th2_6</span>"Puṇṇe pūrassu dhammehi,
+<br>Cando pannaraseriva;
+<br>Paripuṇṇāya paññāya,
+<br><span class="var" title="tamokkhandhaṁ (bj, s2, s3, pts1–2)" id="note1">Tamokhandhaṁ</span> padālayā"ti.</p>
+
+<h5>Tissātherīgāthā</h5>
+
+<p class="verse"><span class="parno">4</span><span class="ms">p_19Th2_8</span>"Tisse sikkhassu sikkhāya,
+<br>mā taṁ yogā upaccaguṁ;
+<br>Sabbayogavisaṁyuttā,
+<br>cara loke anāsavā"ti.</p>
+
+<h5>Aññatarātissātherīgāthā</h5>
+
+<p class="verse"><span class="parno">5</span><span class="ms">p_19Th2_10</span>"Tisse yuñjassu dhammehi,
+<br>khaṇo taṁ mā upaccagā;
+<br>Khaṇātītā hi socanti,
+<br>nirayamhi samappitā"ti.</p>
+
+<h5>Dhīrātherīgāthā</h5>
+
+<p class="verse"><span class="parno">6</span><a class="pts1" id="pts124"></a>
+<span class="ms">p_19Th2_12</span>"Dhīre nirodhaṁ <span class="var" title="phussehi (bj)" id="note2">phusehi</span>,
+<br>Saññāvūpasamaṁ sukhaṁ;
+<br>Ārādhayāhi nibbānaṁ,
+<br><span class="var" title="yogakkhemaṁ anuttaranti (bj, s2, s3) | yogakkhemaṁ anuttaraṁ (pts1–2)" id="note3">Yogakkhemamanuttaran"ti</span>.</p>
+
+<h5>Vīrātherīgāthā</h5>
+
+<p class="verse"><span class="parno">7</span><span class="ms">p_19Th2_14</span>"Vīrā <span class="var" title="dhīrā dhīrehi (s2, s3, pts1–2, mr)" id="note4">vīrehi</span> dhammehi,
+<br>bhikkhunī bhāvitindriyā;
+<br>Dhāreti antimaṁ dehaṁ,
+<br>jetvā māraṁ <span class="var" title="savāhanaṁ (s2, s3, pts1–2) | savāhananti (mr)" id="note5">savāhinin"ti</span>.</p>
+
+<h5>Mittātherīgāthā</h5>
+
+<p class="verse"><span class="parno">8</span><span class="ms">p_19Th2_16</span>"Saddhāya pabbajitvāna,
+<br>mitte mittaratā bhava;
+<br>Bhāvehi kusale dhamme,
+<br>yogakkhemassa pattiyā"ti.</p>
+
+<h5>Bhadrātherīgāthā</h5>
+
+<p class="verse"><span class="parno">9</span><span class="ms">p_19Th2_18</span>"Saddhāya pabbajitvāna,
+<br>bhadre bhadraratā bhava;
+<br>Bhāvehi kusale dhamme,
+<br>yogakkhemamanuttaran"ti.</p>
+
+<h5>Upasamātherīgāthā</h5>
+
+<p class="verse"><span class="parno">10</span><span class="ms">p_19Th2_20</span>"Upasame tare oghaṁ,
+<br>maccudheyyaṁ suduttaraṁ;
+<br>Dhārehi antimaṁ dehaṁ,
+<br>jetvā māraṁ savāhinin"ti.</p>
+
+<h5>Muttātherīgāthā</h5>
+
+<p class="verse"><span class="parno">11</span><span class="ms">p_19Th2_22</span>"Sumuttā sādhumuttāmhi,
+<br>tīhi khujjehi muttiyā;
+<br>Udukkhalena musalena,
+<br>patinā khujjakena ca;
+<br>Muttāmhi jātimaraṇā,
+<br>bhavanetti samūhatā"ti.</p>
+
+<h5>Dhammadinnātherīgāthā</h5>
+
+<p class="verse"><span class="parno">12</span><span class="ms">p_19Th2_24</span>"Chandajātā avasāyī,
+<br>Manasā ca <span class="var" title="phuṭhā (bj-a) | phuṭṭhā (s2, s3)" id="note7">phuṭā</span> siyā;
+<br>Kāmesu <span class="var" title="appaṭibandhacittā (mr)" id="note8">appaṭibaddha&shy;cittā</span>,
+<br><span class="var" title="uddhaṁsotā vimuccatīti (si, pts1–2) | uddhaṁsotāti vuccati (s2, s3)" id="note9">Uddhaṁsotāti vuccatī"ti</span>.</p>
+
+<h5>Visākhātherīgāthā</h5>
+
+<p class="verse"><span class="parno">13</span><span class="ms">p_19Th2_26</span>"Karotha buddhasāsanaṁ,
+<br>yaṁ katvā nānutappati;
+<br>Khippaṁ pādāni dhovitvā,
+<br>ekamante nisīdathā"ti.</p>
+
+<h5>Sumanātherīgāthā</h5>
+
+<p class="verse"><span class="parno">14</span><span class="ms">p_19Th2_28</span>"Dhātuyo dukkhato disvā,
+<br>mā jātiṁ punarāgami;
+<br>Bhave chandaṁ virājetvā,
+<br>upasantā carissasī"ti.</p>
+
+<h5>Uttarātherīgāthā</h5>
+
+<p class="verse"><span class="parno">15</span><a class="pts1" id="pts125"></a>
+<span class="ms">p_19Th2_30</span>"Kāyena saṁvutā āsiṁ,
+<br>vācāya uda cetasā;
+<br>Samūlaṁ taṇhamabbuyha,
+<br>sītibhūtāmhi nibbutā"ti.</p>
+
+<h5>Vuḍḍhapabba&shy;jitasumanātherīgāthā</h5>
+
+<p class="verse"><span class="parno">16</span><span class="ms">p_19Th2_32</span>"Sukhaṁ tvaṁ vuḍḍhike sehi,
+<br>katvā coḷena pārutā;
+<br>Upasanto hi te rāgo,
+<br>sītibhūtāsi nibbutā"ti.</p>
+
+<h5>Dhammātherīgāthā</h5>
+
+<p class="verse"><span class="parno">17</span><span class="ms">p_19Th2_34</span>"Piṇḍapātaṁ caritvāna,
+<br>daṇḍamolubbha dubbalā;
+<br>Vedhamānehi gattehi,
+<br>tattheva nipatiṁ chamā;
+<br>Disvā ādīnavaṁ kāye,
+<br>atha cittaṁ vimucci me"ti.</p>
+
+<h5>Saṇghātherīgāthā</h5>
+
+<p class="verse"><span class="parno">18</span><span class="ms">p_19Th2_36</span>"Hitvā ghare <span class="var" title="pabbajitā (bj)" id="note12">pabbajitvā</span>,
+<br>hitvā puttaṁ pasuṁ piyaṁ;
+<br>Hitvā rāgañca dosañca,
+<br>avijjañca virājiya;
+<br>Samūlaṁ taṇhamabbuyha,
+<br>upasantāmhi nibbutā"ti.</p>
+
+</div><!--end Pali-->
+
+</section>
+
+</div>
+
+<div id="nextprev"><a id="previous-sutta" href="../thi/thi.html#content"></a><a id="next-sutta" href="../thi/thi2.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikaya</a><a href="../thi/thi.html">Therigatha</a>Chapter 1
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ 
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

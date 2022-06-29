@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Samyutta Nika 46.51</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></div>
+ 		</div>
+ 	</div>
+
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="pressed w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+
+<!-- !PAGE CONTENT! --> 
+<div class="w3-main w3-content w3-padding w3-left-align bwcontainer4"> 
+
+ <h2 id="SN01heading">Saṁyutta Nikāya — The Linked Discourses</h2>
+
+ 			<div class="w3-bar w3-light-grey center">  <!-- Div for SN sub-navigation -->
+ 					<a href="sn01.html#content" title="The Book of the Verses" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 1:<br>Verses<br>SN1-11</a>
+ 					<a href="sn02.html#content" title="The Book of Causation" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 2:<br>Causation<br>SN12-21</a>
+ 					<a href="sn03.html#content" title="The Book of the Aggregates" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 3:<br>Aggregates<br>SN22-34</a>
+ 					<a href="sn04.html#content" title="The Book of the Six Sense Bases" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 4:<br>Sense Bases<br>SN35-44</a>
+ 					<a href="sn05.html#content" title="The Great Book" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow w3-yellow" style="width:20%">Vol 5:<br>Great Book<br>SN45-56</a>
+ 				</div>  <!-- End div for SN sub-navigation -->
+
+	 <div class="btn-group bwnav" style="margin-top: 1em">
+ 		<a href="sn45.html#content" title="45. Maggasaṁyutta: On the Path" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN45</a>
+ 		<a href="sn46.html#content" title="46. Bojjhaṅgasaṁyutta: On the Awakening Factors" class="w3-bar-item w3-hover-white w3-border-white w3-button active">SN46</a>
+ 		<a href="sn47.html#content" title="47. Satipaṭṭhānasaṁyutta: On Mindfulness Meditation" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN47</a>
+ 		<a href="sn48.html#content" title="48. Indriyasaṁyutta: On the Faculties" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN48</a>
+ 		<a href="sn49.html#content" title="49. Sammappadhānasaṁyutta: On the Right Efforts" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN49</a>
+ 		<a href="sn50.html#content" title="50. Balasaṁyutta: On the Five Powers" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN50</a>
+ 		<a href="sn51.html#content" title="51. Iddhipādasaṁyutta: On the Bases of Psychic Power" class=" w3-bar-item w3-hover-white w3-border-white w3-button">SN51</a>
+ 		<a href="sn52.html#content" title="52. Anuruddhasaṁyutta: With Anuruddha" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN52</a>
+ 		<a href="sn53.html#content" title="53. Jhānasaṁyutta: On Absorptions" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN53</a>
+ 		<a href="sn54.html#content" title="54. Ānāpānasaṁyutta: On Breath Meditation" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN54</a>
+ 		<a href="sn55.html#content" title="55. Sotāpattisaṁyutta: On Stream-Entry" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN55</a>
+ 		<a href="sn56.html#content" title="56. Saccasaṁyutta: On the Truths" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN56</a>
+ 	</div><!-- End div for lower SN sub-navigation -->
+
+<!-- SN content begins here -->
+<div id="content">
+<h2>46. Bojjhaṅgasaṁyutta: On the Awakening Factors</h2>
+<h3>V1. Discussion — SN 46.51: Nourishing </h3>
+
+<div id="metaarea">
+	<ul class="translator">
+	<li>©&nbsp;Translated from the Pali by Bhante Sujato.<br><a href="../home/copyright.html#sc">(More copyright information)</a>
+	</ul>
+</div>
+
+
+<section class="raw_sutta">
+<div lang="en">
+
+<p><span class="parno">1</span>At Sāvatthī.</p>
+
+<p>“Mendicants, I will teach you what fuels and what starves the five hindrances and the seven awakening factors. Listen …</p>
+
+<p>And what fuels the arising of sensual desire, or, when it has arisen, makes it increase and grow? There is the feature of beauty. Frequent improper attention to that fuels the arising of sensual desire, or, when it has arisen, makes it increase and grow.</p>
+
+<hr>
+
+<p id="p2"><span class="parno">2</span>And what fuels the arising of ill will, or, when it has arisen, makes it increase and grow? There is the feature of harshness. Frequent improper attention to that fuels the arising of ill will, or, when it has arisen, makes it increase and grow.</p>
+
+<p id="p3"><span class="parno">3</span>And what fuels the arising of dullness and drowsiness, or, when it has arisen, makes it increase and grow? There is discontent, sloth, yawning, sleepiness after eating, and mental sluggishness. Frequent improper attention to that fuels the arising of dullness and drowsiness, or, when it has arisen, makes it increase and grow.</p>
+
+<p id="p4"><span class="parno">4</span>And what fuels the arising of restlessness and remorse, or, when it has arisen, makes it increase and grow? There is the unsettled mind. Frequent improper attention to that fuels the arising of restlessness and remorse, or, when it has arisen, makes it increase and grow.</p>
+
+<p id="p5"><span class="parno">5</span>And what fuels the arising of doubt, or, when it has arisen, makes it increase and grow? There are things that are grounds for doubt. Frequent improper attention to them fuels the arising of doubt, or, when it has arisen, makes it increase and grow.</p>
+
+<p id="p6"><span class="parno">6</span>And what fuels the arising of the awakening factor of mindfulness, or, when it has arisen, fully develops it? There are things that are grounds for the awakening factor of mindfulness. Frequent proper attention to them fuels the arising of the awakening factor of mindfulness, or, when it has arisen, fully develops it.</p>
+
+<p id="p7"><span class="parno">7</span>And what fuels the arising of the awakening factor of investigation of principles, or, when it has arisen, fully develops it? There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those on the side of dark and bright. Frequent proper attention to them fuels the arising of the awakening factor of investigation of principles, or, when it has arisen, fully develops it.</p>
+
+<p id="p8"><span class="parno">8</span>And what fuels the arising of the awakening factor of energy, or, when it has arisen, fully develops it? There are the elements of initiative, persistence, and exertion. Frequent proper attention to them fuels the arising of the awakening factor of energy, or, when it has arisen, fully develops it.</p>
+
+<p id="p9"><span class="parno">9</span>And what fuels the arising of the awakening factor of rapture, or, when it has arisen, fully develops it? There are things that are grounds for the awakening factor of rapture. Frequent proper attention to them fuels the arising of the awakening factor of rapture, or, when it has arisen, fully develops it.</p>
+
+<p id="p10"><span class="parno">10</span>And what fuels the arising of the awakening factor of tranquility, or, when it has arisen, fully develops it? There is tranquility of the body and of the mind. Frequent proper attention to that fuels the arising of the awakening factor of tranquility, or, when it has arisen, fully develops it.</p>
+
+<p id="p11"><span class="parno">11</span>And what fuels the arising of the awakening factor of immersion, or, when it has arisen, fully develops it? There are things that are the foundation of serenity and freedom from distraction. Frequent proper attention to them fuels the arising of the awakening factor of immersion, or, when it has arisen, fully develops it.</p>
+
+<p id="p12"><span class="parno">12</span>And what fuels the arising of the awakening factor of equanimity, or, when it has arisen, fully develops it? There are things that are grounds for the awakening factor of equanimity. Frequent proper attention to them fuels the arising of the awakening factor of equanimity, or, when it has arisen, fully develops it.</p>
+
+<p id="p13"><span class="parno">13</span>And what starves the arising of sensual desire, or, when it has arisen, starves its increase and growth? There is the feature of ugliness. Frequent proper attention to that starves the arising of sensual desire, or, when it has arisen, starves its increase and growth.</p>
+
+<p id="p14"><span class="parno">14</span>And what starves the arising of ill will, or, when it has arisen, starves its increase and growth? There is the heart’s release by love. Frequent proper attention to that starves the arising of ill will, or, when it has arisen, starves its increase and growth.</p>
+
+<p id="p15"><span class="parno">15</span>And what starves the arising of dullness and drowsiness, or, when it has arisen, starves its increase and growth? There are the elements of initiative, persistence, and exertion. Frequent proper attention to them starves the arising of dullness and drowsiness, or, when it has arisen, starves its increase and growth.</p>
+
+<p id="p16"><span class="parno">16</span>And what starves the arising of restlessness and remorse, or, when it has arisen, starves its increase and growth? There is the settled mind. Frequent proper attention to that starves the arising of restlessness and remorse, or, when it has arisen, starves its increase and growth.</p>
+
+<p id="p17"><span class="parno">17</span>And what starves the arising of doubt, or, when it has arisen, starves its increase and growth? There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those on the side of dark and bright. Frequent proper attention to them starves the arising of doubt, or, when it has arisen, starves its increase and growth.</p>
+
+<p id="p18"><span class="parno">18</span>And what starves the arising of the awakening factor of mindfulness, or, when it has arisen, starves its full development? There are things that are grounds for the awakening factor of mindfulness. Not frequently focusing on them starves the arising of the awakening factor of mindfulness, or, when it has arisen, starves its full development.</p>
+
+<p id="p19"><span class="parno">19</span>And what starves the arising of the awakening factor of investigation of principles, or, when it has arisen, starves its full development? There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those on the side of dark and bright. Not frequently focusing on them starves the arising of the awakening factor of investigation of principles, or, when it has arisen, starves its full development.</p>
+
+<p id="p20"><span class="parno">20</span>And what starves the arising of the awakening factor of energy, or, when it has arisen, starves its full development? There are the elements of initiative, persistence, and exertion. Not frequently focusing on them starves the arising of the awakening factor of energy, or, when it has arisen, starves its full development.</p>
+
+<p id="p21"><span class="parno">21</span>And what starves the arising of the awakening factor of rapture, or, when it has arisen, starves its full development? There are things that are grounds for the awakening factor of rapture. Not frequently focusing on them starves the arising of the awakening factor of rapture, or, when it has arisen, starves its full development.</p>
+
+<p id="p22"><span class="parno">22</span>And what starves the arising of the awakening factor of tranquility, or, when it has arisen, starves its full development? There is tranquility of the body and of the mind. Not frequently attending to that starves the arising of the awakening factor of tranquility, or, when it has arisen, starves its full development.</p>
+
+<p id="p23"><span class="parno">23</span>And what starves the arising of the awakening factor of immersion, or, when it has arisen, starves its full development? There are things that are the foundation of serenity and freedom from distraction. Not frequently focusing on them starves the arising of the awakening factor of immersion, or, when it has arisen, starves its full development.</p>
+
+<hr>
+
+<p id="p24"><span class="parno">24</span>And what starves the arising of the awakening factor of equanimity, or, when it has arisen, starves its full development? There are things that are grounds for the awakening factor of equanimity. Not frequently focusing on them starves the arising of the awakening factor of equanimity, or, when it has arisen, starves its full development.”</p>
+
+
+
+</div> <!-- End English -->
+<div lang="pi">
+
+<p><span class="parno">1</span>Sāvatthi&shy;nidānaṁ.</p>
+
+<p>"Pañcannañca, bhikkhave, nīvaraṇānaṁ sattannañca bojjhangānaṁ āhārañca anāhārañca desessāmi; taṁ suṇātha. </p>
+
+<p>Ko ca, bhikkhave, āhāro anuppannassa vā kāmacchandassa uppādāya, uppannassa vā kāmacchandassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, subhanimittaṁ. Tattha ayonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā kāmacchandassa uppādāya, uppannassa vā kāmacchandassa bhiyyobhāvāya vepullāya.</p>
+
+<hr>
+
+<p><span class="parno">2</span>Ko ca, bhikkhave, āhāro anuppannassa vā byā pāda ssa uppādāya, uppannassa vā byā pāda ssa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, paṭighanimittaṁ. Tattha ayonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā byā pāda ssa uppādāya, uppannassa vā byā pāda ssa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">3</span>Ko ca, bhikkhave, āhāro anuppannassa vā thinamiddhassa uppādāya, uppannassa vā thinamiddhassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ. Tattha ayonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā thinamiddhassa uppādāya, uppannassa vā thinamiddhassa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">4</span>Ko ca, bhikkhave, āhāro anuppannassa vā uddhaccakukkuccassa uppādāya, uppannassa vā uddhaccakukkuccassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, cetaso avūpasamo. Tattha ayonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā uddhaccakukkuccassa uppādāya, uppannassa vā uddhaccakukkuccassa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">5</span>Ko ca, bhikkhave, āhāro anuppannāya vā vicikicchāya uppādāya, uppannāya vā vicikicchāya bhiyyobhāvāya vepullāya? Atthi, bhikkhave, vicikicchāṭṭhānīyā dhammā. Tattha ayonisomanasikārabahulīkāro – ayamāhāro anuppannāya vā vicikicchāya uppādāya, uppannāya vā vicikicchāya bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">6</span>Ko ca, bhikkhave, āhāro anuppannassa vā satisambojjhangassa uppādāya, uppannassa vā satisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, satisambojjhangaṭṭhānīyā dhammā. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā satisambojjhangassa uppādāya, uppannassa vā satisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">7</span>Ko ca, bhikkhave, āhāro anuppannassa vā dhammavicayasambojjhangassa uppādāya, uppannassa vā dhammavicayasambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā dhammavicayasambojjhangassa uppādāya, uppannassa vā dhammavicayasambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">8</span>Ko ca, bhikkhave, āhāro anuppannassa vā vīriyasambojjhangassa uppādāya, uppannassa vā vīriyasambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā vīriyasambojjhangassa uppādāya, uppannassa vā vīriyasambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">9</span>Ko ca, bhikkhave, āhāro anuppannassa vā pītisambojjhangassa uppādāya, uppannassa vā pītisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, pītisambojjhangaṭṭhānīyā dhammā. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā pītisambojjhangassa uppādāya, uppannassa vā pītisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">10</span>Ko ca, bhikkhave, āhāro anuppannassa vā passaddhisambojjhangassa uppādāya, uppannassa vā passaddhisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, kāyappassaddhi cittappassaddhi. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā passaddhisambojjhangassa uppādāya, uppannassa vā passaddhisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">11</span>Ko ca, bhikkhave, āhāro anuppannassa vā samādhisambojjhangassa uppādāya, uppannassa vā samādhisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, samathanimittaṁ abyagga&shy;nimittaṁ. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā samādhisambojjhangassa uppādāya, uppannassa vā samādhisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">12</span>Ko ca, bhikkhave, āhāro anuppannassa vā upekkhāsambojjhangassa uppādāya, uppannassa vā upekkhāsambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, upekkhāsambojjhangaṭṭhānīyā dhammā. Tattha yonisomanasikārabahulīkāro – ayamāhāro anuppannassa vā upekkhāsambojjhangassa uppādāya, uppannassa vā upekkhāsambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">13</span>Ko ca, bhikkhave, anāhāro anuppannassa vā kāmacchandassa uppādāya, uppannassa vā kāmacchandassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, asubhanimittaṁ. Tattha yonisomanasikārabahulīkāro – ayamanāhāro anuppannassa vā kāmacchandassa uppādāya, uppannassa vā kāmacchandassa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">14</span>Ko ca, bhikkhave, anāhāro anuppannassa vā byā pāda ssa uppādāya, uppannassa vā byā pāda ssa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, mettācetovimutti. Tattha yonisomanasikārabahulīkāro – ayamanāhāro anuppannassa vā byā pāda ssa uppādāya, uppannassa vā byā pāda ssa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">15</span>Ko ca, bhikkhave, anāhāro anuppannassa vā thinamiddhassa uppādāya, uppannassa vā thinamiddhassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu. Tattha yonisomanasikārabahulīkāro – ayamanāhāro anuppannassa vā thinamiddhassa uppādāya, uppannassa vā thinamiddhassa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">16</span>Ko ca, bhikkhave, anāhāro anuppannassa vā uddhaccakukkuccassa uppādāya, uppannassa vā uddhaccakukkuccassa bhiyyobhāvāya vepullāya? Atthi, bhikkhave, cetaso vūpasamo. Tattha yonisomanasikārabahulīkāro – ayamanāhāro anuppannassa vā uddhaccakukkuccassa uppādāya, uppannassa vā uddhaccakukkuccassa bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">17</span>Ko ca, bhikkhave, anāhāro anuppannāya vā vicikicchāya uppādāya, uppannāya vā vicikicchāya bhiyyobhāvāya vepullāya? Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā. Tattha yonisomanasikārabahulīkāro – ayamanāhāro anuppannāya vā vicikicchāya uppādāya, uppannāya vā vicikicchāya bhiyyobhāvāya vepullāya.</p>
+
+<p><span class="parno">18</span>Ko ca, bhikkhave, anāhāro anuppannassa vā satisambojjhangassa uppādāya, uppannassa vā satisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, satisambojjhangaṭṭhānīyā dhammā. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā satisambojjhangassa uppādāya, uppannassa vā satisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">19</span>Ko ca, bhikkhave, anāhāro anuppannassa vā dhammavicayasambojjhangassa uppādāya, uppannassa vā dhammavicayasambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā dhammavicayasambojjhangassa uppādāya, uppannassa vā dhammavicayasambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">20</span>Ko ca, bhikkhave, anāhāro anuppannassa vā vīriyasambojjhangassa uppādāya, uppannassa vā vīriyasambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā vīriyasambojjhangassa uppādāya, uppannassa vā vīriyasambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">21</span>Ko ca, bhikkhave, anāhāro anuppannassa vā pītisambojjhangassa uppādāya, uppannassa vā pītisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, pītisambojjhangaṭṭhānīyā dhammā. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā pītisambojjhangassa uppādāya, uppannassa vā pītisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">22</span>Ko ca, bhikkhave, anāhāro anuppannassa vā passaddhisambojjhangassa uppādāya, uppannassa vā passaddhisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, kāyappassaddhi cittappassaddhi. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā passaddhisambojjhangassa uppādāya, uppannassa vā passaddhisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<p><span class="parno">23</span>Ko ca, bhikkhave, anāhāro anuppannassa vā samādhisambojjhangassa uppādāya, uppannassa vā samādhisambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, samathanimittaṁ abyagga&shy;nimittaṁ. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā samādhisambojjhangassa uppādāya, uppannassa vā samādhisambojjhangassa bhāvanāya pāripūriyā.</p>
+
+<hr>
+
+<p><span class="parno">24</span>Ko ca, bhikkhave, anāhāro anuppannassa vā upekkhāsambojjhangassa uppādāya, uppannassa vā upekkhāsambojjhangassa bhāvanāya pāripūriyā? Atthi, bhikkhave, upekkhāsambojjhangaṭṭhānīyā dhammā. Tattha amana&shy;sikārabahulīkāro – ayamanāhāro anuppannassa vā upekkhāsambojjhangassa uppādāya, uppannassa vā upekkhāsambojjhangassa bhāvanāya pāripūriyā"ti.</p>
+<p class="endsection">Paṭhamaṁ.</p>
+</div> <!-- end pali -->
+
+</section>
+</div><!--content-->
+</div><!-- End page content -->
+<div id="nextprev"><a id="previous-sutta" href="./sn46.50.html#content"></a><a id="next-sutta" href="./sn46.52.html#content"></a></div>
+
+<footer>
+<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="sn.html">Saṁyutta Nikāya</a><a href="sn46.html">46. Bojjhaṅgasaṁyutta: On the Awakening Factors</a> SN 46.51: Nourishing </div>
+	
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+</body>
+ </html>

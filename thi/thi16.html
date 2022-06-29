@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Therigatha 16</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small pressed">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+ <h2>Khuddaka Nikaya - The Minor Texts</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for lower Thi sub-navigation -->
+ 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
+ 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
+ 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button">Sutta Nipata</a>
+ 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
+ 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
+ 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
+ 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Therigatha</a>
+ </div><!-- End div for lower Thi sub-navigation -->
+ 
+ <!--     Therigatha content begins here     -->
+ 
+ <div id="content">
+
+
+<h2>Therigatha - The Verses of the Elder Nuns</h2>
+<h3>Chapter 16: The Great Group of Verses</h3>
+<div id="metaarea">
+<ul class="translator">
+<li>Translated from the Pali by Mrs. Rhys Davids</li>
+</ul>
+</div>
+
+<section class="raw_sutta">
+<div lang="en">
+<h5>Sumedhā</h5>
+
+<p id="p450" class="verse"><span class="parno">450</span>King Heron’s daughter at Mantāvatī,
+<br>Born of his chief consort, was Sumedhā,
+<br>Devoted to the makers of the Law.</p>
+
+<p id="p451" class="verse"><span class="parno">451</span>A virtuous maid was she and eloquent,
+<br>Learnèd and in the system of our Lord
+<br>Well trained. She of her parents audience sought,
+<br>And spake: ‘Now listen, mother, father, both!</p>
+
+<p id="p452" class="verse"><span class="parno">452</span>All my heart’s love is to Nibbāna given.
+<br>Transient is everything that doth become,
+<br>E’en if it have the nature of a god.
+<br>What truck have I, then, with the empty life
+<br>Of sense, that giveth little, slayeth much?</p>
+
+<p id="p453" class="verse"><span class="parno">453</span>Bitter as serpents’ poison are desires
+<br>Of sense, whereafter youthful fools do yearn.
+<br>For that full many a night in wretchedness
+<br>They drag out tortured lives in realms of woe.</p>
+
+<p id="p454" class="verse"><span class="parno">454</span>The vicious-minded, vicious doers mourn
+<br>In purgatorial lives. Ever are fools
+<br>Without restraint in deed and word and thought.</p>
+
+<p id="p455" class="verse"><span class="parno">455</span>Oh! but the foolish have no wit or will.
+<br>They cannot grasp what maketh sorrow rise — 
+<br>When taught, they learn not; in their slumb’ring minds
+<br>The Fourfold Ariyan Truth awakens not.
+<br>Those Truths, O mother, that th’ Awakened One,</p>
+
+<p id="p456" class="verse"><span class="parno">456</span>The Best, the Buddha, hath revealed to us,
+<br>They, the Majority, know not, and they
+<br>Delight in coming aye again to be,
+<br>And long to be reborn among the gods.</p>
+
+<p id="p457" class="verse"><span class="parno">457</span>E’en with the gods is no eternal home.
+<br>Becoming needs must be impermanent.
+<br>Yet they, the foolish souls, are not afraid
+<br>Again, again to come somewhere to birth.</p>
+
+<p id="p458" class="verse"><span class="parno">458</span>Four are the ways of doleful life, and two
+<br>Alone the ways of weal — and these how hard
+<br>To win! Nor if one come into the four,
+<br>Is there renunciation from that world.</p>
+
+<p id="p459" class="verse"><span class="parno">459</span>Suffer ye both that I renounce my world;
+<br>And in the blessed teaching of the Lord,
+<br>Him of the Powers Ten, heedless of all
+<br>Without, I’ll strive to root out birth and death.</p>
+
+<p id="p460" class="verse"><span class="parno">460</span>How can I take delight in many births,
+<br>In this poor body, froth without a soul?
+<br>That I may put an utter end to thirst
+<br>Again to be, suffer that I go forth.</p>
+
+<p id="p461" class="verse"><span class="parno">461</span>Now is the Age of Buddhas! Gone the want
+<br>Of opportunity! The moment’s won!
+<br>O let me never while I live misprize
+<br>The precepts, nor withstand the holy life!’</p>
+
+<p id="p462" class="verse"><span class="parno">462</span>Thus spake Sumedhā, and again: ‘Mother
+<br>And father mine, never again will I
+<br>As a laywoman break my fast and eat.
+<br>Here will I sooner lay me down and die!’</p>
+
+<p id="p463" class="verse"><span class="parno">463</span>Th’ afflicted mother wept; the father, stunned
+<br>With grief, strove to dissuade and comfort her
+<br>Who prostrate lay upon the palace floor: — </p>
+
+<p id="p464" class="verse"><span class="parno">464</span>‘Rise up, dear child. Why this unhappiness
+<br>For thee? Thou art betrothed to go and reign
+<br>In Vāraṇavatī, the promised bride
+<br>Of King Anikaratta, handsome youth.</p>
+
+<p id="p465" class="verse"><span class="parno">465</span>Thou art to be his chief consort, his queen.
+<br>Hard is it, little child, to leave the world,
+<br>Hard are the precepts and the holy life.</p>
+
+<p id="p466" class="verse"><span class="parno">466</span>As queen thou wilt enjoy authority,
+<br>Riches and sov’reignty and luxuries.
+<br>Thou that art blest herein and young, enjoy
+<br>The sweets life yields. Let’s to thy wedding, child.’</p>
+
+<p id="p467" class="verse"><span class="parno">467</span>Then answered them Sumedhā: ‘Nay, not thus!
+<br>No soul, no essence, can becoming yield.
+<br>One or the other shall be — choose ye which:
+<br>Or let me leave the world, or let me die.
+<br>Thus, and thus only, would I choose to wed.</p>
+
+<p id="p468" class="verse"><span class="parno">468</span>What is it worth — this body foul, unclean,
+<br>Emitting odours, source of fears, a bag
+<br>Of skin with carrion filled, oozing impure</p>
+
+<p id="p469" class="verse"><span class="parno">469</span>The while? What is it worth to me who know — 
+<br>Repulsive carcass, plastered o’er with flesh
+<br>And blood, the haunt of worms, dinner of birds — 
+<br>To whom shall such a thing as this be given?</p>
+
+<p id="p470" class="verse"><span class="parno">470</span>Borne in a little while to charnel-field,
+<br>There is this body thrown, when mind hath sped,
+<br>Like useless log, from which e’en kinsfolk turn.</p>
+
+<p id="p471" class="verse"><span class="parno">471</span>Throwing the thing that they have bathed to be
+<br>The food of alien things, whereat recoil
+<br>The very parents, let alone their kin.</p>
+
+<p id="p472" class="verse"><span class="parno">472</span>They have a fondness for this soulless frame,
+<br>That’s knit of bones and sinews, body foul,
+<br>Filled full of exudations manifold.</p>
+
+<p id="p473" class="verse"><span class="parno">473</span>Where one the body to dissect, and turn
+<br>The inside outermost, the smell would prove
+<br>Too much for e’en one’s mother to endure.</p>
+
+<p id="p474" class="verse"><span class="parno">474</span>The factors of my being, organs, elements,
+<br>All are a transient compound, rooted deep
+<br>In birth, are Ill, and first and last the thing
+<br>I would not. Whom, then, could I choose to wed?</p>
+
+<p id="p475" class="verse"><span class="parno">475</span>Rather would I find death day after day
+<br>With spears three hundred piercing me anew,
+<br>E’en for an hundred years, if this would then
+<br>Put a last end to pain, unending else.</p>
+
+<p id="p476" class="verse"><span class="parno">476</span>The wise would with this [bargain] close, and meet
+<br>Utter destruction, seeing that His Word,
+<br>The Master’s, runneth: "Long the wandering
+<br>Of them who, smitten, ever rise again."</p>
+
+<p id="p477" class="verse"><span class="parno">477</span>Countless the ways in which we meet our death,
+<br>‘Mong gods and men, as demons or as beasts,</p>
+
+<hr>
+<p id="p478" class="verse"><span class="parno">478</span>Among the shades, or in the haunts of hell.
+<br>And there how many doomed tormented live!
+<br>No sure refuge is ours even in heaven.
+<br>Above, beyond Nibbāna’s bliss, is naught.</p>
+
+<p id="p479" class="verse"><span class="parno">479</span>And they have won that Bliss who all their hearts
+<br>Have plighted to the blessed Word of Him
+<br>Who hath the Tenfold Power, and heeding naught,
+<br>Have striv’n to put far from them birth and death.</p>
+
+<p id="p480" class="verse"><span class="parno">480</span>This day, my father, will I get me forth!
+<br>I’ll naught of empty riches! Sense-desires
+<br>Repel and sicken me, and are become
+<br>E’en as the stump where once hath stood a palm.’</p>
+
+<p id="p481" class="verse"><span class="parno">481</span>So spake she to her father. Now the King,
+<br>Anikaratta, on his way to woo
+<br>His youthful bride’s consent, drew near
+<br>At the appointed time. But Sumedhā</p>
+
+<p id="p482" class="verse"><span class="parno">482</span>Let down the soft black masses of her hair
+<br>And with a dagger cut them off. Then closed
+<br>The door that led to her own terraced rooms,
+<br>And forthwith to First Jhana-rapture won.</p>
+
+<p id="p483" class="verse"><span class="parno">483</span>There sat she lost in ecstasy, the while
+<br>Anikaratta reached the capital.
+<br>Then she fell musing on impermanence,
+<br>Developing the thought. Then is she ware</p>
+
+<p id="p484" class="verse"><span class="parno">484</span>The while Anikaratta swiftly mounts
+<br>The palace steps, in brave array of gems
+<br>And gold, and bowing low woos Sumedhā.</p>
+
+<p id="p485" class="verse"><span class="parno">485</span>‘Reign in my kingdom and enjoy my wealth
+<br>And power. Rich, happy and so young thou art,
+<br>Enjoy the sweets that life and love can yield,
+<br>Though they be hard to win and won by few.</p>
+
+<p id="p486" class="verse"><span class="parno">486</span>To thee my kingdom I surrender! Now
+<br>Dispose as thou dost wish, give gifts galore.
+<br>Be not downcast. Thy parents are distressed.’</p>
+
+<p id="p487" class="verse"><span class="parno">487</span>To him thus Sumedhā, for whom desires
+<br>Of sensuous love were worthless, nor availed
+<br>To lead astray, made answer: ‘O set not
+<br>The heart’s affections on this sensual love.
+<br>See all the peril, the satiety of sense.</p>
+
+<p id="p488" class="verse"><span class="parno">488</span>Mandhātā, King o’ th’ world’s four continents,
+<br>Had greater wealth to gratify his sense
+<br>Than any other man, yet passed away
+<br>Unsatisfied, his wishes unfulfilled.</p>
+
+<p id="p489" class="verse"><span class="parno">489</span>Nay, an the rain-god rained all seven kinds
+<br>Of gems till earth and heaven were full, still would
+<br>The senses crave, and men insatiate die.</p>
+
+<p id="p490" class="verse"><span class="parno">490</span>‘Like the sharp blades of swords are sense-desires.’
+<br>‘Like the poised heads of snakes prepared to dart.’
+<br>‘Like blazing torches,’ and ‘like bare gnawn bones.’</p>
+
+<p id="p491" class="verse"><span class="parno">491</span>Transient, unstable are desires of sense,
+<br>Pregnant with Ill and full of venom dire,
+<br>Searing as heated iron globe to touch.
+<br>Baneful the root of them, baleful the fruit.</p>
+
+<p id="p492" class="verse"><span class="parno">492</span>As ‘fruit’ that brings the climber to a fall,
+<br>Are sense-desires; evil as ‘lumps of flesh’
+<br>That greedy birds one from the other snatch;
+<br>As cheating ‘dreams’; as ‘borrowed goods’ reclaimed.</p>
+
+<p id="p493" class="verse"><span class="parno">493</span>‘As spears and jav’lins are desires of sense,’
+<br>‘A pestilence, a boil, and bane and bale.
+<br>A furnace of live coals,’ the root of bane,
+<br>Murderous and the source of harrowing dread.</p>
+
+<p id="p494" class="verse"><span class="parno">494</span>So hath the direfulness of sense-desires,
+<br>Those barriers to salvation, been declared.
+<br>Go, leave me, for I do not trust myself,
+<br>While in this world I yet have part and lot.</p>
+
+<p id="p495" class="verse"><span class="parno">495</span>What shall another do for me? For me
+<br>Whose head is wrapped in flames, whose steps are dogged
+<br>By age and death that tarry not. To crush
+<br>Them utterly I needs must strive.’</p>
+
+<p id="p496" class="verse"><span class="parno">496</span>Then coming to her door she saw the king
+<br>Her suitor, and her parents seated there
+<br>And shedding tears. And once more spake to them:</p>
+
+<p id="p497" class="verse"><span class="parno">497</span>‘Long have they yet to wander through the worlds
+<br>Who witless aye again their tears renew,
+<br>Weeping world without end for father dead,
+<br>Or brother slain, or that themselves must die.</p>
+
+<p id="p498" class="verse"><span class="parno">498</span>Call ye to mind how it was said that tears
+<br>And milk and blood flow on world without end.
+<br>And bear in mind that tumulus of bones
+<br>By creatures piled who wander through the worlds.</p>
+
+<p id="p499" class="verse"><span class="parno">499</span>Remember the four oceans as compared
+<br>With all the flow of tears and milk and blood.
+<br>Remember the ‘great cairn of one man’s bones
+<br>From one æon alone, equal to Vipula’;</p>
+
+<p id="p500" class="verse"><span class="parno">500</span>And how ‘great India would not suffice
+<br>To furnish little tally-balls of mould,
+<br>Wherewith to number all the ancestors
+<br>Of one’s own round of life world without end.’</p>
+
+<p id="p501" class="verse"><span class="parno">501</span>Remember how ‘the little squares of straws
+<br>And boughs and twigs could ne’er suffice
+<br>As tallies for one’s sires world without end.’</p>
+
+<p id="p502" class="verse"><span class="parno">502</span>Remember how the parable was told
+<br>Of ‘purblind turtle in the Eastern Seas,
+<br>Or other oceans, once as time goes by,
+<br>Thrusting his head thro’ hole of drifting yoke’;
+<br>So rare as this the chance of human birth.</p>
+
+<p id="p503" class="verse"><span class="parno">503</span>Remember too the ‘body’-parable,
+<br>The ‘lump of froth,’ of spittle without core,
+<br>Drifting. See here the fleeting factors five.
+<br>And O forget not hell where many thole.</p>
+
+<p id="p504" class="verse"><span class="parno">504</span>Remember how we swell the charnel-fields,
+<br>Now dying, now again elsewhere reborn.
+<br>Remember what was said of ‘crocodiles,’
+<br>And what those perils meant for us, and O!
+<br>Bear ye in mind the Four, the Ariyan Truths.</p>
+
+<p id="p505" class="verse"><span class="parno">505</span>THE NECTAR OF THE NORM IS HERE! O how
+<br>Canst thou be satisfied with bitter draughts
+<br>Of sense satiety? All sensual joys
+<br>Are bitterer for the fivefold dogging Ill.</p>
+
+<p id="p506" class="verse"><span class="parno">506</span>THE NECTAR OF THE NORM IS HERE! O how
+<br>Canst thou be satisfied with fevered fits
+<br>Of sense-satiety? All sensual joys
+<br>Are burning, boiling, ferment, stew.</p>
+
+<p id="p507" class="verse"><span class="parno">507</span>THERE IS, WHERE ENMITY IS NOT! O how
+<br>Canst thou be satisfied with joys of sense
+<br>Engend’ring thee so many foes — the wrath
+<br>Or greed of king, or thief, or rival, harm
+<br>Through fire, or water — yea, so many foes!</p>
+
+<p id="p508" class="verse"><span class="parno">508</span>EMANCIPATION WAITS! O how canst thou
+<br>Be satisfied with sensual joys, wherein
+<br>Lie bonds and death? Yea, in those very joys
+<br>Lurk gaol and headsman. They who seek t’ indulge
+<br>Their lusts needs must thereafter suffer ills.</p>
+
+<p id="p509" class="verse"><span class="parno">509</span>Him will straw-torches burn who holds them long
+<br>And lets not go. So, in the parable,
+<br>Desires of sense burn them who let not go.</p>
+
+<p id="p510" class="verse"><span class="parno">510</span>Cast not away, because of some vain joy
+<br>Of sense, the vaster happiness sublime,
+<br>Lest like the finny carp thou gulp the hook,
+<br>Only to find thyself for that foredone</p>
+
+<p id="p511" class="verse"><span class="parno">511</span>Tame thou thyself in sense-desires, nor let
+<br>Thyself be bound by them, as is a dog
+<br>Bound by a chain; else will they do forsooth
+<br>With thee as hungry pariahs with that dog.</p>
+
+<p id="p512" class="verse"><span class="parno">512</span>Once more I say, immeasurable Ills
+<br>And many weary miseries of mind
+<br>Thou’lt suffer yoked to sensual life. Renounce,
+<br>Renounce desires of sense! They pass away.</p>
+
+<p id="p513" class="verse"><span class="parno">513</span>THERE IS, THAT GROWETH NEVER OLD! O how
+<br>Canst thou be satisfied with sense-desires
+<br>That age so soon? Are not all things reborn,
+<br>Where’er it be, gripped by disease and death?</p>
+
+<p id="p514" class="verse"><span class="parno">514</span>THIS that doth ne’er grow old, that dieth not,
+<br>THIS never-ageing, never-dying Path — 
+<br>No sorrow cometh there, no enemies,
+<br>Nor is there any crowd; none faint or fail,
+<br>No fear cometh, nor aught that doth torment — 
+<br>To THIS, the Path Ambrosial, have gone</p>
+
+<p id="p515" class="verse"><span class="parno">515</span>Full many. And to-day, e’en now ’tis to be won.
+<br>But only by a life that’s utterly
+<br>Surrendered in devotion. Labour not,
+<br>And ye shall not attain!’</p>
+
+<p id="p516" class="verse"><span class="parno">516</span>Thus Sumedhā
+<br>Ended her say, who found no joy in all
+<br>Activities that lead from life to life,
+<br>And, to Anikaratta thus her mind
+<br>Declaring, dropped her tresses on the floor.</p>
+
+<p id="p517" class="verse"><span class="parno">517</span>Then up he rose with outstretched folded hands,
+<br>And with her father pleaded for her thus:
+<br>‘O suffer Sumedhā to leave the world,
+<br>That she may see the Truth and Liberty!’</p>
+
+<p id="p518" class="verse"><span class="parno">518</span>The parents suffered her, and forth she went,
+<br>Afeared to stay and build up fear and grief.
+<br>Six branches of Insight she realized,
+<br>As learner, winning to the Topmost Fruit.</p>
+
+<p id="p519" class="verse"><span class="parno">519</span>O wondrous this! O marvellous in sooth!
+<br>Nibbāna for the daughter of a king!
+<br>Her state and conduct in her former births,
+<br>E’en as she told in her last life were these:</p>
+
+<p id="p520" class="verse"><span class="parno">520</span>‘When Koṇāgamana was Buddha here,
+<br>And in a new abode, the Order’s Park,
+<br>Took up his dwelling, two o’ my friends, and I
+<br>Built a Vihāra for the Master’s use.</p>
+
+<p id="p521" class="verse"><span class="parno">521</span>And many scores and centuries of lives
+<br>We lived among the gods, let alone men.
+<br>Mighty our glory and our power among</p>
+
+<p id="p522" class="verse"><span class="parno">522</span>The gods, nor need I speak of fame on earth.
+<br>Was I not consort of an Emperor,
+<br>The Treasure-Woman ’mongst the Treasures Seven?
+<br>Endurance in the Truth the Master taught — </p>
+
+<p id="p523" class="verse"><span class="parno">523</span>This was the cause, the source, the root,
+<br>This the First Link in the long Causal Line,
+<br>This is Nibbāna if we love the Norm.</p>
+
+<p id="p524" class="verse"><span class="parno">524</span>Thus acting, they who put their trust in Him,
+<br>Wisdom Supreme, lose every wish and hope
+<br>Of coming back to be — and thus released
+<br>They from all passion’s stain are purified.</p>
+
+</div><!--end English-->
+
+<div lang="pi">
+<h5>Sumedhātherīgāthā</h5>
+
+<p class="verse"><span class="parno">450</span><span class="ms">p_19Th2_538</span>Mantāvatiyā nagare,
+<br>Rañño koñcassa aggamahesiyā;
+<br>Dhītā āsiṁ sumedhā,
+<br>Pasāditā sāsanakarehi.</p>
+
+<p class="verse"><span class="parno">451</span><span class="ms">p_19Th2_539</span>Sīlavatī cittakathā,
+<br>Bahussutā buddhasāsane vinitā;
+<br>Mātāpitaro upagamma,
+<br>Bhaṇati "ubhayo nisāmetha.</p>
+
+<p class="verse"><span class="parno">452</span><span class="ms">p_19Th2_540</span>Nibbānābhiratāhaṁ,
+<br>Asassataṁ bhavagataṁ yadipi dibbaṁ;
+<br><span class="var" title="kimanga pana (bj, s2, pts1–2) | kiṁ pana (?)" id="note142">Kimangaṁ pana</span> tucchā kāmā,
+<br>Appassādā bahuvighātā.</p>
+
+<p class="verse"><span class="parno">453</span><span class="ms">p_19Th2_541</span>Kāmā kaṭukā āsī,
+<br>Visūpamā yesu mucchitā bālā;
+<br>Te dīgharattaṁ niraye,
+<br>Samappitā <span class="var" title="haññare dukhitā (?)" id="note143">haññante dukkhitā</span>.</p>
+
+<p class="verse"><span class="parno">454</span><span class="ms">p_19Th2_542</span>Socanti pāpakammā,
+<br>Vinipāte pāpavaddhino sadā;
+<br>Kāyena ca vācāya ca,
+<br>Manasā ca asaṁvutā bālā.</p>
+
+<p class="verse"><span class="parno">455</span><span class="ms">p_19Th2_543</span>Bālā te duppaññā,
+<br>Acetanā dukkhasamudayoruddhā;
+<br>Desente ajānantā,
+<br>Na bujjhare ariyasaccāni.</p>
+
+<p class="verse"><span class="parno">456</span><a class="pts1" id="pts168"></a>
+<span class="ms">p_19Th2_544</span>Saccāni amma buddhavaradesitāni,
+<br>Te bahutarā ajānantā ye;
+<br>Abhinandanti bhavagataṁ,
+<br>Pihenti devesu upapattiṁ.</p>
+
+<p class="verse"><span class="parno">457</span><span class="ms">p_19Th2_545</span>Devesupi upapatti,
+<br>Asassatā bhavagate aniccamhi;
+<br>Na ca santasanti bālā,
+<br>Punappunaṁ jāyitabbassa.</p>
+
+<p class="verse"><span class="parno">458</span><span class="ms">p_19Th2_546</span>Cattāro vinipātā,
+<br><span class="var" title="dve (sabbattha)" id="note144">Duve</span> ca gatiyo kathañci labbhanti;
+<br>Na ca vinipātagatānaṁ,
+<br>Pabbajjā atthi nirayesu.</p>
+
+<p class="verse"><span class="parno">459</span><span class="ms">p_19Th2_547</span>Anujānātha maṁ ubhayo,
+<br>Pabbajituṁ dasabalassa pāvacane;
+<br>Appossukkā ghaṭissaṁ,
+<br>Jātimaraṇappahānāya.</p>
+
+<p class="verse"><span class="parno">460</span><span class="ms">p_19Th2_548</span>Kiṁ <span class="var" title="bhavagatena (s2, s3, pts1–2)" id="note145">bhavagate</span> abhinanditena,
+<br>Kāyakalinā asārena;
+<br>Bhavataṇhāya nirodhā,
+<br>Anujānātha pabbajissāmi.</p>
+
+<p class="verse"><span class="parno">461</span><span class="ms">p_19Th2_549</span>Buddhānaṁ uppādo vivajjito,
+<br>Akkhaṇo khaṇo laddho;
+<br>Sīlāni brahmacariyaṁ,
+<br>Yāvajīvaṁ na dūseyyaṁ".</p>
+
+<p class="verse"><span class="parno">462</span><span class="ms">p_19Th2_550</span>Evaṁ bhaṇati sumedhā,<q class="open" id="note146" title=" atha naṁ mātāpitaro ahaṁsu;">
+<br>Mātāpitaro "na tāva āhāraṁ;
+<br><span class="var" title="āhariyāmi (bj) | āhariya (pts1–2) | āhārisaṁ (?)" id="note147">Āharissaṁ</span> gahaṭṭhā,
+<br>Māraṇavasaṁ gatāva hessāmi"</q>.</p>
+
+<p class="verse"><span class="parno">463</span><span class="ms">p_19Th2_551</span>Mātā dukkhitā rodati pitā ca,
+<br>Assā sabbaso samabhihato;
+<br>Ghaṭenti saññāpetuṁ,
+<br>Pāsādatale chamāpatitaṁ.</p>
+
+<p class="verse"><span class="parno">464</span><span class="ms">p_19Th2_552</span>"Uṭṭhehi puttaka kiṁ soci,
+<br>Tena dinnāsi vāraṇavatimhi;
+<br>Rājā <span class="var" title="aṇīkadatto (bj) | anikaratto (s2, s3, pts1–2)" id="note149">anīkaratto</span>,
+<br>Abhirūpo tassa tvaṁ dinnā.</p>
+
+<p class="verse"><span class="parno">465</span><span class="ms">p_19Th2_553</span>Aggamahesī bhavissasi,
+<br>Anikarattassa rājino bhariyā;
+<br>Sīlāni brahmacariyaṁ,
+<br>Pabbajjā dukkarā puttaka.</p>
+
+<p class="verse"><span class="parno">466</span><span class="ms">p_19Th2_554</span>Rajje āṇā dhanamissariyaṁ,
+<br>Bhogā sukhā daharikāsi;
+<br>Bhuñjāhi kāmabhoge,
+<br>Vāreyyaṁ hotu te putta".</p>
+
+<p class="verse"><span class="parno">467</span><span class="ms">p_19Th2_555</span>Atha ne bhaṇati sumedhā,
+<br>"Mā edisikāni bhavagatamasāraṁ;
+<br>Pabbajjā vā hohiti,
+<br>Māraṇaṁ vā me na ceva vāreyyaṁ.</p>
+
+<p class="verse"><span class="parno">468</span><a class="pts1" id="pts169"></a>
+<span class="ms">p_19Th2_556</span>Kimiva pūtikāyamasuciṁ,
+<br>Savanagandhaṁ bhayānakaṁ kuṇapaṁ;
+<br>Abhi&shy;saṁviseyyaṁ bhastaṁ,
+<br>Asakiṁ paggharitaṁ asucipuṇṇaṁ.</p>
+
+<p class="verse"><span class="parno">469</span><span class="ms">p_19Th2_557</span>Kimiva tahaṁ jānantī,
+<br>Vikūlakaṁ maṁsasoṇitupalittaṁ;
+<br>Kimikulālayaṁ sakuṇabhattaṁ,
+<br>Kaḷevaraṁ kissa diyyati.</p>
+
+<p class="verse"><span class="parno">470</span><span class="ms">p_19Th2_558</span>Nibbuyhati susānaṁ,
+<br>Aciraṁ kāyo apetaviññāṇo;
+<br><span class="var" title="chaḍḍito (s2, s3) | chuṭṭho (pts1–2, mr)" id="note150">Chuddho</span> kaḷingaraṁ viya,
+<br>Jigucchamānehi ñātīhi.</p>
+
+<p class="verse"><span class="parno">471</span><span class="ms">p_19Th2_559</span><span class="var" title="chaḍḍūna (s2, s3, pts1–2) | chuṭṭhuna (mr)" id="note151">Chuddhūna</span> naṁ susāne,
+<br>Parabhattaṁ <span class="var" title="nhāyare (?)" id="note152">nhāyanti</span> jigucchantā;
+<br>Niyakā mātāpitaro,
+<br>Kiṁ pana sādhāraṇā janatā.</p>
+
+<p class="verse"><span class="parno">472</span><span class="ms">p_19Th2_560</span>Ajjhositā asāre,
+<br>Kaḷevare aṭṭhinhārusaṁghāte;
+<br>Kheḷassuccārassava,
+<br><span class="var" title="khelassuccārapassava (bj) | kheḷassumucchāssavaparipuṇṇe (pts1–2)" id="note153">Paripuṇṇe</span> pūtikāyamhi.</p>
+
+<p class="verse"><span class="parno">473</span><span class="ms">p_19Th2_561</span>Yo naṁ vinibbhujitvā,
+<br>Abbhanta&shy;ramassa bāhiraṁ kayirā;
+<br>Gandhassa asahamānā,
+<br>Sakāpi mātā jiguccheyya.</p>
+
+<p class="verse"><span class="parno">474</span><span class="ms">p_19Th2_562</span>Khandhadhātuāyatanaṁ,
+<br>Sankhataṁ jātimūlakaṁ dukkhaṁ;
+<br>Yoniso anuvicinantī,
+<br>Vāreyyaṁ kissa iccheyyaṁ.</p>
+
+<p class="verse"><span class="parno">475</span><span class="ms">p_19Th2_563</span>Divase divase tisatti,
+<br>Satāni navanavā pateyyuṁ kāyamhi;
+<br>Vassasatampi ca ghāto,
+<br>Seyyo dukkhassa cevaṁ khayo.</p>
+
+<p class="verse"><span class="parno">476</span><span class="ms">p_19Th2_564</span>Ajjhupagacche ghātaṁ,
+<br>Yo viññāyevaṁ satthuno vacanaṁ;
+<br>‘Dīgho <span class="var" title="ca tesaṁ (s2, s3) | vo (mr)" id="note154">tesaṁ</span> saṁsāro,
+<br>Punappunaṁ haññamānānaṁ’.</p>
+
+<p class="verse"><span class="parno">477</span><a class="pts1" id="pts170"></a>
+<span class="ms">p_19Th2_565</span>Devesu manussesu ca,
+<br>Tiracchānayoniyā asurakāye;
+<br>Petesu ca nirayesu ca,
+<br>Aparimitā dissare ghātā.</p>
+
+<hr>
+<p class="verse"><span class="parno">478</span><span class="ms">p_19Th2_566</span>Ghātā nirayesu bahū,
+<br>Vinipātagatassa <span class="var" title="kilissamānassa (s2, s3, pts1–2, mr)" id="note155">pīḷiyamānassa</span>;
+<br>Devesupi attāṇaṁ,
+<br>Nibbānasukhā paraṁ natthi.</p>
+
+<p class="verse"><span class="parno">479</span><span class="ms">p_19Th2_567</span>Pattā te nibbānaṁ,
+<br>Ye yuttā dasabalassa pāvacane;
+<br>Appossukkā ghaṭenti,
+<br>Jātimaraṇappahānāya.</p>
+
+<p class="verse"><span class="parno">480</span><span class="ms">p_19Th2_568</span>Ajjeva tātabhinikkha-
+<br>Missaṁ bhogehi kiṁ asārehi;
+<br>Nibbinnā me kāmā,
+<br>Vantasamā tālavatthukatā".</p>
+
+<p class="verse"><span class="parno">481</span><span class="ms">p_19Th2_569</span>Sā cevaṁ bhaṇati pitara-
+<br>Manīkaratto ca yassa sā dinnā;
+<br>Upayāsi vāraṇavate,
+<br>Vāreyyamupaṭṭhite kāle.</p>
+
+<p class="verse"><span class="parno">482</span><span class="ms">p_19Th2_570</span>Atha asitanicitamuduke,
+<br>Kese khaggena chindiya sumedhā;
+<br>Pāsādaṁ <span class="var" title="pidhetvā (bj, s2, s3) | padhatvā (pts1–2) | pidhitvā (mr)" id="note156">pidahitvā</span>,
+<br>Paṭhamajjhānaṁ samāpajji.</p>
+
+<p class="verse"><span class="parno">483</span><span class="ms">p_19Th2_571</span>Sā ca tahiṁ samāpannā,
+<br>Anīkaratto ca āgato nagaraṁ;
+<br>Pāsāde <span class="var" title="pāsādeva (bj, s2, s3, pts1–2)" id="note157">ca</span> sumedhā,
+<br><span class="var" title="aniccasaññā (sabbattha)" id="note158">Aniccasaññaṁ</span> subhāveti.</p>
+
+<p class="verse"><span class="parno">484</span><span class="ms">p_19Th2_572</span>Sā ca manasi karoti,
+<br>Anīkaratto ca āruhī turitaṁ;
+<br>Maṇikanakabhūsitango,
+<br>Katañjalī yācati sumedhaṁ.</p>
+
+<p class="verse"><span class="parno">485</span><span class="ms">p_19Th2_573</span>"Rajje āṇādhanamissa-
+<br>Riyaṁ bhogā sukhā daharikāsi;
+<br>Bhuñjāhi kāmabhoge,
+<br>Kāmasukhā dullabhā loke.</p>
+
+<p class="verse"><span class="parno">486</span><span class="ms">p_19Th2_574</span>Nissaṭṭhaṁ te rajjaṁ,
+<br>Bhoge bhuñjassu dehi dānāni;
+<br>Mā dummanā ahosi,
+<br><span class="var" title="mātāpitaro ca te dukhitā (?)" id="note159">Mātāpitaro te dukkhitā</span>".</p>
+
+<p class="verse"><span class="parno">487</span><span class="ms">p_19Th2_575</span>Taṁ taṁ bhaṇati sumedhā,
+<br>Kāmehi anatthikā vigatamohā;
+<br>"Mā kāme abhinandi,
+<br>Kāmesvādīnavaṁ passa.</p>
+
+<p class="verse"><span class="parno">488</span><a class="pts1" id="pts171"></a>
+<span class="ms">p_19Th2_576</span>Cātuddīpo rājā,
+<br>Mandhātā āsi kāmabhoginamaggo;
+<br>Atitto kālankato,
+<br>Na cassa paripūritā icchā.</p>
+
+<p class="verse"><span class="parno">489</span><span class="ms">p_19Th2_577</span>Satta ratanāni vasseyya,
+<br>Vuṭṭhimā dasadisā samantena;
+<br>Na catthi titti kāmānaṁ,
+<br>Atittāva maranti narā.</p>
+
+<p class="verse"><span class="parno">490</span><span class="ms">p_19Th2_578</span>Asisūnūpamā kāmā,
+<br>kāmā sappasiropamā;
+<br>Ukkopamā anudahanti,
+<br><span class="var" title="… kankhala (bj) | … kankāla (pts1–2)" id="note160">aṭṭhikankala</span> sannibhā.</p>
+
+<p class="verse"><span class="parno">491</span><span class="ms">p_19Th2_579</span>Aniccā adhuvā kāmā,
+<br>bahudukkhā mahāvisā;
+<br>Ayoguḷova santatto,
+<br>aghamūlā dukhapphalā.</p>
+
+<p class="verse"><span class="parno">492</span><span class="ms">p_19Th2_580</span>Rukkhapphalūpamā kāmā,
+<br>maṁsapesūpamā dukhā;
+<br>Supinopamā vañcaniyā,
+<br>kāmā yācitakūpamā.</p>
+
+<p class="verse"><span class="parno">493</span><span class="ms">p_19Th2_581</span>Sattisūlūpamā kāmā,
+<br>rogo gaṇḍo aghaṁ nighaṁ;
+<br>Angārakā&shy;susadisā,
+<br>aghamūlaṁ bhayaṁ vadho.</p>
+
+<p class="verse"><span class="parno">494</span><span class="ms">p_19Th2_582</span>Evaṁ bahudukkhā kāmā,
+<br>akkhātā antarāyikā;
+<br>Gacchatha na me bhavagate,
+<br>vissāso atthi attano.</p>
+
+<p class="verse"><span class="parno">495</span><span class="ms">p_19Th2_583</span>Kiṁ mama paro karissati,
+<br>Attano sīsamhi ḍayhamānamhi;
+<br>Anubandhe jarāmaraṇe,
+<br>Tassa ghātāya ghaṭitabbaṁ".</p>
+
+<p class="verse"><span class="parno">496</span><span class="ms">p_19Th2_584</span>Dvāraṁ <span class="var" title="avāpuritvāhaṁ (bj) | apāpuṇitvānāyaṁ (s2, s3) | apāpuṇitvāna'yaṁ (pts1–2)" id="note161">apā&shy;puritvānahaṁ</span>,
+<br>Mātāpitaro anīkarattañca;
+<br>Disvāna chamaṁ nisinne,
+<br>Rodante idamavocaṁ.</p>
+
+<p class="verse"><span class="parno">497</span><span class="ms">p_19Th2_585</span>"Dīgho bālānaṁ saṁsāro,
+<br>Punappunañca rodataṁ;
+<br>Anamatagge pitu maraṇe,
+<br>Bhātu vadhe attano ca vadhe.</p>
+
+<p class="verse"><span class="parno">498</span><span class="ms">p_19Th2_586</span>Assu thaññaṁ rudhiraṁ,
+<br>Saṁsāraṁ anamataggato saratha;
+<br>Sattānaṁ saṁsarataṁ,
+<br>Sarāhi aṭṭhīnañca sannicayaṁ.</p>
+
+<p class="verse"><span class="parno">499</span><span class="ms">p_19Th2_587</span><span class="var" title="sarassu caturo udadhī (?)" id="note162">Sara caturodadhī</span>,
+<br>Upanīte assuthaññarudhiramhi;
+<br>Sara ekakappamaṭṭhīnaṁ,
+<br>Sañcayaṁ vipulena samaṁ.</p>
+
+<p class="verse"><span class="parno">500</span><a class="pts1" id="pts172"></a>
+<span class="ms">p_19Th2_588</span>Anamatagge saṁsarato,
+<br><span class="var" title="mahāmahiṁ (?)" id="note163">Mahiṁ</span> jambudīpamupanītaṁ;
+<br>Kolaṭṭhimattaguḷikā,
+<br>Mātā mātusveva nappahonti.</p>
+
+<p class="verse"><span class="parno">501</span><span class="ms">p_19Th2_589</span><span class="var" title="sara tiṇakaṭṭhasākhāpalāsaṁ (bj, s2, s3) | sara tiṇakaṭṭhaṁ sākhāpalāsaṁ (pts1–2)" id="note164">Tiṇakaṭṭhasākhāpalāsaṁ</span>,
+<br>Upanītaṁ anamataggato sara;
+<br>Caturangulikā ghaṭikā,
+<br>Pitupitusveva nappahonti.</p>
+
+<p class="verse"><span class="parno">502</span><span class="ms">p_19Th2_590</span>Sara kāṇakacchapaṁ pubba-
+<br>Samudde aparato ca yugachiddaṁ;
+<br><span class="var" title="sara (bj)" id="note165">Siraṁ</span> tassa ca paṭimukkaṁ,
+<br>Manussalābhamhi opammaṁ.</p>
+
+<p class="verse"><span class="parno">503</span><span class="ms">p_19Th2_591</span>Sara rūpaṁ pheṇapiṇḍopa-
+<br>Massa kāyakalino asārassa;
+<br>Khandhe passa anicce,
+<br>Sarāhi niraye bahuvighāte.</p>
+
+<p class="verse"><span class="parno">504</span><span class="ms">p_19Th2_592</span>Sara kaṭasiṁ vaḍḍhente,
+<br>Punappunaṁ tāsu tāsu jātīsu;
+<br>Sara kumbhīlabhayāni ca,
+<br>Sarāhi cattāri saccāni.</p>
+
+<p class="verse"><span class="parno">505</span><span class="ms">p_19Th2_593</span>Amatamhi vijjamāne,
+<br>Kiṁ tava pañcakaṭukena pītena;
+<br>Sabbā hi kāmaratiyo,
+<br>Kaṭukatarā pañcakaṭukena.</p>
+
+<p class="verse"><span class="parno">506</span><span class="ms">p_19Th2_594</span>Amatamhi vijjamāne,
+<br>Kiṁ tava kāmehi ye <span class="var" title="sapariḷāhā (bj)" id="note166">pariḷāhā</span>;
+<br>Sabbā hi kāmaratiyo,
+<br>Jalitā kuthitā kampitā santāpitā.</p>
+
+<p class="verse"><span class="parno">507</span><span class="ms">p_19Th2_595</span>Asapattamhi samāne,
+<br>Kiṁ tava kāmehi ye bahusapattā;
+<br>Rājaggicoraudakappiyehi,
+<br>Sādhāraṇā kāmā bahusapattā.</p>
+
+<p class="verse"><span class="parno">508</span><span class="ms">p_19Th2_596</span>Mokkhamhi vijjamāne,
+<br>Kiṁ tava kāmehi yesu vadhabandho;
+<br>Kāmesu hi asakāmā,
+<br>Vadhabandhadukhāni anubhonti.</p>
+
+<p class="verse"><span class="parno">509</span><a class="pts1" id="pts173"></a>
+<span class="ms">p_19Th2_597</span>Ādīpitā tiṇukkā,
+<br>Gaṇhantaṁ dahanti neva muñcantaṁ;
+<br>Ukkopamā hi kāmā,
+<br>Dahanti ye te na muñcanti.</p>
+
+<p class="verse"><span class="parno">510</span><span class="ms">p_19Th2_598</span>Mā appakassa hetu,
+<br>Kāmasukhassa vipulaṁ jahī sukhaṁ;
+<br>Mā puthulomova baḷisaṁ,
+<br>Gilitvā pacchā vihaññasi.</p>
+
+<p class="verse"><span class="parno">511</span><span class="ms">p_19Th2_599</span>Kāmaṁ kāmesu damassu,
+<br>Tāva sunakhova sankhalābaddho;
+<br>Kāhinti khu taṁ kāmā,
+<br>Chātā sunakhaṁva caṇḍālā.</p>
+
+<p class="verse"><span class="parno">512</span><span class="ms">p_19Th2_600</span>Aparimitañca dukkhaṁ,
+<br>Bahūni ca cittadomanassāni;
+<br>Anubhohisi kāmayutto,
+<br><span class="var" title="paṭinissara (bj)" id="note167">Paṭinissaja</span> addhuve kāme.</p>
+
+<p class="verse"><span class="parno">513</span><span class="ms">p_19Th2_601</span>Ajaramhi vijjamāne,
+<br>Kiṁ tava kāmehi<q class="open" id="note168" title=" yesu jarāya ca; maraṇabyādhihi gahitā (?)"> yesu jarā;
+<br>Māraṇabyādhigahitā</q>,
+<br>Sabbā sabbattha jātiyo.</p>
+
+<p class="verse"><span class="parno">514</span><span class="ms">p_19Th2_602</span><span class="var" title="idaṁ ajaraṁ idaṁ amaraṁ (?)" id="note170">Idamajaramidamamaraṁ</span>,
+<br>Idamajarāmaraṁ padamasokaṁ;
+<br>Asapattamasambādhaṁ,
+<br>Akhalita&shy;mabhayaṁ nirupatāpaṁ.</p>
+
+<p class="verse"><span class="parno">515</span><span class="ms">p_19Th2_603</span>Adhigatamidaṁ bahūhi,
+<br>Amataṁ ajjāpi ca labhanīyamidaṁ;
+<br>Yo yoniso payuñjati,
+<br>Na ca sakkā aghaṭamānena".</p>
+
+<p class="verse"><span class="parno">516</span><span class="ms">p_19Th2_604</span>Evaṁ bhaṇati sumedhā,
+<br>Sankhāragate ratiṁ alabhamānā;
+<br>Anunentī anikarattaṁ,
+<br>Kese ca chamaṁ khipi sumedhā.</p>
+
+<p class="verse"><span class="parno">517</span><span class="ms">p_19Th2_605</span>Uṭṭhāya anikaratto,
+<br>Pañjaliko yācatassā pitaraṁ so;
+<br>"Vissajjetha sumedhaṁ,
+<br>Pabbajituṁ vimokkhasaccadassā".</p>
+
+<p class="verse"><span class="parno">518</span><span class="ms">p_19Th2_606</span>Vissajjitā mātāpitūhi,
+<br>pabbaji sokabhayabhītā;
+<br>Cha abhiññā sacchikatā,
+<br>aggaphalaṁ sikkhamānāya.</p>
+
+<p class="verse"><span class="parno">519</span><a class="pts1" id="pts174"></a>
+<span class="ms">p_19Th2_607</span>Acchariya&shy;mabbhutaṁ taṁ,
+<br>Nibbānaṁ āsi rājakaññāya;
+<br>Pubbenivāsacaritaṁ,
+<br>Yathā byākari pacchime kāle.</p>
+
+<p class="verse"><span class="parno">520</span><span class="ms">p_19Th2_608</span>"Bhagavati koṇāgamane,
+<br>Saṁghārāmamhi navanivesamhi;
+<br>Sakhiyo tisso janiyo,
+<br>Vihāradānaṁ adāsimha.</p>
+
+<p class="verse"><span class="parno">521</span><span class="ms">p_19Th2_609</span>Dasakkhattuṁ satakkhattuṁ,
+<br>Dasasatakkhattuṁ satāni ca satakkhattuṁ;
+<br>Devesu uppajjimha,
+<br>Ko pana vādo manussesu.</p>
+
+<p class="verse"><span class="parno">522</span><span class="ms">p_19Th2_610</span>Devesu mahiddhikā ahumha,
+<br>Mānusakamhi ko pana vādo;
+<br>Sattaratanassa mahesī,
+<br>Itthiratanaṁ ahaṁ āsiṁ.</p>
+
+<p class="verse"><span class="parno">523</span><span class="ms">p_19Th2_611</span>So hetu so pabhavo,
+<br>Taṁ mūlaṁ sāva sāsane khantī;
+<br>Taṁ paṭhama&shy;samodhānaṁ,
+<br>Taṁ dhammaratāya nibbānaṁ.</p>
+
+<p class="verse"><span class="parno">524</span><span class="ms">p_19Th2_612</span>Evaṁ karonti ye sadda-
+<br>Hanti vacanaṁ anomapaññassa;
+<br>Nibbindanti bhavagate,
+<br>Nibbinditvā virajjantī"ti.</p>
+
+</div><!--end Pali-->
+
+</section>
+
+</div>
+
+<div id="nextprev"><a id="previous-sutta" href="../thi/thi15.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikaya</a><a href="../thi/thi.html">Therigatha</a>Chapter 16
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ 
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

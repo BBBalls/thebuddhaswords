@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Samyutta Nika 22.85</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></div>
+ 		</div>
+ 	</div>
+
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="pressed w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+
+<!-- !PAGE CONTENT! --> 
+<div class="w3-main w3-content w3-padding w3-left-align bwcontainer4"> 
+
+ <h2 id="SN01heading">Saṁyutta Nikāya — The Linked Discourses</h2>
+
+ 			<div class="w3-bar w3-light-grey center">  <!-- Div for SN sub-navigation -->
+ 					<a href="sn01.html#content" title="The Book of the Verses" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 1:<br>Verses<br>SN1-11</a>
+ 					<a href="sn02.html#content" title="The Book of Causation" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 2:<br>Causation<br>SN12-21</a>
+ 					<a href="sn03.html#content" title="The Book of the Aggregates" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow w3-yellow" style="width:20%">Vol 3:<br>Aggregates<br>SN22-34</a>
+ 					<a href="sn04.html#content" title="The Book of the Six Sense Bases" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 4:<br>Sense Bases<br>SN35-44</a>
+ 					<a href="sn05.html#content" title="The Great Book" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 5:<br>Great Book<br>SN45-56</a>
+ 				</div>  <!-- End div for SN sub-navigation -->
+
+	 <div class="btn-group bwnav" style="margin-top: 1em">
+ 		<a href="sn22.html#content" title="22. Khandhasaṁyutta: On the Aggregates" class="w3-bar-item w3-hover-white w3-border-white w3-button active">SN22</a>
+ 		<a href="sn23.html#content" title="23. Rādhasaṁyutta: With Rādha" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN23</a>
+ 		<a href="sn24.html#content" title="24. Diṭṭhisaṁyutta: On View" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN24</a>
+ 		<a href="sn25.html#content" title="25. Okkantasaṁyutta: On Arrival" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN25</a>
+ 		<a href="sn26.html#content" title="26. Uppādasaṁyutta: On Arising" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN26</a>
+ 		<a href="sn27.html#content" title="27. Kilesasaṁyutta: On Corruptions" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN27</a>
+ 		<a href="sn28.html#content" title="28. Sāriputtasaṁyutta: With Sāriputta" class=" w3-bar-item w3-hover-white w3-border-white w3-button">SN28</a>
+ 		<a href="sn29.html#content" title="29. Nāgasaṁyutta: On Dragons" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN29</a>
+ 		<a href="sn30.html#content" title="30. Supaṇṇasaṁyutta: On Phoenixes" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN30</a>
+ 		<a href="sn31.html#content" title="31. Gandhabbakāyasaṁyutta: On Fairies" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN31</a>
+ 		<a href="sn32.html#content" title="32. Valāhakasaṁyutta: On Cloud Gods" class=" w3-bar-item w3-hover-white w3-border-white w3-button">SN32</a>
+ 		<a href="sn33.html#content" title="33. Vacchagottasaṁyutta: With Vacchagotta" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN33</a>
+ 		<a href="sn34.html#content" title="34. Jhānasaṁyutta: On Absorption" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN34</a>
+ 	</div><!-- End div for lower SN sub-navigation -->
+
+<!-- SN content begins here -->
+<div id="content">
+<h2>22. Khandhasaṁyutta: On the Aggregates</h2>
+<h3>IX. Senior Mendicants — SN 22.85: With Yamaka </h3>
+
+<div id="metaarea">
+	<ul class="translator">
+	<li>©&nbsp;Translated from the Pali by Bhante Sujato.<br><a href="../home/copyright.html#sc">(More copyright information)</a>
+	</ul>
+</div>
+
+
+<section class="raw_sutta">
+<div lang="en">
+
+<p><span class="parno">1</span>At one time Venerable Sāriputta was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.</p>
+
+<p>Now at that time a mendicant called Yamaka had the following harmful misconception: “As I understand the Buddha’s teaching, a mendicant who has ended the defilements is annihilated and destroyed when their body breaks up, and doesn’t exist after death.”</p>
+
+<hr>
+<p><span class="parno">2</span>Several mendicants heard about this. They went to Yamaka and exchanged greetings with him.</p>
+
+<p>When the greetings and polite conversation were over, they sat down to one side and said to him,</p>
+
+<hr>
+<p><span class="parno">3</span>“Is it really true, Reverend Yamaka, that you have such a harmful misconception: ‘As I understand the Buddha’s teaching, a mendicant who has ended the defilements is annihilated and destroyed when their body breaks up, and doesn’t exist after death.’”</p>
+
+<hr>
+<p>“Yes, reverends, that’s how I understand the Buddha’s teaching.”</p>
+
+<hr>
+<p><span class="parno">4</span>“Don’t say that, Yamaka! Don’t misrepresent the Buddha, for misrepresentation of the Buddha is not good. And the Buddha would not say that.”</p>
+
+<p>But even though admonished by those mendicants, Yamaka obstinately stuck to that misconception and insisted on stating it.</p>
+
+<p><span class="parno">5</span>When those mendicants were unable to dissuade Yamaka from that misconception, they got up from their seats and went to see Venerable Sāriputta. They told him what had happened, and said, “May Venerable Sāriputta please go to the mendicant Yamaka out of compassion.” Sāriputta consented in silence.</p>
+
+<hr>
+<p>Then in the late afternoon, Venerable Sāriputta came out of retreat, went to Venerable Yamaka and exchanged greetings with him. Seated to one side he said to Yamaka:</p>
+
+<p><span class="parno">6</span>“Is it really true, Reverend Yamaka, that you have such a harmful misconception: ‘As I understand the Buddha’s teaching, a mendicant who has ended the defilements is annihilated and destroyed when their body breaks up, and doesn’t exist after death.’”</p>
+
+<hr>
+<p>“Yes, reverend, that’s how I understand the Buddha’s teaching.”</p>
+
+<hr>
+<p><span class="parno">7</span>“What do you think, Yamaka? Is form permanent or impermanent?”</p>
+
+<p>“Impermanent, reverend.”</p>
+
+<p>“Is feeling … perception … choices … consciousness permanent or impermanent?”</p>
+
+<hr>
+<p>“Impermanent, reverend.”</p>
+
+<p>“So you should truly see … Seeing this … They understand: ‘… there is no return to any state of existence.’</p>
+
+<hr>
+<p><span class="parno">8</span>What do you think, Reverend Yamaka? Do you regard the Realized One as form?”</p>
+
+<p>“No, reverend.”</p>
+
+<hr>
+<p>“Do you regard the Realized One as feeling … perception … choices … consciousness?”</p>
+
+<p>“No, reverend.”</p>
+
+<hr>
+<p><span class="parno">9</span>“What do you think, Reverend Yamaka? Do you regard the Realized One as in form?”</p>
+
+<p>“No, reverend.”</p>
+
+<p>“Or do you regard the Realized One as distinct from form?”</p>
+
+<p>“No, reverend.”</p>
+
+<p>“Do you regard the Realized One as in feeling … or distinct from feeling … as in perception … or distinct from perception … as in choices … or distinct from choices … as in consciousness?”</p>
+
+<p>“No, reverend.”</p>
+
+<p>“Or do you regard the Realized One as distinct from consciousness?”</p>
+
+<p>“No, reverend.”</p>
+
+<hr>
+<p><span class="parno">10</span>“What do you think, Yamaka? Do you regard the Realized One as possessing form, feeling, perception, choices, and consciousness?”</p>
+
+<p>“No, reverend.”</p>
+
+<p><span class="parno">11</span>“What do you think, Yamaka? Do you regard the Realized One as one who is without form, feeling, perception, choices, and consciousness?”</p>
+
+<hr>
+<p>“No, reverend.”</p>
+
+<p>“In that case, Reverend Yamaka, since you don’t acknowledge the Realized One as a genuine fact in the present life, is it appropriate to declare: ‘As I understand the Buddha’s teaching, a mendicant who has ended the defilements is annihilated and destroyed when their body breaks up, and doesn’t exist after death.’?”</p>
+
+<p><span class="parno">12</span>“Reverend Sāriputta, in my ignorance, I used to have that misconception. But now that I’ve heard the teaching from Venerable Sāriputta I’ve given up that misconception, and I’ve comprehended the teaching.”</p>
+
+<p><span class="parno">13</span>“Reverend Yamaka, suppose they were to ask you: ‘When their body breaks up, after death, what happens to a perfected one, who has ended the defilements?’ How would you answer?”</p>
+
+<p>“Sir, if they were to ask this, I’d answer like this: ‘Reverend, form is impermanent. What’s impermanent is suffering. What’s suffering has ceased and ended.</p>
+
+<p>Feeling … perception … choices … consciousness is impermanent. What’s impermanent is suffering. What’s suffering has ceased and ended.’ That’s how I’d answer such a question.”</p>
+
+<hr>
+<p><span class="parno">14</span>“Good, good, Reverend Yamaka! Well then, I shall give you a simile to make the meaning even clearer. Suppose there was a householder or householder’s son who was rich, with a lot of money and great wealth, and a bodyguard for protection. Then along comes a person who wants to harm, injure, and threaten him, and take his life. They’d think: ‘This householder or householder’s son is rich, with a lot of money and great wealth, and a bodyguard for protection. It won’t be easy to take his life by force. Why don’t I get close to him, then take his life?’</p>
+
+<p>So he goes up to that householder or householder’s son and says: ‘Sir, I would serve you.’ Then they would serve that householder or householder’s son. They’d get up before him and go to bed after him, and be obliging, behaving nicely and speaking politely. The householder or householder’s son would consider them as a friend and companion, and come to trust them. But when that person realizes that they’ve gained the trust of the householder or householder’s son, then, when they know he’s alone, they’d take his life with a sharp knife.</p>
+
+<p><span class="parno">15</span>What do you think, Yamaka? When that person went to the householder or householder’s son and offered to serve him, weren’t they a killer then, though he didn’t know that this was his killer? And when they got up before him and went to bed after him, being obliging, behaving nicely and speaking politely, weren’t they a killer then, though he didn’t know that this was his killer? And when, knowing he was alone, they took his life with a sharp knife, weren’t they a killer then, though he didn’t know that this was his killer?”</p>
+
+<hr>
+<p>“Yes, reverend.”</p>
+
+<p>“In the same way, an uneducated ordinary person has not seen the noble ones, and is neither skilled nor trained in the teaching of the noble ones. They’ve not seen good persons, and are neither skilled nor trained in the teaching of the good persons. They regard form as self, self as having form, form in self, or self in form.</p>
+
+<p>They regard feeling … perception … choices … They regard consciousness as self, self as having consciousness, consciousness in self, or self in consciousness.</p>
+
+<hr>
+<p><span class="parno">16</span>They don’t truly understand form — which is impermanent — as impermanent. They don’t truly understand feeling … perception … choices … consciousness — which is impermanent — as impermanent.</p>
+
+<hr>
+<p><span class="parno">17</span>They don’t truly understand form — which is suffering — as suffering. They don’t truly understand feeling … perception … choices … consciousness — which is suffering — as suffering.</p>
+
+<p><span class="parno">18</span>They don’t truly understand form — which is not-self — as not-self. They don’t truly understand feeling … perception … choices … consciousness — which is not-self — as not-self.</p>
+
+<p><span class="parno">19</span>They don’t truly understand form — which is conditioned — as conditioned. They don’t truly understand feeling … perception … choices … consciousness — which is conditioned — as conditioned.</p>
+
+<p><span class="parno">20</span>They don’t truly understand form — which is a killer — as a killer. They don’t truly understand feeling … perception … choices … consciousness — which is a killer — as a killer.</p>
+
+<p><span class="parno">21</span>They’re attracted to form, grasp it, and commit to the notion that it is ‘my self’. They’re attracted to feeling … perception … choices … consciousness, grasp it, and commit to the notion that it is ‘my self’. And when you’ve gotten involved with and grasped these five grasping aggregates, they lead to your lasting harm and suffering.</p>
+
+<hr>
+<p><span class="parno">22</span>An educated noble disciple has seen the noble ones, and is skilled and trained in the teaching of the noble ones. They’ve seen good persons, and are skilled and trained in the teaching of the good persons. They don’t regard form as self, self as having form, form in self, or self in form.</p>
+
+<p>They don’t regard feeling … perception … choices … consciousness as self, self as having consciousness, consciousness in self, or self in consciousness.</p>
+
+<p>They truly understand form — which is impermanent — as impermanent. They truly understand feeling … perception … choices … consciousness — which is impermanent — as impermanent.</p>
+
+<hr>
+<p><span class="parno">23</span>They truly understand form — which is suffering — as suffering. They truly understand feeling … perception … choices … consciousness — which is suffering — as suffering.</p>
+
+<p><span class="parno">24</span>They truly understand form — which is not-self — as not-self. They truly understand feeling … perception … choices … consciousness — which is not-self — as not-self.</p>
+
+<p><span class="parno">25</span>They truly understand form — which is conditioned — as conditioned. They truly understand feeling … perception … choices … consciousness — which is conditioned — as conditioned.</p>
+
+<p><span class="parno">27</span>They truly understand form — which is a killer — as a killer. They truly understand feeling … perception … choices … consciousness — which is a killer — as a killer.</p>
+
+<hr>
+<p><span class="parno">28</span>Not being attracted to form, they don’t grasp it, and commit to the notion that it is ‘my self’. Not being attracted to feeling … perception … choices … consciousness, they don't grasp it, and commit to the notion that it is ‘my self’. And when you’re not attracted to and don’t grasp these five grasping aggregates, they lead to your lasting welfare and happiness.”</p>
+
+<p>“Reverend Sāriputta, this is how it is when you have such venerables as spiritual companions to advise and instruct you out of kindness and compassion.</p>
+
+<p>And after hearing this teaching by Venerable Sāriputta, my mind is freed from the defilements by not grasping.”</p>
+<hr>
+
+</div> <!-- End English -->
+<div lang="pi">
+
+<p><span class="parno">1</span>Ekaṁ samayaṁ āyasmā sāriputto sāvatthiyaṁ vihārati jetavane anāthap&shy;iṇḍikassa ārāme.</p>
+
+<p>Tena kho pana samayena yamakassa nāma bhikkhuno evarūpaṁ pāpakaṁ diṭṭhigataṁ uppannaṁ hoti: "tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā"ti.</p>
+
+<hr>
+<p><span class="parno">2</span>Assosuṁ kho sambahulā bhikkhū yamakassa kira nāma bhikkhuno evarūpaṁ pāpakaṁ diṭṭhigataṁ uppannaṁ hoti: "tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā"ti.</p>
+
+<p>Atha kho te bhikkhū yenāyasmā yamako tenupasankamiṁsu; upasankamitvā āyasmatā yamakena saddhiṁ sammodiṁsu. Sammodanīyaṁ kathaṁ sāraṇīyaṁ vītisāretvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinnā kho te bhikkhū āyasmantaṁ yamakaṁ etadavocuṁ: </p>
+
+<hr>
+<p><span class="parno">3</span>"Saccaṁ kira te, āvuso yamaka, evarūpaṁ pāpakaṁ diṭṭhigataṁ uppannaṁ: ‘tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’"ti?</p>
+
+<hr>
+<p>"Evaṁ khvāhaṁ, āvuso, bhagavatā dhammaṁ desitaṁ ājānāmi: ‘khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’"ti.</p>
+
+<hr>
+<p><span class="parno">4</span>"Mā, āvuso yamaka, evaṁ avaca, mā bhagavantaṁ abbhācikkhi. Na hi sādhu bhagavato abbhācikkhanaṁ. Na hi bhagavā evaṁ vadeyya: ‘khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’"ti. </p>
+
+<p>Evampi kho āyasmā yamako tehi bhikkhūhi vuccamāno tatheva taṁ pāpakaṁ diṭṭhigataṁ thāmasā parāmāsā abhinivissa voharati: "tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā"ti.</p>
+
+<p><span class="parno">5</span>Yato kho te bhikkhū nāsakkhiṁsu āyasmantaṁ yamakaṁ etasmā pāpakā diṭṭhigatā vivecetuṁ, atha kho te bhikkhū uṭṭhāyāsanā yenāyasmā sāriputto tenupasankamiṁsu; upasankamitvā āyasmantaṁ sāriputtaṁ etadavocuṁ: "yamakassa nāma, āvuso sāriputta, bhikkhuno evarūpaṁ pāpakaṁ diṭṭhigataṁ uppannaṁ: ‘tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’ti. Sādhāyasmā sāriputto yena yamako bhikkhu tenupasankamatu anukampāṁ upādāyā"ti. Adhivāsesi kho āyasmā sāriputto tuṇhībhāvena. </p>
+
+<hr>
+<p>Atha kho āyasmā sāriputto sāyanhasamayaṁ paṭisallānā vuṭṭhito yenāyasmā yamako tenupasankami; upasankamitvā āyasmatā yamakena saddhiṁ sammodi … pe … ekamantaṁ nisinno kho āyasmā sāriputto āyasmantaṁ yamakaṁ etadavoca: </p>
+
+<p><span class="parno">6</span>"Saccaṁ kira te, āvuso yamaka, evarūpaṁ pāpakaṁ diṭṭhigataṁ uppannaṁ: ‘tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’"ti? </p>
+
+<hr>
+<p>"Evaṁ khvāhaṁ, āvuso, bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā"ti.</p>
+
+<hr>
+<p><span class="parno">7</span>"Taṁ kiṁ maññasi, āvuso yamaka, rūpaṁ niccaṁ vā aniccaṁ vā"ti?</p>
+
+<p>"Aniccaṁ, āvuso".</p>
+
+<p>"Vedanā niccā … saññā … sankhārā … viññāṇaṁ niccaṁ vā aniccaṁ vā"ti?</p>
+
+<hr>
+<p>"Aniccaṁ, āvuso".</p>
+
+<p>"Tasmātiha … pe … evaṁ passaṁ … pe … nāparaṁ itthattāyāti pajānāti.</p>
+
+<hr>
+<p><span class="parno">8</span>Taṁ kiṁ maññasi, āvuso yamaka, rūpaṁ tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso" … </p>
+
+<hr>
+<p>"vedanāṁ tathāgatoti samanupassasī"ti? "No hetaṁ, āvuso" … "saññaṁ … sankhāre … viññāṇaṁ tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso".</p>
+
+<hr>
+<p><span class="parno">9</span>"Taṁ kiṁ maññasi, āvuso yamaka, rūpasmiṁ tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso". </p>
+
+<p>"Aññatra rūpā tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso". </p>
+
+<p>"Vedanāya … aññatra vedanāya … pe … saññāya … aññatra saññāya … sankhāresu … aññatra sankhārehi … viññāṇasmiṁ tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso". </p>
+
+<p>"Aññatra viññāṇā tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso".</p>
+
+<hr>
+<p><span class="parno">10</span>"Taṁ kiṁ maññasi, āvuso yamaka, rūpaṁ … vedanāṁ … saññaṁ … sankhāre … viññāṇaṁ tathāgatoti samanupassasī"ti? </p>
+
+<p>"No hetaṁ, āvuso".</p>
+
+<p><span class="parno">11</span>"Taṁ kiṁ maññasi, āvuso yamaka, ayaṁ so arūpī … avedano … asaññī … asankhāro … aviññāṇo tathāgatoti samanupassasī"ti? </p>
+
+<hr>
+<p>"No hetaṁ, āvuso". </p>
+
+<p>"Ettha ca te, āvuso yamaka, diṭṭheva dhamme saccato thetato tathāgate anupalabbhiyamāne, kallaṁ nu te taṁ veyyākaraṇaṁ: ‘tathāhaṁ bhagavatā dhammaṁ desitaṁ ājānāmi, yathā khīṇāsavo bhikkhu kāyassa bhedā ucchijjati vinassati, na hoti paraṁ maraṇā’"ti?</p>
+
+<p><span class="parno">12</span>"Ahu kho me taṁ, āvuso sāriputta, pubbe aviddasuno pāpakaṁ diṭṭhigataṁ; idañca panāyasmato sāriputtassa dhammadesanaṁ sutvā tañceva pāpakaṁ diṭṭhigataṁ pahīnaṁ, dhammo ca me abhisamito"ti.</p>
+
+<p><span class="parno">13</span>"Sace taṁ, āvuso yamaka, evaṁ puccheyyuṁ: ‘yo so, āvuso yamaka, bhikkhu arahaṁ khīṇāsavo so kāyassa bhedā paraṁ maraṇā kiṁ hotī’ti? Evaṁ puṭṭho tvaṁ, āvuso yamaka, kinti byākareyyāsī"ti? </p>
+
+<p>"Sace maṁ, āvuso, evaṁ puccheyyuṁ: ‘yo so, āvuso yamaka, bhikkhu arahaṁ khīṇāsavo so kāyassa bhedā paraṁ maraṇā kiṁ hotī’ti? Evaṁ puṭṭhohaṁ, āvuso, evaṁ byākareyyaṁ: ‘rūpaṁ kho, āvuso, aniccaṁ. Yadaniccaṁ taṁ dukkhaṁ; yaṁ dukkhaṁ taṁ niruddhaṁ tadatthangataṁ.</p>
+
+<p>Vedanā … saññā … sankhārā … viññāṇaṁ aniccaṁ. Yadaniccaṁ taṁ dukkhaṁ; yaṁ dukkhaṁ taṁ niruddhaṁ tadatthangatan’ti. Evaṁ puṭṭhohaṁ, āvuso, evaṁ byākareyyan"ti.</p>
+
+<hr>
+<p><span class="parno">14</span>"Sādhu sādhu, āvuso yamaka. Tena hāvuso yamaka, upamaṁ te karissāmi etasseva atthassa bhiyyoso mattāya ñāṇāya. Seyyathāpi, āvuso yamaka, gahapati vā gahapatiputto vā aḍḍho mahaddhano mahābhogo; so ca ārakkhasampanno. Tassa kocideva puriso uppajjeyya anatthakāmo ahitakāmo ayogakkhemakāmo jīvitā voropetukāmo. Tassa evamassa: ‘ayaṁ kho gahapati vā gahapatiputto vā aḍḍho mahaddhano mahābhogo; so ca ārakkhasampanno; nāyaṁ sukaro pasayha jīvitā voropetuṁ. Yannūnāhaṁ anupakhajja jīvitā voropeyyan’ti. </p>
+
+<p>So taṁ gahapatiṁ vā gahapatiputtaṁ vā upasankamitvā evaṁ vadeyya: ‘upaṭṭhaheyyaṁ taṁ, bhante’ti. Tamenaṁ so gahapati vā gahapatiputto vā upaṭṭhāpeyya. So upaṭṭhaheyya pubbuṭṭhāyī pacchānipātī kinkārapaṭissāvī manāpacārī piyavādī. Tassa so gahapati vā gahapatiputto vā mittatopi naṁ saddaheyya; suhajjatopi naṁ saddaheyya; tasmiñca vissāsaṁ āpajjeyya. Yadā kho, āvuso, tassa purisassa evamassa: ‘saṁvissattho kho myāyaṁ gahapati vā gahapatiputto vā’ti, atha naṁ rahogataṁ viditvā tiṇhena satthena jīvitā voropeyya.</p>
+
+<p><span class="parno">15</span>Taṁ kiṁ maññasi, āvuso yamaka, yadā hi so puriso amuṁ gahapatiṁ vā gahapatiputtaṁ vā upasankamitvā evaṁ āha: ‘upaṭṭhaheyyaṁ taṁ, bhante’ti, tadāpi so vadhakova. Vadhakañca pana santaṁ na aññāsi: ‘vadhako me’ti. Yadāpi so upaṭṭhahati pubbuṭṭhāyī pacchānipātī kinkārapaṭissāvī manāpacārī piyavādī, tadāpi so vadhakova. Vadhakañca pana santaṁ na aññāsi: ‘vadhako me’ti. Yadāpi naṁ rahogataṁ viditvā tiṇhena satthena jīvitā voropeti, tadāpi so vadhakova. Vadhakañca pana santaṁ na aññāsi: ‘vadhako me’"ti. </p>
+
+<hr>
+<p>"Evamāvuso"ti. </p>
+
+<p>"Evameva kho, āvuso, assutavā puthujjano ariyānaṁ adassāvī ariyadhammassa akovido ariyadhamme avinīto, sappurisānaṁ adassāvī sappurisadhammassa akovido sappurisadhamme avinīto rūpaṁ attato samanupassati, rūpavantaṁ vā attānaṁ; attani vā rūpaṁ, rūpasmiṁ vā attānaṁ. </p>
+
+<p>vedanāṁ … saññaṁ … sankhāre … viññāṇaṁ attato samanupassati, viññāṇavantaṁ vā attānaṁ; attani vā viññāṇaṁ, viññāṇasmiṁ vā attānaṁ.</p>
+
+<hr>
+<p><span class="parno">16</span>So aniccaṁ rūpaṁ ‘aniccaṁ rūpan’ti yathābhūtaṁ nappajānāti. Aniccaṁ vedanāṁ ‘aniccā vedanā’ti yathābhūtaṁ nappajānāti. Aniccaṁ saññaṁ ‘aniccā saññā’ti yathābhūtaṁ nappajānāti. Anicce sankhāre ‘aniccā sankhārā’ti yathābhūtaṁ nappajānāti. Aniccaṁ viññāṇaṁ ‘aniccaṁ viññāṇan’ti yathābhūtaṁ nappajānāti.</p>
+
+<hr>
+<p><span class="parno">17</span>Dukkhaṁ rūpaṁ ‘dukkhaṁ rūpan’ti yathābhūtaṁ nappajānāti. Dukkhaṁ vedanāṁ … dukkhaṁ saññaṁ … dukkhe sankhāre … dukkhaṁ viññāṇaṁ ‘dukkhaṁ viññāṇan’ti yathābhūtaṁ nappajānāti.</p>
+
+<p><span class="parno">18</span>Anattaṁ rūpaṁ ‘anattā rūpan’ti yathābhūtaṁ nappajānāti. Anattaṁ vedanāṁ … anattaṁ saññaṁ … anatte sankhāre … anattaṁ viññāṇaṁ ‘anattaṁ viññāṇan’ti yathābhūtaṁ nappajānāti.</p>
+
+<p><span class="parno">19</span>Sankhataṁ rūpaṁ ‘sankhataṁ rūpan’ti yathābhūtaṁ nappajānāti. Sankhataṁ vedanāṁ … sankhataṁ saññaṁ … sankhate sankhāre … sankhataṁ viññāṇaṁ ‘sankhataṁ viññāṇan’ti yathābhūtaṁ nappajānāti.</p>
+
+<p><span class="parno">20</span>Vadhakaṁ rūpaṁ ‘vadhakaṁ rūpan’ti yathābhūtaṁ nappajānāti. Vadhakaṁ vedanāṁ ‘vadhakā vedanā’ti … vadhakaṁ saññaṁ ‘vadhakā saññā’ti … vadhake sankhāre ‘vadhakā sankhārā’ti yathābhūtaṁ nappajānāti. Vadhakaṁ viññāṇaṁ ‘vadhakaṁ viññāṇan’ti yathābhūtaṁ nappajānāti.</p>
+
+<p><span class="parno">21</span>So rūpaṁ upeti upādiyati adhiṭṭhāti ‘attā me’ti. vedanāṁ … saññaṁ … sankhāre … viññāṇaṁ upeti upādiyati adhiṭṭhāti ‘attā me’ti. Tassime pañcupādāna&shy;kkhandhā upetā upādinnā dīgharattaṁ ahitāya dukkhāya saṁvattanti.</p>
+
+<hr>
+<p><span class="parno">22</span>Sutavā ca kho, āvuso, ariyasāvako ariyānaṁ dassāvī … pe … sappurisadhamme suvinīto na rūpaṁ attato samanupassati, na rūpavantaṁ attānaṁ; na attani rūpaṁ, na rūpasmiṁ attānaṁ. </p>
+
+<p>Na vedanāṁ … na saññaṁ … na sankhāre … na viññāṇaṁ attato samanupassati, na viññāṇavantaṁ attānaṁ; na attani viññāṇaṁ, na viññāṇasmiṁ attānaṁ.</p>
+
+<hr>
+<p><span class="parno">23</span>So aniccaṁ rūpaṁ ‘aniccaṁ rūpan’ti yathābhūtaṁ pajānāti. Aniccaṁ vedanāṁ … aniccaṁ saññaṁ … anicce sankhāre … aniccaṁ viññāṇaṁ ‘aniccaṁ viññāṇan’ti yathābhūtaṁ pajānāti.</p>
+
+<p><span class="parno">24</span>Dukkhaṁ rūpaṁ ‘dukkhaṁ rūpan’ti yathābhūtaṁ pajānāti. Dukkhaṁ vedanāṁ … dukkhaṁ saññaṁ … dukkhe sankhāre … dukkhaṁ viññāṇaṁ ‘dukkhaṁ viññāṇan’ti yathābhūtaṁ pajānāti.</p>
+
+<p><span class="parno">25</span>Anattaṁ rūpaṁ ‘anattā rūpan’ti yathābhūtaṁ pajānāti. Anattaṁ vedanāṁ … anattaṁ saññaṁ … anatte sankhāre … anattaṁ viññāṇaṁ ‘anattā viññāṇan’ti yathābhūtaṁ pajānāti.</p>
+
+<p><span class="parno">26</span>Sankhataṁ rūpaṁ ‘sankhataṁ rūpan’ti yathābhūtaṁ pajānāti. Sankhataṁ vedanāṁ … sankhataṁ saññaṁ … sankhate sankhāre … sankhataṁ viññāṇaṁ ‘sankhataṁ viññāṇan’ti yathābhūtaṁ pajānāti.</p>
+
+<p><span class="parno">27</span>Vadhakaṁ rūpaṁ ‘vadhakaṁ rūpan’ti yathābhūtaṁ pajānāti. Vadhakaṁ vedanāṁ … vadhakaṁ saññaṁ … vadhake sankhāre ‘vadhakā sankhārā’ti yathābhūtaṁ pajānāti. Vadhakaṁ viññāṇaṁ ‘vadhakaṁ viññāṇan’ti yathābhūtaṁ pajānāti.</p>
+
+<hr>
+<p><span class="parno">28</span>So rūpaṁ na upeti, na upādiyati, nādhiṭṭhāti: ‘attā me’ti. vedanāṁ … saññaṁ … sankhāre … viññāṇaṁ na upeti, na upādiyati, nādhiṭṭhāti: ‘attā me’ti. Tassime pañcupādāna&shy;kkhandhā anupetā anupādinnā dīgharattaṁ hitāya sukhāya saṁvattantī"ti. </p>
+
+<p>"Evametaṁ, āvuso sāriputta, hoti yesaṁ āyasmantānaṁ tādisā sabrahmacārino anukampakā atthakāmā ovādakā anusāsakā. </p>
+
+<p>Idañca pana me āyasmato sāriputtassa dhammadesanaṁ sutvā anupādāya āsavehi cittaṁ vimuttan"ti.</p>
+<hr>
+<p class="endsection">Tatiyaṁ.</p>
+</div> <!-- end pali -->
+
+</section>
+</div>
+<div id="nextprev"><a id="previous-sutta" href="./sn22.84.html#content"></a><a id="next-sutta" href="./sn22.86.html#content"></a></div>
+
+<footer>
+<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="sn.html">Saṁyutta Nikāya</a><a href="sn22.html">22. Khandhasaṁyutta: On the Aggregates</a> SN 22.85: With Yamaka </div>
+	
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+</body>
+ </html>

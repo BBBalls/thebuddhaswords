@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Therigatha 14</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small pressed">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+ <h2>Khuddaka Nikaya - The Minor Texts</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for lower Thi sub-navigation -->
+ 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
+ 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
+ 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button">Sutta Nipata</a>
+ 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
+ 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
+ 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
+ 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Therigatha</a>
+ </div><!-- End div for lower Thi sub-navigation -->
+ 
+ <!--     Therigatha content begins here     -->
+ 
+ <div id="content">
+
+
+<h2>Therigatha - The Verses of the Elder Nuns</h2>
+<h3>Chapter 14: The Group of (about) Thirty Verses</h3>
+<div id="metaarea">
+<ul class="translator">
+<li>Translated from the Pali by Mrs. Rhys Davids</li>
+</ul>
+</div>
+
+<section class="raw_sutta">
+<div lang="en">
+<h5>Subhājīvakambavanikā</h5>
+
+<p id="p368" class="verse"><span class="parno">368</span>In Jīvaka’s pleasant woodland walked Subhā
+<br>The Bhikkhunī. A gallant met her there
+<br>And barred the way. To him thus spake Subhā:</p>
+
+<p id="p369" class="verse"><span class="parno">369</span>‘What have I done to offend thee, that thus in my path thou comest?
+<br>No man, O friend, it beseemeth to touch a Sister in Orders.</p>
+
+<p id="p370" class="verse"><span class="parno">370</span>So hath my Master ordained in the precepts we honour and follow;
+<br>So hath the Welcome One taught in the training wherein they have trained me,
+<br>Purified discipline holy. Why standest thou blocking my pathway?</p>
+
+<p id="p371" class="verse"><span class="parno">371</span>Me pure, thou impure of heart; me passionless, thou of vile passions;
+<br>Me who as to the whole of me freed am in spirit and blameless,
+<br>Me whence comes it that Thou dost hinder, standing obnoxious?’</p>
+
+
+<p id="p372" class="verse"><span class="parno">372</span>‘Young art thou, maiden, and faultless — what seekest thou in the holy life?
+<br>Cast off that yellow-hued raiment and come! in the blossoming woodland</p>
+
+<p id="p373" class="verse"><span class="parno">373</span>Seek we our pleasure. Filled with the incense of blossoms the trees waft
+<br>Sweetness. See, the spring’s at the prime, the season of happiness!
+<br>Come with me then to the flowering woodland, and seek we our pleasure.</p>
+
+<p id="p374" class="verse"><span class="parno">374</span>Sweet overhead is the sough of the blossoming crests of the forest
+<br>Swayed by the Wind-gods. But an thou goest alone in the jungle,</p>
+
+<p id="p375" class="verse"><span class="parno">375</span>Lost in its depths, how wilt thou find aught to delight or content thee?
+<br>Haunted is the great forest with many a herd of wild creatures,
+<br>Broken its peace by the tramplings of elephants rutting and savage.</p>
+
+<p id="p376" class="verse"><span class="parno">376</span>Empty of mankind and fearsome — is’t there thou would’st go uncompanioned?
+<br>Thou like a gold-wrought statue, like nymph in celestial garden
+<br>Movest, O peerless creature. Radiant would shine thy loveliness
+<br>Robed in raiment of beauty, diaphanous gear of Benares.</p>
+
+<p id="p377" class="verse"><span class="parno">377</span>I would live but to serve thee, an thou would’st abide in the woodland.
+<br>Dearer and sweeter to me than art thou in the world is no creature,
+<br>Thou with the languid and slow-moving eyes of an elf of the forest.</p>
+
+<p id="p378" class="verse"><span class="parno">378</span>If thou wilt list to me, come where the joys of the sheltered life wait thee:
+<br>Dwell in a house of verandas and terraces, handmaidens serving thee.</p>
+
+<p id="p379" class="verse"><span class="parno">379</span>Robe thyself in delicate gear of Benares, don garlands, use unguents.
+<br>Ornaments many and divers I give to thee, fashioned with precious stones,
+<br>Gold work and pearls. And thou shalt mount on a couch fair and sumptuous,</p>
+
+<p id="p380" class="verse"><span class="parno">380</span>Carvèd in sandalwood, fragrant with essences, spread with new pillows,
+<br>Coverlets fleecy and soft, and decked with immaculate canopies.</p>
+
+<p id="p381" class="verse"><span class="parno">381</span>Like to a lotus upborne on the bosom of sprite-haunted water,
+<br>Thou, O chaste anchorite, farest to old age, thy beauty unmated.’</p>
+
+
+<p id="p382" class="verse"><span class="parno">382</span>‘What now to thee, in this carrion-filled, grave-filling carcass so fragile
+<br>Seen by thee, seemeth to warrant the doctrine thou speakest, infatuate?’</p>
+
+<p id="p383" class="verse"><span class="parno">383</span>‘Eyes hast thou like the gazelle’s, like an elf’s in the heart of the mountains — 
+<br>’Tis those eyes of thee, sight of which feedeth the depth of my passion.</p>
+
+<p id="p384" class="verse"><span class="parno">384</span>Shrined in thy dazzling, immaculate face as in calyx of lotus,
+<br>’Tis those eyes of thee, sight of which feedeth the strength of my passion.</p>
+
+<p id="p385" class="verse"><span class="parno">385</span>Though thou be far from me, how could I ever forget thee, O maiden,
+<br>Thee of the long-drawn eyelashes, thee of the eyes so miraculous?</p>
+
+
+<p id="p386" class="verse"><span class="parno">386</span>Dearer to me than those orbs is naught, O thou witching-eyed fairy!’
+<br>‘Lo! thou art wanting to walk where no path is; thou seekest to capture
+<br>Moon from the skies for thy play; thou would’st jump o’er the ridges of Meru,
+<br>Thou who presumest to lie in wait for a child of the Buddha!</p>
+
+<p id="p387" class="verse"><span class="parno">387</span>Nowhere in earth or in heaven lives now any object of lust for me.
+<br>Him I know not. What like is he? Slain, root and branch, through the Noble Path.</p>
+
+<p id="p388" class="verse"><span class="parno">388</span>Hurled as live coal from the hand, and rated as deadly as poison-cup,
+<br>Him I see not. What like is he? Slain, root and branch, through the Noble Path.</p>
+
+<p id="p389" class="verse"><span class="parno">389</span>Tempt thou some woman who hath not discerned what I say, or whose teacher
+<br>Is but a learner; haply she’ll listen; tempt thou not Subhā;</p>
+
+<p id="p390" class="verse"><span class="parno">390</span>She understandeth. And now ’tis thyself hast vexation and failure.
+<br>For I have set my mind to be watchful in whatso befalls me — 
+<br>Blame or honour, gladness or sorrow — and knowing the principle: — 
+<br>‘Foul are all composite things,’ nowhere the mind of me clings to them.</p>
+
+<p id="p391" class="verse"><span class="parno">391</span>Yea, the disciple am I of the Welcome One; onward the march of me
+<br>Riding the Car of the Road that is Eightfold. Drawn are the arrows
+<br>Out of my wounds, and purged is my spirit of drugging Intoxicants.
+<br>So I am come to haunts that are Empty. There lies my pleasure.</p>
+
+<p id="p392" class="verse"><span class="parno">392</span>Oh! I have seen it — a puppet well painted, with new wooden spindles,
+<br>Cunningly fastened with strings and with pins, and diversely dancing.</p>
+
+<p id="p393" class="verse"><span class="parno">393</span>But if the strings and the pins be all drawn out and loosened and scattered,
+<br>So that the puppet be made non-existent and broken in pieces,
+<br>Which of the parts wilt thou choose and appoint for thy heart’s rest and solace?</p>
+
+
+<p id="p394" class="verse"><span class="parno">394</span>Such is the manner wherein persist these poor little bodies:
+<br>Take away members and attributes — nothing surviveth in any wise.
+<br>Nothing surviveth! Which dost thou choose for thy heart’s rest and solace?</p>
+
+<p id="p395" class="verse"><span class="parno">395</span>E’en as a fresco one sees drawn on a wall, painted in ochre,
+<br>[Giveth us naught of the true and the real, save in the seeming ;]</p>
+
+<p id="p396" class="verse"><span class="parno">396</span>Thou herein with vision perverted [canst not distinguish;
+<br>Judgest with] wisdom of average human, fallible, worthless.
+<br>O thou art blind! thou chasest a sham, deluded by puppet shows
+<br>Seen in the midst of the crowd; thou deemest of value and genuine</p>
+
+<p id="p397" class="verse"><span class="parno">397</span>Conjurer’s trickwork, trees all of gold that we see in our dreaming.
+<br>What is this eye but a little ball lodged in the fork of a hollow tree,
+<br>Bubble of film, anointed with tear-brine, exuding slime-drops,
+<br>Compost wrought in the shape of an eye of manifold aspects?’</p>
+
+<p id="p398" class="verse"><span class="parno">398</span>Forthwith the maiden so lovely tore out her eye and gave it him:
+<br>‘Here, then! take thou thine eye!’ Nor sinned she, her heart unobstructed.
+
+<br>
+<p id="p399" class="verse"><span class="parno">399</span>Straightway the lust in him ceasèd and he her pardon imploring:
+<br>‘O that thou mightest recover thy sight, thou maid pure and holy!</p>
+
+<p id="p400" class="verse"><span class="parno">400</span>Never again will I dare to offend thee after this fashion.
+<br>Sore hast thou smitten my sin; blazing flames have I clasped to my bosom;
+<br>Poisonous snake have I handled — but O! be thou heal’d and forgive me!’</p>
+
+<p id="p401" class="verse"><span class="parno">401</span>Freed from molesting, the Bhikkhunī went on her way to the Buddha,
+<br>Chief of th’ Awakened. There in his presence, seeing those features
+<br>Born of uttermost merit, straightway her sight was restored to her.</p>
+
+</div><!--end English-->
+
+<div lang="pi">
+<h5>Subhājīvakambavanikātherīgāthā</h5>
+
+<p class="verse"><span class="parno">368</span><span class="ms">p_19Th2_452</span>Jīvakambavanaṁ rammaṁ,
+<br>Gacchantiṁ bhikkhuniṁ subhaṁ;
+<br>Dhuttako <span class="var" title="taṁ nivāresi (mr)" id="note113">sannivāresi</span>,
+<br>Tamenaṁ abravī subhā.</p>
+
+<p class="verse"><span class="parno">369</span><span class="ms">p_19Th2_453</span>"Kiṁ te aparādhitaṁ mayā,
+<br>Yaṁ maṁ ovariyāna tiṭṭhasi;
+<br>Na hi pabbajitāya āvuso,
+<br>Puriso samphusanāya kappati.</p>
+
+<p class="verse"><span class="parno">370</span><a class="pts1" id="pts159"></a>
+<span class="ms">p_19Th2_454</span>Garuke mama satthusāsane,
+<br>Yā sikkhā sugatena desitā;
+<br>Parisuddhapadaṁ anangaṇaṁ,
+<br>Kiṁ maṁ ovariyāna tiṭṭhasi.</p>
+
+<p class="verse"><span class="parno">371</span><span class="ms">p_19Th2_455</span>Āvilacitto anāvilaṁ,
+<br>Sarajo vītarajaṁ anangaṇaṁ;
+<br>Sabbattha vimuttamānasaṁ,
+<br>Kiṁ maṁ ovariyāna tiṭṭhasi".</p>
+
+
+<p class="verse"><span class="parno">372</span><span class="ms">p_19Th2_456</span>"Daharā ca apāpikā casi,
+<br>Kiṁ te pabbajjā karissati;
+<br>Nikkhipa kāsāyacīvaraṁ,
+<br>Ehi <span class="var" title="ramāmase pupphite (bj, pts1–2) | ramāmase supupphite (s2, s3)" id="note114">ramāma supupphite</span> vane.</p>
+
+<p class="verse"><span class="parno">373</span><span class="ms">p_19Th2_457</span>Madhurañca pavanti sabbaso,
+<br>Kusumarajena samuṭṭhitā dumā;
+<br>Paṭhamavasanto sukho utu,
+<br>Ehi ramāma supupphite vane.</p>
+
+<p class="verse"><span class="parno">374</span><span class="ms">p_19Th2_458</span>Kusumitasikharā ca pādapā,
+<br>Abhigajjantiva māluteritā;
+<br>Kā tuyhaṁ rati bhavissati,
+<br>Yadi ekā <span class="var" title="vanamotarissasi (bj) | vanamogāhissasi (s2, s3, pts1–2, mr)" id="note115">vanamogahissasi</span>.</p>
+
+<p class="verse"><span class="parno">375</span><span class="ms">p_19Th2_459</span>Vāḷamigasanghasevitaṁ,
+<br>Kuñjaramattakareṇuloḷitaṁ;
+<br>Asahāyikā gantumicchasi,
+<br>Rahitaṁ bhiṁsanakaṁ mahāvanaṁ.</p>
+
+<p class="verse"><span class="parno">376</span><span class="ms">p_19Th2_460</span>Tapanīyakatāva dhītikā,
+<br>Vicarasi cittalateva accharā;
+<br>Kāsikasukhumehi vaggubhi,
+<br>Sobhasī suvasanehi nūpame.</p>
+
+<p class="verse"><span class="parno">377</span><span class="ms">p_19Th2_461</span>Ahaṁ tava vasānugo siyaṁ,
+<br><span class="var" title="yadi viharemasi (pts1–2) | yadipi viharesi (mr)" id="note116">Yadi viharemase</span> kānanantare;
+<br>Na hi matthi tayā piyattaro,
+<br>Pāṇo kinnarimandalocane.</p>
+
+<p class="verse"><span class="parno">378</span><span class="ms">p_19Th2_462</span>Yadi me vacanaṁ karissasi,
+<br>Sukhitā ehi agāramāvasa;
+<br>Pāsādanivātavāsinī,
+<br>Parikammaṁ te karontu nāriyo.</p>
+
+<p class="verse"><span class="parno">379</span><a class="pts1" id="pts160"></a>
+<span class="ms">p_19Th2_463</span>Kāsikasukhumāni dhāraya,
+<br><span class="var" title="abhirohehi (bj)" id="note117">Abhiropehi</span> ca mālavaṇṇakaṁ;
+<br>Kañcanamaṇimuttakaṁ bahuṁ,
+<br>Vividhaṁ ābharaṇaṁ karomi te.</p>
+
+<p class="verse"><span class="parno">380</span><span class="ms">p_19Th2_464</span>Sudhotarajapacchadaṁ subhaṁ,
+<br>Gonakatūlikasanthataṁ navaṁ;
+<br>Abhiruha sayanaṁ mahārahaṁ,
+<br>Candanamaṇḍitasāragandhikaṁ.</p>
+
+<p class="verse"><span class="parno">381</span><span class="ms">p_19Th2_465</span>Uppalaṁ cudakā samuggataṁ,
+<br>Yathā taṁ amanus&shy;sasevitaṁ;
+<br>Evaṁ tvaṁ brahmacārinī,
+<br>Sakesangesu jaraṁ gamissasi".</p>
+
+
+<p class="verse"><span class="parno">382</span><span class="ms">p_19Th2_466</span>"Kiṁ te idha sārasammataṁ,
+<br>Kuṇapapūramhi susānavaḍḍhane;
+<br>Bhedanadhamme <span class="var" title="kalebare (bj)" id="note118">kaḷevare</span>,
+<br>Yaṁ disvā vimano udikkhasi".</p>
+
+<p class="verse"><span class="parno">383</span><span class="ms">p_19Th2_467</span>"Akkhīni ca tūriyāriva,
+<br>Kinnariyāriva pabbatantare;
+<br>Tava me <span class="var" title="nayanānudikkhiya (bj)" id="note119">nayanāni dakkhiya</span>,
+<br>Bhiyyo kāmaratī pavaḍḍhati.</p>
+
+<p class="verse"><span class="parno">384</span><span class="ms">p_19Th2_468</span>Uppalasikharopamāni te,
+<br>Vimale hāṭakasannibhe mukhe;
+<br>Tava me nayanāni dakkhiya,
+<br>Bhiyyo kāmaguṇo pavaḍḍhati.</p>
+
+<p class="verse"><span class="parno">385</span><span class="ms">p_19Th2_469</span>Api dūragatā saramhase,
+<br>Āyatapamhe visuddhadassane;
+<br>Na hi matthi tayā piyattaro,
+<br>Nayanā kinnarimandalocane".</p>
+
+
+<p class="verse"><span class="parno">386</span><span class="ms">p_19Th2_470</span>"Apathena payātumicchasi,
+<br>Candaṁ kīḷanakaṁ gavesasi;
+<br>Meruṁ langhetumicchasi,
+<br>Yo tvaṁ buddhasutaṁ maggayasi.</p>
+
+<p class="verse"><span class="parno">387</span><a class="pts1" id="pts161"></a>
+<span class="ms">p_19Th2_471</span>Natthi hi loke sadevake,
+<br>Rāgo yatthapi dāni me siyā;
+<br>Napi naṁ jānāmi kīriso,
+<br>Atha maggena hato samūlako.</p>
+
+<p class="verse"><span class="parno">388</span><span class="ms">p_19Th2_472</span><span class="var" title="inghāḷakhuyāva (s2, s3, pts1–2)" id="note120">Ingālakuyāva</span> ujjhito,
+<br>Visapattoriva <span class="var" title="aggato (bj, s2, s3, pts1–2)" id="note121">aggito</span> kato;
+<br>Napi naṁ passāmi kīriso,
+<br>Atha maggena hato samūlako.</p>
+
+<p class="verse"><span class="parno">389</span><span class="ms">p_19Th2_473</span>Yassā siyā apaccavek&shy;khitaṁ,
+<br>Satthā vā anupāsito siyā;
+<br>Tvaṁ tādisikaṁ palobhaya,
+<br>Jānantiṁ so imaṁ vihaññasi.</p>
+
+<p class="verse"><span class="parno">390</span><span class="ms">p_19Th2_474</span>Mayhañhi akkuṭṭhavandite,
+<br>Sukhadukkhe ca satī upaṭṭhitā;
+<br>Sankhatamasubhanti jāniya,
+<br>Sabbattheva mano na limpati.</p>
+
+<p class="verse"><span class="parno">391</span><span class="ms">p_19Th2_475</span>Sāhaṁ sugatassa sāvikā,
+<br>Maggaṭṭhangikayānayāyinī;
+<br>Uddhaṭasallā anāsavā,
+<br>Suññāgāragatā ramāmahaṁ.</p>
+
+<p class="verse"><span class="parno">392</span><span class="ms">p_19Th2_476</span>Diṭṭhā hi mayā sucittitā,
+<br>Sombhā dārukapillakāni vā;
+<br>Tantīhi ca khīlakehi ca,
+<br>Vinibaddhā vividhaṁ panaccakā.</p>
+
+<p class="verse"><span class="parno">393</span><span class="ms">p_19Th2_477</span>Tamhuddhaṭe tantikhīlake,
+<br>Vissaṭṭhe vikale <span class="var" title="paripakkhite (bj) | paripakkate (s2, s3, pts1–2)" id="note122">parikrite</span>;
+<br>Na vindeyya khaṇḍaso kate,
+<br>Kimhi tattha manaṁ nivesaye.</p>
+
+
+<p class="verse"><span class="parno">394</span><span class="ms">p_19Th2_478</span>Tathūpamā dehakāni maṁ,
+<br>Tehi dhammehi vinā na vattanti;
+<br>Dhammehi vinā na vattati,
+<br>Kimhi tattha manaṁ nivesaye.</p>
+
+<p class="verse"><span class="parno">395</span><a class="pts1" id="pts162"></a>
+<span class="ms">p_19Th2_479</span>Yathā haritālena makkhitaṁ,
+<br>Addasa cittikaṁ bhittiyā kataṁ;
+<br>Tamhi te viparītadassanaṁ,
+<br>Saññā mānusikā niratthikā.</p>
+
+<p class="verse"><span class="parno">396</span><span class="ms">p_19Th2_480</span>Māyaṁ viya aggato kataṁ,
+<br>Supinanteva suvaṇṇapādapaṁ;
+<br>Upagacchasi andha rittakaṁ,
+<br>Janamajjheriva <span class="var" title="rupparūpakā (bj) | rūparūpakaṁ (mr)" id="note123">rupparūpakaṁ</span>.</p>
+
+<p class="verse"><span class="parno">397</span><span class="ms">p_19Th2_481</span>Vaṭṭaniriva koṭarohitā,
+<br>Majjhe pubbuḷakā saassukā;
+<br>Pīḷakoḷikā cettha jāyati,
+<br>Vividhā cakkhuvidhā ca piṇḍitā".</p>
+
+<p class="verse"><span class="parno">398</span><span class="ms">p_19Th2_482</span>Uppāṭiya cārudassanā,
+<br>Na ca pajjittha asangamānasā;
+<br>"Handa te cakkhuṁ harassu taṁ",
+<br>Tassa narassa adāsi tāvade.</p>
+
+<p class="verse"><span class="parno">399</span><span class="ms">p_19Th2_483</span>Tassa ca viramāsi tāvade,
+<br>Rāgo tattha khamāpayī ca naṁ;
+<br>"Sotthi siyā brahmacārinī,
+<br>Na puno edisakaṁ bhavissati".</p>
+
+<p class="verse"><span class="parno">400</span><span class="ms">p_19Th2_484</span>"<span class="var" title="āhaniya (s2, s3, pts1–2, mr)" id="note124">Āsādiya</span> edisaṁ janaṁ,
+<br>Aggiṁ pajjalitaṁva lingiya;
+<br>Gaṇhiya āsīvisaṁ viya,
+<br>Api nu sotthi siyā khamehi no".</p>
+
+<p class="verse"><span class="parno">401</span><span class="ms">p_19Th2_485</span>Muttā ca tato sā bhikkhunī,
+<br>Agamī buddhavarassa santikaṁ;
+<br>Passiya varapuññalakkhaṇaṁ,
+<br>Cakkhu āsi yathā purāṇakanti.</p>
+
+</div><!--end Pali-->
+
+</section>
+
+</div>
+
+<div id="nextprev"><a id="previous-sutta" href="../thi/thi13.html#content"></a><a id="next-sutta" href="../thi/thi15.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikaya</a><a href="../thi/thi.html">Therigatha</a>Chapter 14
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ 
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

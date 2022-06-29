@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Samyutta Nika 3.24</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></div>
+ 		</div>
+ 	</div>
+
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="pressed w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 	<h2 id="SN01heading">Saṁyutta Nikāya — The Linked Discourses</h2>
+
+ 				<div class="w3-bar w3-light-grey center">  <!-- Div for SN sub-navigation -->
+ 					<a href="sn01.html#content" title="The Book of the Verses" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow w3-yellow" style="width:20%">Vol 1:<br>Verses<br>SN1-11</a>
+ 					<a href="sn02.html#content" title="The Book of Causation" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 2:<br>Causation<br>SN12-21</a>
+ 					<a href="sn03.html#content" title="The Book of the Aggregates" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 3:<br>Aggregates<br>SN22-34</a>
+ 					<a href="sn04.html#content" title="The Book of the Six Sense Bases" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 4:<br>Sense Bases<br>SN35-44</a>
+ 					<a href="sn05.html#content" title="The Great Book" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 5:<br>Great Book<br>SN45-56</a>
+ 				</div>  <!-- End div for SN sub-navigation -->
+
+	 <div class="btn-group bwnav" style="margin-top: 1em"> 
+ 		<a href="sn1.html#content" title="1. Devatāsaṁyutta: On Deities" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN1</a>
+ 		<a href="sn2.html#content" title="2. Devaputtasaṁyutta: On Gods" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN2</a>
+ 		<a href="sn3.html#content" title="3. Kosalasaṁyutta: With the Kosalan" class="w3-bar-item w3-hover-white w3-border-white w3-button active">SN3</a>
+ 		<a href="sn4.html#content" title="4. Mārasaṁyutta: With Māra" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN4</a>
+ 		<a href="sn5.html#content" title="5. Bhikunīsaṁyutta: With Nuns" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN5</a>
+ 		<a href="sn6.html#content" title="6. Brahmasaṁyutta: With Brahmās" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN6</a>
+ 		<a href="sn7.html#content" title="7. Brāhmaṇasaṁyutta: With Brahmins" class=" w3-bar-item w3-hover-white w3-border-white w3-button">SN7</a>
+ 		<a href="sn8.html#content" title="8. Vaṅgīsasaṁyutta: With Vaṅgīsa" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN8</a>
+ 		<a href="sn9.html#content" title="Linked Discourses in the Woods" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN9</a>
+ 		<a href="sn10.html#content" title="10. Yakkhasaṁyutta: With Spirits" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN10</a>
+ 		<a href="sn11.html#content" title="11. Sakkasaṁyutta: With Sakka" class="w3-bar-item w3-hover-white w3-border-white w3-button">SN11</a>
+ 	</div><!-- End div for lower SN sub-navigation -->
+
+<!-- SN content begins here -->
+<div id="content">
+<h2>3. Kosalasaṁyutta: With the Kosalan</h2>
+<h3>III. Kosala — SN 3.24: Archery </h3>
+
+<div id="metaarea">
+	<ul class="translator">
+	<li>©&nbsp;Translated from the Pali by Bhante Sujato.<br><a href="../home/copyright.html#sc">(More copyright information)</a>
+	</ul>
+</div>
+
+
+<section class="raw_sutta">
+<div lang="en">
+
+<p><span class="parno">1</span>At Sāvatthī.</p>
+
+<p>Seated to one side, King Pasenadi said to the Buddha, “Sir, where should a gift be given?”</p>
+
+<p>“Wherever your heart feels inspired, great king.”</p>
+
+<p>“But sir, where is a gift very fruitful?”</p>
+
+<p>“Where a gift should be given is one thing, great king, but where a gift is very fruitful is another. A gift is very fruitful when it’s given to an ethical person, not so much to an unethical person. Well then, great king, I’ll ask you about this in return, and you can answer as you like.</p>
+
+<p>What do you think, great king? Suppose you were at war, ready to fight a battle. Then along comes an aristocrat youth who is untrained, inexpert, unfit, inexperienced. And he’s fearful, cowardly, trembling, quick to flee. Would you employ such a man? Would he be of any use to you?”</p>
+
+<p>“No, sir, I would have no use for such a man.”</p>
+
+<p>“What about a brahmin youth, a merchant youth, or a worker youth who was similar?”</p>
+
+<p>“No, sir, I would have no use for such a man.”</p>
+
+<p><span class="parno">2</span>“What do you think, great king? Suppose you were at war, ready to fight a battle. Then along comes an aristocrat youth who is trained, expert, fit, experienced. And he’s fearless, brave, bold, standing his ground. Would you employ such a man? Would he be of any use to you?”</p>
+
+<hr>
+<p>“Yes, sir, I would have a use for such a man.”</p>
+
+<p>“What about a brahmin youth, a merchant youth, or a worker youth who was similar? Would you employ such a man? Would he be of any use to you?”</p>
+
+<hr>
+<p>“Yes, sir, I would have a use for such a man.”</p>
+
+<p><span class="parno">3</span>“In the same way, a gift to anyone who has given up five factors and possesses five factors is very fruitful, no matter what family they’ve gone forth from.</p>
+
+<p>What are the five factors they’ve given up? Sensual desire, ill will, dullness and drowsiness, restlessness and remorse, and doubt. These are the five factors they’ve given up.</p>
+
+<p>What are the five factors they possess? The entire spectrum of an adept’s ethics, immersion, wisdom, freedom, and knowledge and vision of freedom. These are the five factors they possess.</p>
+
+<hr>
+<p>I say that a gift to anyone who has given up these five factors and possesses these five factors is very fruitful.”</p>
+
+<p>That is what the Buddha said. Then the Holy One, the Teacher, went on to say:</p>
+
+<p class="verse"><span class="parno">4</span>“Any youth skilled at archery,
+<br>powerful and vigorous,
+<br>would be employed by a king going to war — 
+<br>one is not a coward because of one’s birth.</p>
+
+<p class="verse"><span class="parno">5</span>Just so, whoever is settled
+<br>in the qualities of patience and gentleness,
+<br>a clever person with noble conduct,
+<br>should be venerated even if they’re low born.</p>
+
+<p class="verse"><span class="parno">6</span>You should build lovely hermitages
+<br>and settle learned people in them.
+<br>You should set up water supplies in barren regions
+<br>and passages in places hard to travel.</p>
+
+<p class="verse"><span class="parno">7</span>Food, drink, edibles,
+<br>clothes, and lodgings
+<br>should be given to the upright ones,
+<br>with a clear and confident heart.</p>
+
+<p class="verse"><span class="parno">8</span>The thundering rain cloud,
+<br>its hundred peaks wreathed in lightning,
+<br>pours down over the rich earth,
+<br>soaking the uplands and valleys.</p>
+
+<p class="verse"><span class="parno">9</span>So too an astute person,
+<br>faithful and learned,
+<br>should prepare a meal to satisfy
+<br>renunciates with food and drink.</p>
+
+<p class="verse"><span class="parno">10</span>Rejoicing, they distribute,
+<br>saying, ‘Give! give!’
+<br>For that is their thunder,
+<br>like the gods when it rains.
+<br>That stream of merit so abundant
+<br>showers down on the giver.”</p>
+
+</div> <!-- End English -->
+<div lang="pi">
+
+<p><span class="parno">1</span>Sāvatthi&shy;nidānaṁ.</p>
+
+<p>Ekamantaṁ nisinno kho rājā pasenadi kosalo bhagavantaṁ etadavoca: "kattha nu kho, bhante, dānaṁ dātabban"ti? </p>
+
+<p>"Yattha kho, mahārāja, cittaṁ pasīdatī"ti. </p>
+
+<p>"Kattha pana, bhante, dinnaṁ mahapphalan"ti? </p>
+
+<p>"Aññaṁ kho etaṁ, mahārāja, kattha dānaṁ dātabbaṁ, aññaṁ panetaṁ kattha dinnaṁ mahapphalanti? Sīlavato kho, mahārāja, dinnaṁ mahapphalaṁ, no tathā dussīle. Tena hi, mahārāja, taññevettha paṭipucchissāmi. Yathā, te khameyya, tathā naṁ byākareyyāsi.</p>
+
+<p>Taṁ kiṁ maññasi, mahārāja, idha tyassa yuddhaṁ paccupaṭṭhitaṁ sangāmo samupabyūḷho. Atha āgaccheyya khattiyakumāro asikkhito akatahattho akatayoggo akatūpāsano bhīru chambhī utrāsī palāyī. Bhareyyāsi taṁ purisaṁ, attho ca te tādisena purisenā"ti? </p>
+
+<p>"Nāhaṁ, bhante, bhareyyaṁ taṁ purisaṁ, na ca me attho tādisena purisenā"ti. </p>
+
+<p>"Atha āgaccheyya brāhmaṇakumāro asikkhito … pe … atha āgaccheyya vessakumāro asikkhito … pe … atha āgaccheyya suddakumāro asikkhito … pe … </p>
+
+<p>na ca me attho tādisena purisenā"ti.</p>
+
+<p><span class="parno">2</span>"Taṁ kiṁ maññasi, mahārāja, idha tyassa yuddhaṁ paccupaṭṭhitaṁ sangāmo samupabyūḷho. Atha āgaccheyya khattiyakumāro susikkhito katahattho katayoggo katūpāsano abhīru acchambhī anutrāsī apalāyī. Bhareyyāsi taṁ purisaṁ, attho ca te tādisena purisenā"ti? </p>
+
+<hr>
+<p>"Bhareyyāhaṁ, bhante, taṁ purisaṁ, attho ca me tādisena purisenā"ti. </p>
+
+<p>"Atha āgaccheyya brāhmaṇakumāro … pe … atha āgaccheyya vessakumāro … pe … atha āgaccheyya suddakumāro susikkhito katahattho katayoggo katūpāsano abhīru acchambhī anutrāsī apalāyī. Bhareyyāsi taṁ purisaṁ, attho ca te tādisena purisenā"ti? </p>
+
+<hr>
+<p>"Bhareyyāhaṁ, bhante, taṁ purisaṁ, attho ca me tādisena purisenā"ti.</p>
+
+<p><span class="parno">3</span>"Evameva kho, mahārāja, yasmā kasmā cepi kulā agārasmā anagāriyaṁ pabbajito hoti, so ca hoti pañca&shy;ngavippahīno pañca&shy;ngasamannāgato, tasmiṁ dinnaṁ mahapphalaṁ hoti.</p>
+
+<p>Katamāni pañcangāni pahīnāni honti? Kāmacchando pahīno hoti, byāpādo pahīno hoti, thinamiddhaṁ pahīnaṁ hoti, uddhaccakukkuccaṁ pahīnaṁ hoti, vicikicchā pahīnā hoti. Imāni pañcangāni pahīnāni honti.</p>
+
+<p>Katamehi pañcahangehi samannāgato hoti? Asekkhena sīlakkhandhena samannāgato hoti, asekkhena samādhikkhandhena samannāgato hoti, asekkhena paññāk&shy;khandhena samannāgato hoti, asekkhena vimuttikkhandhena samannāgato hoti, asekkhena vimuttiñāṇa&shy;dassanak&shy;khandhena samannāgato hoti. Imehi pañcahangehi samannāgato hoti.</p>
+
+<hr>
+<p>Iti pañca&shy;ngavippahīne pañca&shy;ngasamannāgate dinnaṁ mahapphalan"ti.</p>
+
+<p>Idamavoca bhagavā … pe … satthā: </p>
+
+<p class="verse"><span class="parno">4</span>"Issattaṁ balavīriyañca,
+<br>yasmiṁ vijjetha māṇave;
+<br>Taṁ yuddhattho bhare rājā,
+<br>nāsūraṁ jātipaccayā.</p>
+
+<p class="verse"><span class="parno">5</span>Tatheva khantisoraccaṁ,
+<br>dhammā yasmiṁ patiṭṭhitā;
+<br>Ariyavuttiṁ medhāviṁ,
+<br>hīnajaccampi pūjaye.</p>
+
+<p class="verse"><span class="parno">6</span>Kāraye assame ramme,
+<br>vāsayettha bahussute;
+<br>Papañca vivane kayirā,
+<br>dugge sankamanāni ca.</p>
+
+<p class="verse"><span class="parno">7</span>Annaṁ pānaṁ khādanīyaṁ,
+<br>vatthasenāsanāni ca;
+<br>Dadeyya ujubhūtesu,
+<br>vippasannena cetasā.</p>
+
+<p class="verse"><span class="parno">8</span>Yathā hi megho thanayaṁ,
+<br>vijjumālī satakkaku;
+<br>Thalaṁ ninnañca pūreti,
+<br>abhivassaṁ vasundharaṁ.</p>
+
+<p class="verse"><span class="parno">9</span>Tatheva saddho sutavā,
+<br>abhisankhacca bhojanaṁ;
+<br>Vanibbake tappayati,
+<br>annapānena paṇḍito.</p>
+
+<p class="verse"><span class="parno">10</span>Āmodamāno pakireti,
+<br>detha dethāti bhāsati;
+<br>Taṁ hissa gajjitaṁ hoti,
+<br>devasseva pavassato;
+<br>Sā puññadhārā vipulā,
+<br>dātāraṁ abhivassatī"ti.</p>
+</div> <!-- end pali -->
+
+</section>
+</div><!--content-->
+</div><!-- End page content -->
+<div id="nextprev"><a id="previous-sutta" href="./sn3.23.html#content"></a><a id="next-sutta" href="./sn3.25.html#content"></a></div>
+
+<footer>
+<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="sn.html">Saṁyutta Nikāya</a><a href="sn3.html">3. Kosalasaṁyutta: With the Kosalan</a> SN 3.24: Archery </div>
+	
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ 
+</footer>
+
+<script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+</body>
+ </html>

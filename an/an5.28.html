@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Anguttara Nikāya 5.28</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="theme-color" content="#ffd700">
+ 	<!-- Loading manifest -->
+   		<link rel="manifest" href="../home/manifest.json">
+ 	<!-- Loading third party fonts -->
+ 	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<!-- Loading main, menu and Apple touch icon stylesheets -->
+ 		<link rel="stylesheet" href="../css/w3.css">
+ 		<link rel="stylesheet" href="../css/css.css">
+ 		<link rel="stylesheet" href="../css/menu.css">
+ 		<link rel="apple-touch-icon" href="../images/buddha192.png">
+	 		<script src="../js/jquery-1.10.2.min.js"></script>
+ 			<script src="../js/controlpanel.js"></script>
+ 		</head>
+<body>
+
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="an.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="an5.html" class="w3-hide-small pressed">The Fives</a></li>
+ 						<li><a href="an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   <!-- !PAGE CONTENT! --> 
+<div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+<h2>Anguttara Nikāya - The Numerical Discourses</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for AN sub-navigation -->
+ 		<a href="../an/an1.html#AN1heading" title="The Book of the Ones" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Ones</a>
+ 		<a href="../an/an2.html#AN2heading" title="The Book of the Twos" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Twos</a>
+ 		<a href="../an/an3.html#AN3heading" title="The Book of the Threes" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Threes</a>
+ 		<a href="../an/an4.html#AN4heading" title="The Book of the Fours" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Fours</a>
+ 		<a href="../an/an5.html#AN5heading" title="The Book of the Fives" class="w3-bar-item w3-hover-white w3-border-white w3-button active">The<br>Fives</a>
+ 		<a href="../an/an6.html#AN6heading" title="The Book of the Sixes" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Sixes</a>
+ 		<a href="../an/an7.html#AN7heading" title="The Book of the Sevens" class=" w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Sevens</a>
+ 		<a href="../an/an8.html#AN8heading" title="The Book of the Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Eights</a>
+ 		<a href="../an/an9.html#AN9heading" title="The Book of the Nines" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Nines</a>
+ 		<a href="../an/an10.html#AN10heading" title="The Book of the Tens" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Tens</a>
+ 		<a href="../an/an11.html#AN11heading" title="The Book of the Elevens" class="w3-bar-item w3-hover-white w3-border-white w3-button">The<br>Elevens</a>
+ </div><!-- End div for AN sub-navigation -->
+ 
+ <!--      AN content begins here      -->
+  
+ <div id="content">
+
+ 
+ <h2>5: The Book of the Fives</h2>
+<h3>III. With Five Factors — AN 5.28: With Five Factors </h3>
+
+<div id="metaarea">
+<ul class="translator">
+<li>&copy;&nbsp;Translated from the Pali by Bhante Sujato.<br><a href="../home/copyright.html#sc">(More copyright information)</a>
+</li>
+</ul>
+</div>
+
+<section class="raw_sutta">
+<div lang="en"><!--English ("en")-->
+
+<p><span class="parno">1</span>“Mendicants, I will teach you how to develop noble right immersion with five factors. Listen and pay close attention, I will speak.”</p>
+
+<p>“Yes, sir,” they replied. The Buddha said this: </p>
+
+<hr>
+
+<p id="p2"><span class="parno">2</span>“And how do you develop noble right immersion with five factors?</p>
+
+<p>Firstly, a mendicant, quite secluded from sensual pleasures, secluded from unskillful qualities, enters and remains in the first absorption. It has the rapture and bliss born of seclusion, while placing the mind and keeping it connected. They drench, steep, fill, and spread their body with rapture and bliss born of seclusion. There’s no part of the body that’s not spread with rapture and bliss born of seclusion. It’s like when a deft bathroom attendant or their apprentice pours bath powder into a bronze dish, sprinkling it little by little with water. They knead it until the ball of bath powder is soaked and saturated with moisture, spread through inside and out; yet no moisture oozes out. In the same way, a mendicant drenches, steeps, fills, and spreads their body with rapture and bliss born of seclusion. There’s no part of the body that’s not spread with rapture and bliss born of seclusion. This is the first way to develop noble right immersion with five factors.</p>
+
+<p id="p3"><span class="parno">3</span>Furthermore, as the placing of the mind and keeping it connected are stilled, a mendicant enters and remains in the second absorption. It has the rapture and bliss born of immersion, with internal clarity and confidence, and unified mind, without placing the mind and keeping it connected. They drench, steep, fill, and spread their body with rapture and bliss born of immersion. There’s no part of the body that’s not spread with rapture and bliss born of immersion. It’s like a deep lake fed by spring water. There’s no inlet to the east, west, north, or south, and no rainfall to replenish it from time to time. But the stream of cool water welling up in the lake drenches, steeps, fills, and spreads throughout the lake. There’s no part of the lake that’s not spread through with cool water. In the same way, a mendicant drenches, steeps, fills, and spreads their body with rapture and bliss born of immersion. There’s no part of the body that’s not spread with rapture and bliss born of immersion. This is the second way to develop noble right immersion with five factors.</p>
+
+<p id="p4"><span class="parno">4</span>Furthermore, with the fading away of rapture, a mendicant enters and remains in the third absorption. They meditate with equanimity, mindful and aware, personally experiencing the bliss of which the noble ones declare, ‘Equanimous and mindful, one meditates in bliss.’ They drench, steep, fill, and spread their body with bliss free of rapture. There’s no part of the body that’s not spread with bliss free of rapture. It’s like a pool with blue water lilies, or pink or white lotuses. Some of them sprout and grow in the water without rising above it, thriving underwater. From the tip to the root they’re drenched, steeped, filled, and soaked with cool water. There’s no part of them that’s not spread through with cool water. In the same way, a mendicant drenches, steeps, fills, and spreads their body with bliss free of rapture. There’s no part of the body that’s not spread with bliss free of rapture. This is the third way to develop noble right immersion with five factors.</p>
+
+<p id="p5"><span class="parno">5</span>Furthermore, giving up pleasure and pain, and ending former happiness and sadness, a mendicant enters and remains in the fourth absorption. It is without pleasure or pain, with pure equanimity and mindfulness. They sit spreading their body through with pure bright mind. There’s no part of the body that’s not spread with pure bright mind. It’s like someone sitting wrapped from head to foot with white cloth. There’s no part of the body that’s not spread over with white cloth. In the same way, they sit spreading their body through with pure bright mind. There’s no part of the body that’s not spread with pure bright mind. This is the fourth way to develop noble right immersion with five factors.</p>
+
+<p id="p6"><span class="parno">6</span>Furthermore, the meditation that is a foundation for reviewing is properly grasped, attended, borne in mind, and comprehended with wisdom by a mendicant. It’s like when someone views someone else. Someone standing might view someone sitting, or someone sitting might view someone lying down. In the same way, the meditation that is a foundation for reviewing is properly grasped, attended, borne in mind, and comprehended with wisdom by a mendicant. This is the fifth way to develop noble right immersion with five factors.</p>
+
+<p id="p7"><span class="parno">7</span>When the noble right immersion with five factors is cultivated in this way, a mendicant becomes capable of realizing anything that can be realized by insight to which they extend the mind, in each and every case.</p>
+
+<p id="p8"><span class="parno">8</span>Suppose a water jar was placed on a stand, full to the brim so a crow could drink from it. If a strong man was to tip it any which way, would water pour out?”</p>
+
+<p>“Yes, sir.”</p>
+
+<p>“In the same way, when noble right immersion with five factors is cultivated in this way, a mendicant becomes capable of realizing anything that can be realized by insight to which they extend the mind, in each and every case.</p>
+
+<p id="p9"><span class="parno">9</span>Suppose there was a square, walled lotus pond on level ground, full to the brim so a crow could drink from it. If a strong man was to open the wall on any side, would water pour out?”</p>
+
+<p>“Yes, sir.”</p>
+
+<p>“In the same way, when noble right immersion with five factors is cultivated in this way, a mendicant becomes capable of realizing anything that can be realized by insight to which they extend the mind, in each and every case.</p>
+
+<p id="p10"><span class="parno">10</span>Suppose a chariot stood harnessed to thoroughbreds at a level crossroads, with a goad ready. Then a deft horse trainer, a master charioteer, might mount the chariot, taking the reins in his right hand and goad in the left. He’d drive out and back wherever he wishes, whenever he wishes. In the same way, when noble right immersion with five factors is cultivated in this way, a mendicant becomes capable of realizing anything that can be realized by insight to which they extend the mind, in each and every case.</p>
+
+<p id="p11"><span class="parno">11</span>If you wish: ‘May I wield the many kinds of psychic power: multiplying myself and becoming one again … controlling the body as far as the Brahmā realm.’ You’re capable of realizing it, in each and every case.</p>
+
+<p id="p12"><span class="parno">12</span>If you wish: ‘With clairaudience that is purified and superhuman, may I hear both kinds of sounds, human and divine, whether near or far.’ You’re capable of realizing it, in each and every case.</p>
+
+<hr>
+
+<p id="p13"><span class="parno">13</span>If you wish: ‘May I understand the minds of other beings and individuals, having comprehended them with my mind. May I understand mind with greed as “mind with greed”, and mind without greed as “mind without greed”; mind with hate as “mind with hate”, and mind without hate as “mind without hate”; mind with delusion as “mind with delusion”, and mind without delusion as “mind without delusion”; constricted mind as “constricted mind”, and scattered mind as “scattered mind”; expansive mind as “expansive mind”, and unexpansive mind as “unexpansive mind”; mind that is not supreme as “mind that is not supreme”, and mind that is supreme as “mind that is supreme”; mind immersed in samādhi as “mind immersed in samādhi”, and mind not immersed in samādhi as “mind not immersed in samādhi”; freed mind as “freed mind”, and unfreed mind as “unfreed mind”.’ You’re capable of realizing it, in each and every case.</p>
+
+<hr>
+
+<p id="p14"><span class="parno">14</span>If you wish: ‘May I recollect many kinds of past lives, with features and details.’ You’re capable of realizing it, in each and every case.</p>
+
+<p id="p15"><span class="parno">15</span>If you wish: ‘With clairvoyance that is purified and superhuman, may I see sentient beings passing away and being reborn according to their deeds.’ You’re capable of realizing it, in each and every case.</p>
+
+<hr>
+
+<p id="p16"><span class="parno">16</span>If you wish: ‘May I realize the undefiled freedom of heart and freedom by wisdom in this very life, and live having realized it with my own insight due to the ending of defilements.’ You’re capable of realizing it, in each and every case.”</p>
+
+
+
+</div> <!-- End English -->
+<div lang="pi">
+
+<p><a id="p_16A5_106" class="ms"></a><a class="msdiv" id="msdiv_28"></a><span class="parno">1</span>"Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa bhāvanaṁ desessāmi. Taṁ suṇātha, sādhukaṁ manasi karotha, bhāsissāmī"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho te bhikkhū bhagavato paccassosuṁ. Bhagavā etadavoca: </p>
+
+<hr>
+
+<p><a id="p_16A5_107" class="ms"></a><span class="parno">2</span>"Katamā ca, bhikkhave, ariyassa pañcangikassa sammāsamādhissa bhāvanā?</p>
+
+<p>Idha, bhikkhave, bhikkhu vivicceva kāmehi … pe … paṭhamaṁ jhānaṁ upasampajja viharati. So imameva kāyaṁ vivekajena pītisukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa vivekajena pītisukhena apphuṭaṁ hoti. Seyyathāpi, bhikkhave, dakkho nhāpako vā nhāpakantevāsī vā kaṁsathāle nhānīyacuṇṇāni ākiritvā udakena paripphosakaṁ paripphosakaṁ sanneyya. Sāyaṁ nhānīyapiṇḍi snehānugatā snehaparetā santarabāhirā phuṭā snehena, na ca paggharinī. Evamevaṁ kho, bhikkhave, bhikkhu imameva kāyaṁ vivekajena pītisukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa vivekajena pītisukhena apphuṭaṁ hoti. Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa ayaṁ paṭhamā bhāvanā. <span class="brnum">(1)</span></p>
+
+<p><a id="p_16A5_108" class="ms"></a><span class="parno">3</span>Puna caparaṁ, bhikkhave, bhikkhu vitakkavicārānaṁ vūpasamā … pe … dutiyaṁ jhānaṁ upasampajja viharati. So imameva kāyaṁ samādhijena pītisukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa samādhijena pītisukhena apphuṭaṁ hoti. Seyyathāpi, bhikkhave, udakarahado gambhīro ubbhidodako. Tassa nevassa puratthimāya disāya udakassa āyamukhaṁ, na pacchimāya disāya udakassa āyamukhaṁ, na uttarāya disāya udakassa āyamukhaṁ, na dakkhiṇāya disāya udakassa āyamukhaṁ, devo ca kālena kālaṁ sammā dhāraṁ nānu&shy;ppaveccheyya. Atha kho tamhāva udakarahadā sītā vāridhārā ubbhijjitvā tameva udakarahadaṁ sītena vārinā abhisandeyya parisandeyya paripūreyya paripphareyya; nāssa kiñci sabbāvato udakarahadassa sītena vārinā apphuṭaṁ assa. Evamevaṁ kho, bhikkhave, bhikkhu imameva kāyaṁ samādhijena pītisukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa samādhijena pītisukhena apphuṭaṁ hoti. Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa ayaṁ dutiyā bhāvanā. <span class="brnum">(2)</span></p>
+
+<p><a id="p_16A5_109" class="ms"></a><span class="parno">4</span>Puna caparaṁ, bhikkhave, bhikkhu pītiyā ca virāgā … pe … tatiyaṁ jhānaṁ upasampajja viharati. So imameva kāyaṁ nippītikena sukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa nippītikena sukhena apphuṭaṁ hoti. Seyyathāpi, bhikkhave, uppaliniyaṁ vā paduminiyaṁ vā puṇḍarīkiniyaṁ vā appekaccāni uppalāni vā padumāni vā puṇḍarīkāni vā udake jātāni udake saṁvaḍḍhāni udakānuggatāni anto nimuggaposīni. Tāni yāva caggā yāva ca mūlā sītena vārinā abhisannāni parisannāni paripūrāni paripphuṭāni; nāssa kiñci sabbāvataṁ uppalānaṁ vā padumānaṁ vā puṇḍarīkānaṁ vā sītena vārinā apphuṭaṁ assa. Evamevaṁ kho, bhikkhave, bhikkhu imameva kāyaṁ nippītikena sukhena abhisandeti parisandeti paripūreti parippharati; nāssa kiñci sabbāvato kāyassa nippītikena sukhena apphuṭaṁ hoti. Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa ayaṁ tatiyā bhāvanā. <span class="brnum">(3)</span></p>
+
+<p><a id="p_16A5_110" class="ms"></a><span class="parno">5</span>Puna caparaṁ, bhikkhave, bhikkhu sukhassa ca pahānā … pe … catutthaṁ jhānaṁ upasampajja viharati. So imameva kāyaṁ parisuddhena cetasā pariyodātena pharitvā nisinno hoti; nāssa kiñci sabbāvato kāyassa parisuddhena cetasā pariyodātena apphuṭaṁ hoti. Seyyathāpi, bhikkhave, puriso odātena vatthena sasīsaṁ pārupitvā nisinno assa; nāssa kiñci sabbāvato kāyassa odātena vatthena apphuṭaṁ assa. Evamevaṁ kho, bhikkhave, bhikkhu imameva kāyaṁ parisuddhena cetasā pariyodātena pharitvā nisinno hoti; nāssa kiñci sabbāvato kāyassa parisuddhena cetasā pariyodātena apphuṭaṁ hoti. Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa ayaṁ catutthā bhāvanā. <span class="brnum">(4)</span></p>
+
+<p><a id="p_16A5_111" class="ms"></a><span class="parno">6</span>Puna caparaṁ, bhikkhave, bhikkhuno pacca&shy;vekkhaṇānimittaṁ suggahitaṁ hoti sumanasikataṁ sūpadhāritaṁ suppaṭividdhaṁ paññāya. Seyyathāpi, bhikkhave, aññova aññaṁ paccavekkheyya, ṭhito vā nisinnaṁ paccavekkheyya, nisinno vā nipannaṁ paccavekkheyya. Evamevaṁ kho, bhikkhave, bhikkhuno pacca&shy;vekkhaṇānimittaṁ suggahitaṁ hoti sumanasikataṁ sūpadhāritaṁ suppaṭividdhaṁ paññāya. Ariyassa, bhikkhave, pañcangikassa sammāsamādhissa ayaṁ pañcamā bhāvanā. <span class="brnum">(5)</span></p>
+
+<p><a id="p_16A5_112" class="ms"></a><span class="parno">7</span>Evaṁ bhāvite kho, bhikkhave, bhikkhu ariye pañcangike sammāsamādhimhi evaṁ bahulīkate yassa yassa abhiññā&shy;sacchikaraṇīyassa dhammassa cittaṁ abhininnāmeti abhiññā&shy;sacchikiriyāya, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<p><a id="p_16A5_113" class="ms"></a><span class="parno">8</span>Seyyathāpi, bhikkhave, udakamaṇiko ādhāre ṭhapito pūro udakassa samatittiko kākapeyyo. Tamenaṁ balavā puriso yato yato āvajjeyya, āgaccheyya udakan"ti?</p>
+
+<p>"Evaṁ, bhante".</p>
+
+<p>Evamevaṁ kho, bhikkhave, bhikkhu evaṁ bhāvite ariye pañcangike sammāsamādhimhi evaṁ bahulīkate yassa yassa abhiññā&shy;sacchikaraṇīyassa dhammassa cittaṁ abhininnāmeti abhiññā&shy;sacchikiriyāya, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<p><a id="p_16A5_114" class="ms"></a><span class="parno">9</span>Seyyathāpi, bhikkhave, same bhūmibhāge pokkharaṇī caturaṁsā ālibaddhā pūrā udakassa samatittikā kākapeyyā. Tamenaṁ balavā puriso yato yato āliṁ muñceyya, āgaccheyya udakan"ti?</p>
+
+<p>"Evaṁ, bhante".</p>
+
+<p>"Evamevaṁ kho, bhikkhave, bhikkhu evaṁ bhāvite ariye pañcangike sammāsamādhimhi evaṁ bahulīkate yassa yassa abhiññā&shy;sacchikaraṇīyassa dhammassa … pe … sati sati āyatane.</p>
+
+<p><a id="p_16A5_115" class="ms"></a><span class="parno">10</span>Seyyathāpi, bhikkhave, subhūmiyaṁ catumahāpathe ājaññaratho yutto assa ṭhito odhastapatodo. Tamenaṁ dakkho yoggācariyo assadammasārathi abhiruhitvā vāmena hatthena rasmiyo gahetvā dakkhiṇena hatthena patodaṁ gahetvā yenicchakaṁ yadicchakaṁ sāreyyapi paccāsāreyyapi. Evamevaṁ kho, bhikkhave, bhikkhu evaṁ bhāvite ariye pañcangike sammāsamādhimhi evaṁ bahulīkate yassa yassa abhiññā&shy;sacchikaraṇīyassa dhammassa cittaṁ abhininnāmeti abhiññā&shy;sacchikiriyāya, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<p><a id="p_16A5_116" class="ms"></a><span class="parno">11</span>So sace ākankhati:  ‘anekavihitaṁ iddhividhaṁ paccanu&shy;bhaveyyaṁ – ekopi hutvā bahudhā assaṁ … pe … yāva brahmalokāpi kāyena vasaṁ vatteyyan’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<p><a id="p_16A5_117" class="ms"></a><span class="parno">12</span>So sace ākankhati:  ‘dibbāya sotadhātuyā visuddhāya atikkantamānusikāya ubho sadde suṇeyyaṁ – dibbe ca mānuse ca ye dūre santike cā’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<hr>
+
+<p><a id="p_16A5_118" class="ms"></a><span class="parno">13</span>So sace ākankhati:  ‘parasattānaṁ parapuggalānaṁ cetasā ceto paricca pajāneyyaṁ – sarāgaṁ vā cittaṁ sarāgaṁ cittanti pajāneyyaṁ, vītarāgaṁ vā cittaṁ vītarāgaṁ cittanti pajāneyyaṁ, sadosaṁ vā cittaṁ … vītadosaṁ vā cittaṁ … samohaṁ vā cittaṁ … vītamohaṁ vā cittaṁ … sankhittaṁ vā cittaṁ … vikkhittaṁ vā cittaṁ … mahaggataṁ vā cittaṁ … amahaggataṁ vā cittaṁ … sauttaraṁ vā cittaṁ … anuttaraṁ vā cittaṁ … samāhitaṁ vā cittaṁ … asamāhitaṁ vā cittaṁ … vimuttaṁ vā cittaṁ … avimuttaṁ vā cittaṁ avimuttaṁ cittanti pajāneyyan’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<hr>
+
+<p><a id="p_16A5_119" class="ms"></a><span class="parno">14</span>So sace ākankhati:  ‘anekavihitaṁ pubbenivāsaṁ anussareyyaṁ, seyyathidaṁ – ekampi jātiṁ, dvepi jātiyo … pe … iti sākāraṁ sauddesaṁ anekavihitaṁ pubbenivāsaṁ anussareyyan’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<p><a id="p_16A5_120" class="ms"></a><span class="parno">15</span>So sace ākankhati:  ‘dibbena cakkhunā visuddhena atikkantamānusakena … pe … yathākammūpage satte pajāneyyan’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane.</p>
+
+<hr>
+
+<p><a id="p_16A5_121" class="ms"></a><span class="parno">16</span>So sace ākankhati:  ‘āsavānaṁ khayā anāsavaṁ cetovimuttiṁ paññāvimuttiṁ diṭṭheva dhamme sayaṁ abhiññā sacchikatvā upasampajja vihareyyan’ti, tatra tatreva sakkhibhabbataṁ pāpuṇāti sati sati āyatane"ti.</p>
+
+<p class="endsection">Aṭṭhamaṁ.</p>
+</div>
+</section>
+<div id="nextprev"><a id="previous-sutta" href="./an5.27.html#content"></a><a id="next-sutta" href="./an5.29.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="an.html">Anguttara Nikāya</a><a href="an5.html">The Book of the Fives</a>28. Five-Factored
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+	<script src="/sw.js"></script>
+ 
+ </body>
+ </html>

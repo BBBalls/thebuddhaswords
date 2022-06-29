@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Sutta Nipata 3:9</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="snp.html" class="pressed w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+  
+ 
+		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+ <h2>Khuddaka Nikaya - The Minor Texts</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
+ 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
+ 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
+ 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
+ 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
+ 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
+ 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
+ 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
+ </div><!-- End div for lower Dhp sub-navigation -->
+ 
+ <h2>Sutta Nipata</h2>
+ <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
+ 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
+ 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
+ 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button active">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
+ 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
+ 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
+ </div><!-- End div for lower Snp sub-navigation -->
+ 
+ <!-- Snp content begins here -->
+ 
+ <div id="content">
+ 
+ <h2>Sutta Nipata Chapter 3: The Great Chapter</h2>
+
+	<h3>3:9 To Vāseṭṭha on Who is a Brahmin</h3>	
+	<div id="metarea"> <!-- metarea div -->
+		<ul class="translator"><!-- Translator div -->
+			<li>Translated from the Pali by Laurence Khantipalo Mills<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
+		</ul>
+	</div><!-- End metarea div -->
+		
+<section class="raw_sutta">
+<div lang="en">
+
+<h2>3:9 To Vāseṭṭha on Who is a Brahmin</h2>
+
+<p><span class="evam">Thus have I heard</span>:</p>
+
+<p>At one time the Radiant One was dwelling at Icchānaṅgala. Now at that time a number of notable and prosperous brahmins were staying at lcchānangala, that is to say the brahmins Caṅkī, Tārukkha, Pokkharasāti, Jāṇussoni and Todeyya, as well as other notable and prosperous brahmins.</p>
+
+<hr>
+
+<p>Then, as the young brahmins Vāseṭṭha and Bhāradvaia were walking and wandering for exercise this subject of discussion arose between them. “How is one a brahmin?" </p>
+
+<p>The young brahmin Bhāradvaja said, “When one is well-born on both sides, of pure maternal and paternal descent through seven generations in the past, then one is a brahmin".</p>
+
+<p>But Vāseṭṭha the young brahmin said, “When one is virtuous and fulfils one’s vows, then one is a brahmin". Bhāradvaja could not convince Vāseṭṭha while the latter failed to convince the former.</p>
+
+<hr>
+
+<p>Then Vāseṭṭha said to Bhāradvaja, “Sir, the samaṇa Gotama son of the Sakyas who left home from the Sakyan clan is living at Icchānaṅgala, in the forest near Icchānaṅgala. Now the good reputation of Master Gotama has spread in this way: ‘That Radiant One is accomplished, completely Awakened, possessed of True Knowledge and conduct, well-gone for himself and others, knower of the worlds, unexcelled trainer of those who can be tamed, teacher of devas and humanity, Awake and Radiant.’ Come, Bhāradvaja, let us go to the samaṇa Gotama and ask him about this. As he replies, so will we bear his words in mind."</p>
+
+<p>“Yes, sir", Bharadvaja replied.</p>
+
+<p>So the two young brahmins approached the Radiant One and exchanged greetings with him. When this courteous and amiable talk was concluded, they sat down to one side, and the young brahmin Vāseṭṭha addressed the Radiant One in verse:</p>
+
+<hr>
+<div class="verse">
+<p><span class="speaker">Vāseṭṭha</span>
+<br><span class="parno">594</span>Of Pokkharasāti the pupil I am,
+<br>while student of Tārukkha is he;
+<br>both of us have acknowledged mastery
+<br>in the threefold Veda lore.</p>
+
+<p id="p595"><span class="parno">595</span>We have attained totality
+<br>over all the Vedic masters teach;
+<br>as philologists, grammarians,
+<br>and we chant as our masters do.</p>
+
+<p id="p596"><span class="parno">596</span>The subject of “birth", O Gotama,
+<br>is contention’s cause with us:
+<br>he, a Bhāradvāja, does declare
+<br>“birth" is due to brahmin caste,
+<br>while I say its by karma caused:
+<br>know its thus, O One-with-Eyes.</p>
+
+<p id="p597"><span class="parno">597</span>Sir, to ask about this we have come,
+<br>to you acclaimed as Wide Awake,
+<br>each of us unable is
+<br>the other to convince.</p>
+
+<p id="p598"><span class="parno">598</span>As they raise their lotussed hands
+<br>towards the moon waxed full,
+<br>so to you, by this world revered,
+<br>we pay homage too.</p>
+
+<p id="p599"><span class="parno">599</span>So now of Gotama the Eye
+<br>uprisen in the world, we ask:
+<br>Is one by “birth" a brahmin,
+<br>or a brahmin karma-caused?
+<br>Explain to us who do not know
+<br>how we should “brahmin" recognize?</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="speaker">Buddha</span>
+<br><span class="parno">600</span>I shall analyse for you,
+<br>in order due and as they are,
+<br>the types of “birth" ’mong living things,
+<br>for many are the sorts of birth.</p>
+
+<p id="p601"><span class="parno">601</span>First, there’s grasses and the trees,
+<br>though of themselves they nothing know,
+<br>each species possessing its own marks,
+<br>for many are the sorts of birth.</p>
+
+<p id="p602"><span class="parno">602</span>Next come beetles, butterflies,
+<br>and so on to the termites, ants,
+<br>each species possessing its own marks,
+<br>for many are the sorts of birth.</p>
+
+<p id="p603"><span class="parno">603</span>Then, know of those four-footed kinds,
+<br>both the tiny and the huge,
+<br>each species possessing its own marks
+<br>for many are the sorts of birth.</p>
+
+<p id="p604"><span class="parno">604</span>Know those whose bellies are their feet,
+<br>that is, the long-backed group of snakes,
+<br>each species possessing its own marks,
+<br>for many are the sorts of birth.</p>
+
+<p id="p605"><span class="parno">605</span>Know too the many kinds of fish,
+<br>living in their watery world,
+<br>each species possessing its own marks,
+<br>for many are the sorts of birth.</p>
+
+<p id="p606"><span class="parno">606</span>Then know the varied winged ones,
+<br>the birds that range the open skies,
+<br>each species possessing its own marks,
+<br>for many are the sorts of birth.</p>
+
+<p id="p607"><span class="parno">607</span>While in those births are differences,
+<br>each having their own distinctive marks,
+<br>among humanity such differences
+<br>of species — no such marks are found.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p608"><span class="parno">608</span>Neither in hair, nor in the head,
+<br>not in the ears or eyes,
+<br>neither found in mouth or nose,
+<br>not in lips or brows.</p>
+
+<p id="p609"><span class="parno">609</span>Neither in neck, nor shoulders found,
+<br>not in belly or the back,
+<br>neither in buttocks nor the breast,
+<br>not in groin or sexual parts.</p>
+
+<p id="p610"><span class="parno">610</span>Neither in hands nor in the feet,
+<br>not in fingers or the nails,
+<br>neither in knees nor in the thighs,
+<br>not in their “colour", not in sound,
+<br>here is no distinctive mark
+<br>as in the many other sorts of birth.</p>
+
+<p id="p611"><span class="parno">611</span>In human bodies as they are,
+<br>such differences cannot be found:
+<br>the only human differences
+<br>are those in names alone.</p>
+
+<p id="p612"><span class="parno">612</span>’Mong humankind whoever lives
+<br>by raising cattle on a farm,
+<br>O Vāseṭṭha you should know
+<br>as farmer not as Brahmin then.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p613"><span class="parno">613</span>’Mong humankind whoever lives
+<br>by trading wares here and there,
+<br>O Vāseṭṭha you should know
+<br>as merchant not as Brahmin then.</p>
+
+<p id="p614"><span class="parno">614</span>’Mong humankind whoever lives
+<br>by work of many arts and crafts,
+<br>O Vāseṭṭha you should know
+<br>as craftsman not as Brahmin then.</p>
+
+<p id="p615"><span class="parno">615</span>’Mong humankind whoever lives
+<br>by serving other’ needs and wants,
+<br>O Vāseṭṭha you should know
+<br>as servant not as Brahmin then.</p>
+
+<p id="p616"><span class="parno">616</span>’Mong humankind whoever lives
+<br>by taking things that are not given,
+<br>O Vāseṭṭha you should know
+<br>as a thief not Brahmin then.</p>
+
+<p id="p617"><span class="parno">617</span>’Mong humankind whoever lives
+<br>by the skill of archery,
+<br>O Vāseṭṭha you should know
+<br>as soldier not as Brahmin then.</p>
+
+<p id="p618"><span class="parno">618</span>’Mong humankind whoever lives
+<br>by performing priestly rites,
+<br>O Vāseṭṭha you should know
+<br>as a priest not Brahmin then.</p>
+
+<p id="p619"><span class="parno">619</span>’Mong humankind whoever lives
+<br>through enjoying towns and lands,
+<br>O Vāseṭṭha you should know
+<br>as rajah not as Brahmin then.</p>
+
+<p id="p620"><span class="parno">620</span>Him I call not a brahmin, though
+<br>born from brahmin mother’s line,
+<br>if with sense of ownership,
+<br>he’s just supercilious:
+<br>owning nothing and unattached — 
+<br>one such I say’s a Brahmin then.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p621"><span class="parno">621</span>Who fetters all has severed,
+<br>who trembles not at all,
+<br>gone beyond ties, free from bonds — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p622"><span class="parno">622</span>Having cut strap and reins,
+<br>the rope and bridle too,
+<br>and tipped the shafts, as one Awake — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p623"><span class="parno">623</span>Who angerless endures abuse,
+<br>beating and imprisonment,
+<br>with patience-power, an arméd might — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p624"><span class="parno">624</span>Who’s angerless and dutiful,
+<br>of virtue full and free of lust,
+<br>who’s tamed, to final body come — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p625"><span class="parno">625</span>Like water drop on lotus leaf,
+<br>or mustard seed on needle point,
+<br>whoso clings not to sense desires,
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p626"><span class="parno">626</span>Here who comes to Know
+<br>exhaustion of all <i>dukkha</i>,
+<br>laid down the burden, free from bonds — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p627"><span class="parno">627</span>Skilled in the Path, what’s not the path,
+<br>in wisdom deep, sagacious one,
+<br>having attained the highest aim — 
+<br>one such I say’s a Brahmin then.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p628"><span class="parno">628</span>Not intimate with those gone forth,
+<br>nor with those who dwell at home,
+<br>without a shelter, wishes few — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p629"><span class="parno">629</span>Who has renounced all force
+<br>towards all being weak and strong,
+<br>who causes not to kill, nor kills — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p630"><span class="parno">630</span>Among the hostile, friendly,
+<br>among the violent, cool,
+<br>detached amid the passionate — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p631"><span class="parno">631</span>From whoever lust and hate,
+<br>conceit, contempt have dropped away,
+<br>as mustard seed from needle-point — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p632"><span class="parno">632</span>Who utters speech instructive,
+<br>true and gentle too,
+<br>who gives offence to none — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p633"><span class="parno">633</span>Who in the world will never take
+<br>what is not given, long or short,
+<br>the great or small, the fair or foul — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p634"><span class="parno">634</span>In whom there are not longings found
+<br>for this world or the next,
+<br>longingless and free from bonds — 
+<br>on such I say’s a Brahmin then.</p>
+
+<p id="p635"><span class="parno">635</span>In whom is no dependence found,
+<br>with Final Knowledge, free from doubt,
+<br>duly wont to the Deathless deeps — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p636"><span class="parno">636</span>Here who’s gone beyond both bonds:
+<br>to goodness and to evil too,
+<br>one who’s sorrowless, stainless, pure — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p637"><span class="parno">637</span>Vanished is all love of being,
+<br>like the moon — unblemished, pure,
+<br>that one serene and undisturbed — 
+<br>one such I say’s a Brahmin then.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p638"><span class="parno">638</span>Who’s overpassed this difficult path,
+<br>delusion’s bond, the wandering-on,
+<br>who’s crossed beyond, contemplative,
+<br>craving not, no questions left,
+<br>no clinging’s fuel, so Cool become — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p639"><span class="parno">639</span>Who has abandoned sense desires,
+<br>as homeless one renouncing all,
+<br>desire for being all consumed — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p640"><span class="parno">640</span>Who has abandoned craving here
+<br>as homeless one renouncing all,
+<br>craving for being all consumed — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p641"><span class="parno">641</span>Abandoned all the human bonds
+<br>and gone beyond the bonds of god
+<br>unbound one is from every bond — 
+<br>one such I say’s a Brahmin then.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p642"><span class="parno">642</span>Abandoned boredom and delight,
+<br>become quite cool and assetless
+<br>A hero, All-worlds conqueror,
+<br>one such I say’s a Brahmin then</p>
+
+<p id="p643"><span class="parno">643</span>Whoever knows of being’ death,
+<br>their being born in every way,
+<br>unshackled, faring well, Awake — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p644"><span class="parno">644</span>Whose destination is unknown
+<br>to humans, spirits or to gods,
+<br>pollutions faded, Arahat — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p645"><span class="parno">645</span>For whom there is not ownership
+<br>before or after or midway,
+<br>owning nothing and unattached — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p646"><span class="parno">646</span>One noble, most excellent, heroic too,
+<br>the great sage and the one who conquers all,
+<br>who’s faultless, washes, one Awake — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p647"><span class="parno">647</span>Who knows their former births
+<br>and sees the states of bliss and woe
+<br>and then who wins the waste of births — 
+<br>one such I say’s a Brahmin then.</p>
+
+<p id="p648"><span class="parno">648</span>Whatever’s accepted and “name" and “clan"
+<br>is just a worldly designation — 
+<br>by conventions handed down
+<br>accepted everywhere.</p>
+
+<p id="p649"><span class="parno">649</span>But those asleep, unquestioning,
+<br>who take up views, who do not Know,
+<br>unknowingly they’ve long declared:
+<br>one’s a brahmin just by “birth".</p>
+
+</div>
+<hr>
+<div class="verse">
+<p id="p650"><span class="parno">650</span>One’s not a brahmin caused by “birth",
+<br>nor caused by “birth" a non-brahmin;
+<br>a brahmin’s one by karma caused,
+<br>by karma caused a non-brahmin.</p>
+
+<p id="p651"><span class="parno">651</span>By karma caused a farmer is,
+<br>one’s a craftsman karma-caused,
+<br>by karma caused a merchant is,
+<br>one’s a servant karma-caused.</p>
+
+<p id="p652"><span class="parno">652</span>By karma caused a robber is,
+<br>one’s a soldier karma-caused,
+<br>by karma caused a priest becomes,
+<br>one’s a ruler karma-caused.</p>
+
+<p id="p653"><span class="parno">653</span>Thus according as it is
+<br>people wise do karma see;
+<br>Seers of causal relatedness,
+<br>skilled in karma, its results.</p>
+
+<p id="p654"><span class="parno">654</span>Karma makes the world go on,
+<br>people by karma, circle round;
+<br>sentient beings are bound to karma,
+<br>as a cart is pulled by a horse.</p>
+
+<p id="p655"><span class="parno">655</span>By ardour and the Good Life leading,
+<br>with restraint and taming too:
+<br>by this a Brahmin one becomes,
+<br>one’s by this a Brahmin best.</p>
+
+<p id="p656"><span class="parno">656</span>Possessed of Triple Knowledges,
+<br>at Peace, rebirth come to an end — 
+<br>know Vāseṭṭha, such a one
+<br>is Brahmā and Sakra for those who Know.</p>
+</div>
+
+<hr>
+<p>When this was said the young brahmins Vāseṭṭha and Bhāradvāja exclaimed to the Radiant One: “Magnificent, Master Gotama! The Dharma has been clarified by Master Gotama in many ways, as though he was lighting what was overthrown revealing what was hidden, showing the way to one who was lost, or holding a lamp in the dark so that those with eyes can see forms. We go for refuge to Master Gotama, to the Dharma and to the Saṅgha. May Master Gotama remember us as <i>upāsakas</i> who from today have Gone for Refuge for life.</p>
+
+</div>
+
+<div lang="pi">
+<h2>Vāseṭṭhasutta</h2>
+
+<p><span class="evam">Evaṁ me sutaṁ — ​</span>   <br>
+
+<br>ekaṁ samayaṁ bhagavā icchānangale viharati icchānangalavanasaṇḍe. Tena kho pana samayena sambahulā abhiññātā abhiññātā brāhmaṇamahāsālā icchānangale paṭivasanti, seyyathidaṁ – cankī brāhmaṇo, tārukkho brāhmaṇo, pokkharasāti brāhmaṇo, jāṇussoṇi brāhmaṇo, todeyyo brāhmaṇo, aññe ca abhiññātā abhiññātā brāhmaṇamahāsālā. </p>
+
+<hr>
+
+<p>Atha kho vāseṭṭhabhāradvājānaṁ māṇavānaṁ janghāvihāraṁ anucanka&shy;mantānaṁ anu&shy;vicarantānaṁ ayamantarā&shy;kathā udapādi:  "kathaṁ, bho, brāhmaṇo hotī"ti?</p>
+
+<p>Bhāradvājo māṇavo evamāha:  "yato kho, bho, ubhato sujāto hoti mātito ca pitito ca saṁsuddhagahaṇiko yāva sattamā pitāmahayugā akkhitto anupakkuṭṭho jātivādena, ettāvatā kho bho brāhmaṇo hotī"ti.</p>
+
+<p>Vāseṭṭho māṇavo evamāha:  "yato kho, bho, sīlavā ca hoti vatasampanno ca, ettāvatā kho, bho, brāhmaṇo hotī"ti. Neva kho asakkhi bhāradvājo māṇavo vāseṭṭhaṁ māṇavaṁ saññāpetuṁ, na pana asakkhi vāseṭṭho māṇavo bhāradvājaṁ māṇavaṁ saññāpetuṁ.</p>
+
+
+<hr>
+
+
+<p>Atha kho vāseṭṭho māṇavo bhāradvājaṁ māṇavaṁ āmantesi:  "ayaṁ kho, bho bhāradvāja, samaṇo gotamo sakyaputto sakyakulā pabbajito icchānangale viharati icchānangalavanasaṇḍe; taṁ kho pana bhavantaṁ gotamaṁ evaṁ kalyāṇo kittisaddo abbhuggato:  ‘itipi … pe … buddho bhagavā’ti. Āyāma, bho bhāradvāja, yena samaṇo gotamo tenupasankamissāma; upasankamitvā samaṇaṁ gotamaṁ etamatthaṁ pucchissāma. Yathā no samaṇo gotamo byākarissati tathā naṁ dhāressāmā"ti. </p>
+
+<p>"Evaṁ, bho"ti kho bhāradvājo māṇavo vāseṭṭhassa māṇavassa paccassosi.</p>
+
+<p>Atha kho vāseṭṭhabhāradvājā māṇavā yena bhagavā tenupasankamiṁsu; upasankamitvā bhagavatā saddhiṁ sammodiṁsu. Sammodanīyaṁ kathaṁ sāraṇīyaṁ vītisāretvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinno kho vāseṭṭho māṇavo bhagavantaṁ gāthāhi ajjhabhāsi: </p>
+
+<hr>
+<div class="verse">
+<p><span class="parno">594</span>"Anuññāta&shy;paṭiññātā,<br> tevijjā mayamasmubho;
+<br>Ahaṁ pokkharasātissa,
+<br>tārukkhassāyaṁ māṇavo.</p>
+
+<p><span class="parno">595</span><a class="brnum" id="br2"></a>
+Tevijjānaṁ yadakkhātaṁ,<br> Tatra kevalinosmase;
+<br>Padakasma veyyākaraṇā,
+<br>Jappe ācariyasādisā.</p>
+
+<p><span class="parno">596</span><a class="brnum" id="br3"></a>
+Tesaṁ no jātivādasmiṁ,<br> vivādo atthi gotama;
+<br>Jātiyā brāhmaṇo hoti,
+<br>bhāradvājo iti bhāsati;
+<br>Ahañca kammunā brūmi,
+<br>evaṁ jānāhi cakkhuma.</p>
+
+<p><span class="parno">597</span><a class="brnum" id="br4"></a>
+Te na sakkoma saññāpetuṁ,<br> aññamaññaṁ mayaṁ ubho;
+<br>Bhavantaṁ puṭṭhumāgamhā,
+<br>sambuddhaṁ iti vissutaṁ.</p>
+
+<p><span class="parno">598</span><a class="brnum" id="br5"></a>
+Candaṁ yathā khayātītaṁ,<br> pecca pañjalikā janā;
+<br>Vandamānā namassanti,
+<br>evaṁ lokasmi gotamaṁ.</p>
+
+<p><span class="parno">599</span><a class="brnum" id="br6"></a>
+Cakkhuṁ loke samuppannaṁ,<br> mayaṁ pucchāma gotamaṁ;
+<br>Jātiyā brāhmaṇo hoti,
+<br>udāhu bhavati kammunā;
+<br>Ajānataṁ no pabrūhi,
+<br>yathā jānemu brāhmaṇaṁ".</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="speaker">(vāseṭṭhāti bhagavā):</span>
+<br><span class="parno">600</span><a class="brnum" id="br7"></a> "Tesaṁ vo ahaṁ byakkhissaṁ,<br> Anupubbaṁ yathātathaṁ;
+<br>Jātivibhangaṁ pāṇānaṁ,
+<br>Aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">601</span><a class="brnum" id="br8"></a>
+Tiṇarukkhepi jānātha,<br> na cāpi paṭijānare;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">602</span><a class="brnum" id="br9"></a>
+Tato kīṭe paṭange ca,<br> yāva kunthakipillike;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">603</span><a class="brnum" id="br10"></a>
+Catuppadepi jānātha,<br> Khuddake ca mahallake;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>Aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">604</span><a class="brnum" id="br11"></a>
+Pādūdarepi jānātha,<br> Urage dīghapiṭṭhike;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>Aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">605</span><a class="brnum" id="br12"></a>
+Tato macchepi jānātha,<br> Odake vārigocare;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>Aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">606</span><a class="brnum" id="br13"></a>
+Tato pakkhīpi jānātha,<br> Pattayāne vihangame;
+<br>Lingaṁ jātimayaṁ tesaṁ,
+<br>Aññamaññā hi jātiyo.</p>
+
+<p><span class="parno">607</span><a class="brnum" id="br14"></a>
+Yathā etāsu jātīsu,<br> Lingaṁ jātimayaṁ puthu;
+<br>Evaṁ natthi manussesu,
+<br>Lingaṁ jātimayaṁ puthu.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">608</span><a class="brnum" id="br15"></a>
+Na kesehi na sīsena,<br> Na kaṇṇehi na akkhibhi;
+<br>Na mukhena na nāsāya,
+<br>Na oṭṭhehi bhamūhi vā.</p>
+
+<p><span class="parno">609</span><a class="brnum" id="br16"></a>
+Na gīvāya na aṁsehi,<br> Na udarena na piṭṭhiyā;
+<br>Na soṇiyā na urasā,
+<br>Na sambādhe na methune.</p>
+
+<p><span class="parno">610</span><a class="brnum" id="br17"></a>
+Na hatthehi na pādehi,<br> Nāngulīhi nakhehi vā;
+<br>Na janghāhi na ūrūhi,
+<br>Na vaṇṇena sarena vā;
+<br>Lingaṁ jātimayaṁ neva,
+<br>Yathā aññāsu jātisu.</p>
+
+<p><span class="parno">611</span><a class="brnum" id="br18"></a>
+Paccattañca sarīresu,<br> Manussesvetaṁ na vijjati;
+<br>Vokārañca manussesu,
+<br>Samaññāya pavuccati.</p>
+
+<p><span class="parno">612</span><a class="brnum" id="br19"></a>
+Yo hi koci manussesu,<br> Gorakkhaṁ upajīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Kassako so na brāhmaṇo.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">613</span><a class="brnum" id="br20"></a>
+Yo hi koci manussesu,<br> Puthusippena jīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Sippiko so na brāhmaṇo.</p>
+
+<p><span class="parno">614</span><a class="brnum" id="br21"></a>
+Yo hi koci manussesu,<br> Vohāraṁ upajīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Vāṇijo so na brāhmaṇo.</p>
+
+<p><span class="parno">615</span><a class="brnum" id="br22"></a>
+Yo hi koci manussesu,<br> Parapessena jīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Pessiko so na brāhmaṇo.</p>
+
+<p><span class="parno">616</span><a class="brnum" id="br23"></a>
+Yo hi koci manussesu,<br> Adinnaṁ upajīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Coro eso na brāhmaṇo.</p>
+
+<p><span class="parno">617</span><a class="brnum" id="br24"></a>
+Yo hi koci manussesu,<br> Issatthaṁ upajīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Yodhājīvo na brāhmaṇo.</p>
+
+<p><span class="parno">618</span><a class="brnum" id="br25"></a>
+Yo hi koci manussesu,<br> Porohiccena jīvati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Yājako eso na brāhmaṇo.</p>
+
+<p><span class="parno">619</span><a class="brnum" id="br26"></a>
+Yo hi koci manussesu,<br> Gāmaṁ raṭṭhañca bhuñjati;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>Rājā eso na brāhmaṇo.</p>
+
+<p><span class="parno">620</span><a class="brnum" id="br27"></a>
+Na cāhaṁ brāhmaṇaṁ brūmi,<br> Yonijaṁ mattisambhavaṁ;
+<br>Bhovādi nāma so hoti,
+<br>Sace hoti sakiñcano;
+<br>Akiñcanaṁ anādānaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">621</span><a class="brnum" id="br28"></a>
+Sabbasaṁyojanaṁ chetvā,<br> Yo ve na paritassati;
+<br>Sangātigaṁ visaṁyuttaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">622</span><a class="brnum" id="br29"></a>
+Chetvā naddhiṁ varattañca,<br> Sandānaṁ sahanukkamaṁ;
+<br>Ukkhittapalighaṁ buddhaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">623</span><a class="brnum" id="br30"></a>
+Akkosaṁ vadhabandhañca,<br> Aduṭṭho yo titikkhati;
+<br>Khantībalaṁ balānīkaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">624</span><a class="brnum" id="br31"></a>
+Akkodhanaṁ vatavantaṁ,<br> Sīlavantaṁ anussadaṁ;
+<br>Dantaṁ antimasārīraṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">625</span><a class="brnum" id="br32"></a>
+Vāri pokkharapatteva,<br> Āraggeriva sāsapo;
+<br>Yo na limpati kāmesu,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">626</span><a class="brnum" id="br33"></a>
+Yo dukkhassa pajānāti,<br> Idheva khayamattano;
+<br>Pannabhāraṁ visaṁyuttaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">627</span><a class="brnum" id="br34"></a>
+Gambhīrapaññaṁ medhāviṁ,<br> Maggāmaggassa kovidaṁ;
+<br>Uttamatthamanuppattaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">628</span><a class="brnum" id="br35"></a>
+Asaṁsaṭṭhaṁ gahaṭṭhehi,<br> Anāgārehi cūbhayaṁ;
+<br>Anokasāri&shy;mappicchaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">629</span><a class="brnum" id="br36"></a>
+Nidhāya daṇḍaṁ bhūtesu,<br> Tasesu thāvaresu ca;
+<br>Yo na hanti na ghāteti,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">630</span><a class="brnum" id="br37"></a>
+Aviruddhaṁ viruddhesu,<br> Attadaṇḍesu nibbutaṁ;
+<br>Sādānesu anādānaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">631</span><a class="brnum" id="br38"></a>
+Yassa rāgo ca doso ca,<br> Māno makkho ca pātito;
+<br>Sāsaporiva āraggā,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">632</span><a class="brnum" id="br39"></a>
+Akakkasaṁ viññāpaniṁ,<br> Giraṁ saccamudīraye;
+<br>Yāya nābhisaje kañci,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">633</span><a class="brnum" id="br40"></a>
+Yodha dīghaṁ va rassaṁ vā,<br> Aṇuṁ thūlaṁ subhāsubhaṁ;
+<br>Loke adinnaṁ nādiyati,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">634</span><a class="brnum" id="br41"></a>
+Āsā yassa na vijjanti,<br> Asmiṁ loke paramhi ca;
+<br>Nirāsāsaṁ visaṁyuttaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">635</span><a class="brnum" id="br42"></a>
+Yassālayā na vijjanti,<br> Aññāya akathankathī;
+<br>Amato&shy;gadhamanup&shy;pattaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">636</span><a class="brnum" id="br43"></a>
+Yodha puññañca pāpañca,<br> Ubho sangamupaccagā;
+<br>Asokaṁ virajaṁ suddhaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">637</span><a class="brnum" id="br44"></a>
+Candaṁva vimalaṁ suddhaṁ,<br> Vippasannamanāvilaṁ;
+<br>Nandībhavaparikkhīṇaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">638</span><a class="brnum" id="br45"></a>
+Yomaṁ palipathaṁ duggaṁ,<br> Saṁsāraṁ mohamaccagā;
+<br>Tiṇṇo pārangato jhāyī,
+<br>Anejo akathankathī;
+<br>Anupādāya nibbuto,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">639</span><a class="brnum" id="br46"></a>
+Yodha kāme pahantvāna,<br> Anāgāro paribbaje;
+<br>Kāmabhavaparikkhīṇaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">640</span><a class="brnum" id="br47"></a>
+Yodha taṇhaṁ pahantvāna,<br> Anāgāro paribbaje;
+<br>Taṇhābhavapari&shy;kkhīṇaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">641</span><a class="brnum" id="br48"></a>
+Hitvā mānusakaṁ yogaṁ,<br> Dibbaṁ yogaṁ upaccagā;
+<br>Sabbayogavisaṁyuttaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">642</span><a class="brnum" id="br49"></a>
+Hitvā ratiñca aratiṁ,<br> Sītibhūtaṁ nirūpadhiṁ;
+<br>Sabbalokābhibhuṁ vīraṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">643</span><a class="brnum" id="br50"></a>
+Cutiṁ yo vedi sattānaṁ,<br> Upapattiñca sabbaso;
+<br>Asattaṁ sugataṁ buddhaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">644</span><a class="brnum" id="br51"></a>
+Yassa gatiṁ na jānanti,<br> Devā gandhabbamānusā;
+<br>Khīṇāsavaṁ arahantaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">645</span><a class="brnum" id="br52"></a>
+Yassa pure ca pacchā ca,<br> Majjhe ca natthi kiñcanaṁ;
+<br>Akiñcanaṁ anādānaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">646</span><a class="brnum" id="br53"></a>
+Usabhaṁ pavaraṁ vīraṁ,<br> Mahesiṁ vijitāvinaṁ;
+<br>Anejaṁ nhātakaṁ buddhaṁ,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">647</span><a class="brnum" id="br54"></a>
+Pubbenivāsaṁ yo vedi,<br> Saggāpāyañca passati;
+<br>Atho jātikkhayaṁ patto,
+<br>Tamahaṁ brūmi brāhmaṇaṁ.</p>
+
+<p><span class="parno">648</span><a class="brnum" id="br55"></a>
+Samaññā hesā lokasmiṁ,<br> Nāmagottaṁ pakappitaṁ;
+<br>Sammuccā samudāgataṁ,
+<br>Tattha tattha pakappitaṁ.</p>
+
+<p><span class="parno">649</span><a class="brnum" id="br56"></a>
+Dīgharattamanusayitaṁ,<br> Diṭṭhigatamajānataṁ;
+<br>Ajānantā no pabruvanti,
+<br>Jātiyā hoti brāhmaṇo.</p>
+
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">650</span><a class="brnum" id="br57"></a>
+Na jaccā brāhmaṇo hoti,<br> Na jaccā hoti abrāhmaṇo;
+<br>Kammunā brāhmaṇo hoti,
+<br>Kammunā hoti abrāhmaṇo.</p>
+
+<p><span class="parno">651</span><a class="brnum" id="br58"></a>
+Kassako kammunā hoti,<br> Sippiko hoti kammunā;
+<br>Vāṇijo kammunā hoti,
+<br>Pessiko hoti kammunā.</p>
+
+<p><span class="parno">652</span><a class="brnum" id="br59"></a>
+Coropi kammunā hoti,<br> Yodhājīvopi kammunā;
+<br>Yājako kammunā hoti,
+<br>Rājāpi hoti kammunā.</p>
+
+<p><span class="parno">653</span><a class="brnum" id="br60"></a>
+Evametaṁ yathābhūtaṁ,<br> Kammaṁ passanti paṇḍitā;
+<br>Paṭiccasamuppādadassā,
+<br>Kammavipākakovidā.</p>
+
+<p><span class="parno">654</span><a class="brnum" id="br61"></a>
+Kammunā vattati loko,<br> Kammunā vattati pajā;
+<br>Kammanibandhanā sattā,
+<br>Rathassāṇīva yāyato.</p>
+
+<p><span class="parno">655</span><a class="brnum" id="br62"></a>
+Tapena brahmacariyena,<br> Saṁyamena damena ca;
+<br>Etena brāhmaṇo hoti,
+<br>Etaṁ brāhmaṇamuttamaṁ.</p>
+
+<p><span class="parno">656</span>Tīhi vijjāhi sampanno,<br> santo khīṇapunabbhavo;
+<br>Evaṁ vāseṭṭha jānāhi,
+<br>brahmā sakko vijānatan"ti.</p>
+</div>
+
+<hr>
+<p>Evaṁ vutte, vāseṭṭhabhāradvājā māṇavā bhagavantaṁ etadavocuṁ:  "abhikkantaṁ, bho gotama … pe … upāsake no bhavaṁ gotamo dhāretu ajjatagge pāṇupete saraṇaṁ gate"ti.</p>
+<p class="endsection">Vāseṭṭhasuttaṁ navamaṁ.</p>
+
+</div>
+</section>
+<div id="nextprev"><a id="previous-sutta" href="../snp/snp3.8.html#content"></a><a id="next-sutta" href="../snp/snp3.10.html#content"></a></div>
+</div><!--content-->
+<footer>
+<div id="breadcrumbs">
+<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp3.html">Chapter 3: The Great Chapter</a>3:9 To Vāseṭṭha on Who is a Brahmin
+</div>
+	
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+
+</div>
+  
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

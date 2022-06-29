@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Vinaya - Khandhaka&nbsp;7</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small pressed">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+<h2>Vinaya Pitaka - Monastic Rules</h2>
+ 
+ 	<div class="subnav6"> <!-- Div for sub-navigation -->
+ 		<a href="../vi/kd.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile w3-yellow">Bhikkhu<br>Khandaka</a>
+ 		<a href="../vi/bu-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Vibhanga</a>
+ 		<a href="../vi/bu-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhunī<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhuni<br>Vibhanga</a>
+ 		<a href="../bmc/bmc.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Buddhist<br>Monastic Code</a>
+ 	</div>	<!-- End div for sub-navigation -->
+ 
+ <div id="content">
+
+
+<p>&nbsp;</p>
+
+<h2>Khandhaka <span class="add">and Mahāvagga</span> 7 - The Kaṭhina</h2>
+
+<div id="metaarea">
+ 	<ul class="translator">
+ 		<li>©&nbsp;Translated from the Pali by I.B. Horner and Bhikkhu Brahmali&nbsp; &nbsp;<a href="../home/copyright.html#hornerbrahmali">(More copyright information)</a></li>
+ 	</ul>
+ </div>
+
+ <section class="raw_sutta">
+ <div lang="en">
+
+<p id="p1"><span class="parno">1</span>At that time the awakened one, the Lord was staying at Sāvatthī in the Jeta Grove in Anāthapiṇḍika’s monastery. Now at that time as many as thirty monks of Pāvā, all forest-dwellers, all almsmen, all wearers of rag-robes, all wearers of the three robes, going to Sāvatthī so as to see the Lord when the beginning of the rains was approaching, were unable to reach Sāvatthī for the beginning of the rains; they entered upon the rains on the way, at Sāketa. They spent the rains in a state of longing, thinking: "The Lord is staying close to us, six <i>yojanas</i> from here, but we are not getting a chance to see the Lord."</p>
+
+<p>Then these monks having, after the lapse of three months, kept the rains, after the Invitation had been carried out, while the god was raining, while waters were gathering, while swamps were forming, with drenched robes and in a state of weariness approached Sāvatthī, the Jeta Grove, Anāthapiṇḍika’s monastery, the Lord; having approached, having greeted the Lord, they sat down at a respectful distance.</p>
+
+<p>Now it is the custom for awakened ones, for Lords to exchange friendly greetings with in-coming monks.</p>
+
+<hr>
+<p id="p2"><span class="parno">2</span>So the Lord spoke thus to these monks:</p>
+
+<p>"I hope, monks, that things went well with you, I hope you had enough to support life, I hope that, in unity, being on friendly terms and harmonious, you spent a comfortable rainy season and did not go short of almsfood?"</p>
+
+<p>"Things did go well with us, Lord, we had enough to support life, Lord, and in unity we, Lord, being on friendly terms and harmonious, spent the rainy season and did not go short of almsfood. Here are we, Lord, as many as thirty monks of Pāvā, coming to Sāvatthī so as to see the Lord, (but) when the beginning of the rains was approaching, we were unable to reach Sāvatthī for the beginning of the rains; we entered on the rains on the way, at Sāketa. We spent the rains, Lord, in a state of longing for you, thinking: ‘The Lord is staying close to us, six <i>yojanas</i> from here, but we are not getting a chance to see the Lord.’ Then we, Lord, having, after the lapse of three months, kept the rains, and after the Invitation had been carried out, while the god was raining, while waters were gathering, while swamps were forming, with drenched robes and in a state of weariness came along on the journey."</p>
+
+<p id="p3"><span class="parno">3</span>Then the Lord, on this occasion, having given dhamma-talk addressed the monks, saying:</p>
+
+<p>"<span class="allowance">I allow you, monks, to make up <i>kaṭhina</i>-cloth when monks have completed the rains. Five (things) will be allowable to you, monks, when the kaṭhina-cloths have been made up: going (to families for alms) without having asked for permission, walking (for alms) not taking the three robes, a group-meal, as many robes as you require, and whatever robe-material accrues there, that will be for them. These five (things) will be allowable to you, monks, when the kaṭhina-cloths have been made.</span> And thus, monks, should kaṭhina-cloth be made:</p>
+
+<hr>
+<p>"The Order should be informed by an experienced, competent monk, saying:</p>
+
+<p id="p4"><span class="parno">4</span>‘<span class="kamma">Honoured sirs, let the Order listen to me. This material for kaṭhina-cloth has accrued to the Order. If it seems right to the Order, the Order should give this material for kaṭhina-cloth to the monk so and so for making kaṭhina-cloth. This is the motion.</span></p>
+
+<p id="p5"><span class="parno">5</span>Honoured sirs, let the Order listen to me. This material for kaṭhina-cloth has accrued to the Order. The Order is giving this material for kaṭhina-cloth to the monk so and so for making kaṭhina-cloth. If the giving of this material for kaṭhina-cloth to the monk so and so for making kaṭhina-cloth is pleasing to the venerable ones, let them be silent. He to whom it is not pleasing should speak.</p>
+
+<hr>
+<p id="p6"><span class="parno">6</span>This material for kaṭhina-cloth is given by the Order to the monk so and so for making kathiṇa-cloth. It is pleasing to the Order, therefore they are silent. Thus do I understand this.’</p>
+
+<p id="p7"><span class="parno">7</span>"Monks, kaṭhina-cloth becomes made thus, not made thus. And how, monks, does kaṭhina-cloth become not made? kaṭhina-cloth does not become made only by marking it, kaṭhina-cloth does not become made only by washing it; kaṭhina-cloth does not become made only by calculating (the number of) robes (that it will make); kaṭhina-cloth does not become made only by cutting it; kaṭhina-cloth does not become made only by tacking it; kaṭhina-cloth does not become made only by making the lengths; kaṭhina-cloth does not become made only by marking with a piece of cloth; kaṭhina-cloth does not become made only by strengthening the work; kaṭhina-cloth does not become made only by making a braiding; kaṭhina-cloth does not become made only by making a binding;
+
+kaṭhina-cloth does not become made only by patching; kaṭhina-cloth does not become made only by dyeing the garment; kaṭhina-cloth does not become made by insinuation; kaṭhina-cloth does not become made by roundabout talking; kaṭhina-cloth does not become made by its being temporary; kaṭhina-cloth does not become made by postponement; kaṭhina-cloth does not become made if it has to be abandoned; kaṭhina-cloth does not become made if it is not made allowable; kaṭhina-cloth does not become made if it is (made) except for the outer cloak;kaṭhina-cloth does not become made if it is (made) except for the upper robe; kaṭhina-cloth does not become made if it is (made) except for the inner robe; kaṭhina-cloth does not become made unless five parts or more than five parts (of kaṭhina-cloth) are cut out, are hemmed together on that same day; kaṭhina-cloth does not become made unless the making is by an individual. And even if kaṭhina-cloth comes to be quite properly made, but if no one gives thanks for it standing outside the boundary, thus also kaṭhina-cloth comes to be not made. And thus, monks, does kaṭhina-cloth come to be not made.</p>
+
+<p id="p8"><span class="parno">8</span>"And how, monks, does kaṭhina-cloth come to be made? kaṭhina-cloth comes to be made when it is unsoiled; kaṭhina-cloth comes to be made when what is allowable is unsoiled; kaṭhina-cloth comes to be made when it is (made) out of pieces of cloth; kaṭhina-cloth comes to be made when it is (made) out of rag-robes; kaṭhina-cloth comes to be made when it is (made) out of (bits picked up near) a shop; kaṭhina-cloth comes to be made if there is no insinuation; kaṭhina-cloth comes to be made if there is no roundabout talking; kaṭhina-cloth comes to be made if it is not temporary; kaṭhina-cloth comes to be made if there is no postponement; kaṭhina-cloth comes to be made if it has not to be abandoned; kaṭhina-cloth comes to be made if it is made allowable; kaṭhina-cloth comes to be made if there is the outer cloak; kaṭhina-cloth comes to be made if there is the upper robe; kaṭhina-cloth comes to be made if there is the inner robe; kaṭhina-cloth comes to be made if five parts or more than five parts are cut out, are hemmed together on that same day; kaṭhina-cloth comes to be made if the making is by an individual. And if kaṭhina-cloth comes to be quite properly made, and if one gives thanks for it standing on the boundary, kaṭhina-cloth thus also comes to be made. And thus, monks, does kaṭhina-cloth come to be made.</p>
+
+<p id="p9"><span class="parno">9</span>"And how, monks, do the kaṭhina (privileges) become removed? Monks, there are these eight grounds for the removal of the kaṭhina (privileges): that depending on (a monk) going away; that depending on (his robe) being settled; that depending on his resolves (not to have it made up and not to come back); that depending on (the robe) being lost; that depending on his hearing (of the general removal of the privileges in the residence to which he has gone); (that depending on) the disappointment of his expectation (that a special gift of a robe would be made to him); that depending on his having crossed the boundary; (that depending on) the removal (of the kaṭhina privileges) together with (those of the other monks)".</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p10"><span class="parno">10</span>"A monk, after kaṭhina-cloth has been made, taking a robe that is made up, goes away, thinking: "I will not come back". That monk’s kaṭhina (privileges) are removed because of his going away.</p>
+
+<p id="p11"><span class="parno">11</span>A monk, after kaṭhina-cloth has been made, taking robe-material goes away. When he has gone outside the boundary, it occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<p id="p12"><span class="parno">12</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away. When he has gone outside the boundary it occurs to him: "I will not get this robe-material made up nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p13"><span class="parno">13</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away. When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe-material) being lost.</p>
+
+<p id="p14"><span class="parno">14</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe has been made up, he hears:
+
+ "The kaṭhina (privileges) are removed in this residence." That monk’s kaṭhina (privileges) are removed because of his hearing (this news).</p>
+
+<p id="p15"><span class="parno">15</span>A monk, after kaṭhina-cloth has been made, taking robe material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe has been made up, he, thinking again and again, "I will come back", spends the time outside (the boundary) until the kaṭhina (privileges) are removed. That monk’s kaṭhina (privileges) are removed because of his having crossed the boundary.</p>
+
+<p id="p16"><span class="parno">16</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe is made up, he, thinking again and again, "I will come back", (his return) coincides with the removal of the kaṭhina (privileges). That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<p class="endsutta"><span class="parno">17</span>Told are the seven cases on Taking.</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">18–24</span>A monk, after kaṭhina-cloth has been made, taking with him a robe that is made up, goes away, thinking, "I will not come back". That monk’s kaṭhina (privileges) are removed because of his going away …</p>
+
+<hr>
+<p class="endsutta"><span class="parno">25</span>Told are the seven cases on Taking with him.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p26"><span class="parno">26</span>A monk, after kaṭhina-cloth has been made, taking a robe that is imperfectly executed, goes away. When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina, (privileges) are removed because of (his robe) being settled.</p>
+
+<p id="p27"><span class="parno">27</span>"A monk, after kaṭhina-cloth has been made, taking a robe that is imperfectly executed, goes away, thinking: "I will not come back". That monk’s kaṭhina (privileges) are removed because of his going away.</p>
+
+<p id="p28"><span class="parno">28</span>A monk, after kaṭhina-cloth has been made, taking robe-material that is imperfectly executed, goes away. When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe-material) being lost.</p>
+
+<hr>
+<p id="p29"><span class="parno">29</span>A monk, after kaṭhina-cloth has been made, taking robe-material that is imperfectly executed, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe has been made up, he hears: "The kaṭhina (privileges) are removed in this residence." That monk’s kaṭhina (privileges) are removed because of his hearing (this news).</p>
+
+<p id="p30"><span class="parno">30</span>A monk, after kaṭhina-cloth has been made, taking robe material that is imperfectly executed, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe has been made up, he, thinking again and again, "I will come back", spends the time outside (the boundary) until the kaṭhina (privileges) are removed. That monk’s kaṭhina (privileges) are removed because of his having crossed the boundary.</p>
+
+<p id="p31"><span class="parno">31</span>A monk, after kaṭhina-cloth has been made, taking robe-material that is imperfectly executed, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up; when that robe is made up, he, thinking again and again, "I will come back", (his return) coincides with the removal of the kaṭhina (privileges). That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">32</span>Told are the six cases on Taking</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">33–37</span>A monk, after kaṭhina-cloth has been made, taking with him a robe that is imperfectly executed, goes away. When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled …</p>
+
+<hr>
+<p id="p38"><span class="parno">38</span>… That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">39</span>The six cases on Taking with him</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">40–43</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away. When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled …</p><hr>
+<p><span class="parno">44–47</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will not come back". When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled.</p>
+
+<hr>
+<p><span class="parno">48–51</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will not come back". When he has gone outside the boundary it occurs to him, "I will not get this robe-material made up". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p><span class="parno">52–58</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will not come back". When he has gone outside the boundary it occurs, to him, "I will get this robe-material made up here", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe) being lost.</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">59–62</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away without having determined, for it neither occurs to him that "I will come back" nor does it occur to him that "I will not come back". When he has gone outside the boundary it occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled.</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">63–66</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away without having determined, for it neither occurs to him that "I will come back", nor does it occur to him that "I will not come back". When he has gone outside the boundary, it occurs to him: "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p><span class="parno">67–70</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away without having determined, for it neither occurs to him that "I will come back", nor does it occur to him that "I will not come back". When he has gone outside the boundary it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up; but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<hr>
+<p><span class="parno">71–74</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary it occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p75"><span class="parno">75</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary it occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p76"><span class="parno">76</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back." When he has gone outside the boundary it occurs to him, "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p77"><span class="parno">77</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up. When that robe is made up he hears, "The kaṭhina (privileges) are removed in this residence." That monk’s kaṭhina (privileges) are removed because of his hearing this news.</p>
+
+<p id="p78"><span class="parno">78</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up. When that robe is made up, he, thinking again and again, "I will come back," spends the time outside (the boundary) until the kaṭhina (privileges) are removed. That monk’s kaṭhina (privileges) are removed because of his having crossed the boundary.</p>
+
+<p id="p79"><span class="parno">79</span>A monk, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will come back". When he has gone outside the boundary he gets that robe-material made up. When that robe is made up, he, thinking again and again, "I will come back,"
+
+ (his return) coincides with the removal of the kaṭhina (privileges). That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<p id="p80"><span class="parno">80</span>A monk, after kaṭhina-cloth has been made, taking with him robe-material, goes away … it should be given in full thus, like the portion on "going away, taking" … A monk, after kaṭhina-cloth is made, taking a robe that is imperfectly executed, goes away … it should be given in full thus, like the portion on "going away, taking with him" … A monk, after kaṭhina-cloth is made, taking with him a robe that is imperfectly executed, goes away … taking with him a robe that is imperfectly executed … That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">81</span>Told is the Portion for Repeating on Taking</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p82"><span class="parno">82</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe. When he has gone outside the boundary he attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation. It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled.</p>
+
+<hr>
+<p id="p83"><span class="parno">83</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe … It occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p84"><span class="parno">84</span>A monk, after kaṭhina-cloth has been made … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe) being lost.</p>
+
+<p id="p85"><span class="parno">85</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe. When he has gone outside the boundary, it occurs to him, "I will attend to this expectation of a robe here, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p id="p86"><span class="parno">86</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will not come back". When he has gone outside the boundary he attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation. It occurs to him, "I will get this robe-material made up here", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p87"><span class="parno">87</span>A monk, after kaṭhina-cloth has been made … It occurs to him, "I will not get this robe-material made up". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p88"><span class="parno">88</span>A monk, after kaṭhina-cloth has been made … It occurs to him, "I will get this robe-material made up here", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe) being lost.</p>
+
+<p id="p89"><span class="parno">89</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will not come back". When he has gone outside the boundary, it occurs to him, "I will attend to this expectation of a robe here", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p id="p90"><span class="parno">90</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, (but) without having determined, for it neither occurs to him, "I will come back", nor does it occur to him, "I will not come back". When he has gone outside the boundary he attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation. It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled.</p>
+
+<hr>
+<p id="p91"><span class="parno">91</span>A monk, after kaṭhina-cloth has been made … It occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p92"><span class="parno">92</span>A monk, after kaṭhina-cloth has been made … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (the robe) being lost.</p>
+
+<hr>
+<p id="p93"><span class="parno">93</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, (but) without having determined, for it neither occurs to him, "I will come back", nor does it occur to him, "I will not come back". When he has gone outside the boundary, it occurs to him, "I will attend to this expectation of a robe here, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p class="endsutta"><span class="parno">94</span>Told are the twelve cases on Contrary to Expectation.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p95"><span class="parno">95</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary he attends to that expectation of a robe; he obtains one in accordance with his expectation, he does not obtain one contrary to his expectation. It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p96"><span class="parno">96</span>A monk … It occurs to him, "I will not have this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p97"><span class="parno">97</span>A monk … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p98"><span class="parno">98</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary it occurs to him, "I will attend to this expectation of a robe here, I will not come back and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<hr>
+<p id="p99"><span class="parno">99</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary he hears that "In this residence the kaṭhina (privileges) are removed". It occurs to him, "Inasmuch as in this residence the kaṭhina (privileges) are removed, I will attend to this expectation of a robe here", and he attends to that expectation of a robe; he obtains one in accordance with his expectation, he does not obtain one contrary to his expectation. It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p100"><span class="parno">100</span>A monk … It occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p101"><span class="parno">101</span>A monk … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<hr>
+<p id="p102"><span class="parno">102</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back" … It occurs to him, "I will attend to this expectation of a robe here, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p id="p103"><span class="parno">103</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary he attends to that expectation of a robe; he obtains one in accordance with his expectation, he does not obtain one contrary to his expectation. He gets that robe-material made up; when that robe is made up, he hears, "The kaṭhina (privileges) are removed in this residence". That monk’s kaṭhina (privileges) are removed because of his hearing (this news).</p>
+
+<p id="p104"><span class="parno">104</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary, it occurs to him, "I will attend to this expectation of a robe, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p id="p105"><span class="parno">105</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary, he attends to that expectation of a robe; he obtains one in accordance with his expectation, he does not obtain one contrary to his expectation. He gets that robe-material made up; when that robe is made up, he, thinking again and again, "I will come back", spends the time outside (the boundary) until the kaṭhina (privileges) are removed. That monk’s kaṭhina (privileges) are removed because of his having crossed the boundary.</p>
+
+<hr>
+<p id="p106"><span class="parno">106</span>A monk, after kaṭhina-cloth has been made, goes away with the expectation of a robe, thinking, "I will come back". When he has gone outside the boundary he attends to that expectation of a robe; he obtains one in accordance with his expectation, he does not obtain one contrary to his expectation. He gets that robe-material made up; when that robe is made up, he, thinking again and again, "I will come back", (his return) coincides with the removal of the kaṭhina (privileges). That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<p class="endsutta"><span class="parno">107</span>Told are the twelve cases on In accordance with Expectation</p>
+
+<h4>&nbsp;</h4>
+
+S<p id="p108"><span class="parno">108</span>A monk, after kaṭhina-cloth has been made, goes away on some business. When he has gone outside the boundary there arises the expectation of a robe. He attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robe) being settled.</p>
+
+<hr>
+<p id="p109"><span class="parno">109</span>A monk … It occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p110"><span class="parno">110</span>A monk … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<hr>
+<p id="p111"><span class="parno">111</span>A monk, after kaṭhina-cloth has been made, goes away on some business. When he has gone outside the boundary there arises the expectation of a robe. It occurs to him, "I will attend to this expectation of a robe here, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p id="p112"><span class="parno">112</span>A monk, after kaṭhina-cloth has been made, goes away on some business, thinking, "I will not come back". When he has gone outside the boundary there arises the expectation of a robe. He attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation. It occurs to him, "I will get this robe-material made up here", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p113"><span class="parno">113</span>A monk … It occurs to him, "I will not get this robe-material made up". That monk’s kaṭhina (privileges) are removed because of his resolve.</p>
+
+<hr>
+<p id="p114"><span class="parno">114</span>A monk … It occurs to him, "I will get this robe-material made up here", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p115"><span class="parno">115</span>A monk, after kaṭhina-cloth has been made, goes away on some business, thinking, "I will not come back". When he has gone outside the boundary there arises the expectation of a robe. It occurs to him, "I will attend to this expectation of a robe here", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<hr>
+<p id="p116"><span class="parno">116</span>A monk, after kaṭhina-cloth has been made, goes away on some business, (but) without having determined, for it neither occurs to him, "I will come back", nor does it occur to him, "I will not come back". When he has gone outside the boundary there arises the expectation of a robe. He attends to that expectation of a robe; he obtains one contrary to his expectation, he does not obtain one in accordance with his expectation. It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p117"><span class="parno">117</span>A monk … It occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p118"><span class="parno">118</span>A monk … It occurs to him, "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p119"><span class="parno">119</span>A monk, after kaṭhina-cloth has been made, goes away on some business, (but) without having determined, for it neither occurs to him, "I will come back", nor does it occur to him, "I will not come back". When he has gone back outside the boundary there arises the expectation of a robe. It occurs to him, "I will attend to this expectation of a robe here, I will not come back", and he attends to that expectation of a robe, but that expectation of a robe is disappointed for him. That monk’s kaṭhina (privileges) are removed because of the disappointment of his expectation.</p>
+
+<p class="endsutta"><span class="parno">120</span>Told are the twelve cases on Business.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p121"><span class="parno">121</span>A monk, after kaṭhina-cloth has been made, goes away, travelling to distant parts, without collecting his share of the robe-material. While he is thus travelling to distant parts, monks ask him, "Where have you, your reverence, spent the rains, and where is your share of the robe-material?"</p>
+
+<p>He speaks thus, "I spent the rains in such and such a residence, and my share of the robe-material is there."</p>
+
+<p>These speak thus, "Go, your reverence, fetch that robe-material. We will make up that robe-material for you here."</p>
+
+<p>He, going to that residence, asks the monks: "Where, your reverences, is my-share of the robe-material?"</p>
+
+<p>These speak thus: "This, your reverence, is your share of the robe-material. Where are you going?"</p>
+
+<p>He speaks thus: "I am going to such and such a residence. The monks will make up the robe-material for me there."</p>
+
+<p>These speak thus: "No, your reverence, do not go; we will make up the robe-material for you here."</p>
+
+<p>It occurs to him: "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p122"><span class="parno">122</span>A monk … That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p123"><span class="parno">123</span>A monk … That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<hr>
+<p id="p124"><span class="parno">124</span>A monk, after kaṭhina-cloth has been made, goes away, travelling to distant parts without collecting his share of the robe-material …</p>
+
+<hr>
+<p>"This, your reverence, is your share of the robe-material."</p>
+
+<p>He, taking that robe-material, goes to that residence. On the way (some) monks ask him: "Your reverence, where are you going?"</p>
+
+<p>He speaks thus: "I am going to such and such a residence. The monks will make up the robe-material for me there."</p>
+
+<p>These speak thus: "No, your reverence, do not go; we will make up the robe-material for you here."</p>
+
+<p>It occurs to him: "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p125"><span class="parno">125</span>A monk … It occurs to him: "I will not get this robe-material made up, nor will I come back." That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p126"><span class="parno">126</span>A monk … It occurs to him: "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p127"><span class="parno">127</span>A monk, after kaṭhina-cloth has been made, goes away, travelling to distant parts without collecting his share of the robe-material …</p>
+
+<hr>
+<p>"This, your reverence, is your share of the robe-material."</p>
+
+<p>He, taking the robe-material, goes to that residence; while he is going to that residence, it occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<hr>
+<p id="p128"><span class="parno">128</span>A monk … It occurs to him: "I will not get this robe-material made up, nor will I come back." That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<p id="p129"><span class="parno">129</span>A monk … It occurs to him: "I will get this robe-material made up here, I will not come back", and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p class="endsutta"><span class="parno">130</span>Told are the nine cases on Without collecting.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p131"><span class="parno">131</span>A monk, one who lives in comfort, after kaṭhina-cloth has been made, taking robe-material, goes away, thinking, "I will go to such and such a residence; if there comes to be comfort for me there, I will stay, but if there does not come to be comfort for me, I will go to such and such a residence; if there comes to be comfort for me there, I will stay, but if there does not come to be comfort for me, I will go to such and such a residence; if there comes to be comfort for me there, I will stay, but if there does not come to be comfort for me, I will come back". When he has gone outside the boundary, it occurs to him: "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up. That monk’s kaṭhina (privileges) are removed because of (his robes) being settled.</p>
+
+<p id="p132"><span class="parno">132</span>A monk … When he has gone outside the boundary, it occurs to him, "I will not get this robe-material made up, nor will I come back". That monk’s kaṭhina (privileges) are removed because of his resolves.</p>
+
+<hr>
+<p id="p133"><span class="parno">133</span>A monk … When he has gone outside the boundary, it occurs to him: "I will get this robe-material made up here, I will not come back," and he gets that robe-material made up, but while that robe-material is being made up, it is lost. That monk’s kaṭhina (privileges) are removed because of (his robe) being lost.</p>
+
+<p id="p134"><span class="parno">134</span>A monk … When he has gone outside the boundary, he has that robe-material made up; when that robe-material is made up, he, thinking again and again, "I will come back", spends the time outside (the boundary) until the kaṭhina (privileges) are removed. That monk’s kaṭhina (privileges) are removed because of his having crossed the boundary.</p>
+
+<hr>
+<p id="p135"><span class="parno">135</span>A monk … When he has gone outside the boundary, he has that robe-material made up; when that robe-material is made up, he, thinking again and again, "I will come back (his return) coincides with the removal of the
+kaṭhina (privileges). That monk’s kaṭhina (privileges) are removed together with (those of the other) monks.</p>
+
+<p class="endsutta"><span class="parno">136</span>Told are the five cases on Living in comfort.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p137"><span class="parno">137</span>"Monks, there are these two impediments, these two non-impediments to (the removal of) the kaṭhina (privileges). And what, monks, are the two impediments to (the removal of) the kaṭhina (privileges)? The residence-impediment and the robes-impediment. And how, monks, does the residence-impediment come to be? Monks, in this case a monk who is either staying in or who is longing for that residence, goes away, thinking, ‘I will come back’. Thus, monks, does the residence-impediment come to be. And how, monks, does the robes-impediment come to be? Monks, in this case, a monk’s robe-material comes to be not made up or it is imperfectly executed or the expectation of a robe is not fulfilled. Thus, monks, does the robes-impediment come to be. Monks, these are the two impediments to (the removal of) the kaṭhina (privileges).</p>
+
+<p id="p138"><span class="parno">138</span>"And what, monks, are the two non-impediments to (the removal of) the kaṭhina (privileges)? The residence-non-impediment and the robes-non-impediment. And how, monks, does the residence-non-impediment come to be? In this case, monks, a monk goes away from that residence because of giving up, because of renunciation, because of sacrifice, because of indifference, thinking, ‘I will not come back’. Thus, monks, does the residence-non-impediment come to be. And how, monks, does the robes-non-impediment come to be? In this case, monks, a monk’s robe-material comes to be made up or it is lost or destroyed or burnt or the expectation of a robe is disappointed. Thus, monks, does the robes-non-impediment come to be. These, monks, are the two non-impediments to (the removal of) the kaṭhina (privileges)."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">139</span>The Section on kaṭhina: the Seventh.</p>
+
+<p id="p140"><span class="parno">140</span>In this Section are twelve items, the words of abridgement are one hundred and eighteen. This is its key:</p>
+
+<p id="p141" class="verse"><span class="parno">141</span>Thirty monks of Pāvā stayed longing in Sāketa,
+<br>at the end of the rains they went
+<br>with drenched (robes) to see the Conqueror.</p>
+
+<p id="p142" class="verse"><span class="parno">142</span>This item of kaṭhina-cloth, and the five things called allowable:
+<br>Without asking permission, nor taking three robes,
+<br>a joint-meal likewise,</p>
+
+<p id="p143" class="verse"><span class="parno">143</span>As much as is required, and one that accrues will be for the makers.
+<br>The motion, and just what is made and just what is not made.</p>
+
+<p id="p144" class="verse"><span class="parno">144</span>Marking, washing, and calculating, and cutting, tacking,
+<br>making lengths, using a piece of cloth, and strengthening, braiding,</p>
+
+
+<p id="p145" class="verse"><span class="parno">145</span>Binding, patching, dyeing, talk with hints, temporary,
+<br>postponement, abandonment,
+<br>not (made) if it is not allowable, but for these three,</p>
+
+<hr>
+<p id="p146" class="verse"><span class="parno">146</span>Unless five parts or more when they are cut out are hemmed together,
+<br>not (made) unless by an individual,
+<br>if properly (made) he gives thanks standing outside the boundary:</p>
+
+<p id="p147" class="verse"><span class="parno">147</span>kaṭhina-cloth comes to be not made,
+<br>thus it is taught by the awakened one.
+<br>Unsoiled, when what is allowable (is unsoiled),
+<br>pieces of cloth, rags, and bits near a shop,</p>
+
+<p id="p148" class="verse"><span class="parno">148</span>Not insinuation, nor roundabout talking,
+<br>not temporary and no postponement,
+<br>not abandoned, made allowable,
+<br>and inasmuch as it is for (a set of) three robes,</p>
+
+<p id="p149" class="verse"><span class="parno">149</span>If five parts or more are cut out and hemmed together,
+<br>if the making is by an individual,
+<br>if properly (made) he gives thanks standing on the boundary:</p>
+
+<p id="p150" class="verse"><span class="parno">150</span>Thus the making of kaṭhina-cloth.
+<br>Eight grounds for removal:
+<br>that depending on going away,
+<br>on being settled, on resolve and on loss,
+<br>On hearing, on disappointment of an expectation,</p>
+
+<hr>
+<p id="p151" class="verse"><span class="parno">151</span>over the boundary,
+<br>and the eighth is with the removal (of other monks’).
+<br>Taking a robe that is made up, he goes away, thinking,
+<br>"I will not come back",</p>
+
+<p id="p152" class="verse"><span class="parno">152</span>His kaṭhina (privileges) become removed
+<br>because of his going away.
+<br>Taking robe-material he goes away, when he is outside the boundary, he thinks,</p>
+
+<p id="p153" class="verse"><span class="parno">153</span>"I will have it made up here,
+<br>I will not come back";<br>
+his kaṭhina (privileges) are removed<br>
+because of (his robes) being settled.<br>
+Taking it, when he is outside the boundary, he intends,</p>
+
+<p id="p154" class="verse"><span class="parno">154</span>thinking, "Neither that nor will I come back",
+<br>His kaṭhina (privileges) become removed depending on that of resolve.</p>
+
+<p id="p155" class="verse"><span class="parno">155</span>Taking robe-material he goes away, when he is outside the boundary, he thinks,
+<br>"I will have it made up here, I will not come back," but while it is being made up, it is lost;
+<br>his kaṭhina (privileges) become removed depending on that of loss.</p>
+
+<hr>
+<p id="p156" class="verse"><span class="parno">156</span>Taking it, he goes away, thinking, "I will come back",
+<br>and has the robe-material made up outside,
+<br>when the robe has been made up,
+<br>he hears that the kaṭhina (privileges) are removed there;</p>
+
+<p id="p157" class="verse"><span class="parno">157</span>His kaṭhina (privileges) become removed
+<br>depending on that of hearing.
+<br>Taking it, be goes away, thinking, "I will come back",
+<br>and has the robe-material made up outside,</p>
+
+<p id="p158" class="verse"><span class="parno">158</span>When the robe has been made up, (staying) outside
+<br>he does not go back
+<br>until the removal of the kaṭhina (privileges);
+<br>his kaṭhina (privileges) become removed
+<br>depending on that of having crossed the
+boundary.</p>
+
+<p id="p159" class="verse"><span class="parno">159</span>Taking it, he goes away, thinking, "I will come back",
+<br>and has the robe-material made up outside,
+<br>when the robe has been made up,</p>
+
+<hr>
+<p id="p160" class="verse"><span class="parno">160</span>thinking, "I will come back",
+<br>(his return) coincides with
+the removal of the kaṭhina (privileges);
+<br>The removal of his kaṭhina (privileges) is because it occurs with (that of) the other monks.</p>
+
+<p id="p161" class="verse"><span class="parno">161</span>Taking and taking with him, the going away is seven times sevenfold.
+<br>There is no sixfold going away,
+<br>(the robes) imperfectly executed depending on "going away".</p>
+
+<p id="p162" class="verse"><span class="parno">162</span>Taking it, this arises, "I will have it made up
+<br>when I am outside the boundary";
+<br>Settled and resolves and loss, these three.
+<br>Taking it, thinking, "I will not come back",
+<br>"I am making it up outside the boundary";</p>
+
+<p id="p163" class="verse"><span class="parno">163</span>Settled, then resolves, then loss, this is three (fold).
+<br>Without having determined, for it does not (occur) to him,
+<br>the threefold meaning below.</p>
+
+<hr>
+<p id="p164" class="verse"><span class="parno">164</span>Taking it, he goes away, thinking, "I will come back",
+<br>"I am making it up outside the boundary",
+<br>thinking, "I will not come back", he gets it made up;</p>
+
+<p id="p165" class="verse"><span class="parno">165</span>his kaṭhina (privileges) are removed
+<br>because of (his robes) being settled.
+<br>Resolves and loss, hearing, having crossed the boundary,
+<br>it may arise with (those of the other) monks;
+<br>thus there is going away fifteen times.</p>
+
+<p id="p166" class="verse"><span class="parno">166</span>Taking with him, imperfectly executed,
+<br>taking it with him likewise again,
+<br>these are four turns where all is fifteen-fold.</p>
+
+<p id="p167" class="verse"><span class="parno">167</span>And contrary to expectation, in accordance with expectation,
+<br>and business, these three.
+<br>One should understand this from what has been said: there are three that are each twelve (-fold).</p>
+
+<p id="p168" class="verse"><span class="parno">168</span>Here are nine on "without collecting",
+<br>there is a set of five on comfort;
+<br>impediments, non-impediments;
+<br>the key is made from what has been said.</p>
+
+<hr>
+<p id="p169"><span class="parno">169</span><p id="p170"><span class="parno">170</span></div><!--End English-->
+
+<div lang="pi"><!--Pali-->
+
+<p><span class="parno">1</span><span class="ms">p_3V_1388, msdiv306</span>Tena samayena buddho bhagavā sāvatthiyaṁ viharati jetavane anāthap&shy;iṇḍikassa ārāme. Tena kho pana samayena tiṁsamattā pāveyyakā bhikkhū, sabbe āraññikā sabbe piṇḍapātikā sabbe paṁsukūlikā sabbe tecīvarikā sāvatthiṁ āgacchantā bhagavantaṁ dassanāya upakaṭṭhāya vassūpanāyikāya nāsakkhiṁsu sāvatthiyaṁ vassūpanāyikaṁ sambhāvetuṁ; antarāmagge sākete vassaṁ upagacchiṁsu. Te ukkaṇṭhitarūpā vassaṁ vasiṁsu — āsanneva no bhagavā viharati ito chasu yojanesu, na ca mayaṁ labhāma bhagavantaṁ dassanāyāti.</p>
+
+<p>Atha kho te bhikkhū vassaṁvuṭṭhā, temāsaccayena katāya pavāraṇāya, deve vassante, udakasangahe udakacikkhalle okapuṇṇehi cīvarehi kilantarūpā yena sāvatthi jetavanaṁ anāthap&shy;iṇḍikassa ārāmo, yena bhagavā tenupasankamiṁsu; upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu.</p>
+
+<p>Āciṇṇaṁ kho panetaṁ buddhānaṁ bhagavantānaṁ āgantukehi bhikkhūhi saddhiṁ paṭisammodituṁ.</p>
+
+<hr>
+<p><span class="parno">2</span><span class="ms">p_3V_1389</span>Atha kho bhagavā te bhikkhū etadavoca — </p>
+
+<p>"kacci, bhikkhave, khamanīyaṁ, kacci yāpanīyaṁ, kacci samaggā sammodamānā avivadamānā phāsukaṁ vassaṁ vasittha, na ca piṇḍakena kilamitthā"ti?</p>
+
+<p>"Khamanīyaṁ, bhagavā, yāpanīyaṁ, bhagavā; samaggā ca mayaṁ, bhante, sammodamānā avivadamānā vassaṁ vasimhā, na ca piṇḍakena kilamimhā. Idha mayaṁ, bhante, tiṁsamattā pāveyyakā bhikkhū sāvatthiṁ āgacchantā bhagavantaṁ dassanāya upakaṭṭhāya vassūpanāyikāya nāsakkhimhā sāvatthiyaṁ vassūpanāyikaṁ sambhāvetuṁ, antarāmagge sākete vassaṁ upagacchimhā. Te mayaṁ, bhante, ukkaṇṭhitarūpā vassaṁ vasimhā — ‘āsanneva no bhagavā viharati ito chasu yojanesu, na ca mayaṁ labhāma bhagavantaṁ dassanāyā’ti. Atha kho mayaṁ, bhante, vassaṁvuṭṭhā, temāsaccayena katāya pavāraṇāya, deve vassante, udakasangahe udakacikkhalle okapuṇṇehi cīvarehi kilantarūpā addhānaṁ
+āgatā"ti.</p>
+
+<p><span class="parno">3</span><span class="ms">p_3V_1390</span>Atha kho bhagavā etasmiṁ nidāne etasmiṁ pakaraṇe dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<p>"anujānāmi, bhikkhave, vassaṁvuṭṭhānaṁ bhikkhūnaṁ kaṭhinaṁ attharituṁ. Atthatakathinānaṁ vo, bhikkhave, pañca kappissanti — anāmantacāro, asamādānacāro, gaṇabhojanaṁ, yāvadatthacīvaraṁ, yo ca tattha cīvaruppādo so nesaṁ bhavissatīti. Atthatakathinānaṁ vo, bhikkhave, imāni pañca kappissanti.</p>
+
+<hr>
+<p>Evañca pana, bhikkhave, kaṭhinaṁ attharitabbaṁ. Byattena bhikkhunā paṭibalena saṇgho ñāpetabbo — </p>
+
+<p><span class="parno">4</span><span class="ms">p_3V_1391, msdiv307</span>‘Suṇātu me, bhante, saṇgho. Idaṁ saṇghassa kaṭhinadussaṁ uppannaṁ. Yadi saṇghassa pattakallaṁ, saṇgho imaṁ kaṭhinadussaṁ itthannāmassa bhikkhuno dadeyya kaṭhinaṁ attharituṁ. Esā ñatti.</p>
+
+<p><span class="parno">5</span><span class="ms">p_3V_1392</span>Suṇātu me, bhante, saṇgho. Idaṁ saṇghassa kaṭhinadussaṁ uppannaṁ. Saṇgho imaṁ kaṭhinadussaṁ itthannāmassa bhikkhuno deti kaṭhinaṁ attharituṁ. Yassāyasmato khamati imassa kaṭhinadussassa itthannāmassa bhikkhuno dānaṁ kaṭhinaṁ attharituṁ, so tuṇhassa; yassa nakkhamati, so bhāseyya.</p>
+
+<hr>
+<p><span class="parno">6</span><span class="ms">p_3V_1393</span>Dinnaṁ idaṁ saṇghena kaṭhinadussaṁ itthannāmassa bhikkhuno kaṭhinaṁ attharituṁ. Khamati saṇghassa, tasmā tuṇhī, evametaṁ dhārayāmī’ti.</p>
+
+<p><span class="parno">7</span><span class="ms">p_3V_1394, msdiv308</span>Evaṁ kho, bhikkhave, atthataṁ hoti kaṭhinaṁ, evaṁ anatthataṁ. Kathañca pana, bhikkhave, anatthataṁ hoti kaṭhinaṁ? Na ullikhitamattena atthataṁ hoti kaṭhinaṁ, na dhovanamattena atthataṁ hoti kaṭhinaṁ, na cīvaravicāraṇamattena atthataṁ hoti kaṭhinaṁ, na chedanamattena atthataṁ hoti kaṭhinaṁ, na bandhanamattena atthataṁ hoti kaṭhinaṁ, na ovaṭṭi&shy;yakaraṇamattena atthataṁ hoti kaṭhinaṁ, na kaṇḍusakaraṇamattena atthataṁ hoti kaṭhinaṁ, na daḷhīkammakaraṇamattena atthataṁ hoti kaṭhinaṁ, na anuvāta&shy;karaṇamattena atthataṁ hoti kaṭhinaṁ, na pari&shy;bhaṇḍakaraṇamattena atthataṁ hoti kaṭhinaṁ, na ovaddheyya&shy;karaṇamattena atthataṁ hoti kaṭhinaṁ, na kambalamaddanamattena atthataṁ hoti kaṭhinaṁ, na nimittakatena atthataṁ hoti kaṭhinaṁ, na pari&shy;kathākatena atthataṁ hoti kaṭhinaṁ, na kukkukatena atthataṁ hoti kaṭhinaṁ, na sannidhikatena atthataṁ hoti kaṭhinaṁ, na nissaggiyena atthataṁ hoti kaṭhinaṁ, na akappakatena atthataṁ hoti kaṭhinaṁ, na aññatra sanghāṭiyā atthataṁ hoti kaṭhinaṁ, na aññatra uttarāsangena atthataṁ hoti kaṭhinaṁ, na aññatra antaravāsakena atthataṁ hoti kaṭhinaṁ, na aññatra pañcakena vā atirekapañcakena vā tadaheva sañchinnena samaṇḍalīkatena atthataṁ hoti kaṭhinaṁ, na aññatra puggalassa atthārā atthataṁ hoti kaṭhinaṁ; sammā ce atthataṁ hoti kaṭhinaṁ, tañce nissīmaṭṭho anumodati, evampi anatthataṁ hoti kaṭhinaṁ. Evaṁ kho, bhikkhave, anatthataṁ hoti kaṭhinaṁ.</p>
+
+<p><span class="parno">8</span><span class="ms">p_3V_1395, msdiv309</span>Kathañca, bhikkhave, atthataṁ hoti kaṭhinaṁ? Ahatena atthataṁ hoti kaṭhinaṁ, ahatakappena atthataṁ hoti kaṭhinaṁ, pilotikāya atthataṁ hoti kaṭhinaṁ, paṁsukūlena atthataṁ hoti kaṭhinaṁ, pāpaṇikena atthataṁ hoti kaṭhinaṁ, animittakatena atthataṁ hoti kaṭhinaṁ, apari&shy;kathākatena atthataṁ hoti kaṭhinaṁ, akukkukatena atthataṁ hoti kaṭhinaṁ, asannidhikatena atthataṁ hoti kaṭhinaṁ, anissaggiyena atthataṁ hoti kaṭhinaṁ, kappakatena atthataṁ hoti kaṭhinaṁ, sanghāṭiyā atthataṁ hoti kaṭhinaṁ, uttarāsangena atthataṁ hoti kaṭhinaṁ, antaravāsakena atthataṁ hoti kaṭhinaṁ, pañcakena vā atirekapañcakena vā tadaheva sañchinnena samaṇḍalīkatena atthataṁ hoti kaṭhinaṁ, puggalassa atthārā atthataṁ hoti kaṭhinaṁ; sammā ce atthataṁ hoti kaṭhinaṁ, tañce sīmaṭṭho anumodati, evampi atthataṁ hoti kaṭhinaṁ. Evaṁ kho, bhikkhave, atthataṁ hoti kaṭhinaṁ.</p>
+
+<p><span class="parno">9</span><span class="ms">p_3V_1396, msdiv310</span>Kathañca, bhikkhave, ubbhataṁ hoti kaṭhinaṁ? Aṭṭhimā, bhikkhave, mātikā kaṭhinassa ubbhārāya — pakkamanantikā, niṭṭhānantikā, sanniṭṭhānantikā, nāsanantikā, savanantikā, āsāvacchedikā, sīmātikkantikā, sahubbhārā"ti.</p>
+
+<h4>2 Ādāyasattaka</h4>
+
+<p><span class="parno">10</span><span class="ms">p_3V_1397, msdiv311</span>Bhikkhu atthatakathino katacīvaraṁ ādāya pakkamati — "na paccessan"ti. Tassa bhikkhuno pakkamanantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">11</span><span class="ms">p_3V_1398</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">12</span><span class="ms">p_3V_1399</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">13</span><span class="ms">p_3V_1400</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">14</span><span class="ms">p_3V_1401</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (5)</p>
+
+<p><span class="parno">15</span><span class="ms">p_3V_1402</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti — bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (6)</p>
+
+<p><span class="parno">16</span><span class="ms">p_3V_1403</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti — sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (7)</p>
+
+<p class="endsutta"><span class="parno">17</span><span class="ms">p_3V_1404</span>Ādāyasattakaṁ niṭṭhitaṁ.</p>
+
+<h4>3 Samādāyasattaka</h4>
+
+<p><span class="parno">18</span><span class="ms">p_3V_1405, msdiv312</span>Bhikkhu atthatakathino katacīvaraṁ samādāya pakkamati "na paccessan"ti. Tassa bhikkhuno pakkamanantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">19</span><span class="ms">p_3V_1406</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">20</span><span class="ms">p_3V_1407</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">21</span><span class="ms">p_3V_1408</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">22</span><span class="ms">p_3V_1409</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (5)</p>
+
+<p><span class="parno">23</span><span class="ms">p_3V_1410</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti — bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (6)</p>
+
+<p><span class="parno">24</span><span class="ms">p_3V_1411</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati — "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti — sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (7)</p>
+
+<hr>
+<p class="endsutta"><span class="parno">25</span><span class="ms">p_3V_1412</span>Samādāyasattakaṁ niṭṭhitaṁ.</p>
+
+<h4>4 Ādāyachakka</h4>
+
+<p><span class="parno">26</span><span class="ms">p_3V_1413, msdiv313</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">27</span><span class="ms">p_3V_1414</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">28</span><span class="ms">p_3V_1415</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassaṁ taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<hr>
+<p><span class="parno">29</span><span class="ms">p_3V_1416</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ
+āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">30</span><span class="ms">p_3V_1417</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (5)</p>
+
+<p><span class="parno">31</span><span class="ms">p_3V_1418</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (6)</p>
+
+<hr>
+<p class="endsutta"><span class="parno">32</span><span class="ms">p_3V_1419</span>Ādāyachakkaṁ niṭṭhitaṁ.</p>
+
+<h4>5 Samādāyachakka</h4>
+
+<p><span class="parno">33</span><span class="ms">p_3V_1420, msdiv314</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">34</span><span class="ms">p_3V_1421</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">35</span><span class="ms">p_3V_1422</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">36</span><span class="ms">p_3V_1423</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">37</span><span class="ms">p_3V_1424</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (5)</p>
+
+<hr>
+<p><span class="parno">38</span><span class="ms">p_3V_1425</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (6)</p>
+
+<hr>
+<p class="endsutta"><span class="parno">39</span><span class="ms">p_3V_1426</span>Samādāyachakkaṁ niṭṭhitaṁ.</p>
+
+<h4>6 Ādāya&shy;pannarasaka</h4>
+
+<p><span class="parno">40</span><span class="ms">p_3V_1427, msdiv315</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">41</span><span class="ms">p_3V_1428</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">42</span><span class="ms">p_3V_1429</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p class="endsutta"><span class="parno">43</span><span class="ms">p_3V_1430</span>Tikaṁ. (1)</p>
+
+<hr>
+<p><span class="parno">44</span><span class="ms">p_3V_1431</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">45</span><span class="ms">p_3V_1432</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<p><span class="parno">46</span><span class="ms">p_3V_1433</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (6)</p>
+
+<p class="endsutta"><span class="parno">47</span><span class="ms">p_3V_1434</span>Tikaṁ. (2)</p>
+
+<hr>
+<p><span class="parno">48</span><span class="ms">p_3V_1435</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati anadhiṭṭhitena; nevassa hoti "paccessan"ti, na panassa hoti "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (7)</p>
+
+<p><span class="parno">49</span><span class="ms">p_3V_1436</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati anadhiṭṭhitena; nevassa hoti "paccessan"ti, na panassa hoti "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (8)</p>
+
+<p><span class="parno">50</span><span class="ms">p_3V_1437</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati anadhiṭṭhitena; nevassa hoti "paccessan"ti, na panassa hoti "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (9)</p>
+
+<p class="endsutta"><span class="parno">51</span><span class="ms">p_3V_1438</span>Tikaṁ. (3)</p>
+
+<hr>
+<p><span class="parno">52</span><span class="ms">p_3V_1439</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (10)</p>
+
+<p><span class="parno">53</span><span class="ms">p_3V_1440</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (11)</p>
+
+<p><span class="parno">54</span><span class="ms">p_3V_1441</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (12)</p>
+
+<p><span class="parno">55</span><span class="ms">p_3V_1442</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (13)</p>
+
+<p><span class="parno">56</span><span class="ms">p_3V_1443</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti — bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (14)</p>
+
+<p><span class="parno">57</span><span class="ms">p_3V_1444</span>Bhikkhu atthatakathino cīvaraṁ ādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (15)</p>
+
+<p class="endsutta"><span class="parno">58</span><span class="ms">p_3V_1445</span>Chakkaṁ.
+<br>Ādāya&shy;pannarasakaṁ.</p>
+
+<h4>7 Samādāyapannarasakādi</h4>
+
+<p><span class="parno">59</span><span class="ms">p_3V_1446, msdiv316</span>Bhikkhu atthatakathino cīvaraṁ samādāya pakkamati … pe …  .</p>
+
+<p class="endsutta"><span class="parno">60</span><span class="ms">p_3V_1447</span>(Ādāya&shy;vārasadisaṁ evaṁ vitthāretabbaṁ.)</p>
+
+<p><span class="parno">61</span><span class="ms">p_3V_1448</span>Bhikkhu atthatakathino vippakatacīvaraṁ ādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro … pe …  .</p>
+
+<p class="endsutta"><span class="parno">62</span><span class="ms">p_3V_1449</span>(Samādāyavārasadisaṁ evaṁ vitthāretabbaṁ.)</p>
+
+<h4>8 Vippakatasamādāyapannarasaka</h4>
+
+<p><span class="parno">63</span><span class="ms">p_3V_1450, msdiv317</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">64</span><span class="ms">p_3V_1451</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">65</span><span class="ms">p_3V_1452</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p class="endsutta"><span class="parno">66</span><span class="ms">p_3V_1453</span>Tikaṁ. (1)</p>
+
+<hr>
+<p><span class="parno">67</span><span class="ms">p_3V_1454</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">68</span><span class="ms">p_3V_1455</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<p><span class="parno">69</span><span class="ms">p_3V_1456</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (6)</p>
+
+<p class="endsutta"><span class="parno">70</span><span class="ms">p_3V_1457</span>Tikaṁ. (2)</p>
+
+<hr>
+<p><span class="parno">71</span><span class="ms">p_3V_1458</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (7)</p>
+
+<p><span class="parno">72</span><span class="ms">p_3V_1459</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (8)</p>
+
+<p><span class="parno">73</span><span class="ms">p_3V_1460</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (9)</p>
+
+<p class="endsutta"><span class="parno">74</span><span class="ms">p_3V_1461</span>Tikaṁ. (3)</p>
+
+<hr>
+<p><span class="parno">75</span><span class="ms">p_3V_1462</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (10)</p>
+
+<p><span class="parno">76</span><span class="ms">p_3V_1463</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (11)</p>
+
+<p><span class="parno">77</span><span class="ms">p_3V_1464</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (12)</p>
+
+<p><span class="parno">78</span><span class="ms">p_3V_1465</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ
+āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (13)</p>
+
+<p><span class="parno">79</span><span class="ms">p_3V_1466</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (14)</p>
+
+<p><span class="parno">80</span><span class="ms">p_3V_1467</span>Bhikkhu atthatakathino vippakatacīvaraṁ samādāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (15)</p>
+
+<hr>
+<p class="endsutta"><span class="parno">81</span><span class="ms">p_3V_1468</span>Chakkaṁ.<br> Samādāyapannarasakaṁ.
+<br>Ādāyabhāṇavāro.</p>
+
+<h4>9 Anāsādoḷasaka</h4>
+
+<p><span class="parno">82</span><span class="ms">p_3V_1469, msdiv318</span>Bhikkhu atthatakathino cīvarāsāya pakkamati. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<hr>
+<p><span class="parno">83</span><span class="ms">p_3V_1470</span>Bhikkhu atthatakathino cīvarāsāya pakkamati. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">84</span><span class="ms">p_3V_1471</span>Bhikkhu atthatakathino cīvarāsāya pakkamati. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">85</span><span class="ms">p_3V_1472</span>Bhikkhu atthatakathino cīvarāsāya pakkamati. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">86</span><span class="ms">p_3V_1473</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<hr>
+<p><span class="parno">87</span><span class="ms">p_3V_1474</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro.
+(6)</p>
+
+<p><span class="parno">88</span><span class="ms">p_3V_1475</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (7)</p>
+
+<p><span class="parno">89</span><span class="ms">p_3V_1476</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (8)</p>
+
+<p><span class="parno">90</span><span class="ms">p_3V_1477</span>Bhikkhu atthatakathino cīvarāsāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (9)</p>
+
+<hr>
+<p><span class="parno">91</span><span class="ms">p_3V_1478</span>Bhikkhu atthatakathino cīvarāsāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (10)</p>
+
+<p><span class="parno">92</span><span class="ms">p_3V_1479</span>Bhikkhu atthatakathino cīvarāsāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (11)</p>
+
+<hr>
+<p><span class="parno">93</span><span class="ms">p_3V_1480</span>Bhikkhu atthatakathino cīvarāsāya pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (12)</p>
+
+<p class="endsutta"><span class="parno">94</span><span class="ms">p_3V_1481</span>Anāsādoḷasakaṁ niṭṭhitaṁ.</p>
+
+<h4>10 Āsādoḷasaka</h4>
+
+<p><span class="parno">95</span><span class="ms">p_3V_1482, msdiv319</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<hr>
+<p><span class="parno">96</span><span class="ms">p_3V_1483</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<hr>
+<p><span class="parno">97</span><span class="ms">p_3V_1484</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">98</span><span class="ms">p_3V_1485</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (4)</p>
+
+<hr>
+<p><span class="parno">99</span><span class="ms">p_3V_1486</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa evaṁ hoti — "yato tasmiṁ āvāse ubbhataṁ kaṭhinaṁ, idhevimaṁ cīvarāsaṁ payirupāsissan"ti. So taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<hr>
+<p><span class="parno">100</span><span class="ms">p_3V_1487</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa evaṁ hoti — "yato tasmiṁ āvāse ubbhataṁ kaṭhinaṁ, idhevimaṁ cīvarāsaṁ payirupāsissan"ti. So taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (6)</p>
+
+<hr>
+<p><span class="parno">101</span><span class="ms">p_3V_1488</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa evaṁ hoti — "yato tasmiṁ āvāse ubbhataṁ kaṭhinaṁ, idhevimaṁ cīvarāsaṁ payirupāsissan"ti. So taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (7)</p>
+
+<hr>
+<p><span class="parno">102</span><span class="ms">p_3V_1489</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa evaṁ hoti — "yato tasmiṁ āvāse ubbhataṁ kaṭhinaṁ, idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (8)</p>
+
+<p><span class="parno">103</span><span class="ms">p_3V_1490</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. So taṁ cīvaraṁ kāreti. So katacīvaro suṇāti — "ubbhataṁ kira tasmiṁ āvāse kaṭhinan"ti. Tassa bhikkhuno savanantiko kaṭhinuddhāro. (9)</p>
+
+<p><span class="parno">104</span><span class="ms">p_3V_1491</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (10)</p>
+
+<p><span class="parno">105</span><span class="ms">p_3V_1492</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. So taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti — bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (11)</p>
+
+<hr>
+<p><span class="parno">106</span><span class="ms">p_3V_1493</span>Bhikkhu atthatakathino cīvarāsāya pakkamati "paccessan"ti. So bahisīmagato taṁ cīvarāsaṁ payirupāsati. Āsāya labhati, anāsāya na labhati. So taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti — sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (12)</p>
+
+<p class="endsutta"><span class="parno">107</span><span class="ms">p_3V_1494</span>Āsādoḷasakaṁ niṭṭhitaṁ.</p>
+
+<h4>11 Karaṇīyadoḷasaka</h4>
+
+<p><span class="parno">108</span><span class="ms">p_3V_1495, msdiv320</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<hr>
+<p><span class="parno">109</span><span class="ms">p_3V_1496</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<hr>
+<p><span class="parno">110</span><span class="ms">p_3V_1497</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<hr>
+<p><span class="parno">111</span><span class="ms">p_3V_1498</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati. Tassa bahisīmagatassa cīvarāsā uppajjati. Tassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (4)</p>
+
+<p><span class="parno">112</span><span class="ms">p_3V_1499</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<hr>
+<p><span class="parno">113</span><span class="ms">p_3V_1500</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (6)</p>
+
+<hr>
+<p><span class="parno">114</span><span class="ms">p_3V_1501</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (7)</p>
+
+<p><span class="parno">115</span><span class="ms">p_3V_1502</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. Tassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (8)</p>
+
+<hr>
+<p><span class="parno">116</span><span class="ms">p_3V_1503</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (9)</p>
+
+<hr>
+<p><span class="parno">117</span><span class="ms">p_3V_1504</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (10)</p>
+
+<hr>
+<p><span class="parno">118</span><span class="ms">p_3V_1505</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. So taṁ cīvarāsaṁ payirupāsati. Anāsāya labhati, āsāya na labhati. Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (11)</p>
+
+<p><span class="parno">119</span><span class="ms">p_3V_1506</span>Bhikkhu atthatakathino kenacideva karaṇīyena pakkamati anadhiṭṭhitena; nevassa hoti — "paccessan"ti, na panassa hoti — "na paccessan"ti. Tassa bahisīmagatassa cīvarāsā uppajjati. Tassa evaṁ hoti — "idhevimaṁ cīvarāsaṁ payirupāsissaṁ, na paccessan"ti. So taṁ cīvarāsaṁ payirupāsati. Tassa sā cīvarāsā upacchijjati. Tassa bhikkhuno āsāvacchediko kaṭhinuddhāro. (12)</p>
+
+<p class="endsutta"><span class="parno">120</span><span class="ms">p_3V_1507</span>Karaṇīyadoḷasakaṁ niṭṭhitaṁ.</p>
+
+<h4>12 Apavilāyananavaka</h4>
+
+<p><span class="parno">121</span><span class="ms">p_3V_1508, msdiv321</span>Bhikkhu atthatakathino disangamiko pakkamati cīvarapaṭivīsaṁ apavilāyamāno. Tamenaṁ disaṁgataṁ bhikkhū pucchanti — "kahaṁ tvaṁ, āvuso, vassaṁvuṭṭho, kattha ca te cīvarapaṭivīso"ti?</p>
+
+<p>So evaṁ vadeti — "amukasmiṁ āvāse vassaṁvuṭṭhomhi. Tattha ca me cīvarapaṭivīso"ti.</p>
+
+<p>Te evaṁ vadanti — "gacchāvuso, taṁ cīvaraṁ āhara, mayaṁ te idha cīvaraṁ karissāmā"ti.</p>
+
+<p>So taṁ āvāsaṁ gantvā bhikkhū pucchati — "kahaṁ me, āvuso, cīvarapaṭivīso"ti?</p>
+
+<p>Te evaṁ vadanti — "ayaṁ te, āvuso, cīvarapaṭivīso; kahaṁ gamissasī"ti?</p>
+
+<p>So evaṁ vadeti — "amukaṁ nāma āvāsaṁ gamissāmi, tattha me bhikkhū cīvaraṁ karissantī"ti.</p>
+
+<p>Te evaṁ vadanti — "alaṁ, āvuso, mā agamāsi. Mayaṁ te idha cīvaraṁ karissāmā"ti.</p>
+
+<p>Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<hr>
+<p><span class="parno">122</span><span class="ms">p_3V_1509</span>Bhikkhu atthatakathino disangamiko pakkamati … pe … "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<p><span class="parno">123</span><span class="ms">p_3V_1510</span>Bhikkhu atthatakathino disangamiko pakkamati … pe … "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<hr>
+<p><span class="parno">124</span><span class="ms">p_3V_1511, msdiv322</span>Bhikkhu atthatakathino disangamiko pakkamati cīvarapaṭivīsaṁ apavilāyamāno. Tamenaṁ disaṁgataṁ bhikkhū pucchanti — "kahaṁ tvaṁ, āvuso, vassaṁvuṭṭho, kattha ca te cīvarapaṭivīso"ti? So evaṁ vadeti — "amukasmiṁ āvāse vassaṁvuṭṭhomhi, tattha ca me cīvarapaṭivīso"ti. Te evaṁ vadanti — "gacchāvuso, taṁ cīvaraṁ āhara, mayaṁ te idha cīvaraṁ karissāmā"ti. So taṁ āvāsaṁ gantvā bhikkhū pucchati — "kahaṁ me, āvuso, cīvarapaṭivīso"ti? Te evaṁ vadanti — </p>
+
+<hr>
+<p>"ayaṁ te, āvuso, cīvarapaṭivīso"ti.</p>
+
+<p>So taṁ cīvaraṁ ādāya taṁ āvāsaṁ gacchati. Tamenaṁ antarāmagge bhikkhū pucchanti — "āvuso, kahaṁ gamissasī"ti?</p>
+
+<p>So evaṁ vadeti — "amukaṁ nāma āvāsaṁ gamissāmi, tattha me bhikkhū cīvaraṁ karissantī"ti.</p>
+
+<p>Te evaṁ vadanti — "alaṁ, āvuso, mā agamāsi, mayaṁ te idha cīvaraṁ karissāmā"ti.</p>
+
+<p>Tassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (4)</p>
+
+<hr>
+<p><span class="parno">125</span><span class="ms">p_3V_1512</span>Bhikkhu atthatakathino disangamiko pakkamati cīvarapaṭivīsaṁ apavilāyamāno. Tamenaṁ disaṁgataṁ bhikkhū pucchanti — "kahaṁ tvaṁ, āvuso, vassaṁvuṭṭho, kattha ca te cīvarapaṭivīso"ti? So evaṁ vadeti — "amukasmiṁ āvāse vassaṁvuṭṭhomhi, tattha ca me cīvarapaṭivīso"ti. Te evaṁ vadanti — "gacchāvuso, taṁ cīvaraṁ āhara, mayaṁ te idha cīvaraṁ karissāmā"ti. So taṁ āvāsaṁ gantvā bhikkhū pucchati — "kahaṁ me, āvuso, cīvarapaṭivīso"ti? Te evaṁ vadanti — "ayaṁ te, āvuso, cīvarapaṭivīso"ti. So taṁ cīvaraṁ ādāya taṁ āvāsaṁ gacchati. Tamenaṁ antarāmagge bhikkhū pucchanti — "āvuso, kahaṁ gamissasī"ti? So evaṁ vadeti — "amukaṁ nāma āvāsaṁ gamissāmi, tattha me bhikkhū cīvaraṁ karissantī"ti. Te evaṁ vadanti — "alaṁ, āvuso, mā agamāsi, mayaṁ te idha cīvaraṁ karissāmā"ti. Tassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (5)</p>
+
+<hr>
+<p><span class="parno">126</span><span class="ms">p_3V_1513</span>Bhikkhu atthatakathino disangamiko pakkamati … pe … "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (6)</p>
+
+<p><span class="parno">127</span><span class="ms">p_3V_1514, msdiv323</span>Bhikkhu atthatakathino disangamiko pakkamati cīvarapaṭivīsaṁ apavilāyamāno. Tamenaṁ disaṁgataṁ bhikkhū pucchanti — "kahaṁ tvaṁ, āvuso, vassaṁvuṭṭho, kattha ca te cīvarapaṭivīso"ti? So evaṁ vadeti — "amukasmiṁ āvāse vassaṁvuṭṭhomhi, tattha ca me cīvarapaṭivīso"ti. Te evaṁ vadanti — "gacchāvuso, taṁ cīvaraṁ āhara, mayaṁ te idha cīvaraṁ karissāmā"ti. So taṁ āvāsaṁ gantvā bhikkhū pucchati — "kahaṁ me, āvuso, cīvarapaṭivīso"ti? Te evaṁ vadanti — </p>
+
+<hr>
+<p>"ayaṁ te, āvuso, cīvarapaṭivīso"ti.</p>
+
+<p>So taṁ cīvaraṁ ādāya taṁ āvāsaṁ gacchati. Tassa taṁ āvāsaṁ gatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (7)</p>
+
+<hr>
+<p><span class="parno">128</span><span class="ms">p_3V_1515</span>Bhikkhu atthatakathino disangamiko pakkamati … pe … "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (8)</p>
+
+<p><span class="parno">129</span><span class="ms">p_3V_1516</span>Bhikkhu atthatakathino disangamiko pakkamati … pe … "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (9)</p>
+
+<p class="endsutta"><span class="parno">130</span><span class="ms">p_3V_1517</span>Apavilāyananavakaṁ niṭṭhitaṁ.</p>
+
+<h4>13 Phāsuvihārapañcaka</h4>
+
+<p><span class="parno">131</span><span class="ms">p_3V_1518, msdiv324</span>Bhikkhu atthatakathino phāsuvihāriko cīvaraṁ ādāya pakkamati — "amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa bhikkhuno niṭṭhānantiko kaṭhinuddhāro. (1)</p>
+
+<p><span class="parno">132</span><span class="ms">p_3V_1519</span>Bhikkhu atthatakathino phāsuvihāriko cīvaraṁ ādāya pakkamati — "amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "nevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. Tassa bhikkhuno sanniṭṭhānantiko kaṭhinuddhāro. (2)</p>
+
+<hr>
+<p><span class="parno">133</span><span class="ms">p_3V_1520</span>Bhikkhu atthatakathino phāsuvihāriko cīvaraṁ ādāya pakkamati — "amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, paccessan"ti. Tassa bahisīmagatassa evaṁ hoti — "idhevimaṁ cīvaraṁ kāressaṁ, na paccessan"ti. So taṁ cīvaraṁ kāreti. Tassa taṁ cīvaraṁ kayiramānaṁ nassati. Tassa bhikkhuno nāsanantiko kaṭhinuddhāro. (3)</p>
+
+<p><span class="parno">134</span><span class="ms">p_3V_1521</span>Bhikkhu atthatakathino phāsuvihāriko cīvaraṁ ādāya pakkamati — "amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro — "paccessaṁ paccessan"ti bahiddhā kaṭhinuddhāraṁ vītināmeti. Tassa bhikkhuno sīmātikkantiko kaṭhinuddhāro. (4)</p>
+
+<hr>
+<p><span class="parno">135</span><span class="ms">p_3V_1522</span>Bhikkhu atthatakathino phāsuvihāriko cīvaraṁ ādāya pakkamati — "amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, amukaṁ nāma āvāsaṁ gamissāmi; tattha me phāsu bhavissati vasissāmi, no ce me phāsu bhavissati, paccessan"ti. So bahisīmagato taṁ cīvaraṁ kāreti. So katacīvaro "paccessaṁ paccessan"ti sambhuṇāti kaṭhinuddhāraṁ. Tassa bhikkhuno saha bhikkhūhi kaṭhinuddhāro. (5)</p>
+
+<p class="endsutta"><span class="parno">136</span><span class="ms">p_3V_1523</span>Phāsuvihārapañcakaṁ niṭṭhitaṁ.</p>
+
+<h4>14 Palibodhā&shy;palibodhakathā</h4>
+
+<p><span class="parno">137</span><span class="ms">p_3V_1524, msdiv325</span>Dveme, bhikkhave, kaṭhinassa palibodhā, dve apalibodhā. Katame ca, bhikkhave, dve kaṭhinassa palibodhā? Āvāsapalibodho ca cīvarapalibodho ca. Kathañca, bhikkhave, āvāsapalibodho hoti? Idha, bhikkhave, bhikkhu vasati vā tasmiṁ āvāse, sāpekkho vā pakkamati "paccessan"ti. Evaṁ kho, bhikkhave, āvāsapalibodho hoti. Kathañca, bhikkhave, cīvarapalibodho hoti? Idha, bhikkhave, bhikkhuno cīvaraṁ akataṁ vā hoti vippakataṁ vā, cīvarāsā vā anupacchinnā. Evaṁ kho, bhikkhave, cīvarapalibodho hoti. Ime kho, bhikkhave, dve kaṭhinassa palibodhā.</p>
+
+<p><span class="parno">138</span><span class="ms">p_3V_1525</span>Katame ca, bhikkhave, dve kaṭhinassa apalibodhā? Āvāsaapalibodho ca cīvaraapalibodho ca. Kathañca, bhikkhave, āvāsaapalibodho hoti? Idha, bhikkhave, bhikkhu pakkamati tamhā āvāsā cattena vantena muttena anapekkho "na paccessan"ti. Evaṁ kho, bhikkhave, āvāsaapalibodho hoti. Kathañca, bhikkhave, cīvaraapalibodho hoti? Idha, bhikkhave, bhikkhuno cīvaraṁ kataṁ vā hoti, naṭṭhaṁ vā vinaṭṭhaṁ vā daḍḍhaṁ vā, cīvarāsā vā upacchinnā. Evaṁ kho, bhikkhave, cīvaraapalibodho hoti. Ime kho, bhikkhave, dve kaṭhinassa apalibodhā"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">139</span><span class="ms">p_3V_1526</span>Kaṭhinakkhandhako niṭṭhito sattamo.</p>
+
+<p><span class="parno">140</span><span class="ms">p_3V_1527</span>Tassuddānaṁ</p>
+
+<p class="verse"><span class="parno">141</span><span class="ms">p_3V_1528</span>Tiṁsa pāveyyakā bhikkhū,
+<br>sāketukkaṇṭhitā vasuṁ;
+<br>Vassaṁvuṭṭhokapuṇṇehi,
+<br>agamuṁ jinadassanaṁ.</p>
+
+<p class="verse"><span class="parno">142</span><span class="ms">p_3V_1529</span>Idaṁ vatthu kaṭhinassa,
+<br>kappissanti ca pañcakā;
+<br>Anāmantā asamācārā,
+<br>tatheva gaṇabhojanaṁ.</p>
+
+<p class="verse"><span class="parno">143</span><span class="ms">p_3V_1530</span>Yāvadatthañca uppādo,
+<br>atthatānaṁ bhavissati;
+<br>Ñatti evatthatañceva,
+<br>evañceva anatthataṁ.</p>
+
+<p class="verse"><span class="parno">144</span><span class="ms">p_3V_1531</span>Ullikhi dhovanā ceva,
+<br>vicāraṇañca chedanaṁ;
+<br>Bandhano vaṭṭi kaṇḍusa,
+<br>daḷhīkammānuvātikā.</p>
+
+<p class="verse"><span class="parno">145</span><span class="ms">p_3V_1532</span>Paribhaṇḍaṁ ovaddheyyaṁ,
+<br>maddanā nimittaṁ kathā;
+<br>Kukku sannidhi nissaggi,
+<br>na kappaññatra te tayo.</p>
+
+<hr>
+<p class="verse"><span class="parno">146</span><span class="ms">p_3V_1533</span>Aññatra pañcātireke,
+<br>sañchinnena samaṇḍalī;
+<br>Nāññatra puggalā sammā,
+<br>nissīmaṭ&shy;ṭhonumodati.</p>
+
+<p class="verse"><span class="parno">147</span><span class="ms">p_3V_1534</span>Kathinānatthataṁ hoti,
+<br>evaṁ buddhena desitaṁ;
+<br>Ahatākappapiloti,
+<br>paṁsu pāpaṇikāya ca.</p>
+
+<p class="verse"><span class="parno">148</span><span class="ms">p_3V_1535</span>Animittā&shy;parikathā,
+<br>akukku ca asannidhi;
+<br>Anissaggi kappakate,
+<br>tathā ticīvarena ca.</p>
+
+<p class="verse"><span class="parno">149</span><span class="ms">p_3V_1536</span>Pañcake vātireke vā,
+<br>chinne samaṇḍalīkate;
+<br>Puggalassatthārā sammā,
+<br>sīmaṭṭho anumodati.</p>
+
+<p class="verse"><span class="parno">150</span><span class="ms">p_3V_1537</span>Evaṁ kaṭhinattharaṇaṁ,
+<br>ubbhārassaṭṭhamātikā;
+<br>Pakkamananti niṭṭhānaṁ,
+<br>sanniṭṭhānañca nāsanaṁ.</p>
+
+<hr>
+<p class="verse"><span class="parno">151</span><span class="ms">p_3V_1538</span>Savanaṁ āsāvacchedi,
+<br>sīmā sahubbhāraṭṭhamī;
+<br>Katacīvaramādāya,
+<br>"na paccessan"ti gacchati.</p>
+
+<p class="verse"><span class="parno">152</span><span class="ms">p_3V_1539</span>Tassa taṁ kaṭhinuddhāro,
+<br>hoti pakkamanantiko;
+<br>Ādāya cīvaraṁ yāti,
+<br>nissīme idaṁ cintayi.</p>
+
+<p class="verse"><span class="parno">153</span><span class="ms">p_3V_1540</span>"Kāressaṁ na paccessan"ti,
+<br>niṭṭhāne kaṭhinuddhāro;
+<br>Ādāya nissīmaṁ neva,
+<br>"na paccessan"ti mānaso.</p>
+
+<p class="verse"><span class="parno">154</span><span class="ms">p_3V_1541</span>Tassa taṁ kaṭhinuddhāro,
+<br>sanniṭṭhānantiko bhave;
+<br>Ādāya cīvaraṁ yāti,
+<br>nissīme idaṁ cintayi.</p>
+
+<p class="verse"><span class="parno">155</span><span class="ms">p_3V_1542</span>"Kāressaṁ na paccessan"ti,
+<br>kayiraṁ tassa nassati;
+<br>Tassa taṁ kaṭhinuddhāro,
+<br>bhavati nāsanantiko.</p>
+
+<hr>
+<p class="verse"><span class="parno">156</span><span class="ms">p_3V_1543</span>Ādāya yāti "paccessaṁ",
+<br>bahi kāreti cīvaraṁ;
+<br>Katacīvaro suṇāti,
+<br>ubbhataṁ kaṭhinaṁ tahiṁ.</p>
+
+<p class="verse"><span class="parno">157</span><span class="ms">p_3V_1544</span>Tassa taṁ kaṭhinuddhāro,
+<br>bhavati savanantiko;
+<br>Ādāya yāti "paccessaṁ",
+<br>bahi kāreti cīvaraṁ.</p>
+
+<p class="verse"><span class="parno">158</span><span class="ms">p_3V_1545</span>Katacīvaro bahiddhā,
+<br>nāmeti kaṭhinuddhāraṁ;
+<br>Tassa taṁ kaṭhinuddhāro,
+<br>sīmātikkantiko bhave.</p>
+
+<p class="verse"><span class="parno">159</span><span class="ms">p_3V_1546</span>Ādāya yāti "paccessaṁ",
+<br>bahi kāreti cīvaraṁ;
+<br>Katacīvaro paccessaṁ,
+<br>sambhoti kaṭhinuddhāraṁ.</p>
+
+<hr>
+<p class="verse"><span class="parno">160</span><span class="ms">p_3V_1547</span>Tassa taṁ kaṭhinuddhāro,
+<br>saha bhikkhūhi jāyati;
+<br>Ādāya ca samādāya,
+<br>sattasattavidhā gati.</p>
+
+<p class="verse"><span class="parno">161</span><span class="ms">p_3V_1548</span>Pakkamanantikā natthi,
+<br>chakke vippakate gati;
+<br>Ādāya nissīmagataṁ,
+<br>kāressaṁ iti jāyati.</p>
+
+<p class="verse"><span class="parno">162</span><span class="ms">p_3V_1549</span>Niṭṭhānaṁ sanniṭṭhānañca,
+<br>nāsanañca ime tayo;
+<br>Ādāya "na paccessan"ti,
+<br>bahisīme karomiti.</p>
+
+<p class="verse"><span class="parno">163</span><span class="ms">p_3V_1550</span>Niṭṭhānaṁ sanniṭṭhānampi,
+<br>nāsanampi idaṁ tayo;
+<br>Anadhiṭṭhitena nevassa,
+<br>heṭṭhā tīṇi nayāvidhi.</p>
+
+<hr>
+<p><span class="parno">164</span><span class="ms">p_3V_1551</span>Ādāya yāti paccessaṁ,
+<br>bahisīme karomiti;
+<br>"Na paccessan"ti kāreti,
+<br>niṭṭhāne kaṭhinuddhāro.</p>
+
+<p><span class="parno">165</span><span class="ms">p_3V_1552</span>Sanniṭṭhānaṁ nāsanañca,
+<br>savanasīmātikkamā;
+<br>Saha bhikkhūhi jāyetha,
+<br>evaṁ pannarasaṁ gati.</p>
+
+<p><span class="parno">166</span><span class="ms">p_3V_1553</span>Samādāya vippakatā,
+<br>samādāya punā tathā;
+<br>Ime te caturo vārā,
+<br>sabbe pannarasavidhi.</p>
+
+<p><span class="parno">167</span><span class="ms">p_3V_1554</span>Anāsāya ca āsāya,
+<br>karaṇīyo ca te tayo;
+<br>Nayato taṁ vijāneyya,
+<br>tayo dvādasa dvādasa.</p>
+
+<p><span class="parno">168</span><span class="ms">p_3V_1555</span>Apavilānā navettha,
+<br>phāsu pañcavidhā tahiṁ;
+<br>Palibodhā&shy;palibodhā,
+<br>uddānaṁ nayato katanti.</p>
+
+<hr>
+<p><span class="parno">169</span><span class="ms">p_3V_1556</span>Imamhi khandhake vatthū doḷasakapeyyālamukhāni ekasataṁ aṭṭhārasa.</p>
+
+<p class="endsection"><span class="parno">170</span><span class="ms">p_3V_1557</span>Kaṭhinakkhandhako niṭṭhito.</p>
+
+</div><!--End Pali-->
+</section>
+
+<div id="nextprev"><a id="previous-sutta" href="../vi/kd6.html#content"></a><a id="next-sutta" href="../vi/kd8.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../vi/vi.html">Vinaya Pitaka</a><a href="../vi/kd.html">Khandhaka</a>Khandhaka&nbsp;7 - The Kaṭhina
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

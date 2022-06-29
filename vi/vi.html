@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Vinaya Pitika</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   <!-- !PAGE CONTENT! --> 
+<div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+
+<h2>Vinaya Pitaka - Monastic Rules</h2>
+
+<div class="subnav6"> <!-- Div for sub-navigation -->
+		<a href="../vi/kd.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile w3-yellow">Bhikkhu<br>Khandaka</a>
+  <a href="../vi/bu-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Vibhanga</a>
+  <a href="../vi/bu-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Pāṭimokkha</a>
+		<a href="../vi/bi-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhunī<br>Pāṭimokkha</a>
+  <a href="../vi/bi-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhuni<br>Vibhanga</a>
+	 <a href="../bmc/bmc.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Buddhist<br>Monastic Code</a>
+	</div>	<!-- End div for sub-navigation -->
+
+<div id="content">
+
+ <p>&nbsp;</p>
+
+<p><i>These pages only contain a selection of the more important vinaya texts, specifically, those texts that are more reliably the "Word of the Buddha" thus the later commentarial material has been omitted.</i></p>
+
+<h2>The Origin of the Vinaya</h2>
+
+<div id="metaarea">
+<ul class="translator">
+	<li>©&nbsp;Translated from the Pali by I.B. Horner with supplementary translation by Bikkhu Brahmali&nbsp; &nbsp;<a href="../home/copyright.html#hornerbrahmali">(More copyright information)</a></li>
+</ul>
+</div>
+
+
+
+<section class="raw_sutta">
+<div lang="en">
+<p id="p1"><span class="parno">1</span>Homage to the Master, the <i>Arahant</i>, the truly Awakened One</p>
+
+<p id="p2"><span class="parno">2</span>At one time the Buddha, the Master, was staying at Verañjā near Naḷeruʼs Nimba tree with a great Saṅgha of five hundred monks. Now a brahmin of Verañjā was told:
+<br>"Sir, the recluse Gotama, the Sakyan, having gone forth from the Sakyan clan, is staying at Verañjā near Naleruʼs Nimba tree with a great Saṅgha of five hundred monks. That Master Gotama has acquired a good reputaton, thus:
+<br>ʻHe is indeed a Master, an <i>arahant</i>, fully awakened, accomplished in true knowledge and conduct, fortunate, knower of the worlds, unrivalled trainer of tamable people, teacher of gods and humans, the Awakened One, the Master. Having realised with his own direct knowledge this world with its gods, its lords of death and its supreme beings, this population with its recluses and brahmins, its gods and humans, he makes it known to others. He teaches a Dhamma that is good in the beginning, good in the middle and good in the end, with the right meaning and phrasing; he reveals a perfectly complete and pure spiritual life.ʼ Good indeed it is to see such <i>arahants</i>."</p>
+
+<p id="p3"><span class="parno">3</span>Then the brahmin of Verañjā approached the Master, exchanged friendly greetings with him and sat down to one side. He then said this to the Master:
+<br>"I have heard, good Gotama, that the recluse Gotama does not pay homage to brahmins who are worn, old, burdened with years, advanced in life, come to the last stage; nor that he stands up for them or offers them a seat. This is indeed so, for the good Gotama does not pay homage to brahmins who are worn, old, burdened with years, advanced in life, come to the last stage; nor does he stand up for them or offer them a seat. This, good Gotama, is not proper."</p>
+
+<p id="p4"><span class="parno">4</span>"Brahmin, in the world with its gods, its lords of death and its supreme beings, in this population with its recluses and brahmins, its gods and humans, I do not see one to whom I should pay homage, for whom I should rise up or to whom I should offer a seat. For if the Tathāgata should pay homage to anyone, rise up for him or offer him a seat, his head might even split asunder."</p>
+
+<p id="p5"><span class="parno">5</span>"The revered Gotama lacks taste."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama lacks taste.ʼ For tastes for forms, sounds, scents, flavours, and tangible objects — these have been destroyed by the Tathāgata, cut off at the root, made like a palm-stump, so utterly done away with that they are incapable of future arising. This is a way in which one could truly say of me, ʻthe recluse Gotama lacks taste.ʼ But that is not what you meant."</p>
+
+<p id="p6"><span class="parno">6</span>"The revered Gotama is without enjoyment."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama is without enjoyment.ʼ For enjoyments of forms, sounds, scents, flavours, and tangible objects — these have been destroyed by the Tathāgata, cut off at the root, made like a palm-stump, so utterly done away with that they are incapable of future arising. This is a way in which one could truly say of me, ʻthe recluse Gotama is without enjoyment.ʼ But that is not what you meant."</p>
+
+<p id="p7"><span class="parno">7</span>"The revered Gotama professes the doctrine of non-action."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama professes the doctrine of non-action.ʼ For I teach the non-doing of misconduct by body, speech and mind. I teach the non-doing of manifold bad unwholesome actions. This is a way in which one could truly say of me, ʻthe recluse Gotama professes the doctrine of non-action.ʼ But that is not what you meant."</p>
+
+<p id="p8"><span class="parno">8</span>"The revered Gotama professes the doctrine of annihilation."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama professes the doctrine of annihilation.ʼ For I speak of the annihilation of sense desire, anger and confusion; I speak of the annihilation of manifold bad unwholesome qualities. This is a way in which one could truly say of me, ʻthe recluse Gotama professes the doctrine of annihilation.ʼ
+But that is not what you meant."</p>
+
+<p id="p9"><span class="parno">9</span>"The revered Gotama is one who detests."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama is one who detests.ʼ For I detest misconduct by body, speech and mind, and the acquisition of manifold bad unwholesome qualities. This is a way in which one could truly say of me, ʻthe recluse Gotama is one who detests.ʼ But that is not what you meant."</p>
+
+<p id="p10"><span class="parno">10</span>"The revered Gotama is a disciplinarian."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama is a disciplinarian.ʼ For I teach the Dhamma for the disciplining of sense desire, anger and confusion; I teach the Dhamma for the disciplining of manifold bad unwholesome qualities. This is a way in which one could truly say of me, ʻthe recluse Gotama is a disciplinarian.ʼ But that is not what you meant."</p>
+
+<p id="p11"><span class="parno">11</span>"The revered Gotama is one who practises austerities."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama is one who practises austerities.ʼ For I say that bad unwholesome qualities — misconduct by body, speech and mind — are to be burned up. He who has destroyed the bad unwholesome qualities that are to be burned up, who has cut them off at the root, made them like a palm-stump, done away with them so utterly that they are incapable of future arising — him I call one who practises austerities. The Tathāgata has destroyed the bad unwholesome qualities that are to be burned up, has cut them off at the root, made them like a palm tree, done away with them so utterly that they are incapable of future arising. This is a way in which one could truly say of me, ʻthe recluse Gotama is one who practises austerities.ʼ But that is not what you meant."</p>
+
+<p id="p12"><span class="parno">12</span>"The revered Gotama is withdrawn."
+<br>"There is indeed, brahmin, a way in which one could truly say of me, ʻthe recluse Gotama is withdrawn.ʼ He whose future conception in a womb, whose rebirth in a future life, is destroyed and cut off at the root, made like a palm-stump, so utterly done away with that it is incapable of future arising — him I call one who is withdrawn. The Tathāgataʼs future conception in a womb, his rebirth in a future life, is destroyed and cut off at the root, made like a palm-stump, so utterly done away with that he is incapable of future arising. This is a way in which one could truly say of me, ʻthe recluse Gotama is withdrawn.ʼ But that is not what you meant."</p>
+
+<p id="p13"><span class="parno">13</span>"Brahmin, suppose there was a hen with eight or ten or twelve eggs, which she had properly covered, properly warmed and properly incubated. Is the first chick that hatches safely — having pierced through the egg-shell with the point of the claw on its foot, or with its beak — to be called the eldest or the youngest?"
+<br>"He is to be called the eldest, good Gotama, for he is the eldest of those."
+<br>"Even so, brahmin, in this generation without understanding, being like an egg, covered over, I alone in the world have split the eggshell of ignorance and reached the unsurpassed full awakening. I, brahmin, am the worldʼs eldest and best.</p>
+
+<p id="p14"><span class="parno">14</span>Brahmin, I was firmly energetic and had clarity of mindfulness; my body was tranquil and my mind unified. Fully secluded from the five senses, secluded from unwholesome mental qualities, I entered and remained in the first <i>jhāna</i>, which consists of rapture and happiness born of seclusion, accompanied by movement of the mind. Through the stilling of the movement of the mind, I entered and remained in the second <i>jhāna</i>, which has internal confidence and unification of mind and consists of rapture and happiness born of <i>samādhi</i>. Through the fading away of rapture, I remained even-minded, mindful and clearly comprehending, experiencing happiness directly, and I entered and remained in the third <i>jhāna</i> of which the noble one declare, ʻhe is even-minded, mindful, and abides in happiness.ʼ Through the abandoning of happiness and suffering and the earlier ending of joy and displeasure, I entered and remained in the fourth <i>jhāna</i>, which has neither suffering nor happiness and consists of purity of mindfulness and even-mindedness.</p>
+
+<p id="p15"><span class="parno">15</span>Then with the mind collected, clarified, purified, flawless, void of taints, grown soft and pliable, steady and imperturbable, I directed it to the knowledge of the memory of former lives. I recollected many past lives, that is to say, one birth, two births, three births, four births, five births, ten births, twenty births, thirty births, forty births, fifty births, a hundred births, a thousand births, a hundred thousand births, and many eons of world dissolution, many eons of world evolution, and many eons of both dissolution and evolution: "There I had such a name, such a family, such appearance, such food, such experience of happiness and suffering, and such a life-span. Passing away from there I was reborn elsewhere, and there I had such a name … and such a life-span. Passing away from there I was reborn here. Thus I recollected many past lives with their characteristics and particulars." This was the first knowledge attained by me in the first watch of that night; ignorance was dispelled, understanding arose, darkness was dispelled, light arose, as it is for one who remains heedful, ardent and energetic. This, brahmin, was my first successful breaking forth like a chickʼs from the eggshell.</p>
+
+<p id="p16"><span class="parno">16</span>Then with the mind collected, clarified, purified, flawless, void of taints, grown soft and pliable, steady and imperturbable, I directed it to the knowledge of the arising and passing away of beings. With the purified divine eye surpassing that of humans, I saw beings passing away and getting reborn, inferior and superior, beautiful and ugly, gone to good destinations and bad destinations, and I understood how beings fare according to their kamma: ʻThese beings who engaged in misconduct by body, speech and mind, who abused the noble ones, held wrong view and acted accordingly, at the breaking up of the body after death, have arisen in the plane of misery, a bad destination, the abyss, hell. But these beings who engaged in good conduct of body, speech and mind, who did not abuse the noble ones, held right view and acted accordingly, at the breaking up of the body after death, have arisen in a good destination, a heaven world. Thus with the purified divine eye surpassing that of humans, I saw beings passing away and getting reborn, inferior and superior, beautiful and ugly, gone to good destinations and bad destinations, and I understood how beings fare according to their kamma. This was the second knowledge attained by me in the middle watch of that night. Ignorance was dispelled, understanding arose, darkness was dispelled, light arose, as it is for one who remains heedful, ardent and energetic. This, brahmin, was my second successful breaking forth, like a chickʼs from the eggshell.</p>
+
+<p id="p17"><span class="parno">17</span>Then with the mind collected, clarified, purified, flawless, void of taints, grown soft and pliable, steady and imperturbable, I directed it to the knowledge of the ending of the corruptions. I knew according to reality: This is suffering, this is the arising of suffering, this is the ending of suffering, this is the course leading to the ending of suffering. I knew according to reality: These are the corruptions, this is the arising of the corruptions, this is the ending of the corruptions, this is the course leading to the ending of the corruptions. When I knew and saw this, my mind was freed from the corruption of sense desire, my mind was freed from the corruption of existence, my mind was freed from the corruption of false views, my mind was freed from the corruption of ignorance. When it was freed, I knew, "It is freed," and I understood that birth is ended, the spiritual life has been lived, the job has been done, there is no further state of existence. This was the third knowledge attained by me in the third watch of that night. Ignorance was dispelled, understanding arose, darkness was dispelled, light arose, as it is for one who remains heedful, ardent and energetic. This, brahmin, was my third successful breaking forth, like a chickʼs from the eggshell."</p>
+
+<p id="p18"><span class="parno">18</span>When this had been said, the brahmin of Verañjā said to the Master:
+<br>"Good Gotama is the eldest; good Gotama is the best. Wonderful, good Gotama, wonderful. As one might set upright what had been overturned, or reveal what had been hidden, or show the way to one who was lost, or bring a lamp into the darkness so that those with eyes might see forms — even so has the good Gotama made the Dhamma clear in many ways. To good Gotama I go for refuge, and to the Dhamma and to the Saṅgha of monks. May the good Gotama accept me as a lay follower who from today has gone for refuge for life. May the good Gotama consent to spend the rains at Verañjā together with the Saṅgha of monks." The Master consented by silence. Then the brahmin of Verañjā, understanding that the Master had consented, rose from his seat, paid homage to him and departed, keeping his right side towards him.</p>
+
+<p id="p19"><span class="parno">19</span>At that time Verañjā was short of food and stricken by hunger, with crops blighted and turned to straw. It was not easy to keep oneself going by collecting alms. Just then some horse-dealers from Uttarāpathaka entered the rains residence at Verañjā with five hundred horses. In the horse-pen they prepared <i>pattha</i> measure after <i>pattha</i> measure of steamed grain for the monks. The monks, having dressed in the morning, took their bowls and robes and entered Verañjā for alms. Being unable to obtain anything, they went to the horse-pen. Having brought the <i>pattha</i> measures of steamed grain back to the monastery, they pounded them and ate them. Venerable Ānanda, having crushed a <i>pattha</i> measure of the steamed grain on a stone, took it to the Master, and the Master ate it.</p>
+
+<p id="p20"><span class="parno">20</span>Now the Master had heard the sound of the mortar. Tathāgatas sometimes ask knowing, and knowing sometimes do not ask; they ask knowing the right time to ask, and they ask knowing the right time when not to ask. Tathāgatas ask when it is beneficial, not when it is unbeneficial; in regard to what is unbeneficial, the Tathāgatas have destroyed the bridge. The Buddhas, the Masters, question the monks for two reasons: "We shall teach the Dhamma or lay down a training rule for the disciples."</p>
+
+<p id="p21"><span class="parno">21</span>Then the Master addressed Venerable Ānanda: "Ānanda, what is this sound of a mortar?"
+<br>Then Venerable Ānanda informed the Master.
+<br>"Good, good, Ānanda, you who are superior people have conquered <span class="add">the problems of famine</span>; later generations will despise even rice and meat."</p>
+
+<p id="p22"><span class="parno">22</span>Then Venerable Mahāmoggallāna approached the Master, paid homage to him and sat down to one side. He then said to him:
+<br>"At present, Master, Verañjā is short of food and stricken by hunger, with crops blighted and turned to straw. It is not easy to keep oneself going by collecting alms. Master, the under-surface of this great earth is abounding with food, and its taste is just like pure honey. It would be good, Master, if I inverted the earth, so that the monks might enjoy the nutritive essence of the water-plants."
+<br>"But what will you do with those creatures, Moggallāna, who are supported by the earth?"
+<br>"Master, I will make one of my hands broad, like the great earth, and I will make those creatures who are supported by the earth go there. Then with the other hand I will invert the earth."
+<br>"Enough, Moggallāna, please do not invert the earth, or beings may become deranged."
+<br>"It would be good, Master, if the whole Saṅgha of monks could go to Uttarakuru for alms."
+<br>"Enough, Moggallāna, do not pursue this idea."</p>
+
+<hr>
+<p id="p23"><span class="parno">23</span>Now while Venerable Sāriputta was in seclusion, he thought this: "For which Buddhas, for which Masters, did the spiritual life not last long? For which Buddhas, for which Masters, did the spiritual life last long?"</p>
+
+<p id="p24"><span class="parno">24</span>Then, in the evening, Venerable Sāriputta came out of seclusion and approached the Master. He paid homage to him, sat down to one side and said this: "Just now, Master, as I was in seclusion, I thought this: ʻFor which Buddhas … last long?ʼ"</p>
+
+<hr>
+<p id="p25"><span class="parno">25</span>"Sāriputta, the spiritual life established by Master Vipassī, Master Sikhī and Master Vesabhū did not last long. But the spiritual life established by Master Kakusandha, Master Konāgamana and Master Kassapa did last long."</p>
+
+<p id="p26"><span class="parno">26</span>"And what, Master, is the reason why the spiritual life established by Master Vipassī, Master Sikhī and Master Vesabhū did not last long?"
+<br>"Sāriputta, Master Vipassī, Master Sikhī and Master Vessabhū were disinclined to teach the Dhamma in detail to their disciples. They had few discourses in prose and in prose and verse, few expositions, verses, inspired utterances, quotations, birth stories, amazing accounts and analyses; and training rules were not laid down and a <i>pātimokkha</i> was not recited. After the disappearance of those Buddhas, those Masters, after the disappearance of the disciples enlightened under those Buddhas, those who were the last disciples — of various names, clans, and social strata, who had gone forth from various families — caused that spiritual life rapidly to disappear. It is just like various flowers, lying on a flat piece of wood without being tied together by a thread, are scattered about, whirled about and destroyed by the wind. Why is that? Because they are not held together by a thread. Even so, at the disappearance of those Buddhas, those Masters, at the disappearance of the disciples enlightened under those Buddhas, those who were the last disciples — of various names, clans and social strata, who had gone forth from various families — caused that spiritual life rapidly to disappear.</p>
+
+<hr>
+<p id="p27"><span class="parno">27</span>Instead those Masters were untiring in exhorting their disciples, after reading their minds with their own. Formerly, Sāriputta, while staying in a certain frightening jungle thicket, Master Vessabhū, the <i>arahant</i>, the fully Awakened One, exhorted and admonished a Saṅgha of a thousand monks, reading their minds with his own, saying: ʻThink like this, not like this; pay attention like this, not like this; forsake this; having attained this, abide in it.ʼ Then, when those thousand monks had been exhorted and admonished by Master Vessabhū, the <i>arahant</i>, the fully Awakened One, their minds were freed from the corruptions without grasping. But if anyone not devoid of desire should enter that frightening jungle-thicket, usually their hair would stand on end. This is the reason why the spiritual life established by Master Vipassī, Master Sikhī and Master Vesabhū did not last long."</p>
+
+<p id="p28"><span class="parno">28</span>"But what, Master, is the reason why the spiritual life established by Master Kakusandha, Master Konāgamana and Master Kassapa lasted long?"
+<br>"Sāriputta, Master Kakusandha, Master Konāgamana and Master Kassapa were diligent in teaching the Dhamma in detail to their disciples. They had many discourses in prose and in prose and in verse, many expositions, verses, inspired utterances, quotations, birth stories, amazing accounts and analyses; and training rules for their disciples were laid down and a <i>pātimokkha</i> was recited. At the disappearance of those Buddhas, those Masters, at the disappearance of the disciples who were enlightened under those Buddhas, those who were the last disciples — of various names, clans and social strata, who had gone forth from various families — established that spiritual life for a long time. It is just like various flowers, lying on a piece of wood but being well tied together by a thread, are not scattered about, whirled about or destroyed by the wind. Why is that? Because they are well tied together by the thread. Even so, at the disappearance of those Buddhas, those Masters, at the disappearance of the disciples who were enlightened under those Buddhas, those who were the last disciples — of various names, clans and social strata, who had gone forth from various families — established that spiritual life for a long time. This is the reason why the spiritual life established by Master Kakusandha, Master Konāgamana and Master Kassapa lasted long."</p>
+
+<hr>
+<p><span class="parno">29–33</span>Then Venerable Sāriputta got up from his seat, put his robe over one shoulder, put the palms of his hands together and said to the Master:
+<br>"This is the right time, Master, to lay down training rules and recite a <i>pātimokkha</i>, so that this spiritual life may persist and last for a long time."
+<br>"Hold on, Sāriputta, the Tathāgata will know the right time for that. The teacher does not lay down training rules for his disciples and recite a <i>pātimokkha</i> until the causes of corruption appear in the Saṅgha. And they do not appear until the Saṅgha has attained long standing, great size or great learning. But when this happens, then the Teacher lays down training rules for his disciples and recites a <i>pātimokkha</i> in order to ward off those causes of corruptions.</p>
+
+<hr>
+<p id="p34"><span class="parno">34</span>Sāriputta, the Saṅgha of monks is devoid of immorality, devoid of danger, stainless, purified, established in the essence. The most backward of these five hundred monks is a stream-enterer, not liable to be reborn in any state of misery, assured, bound for awakening.</p>
+
+<p id="p35"><span class="parno">35</span>Then the Master addressed Venerable Ānanda: "Ānanda, it is the custom for Tathāgatas not to tour the country without having taken leave of those who invited them to spend the rains. Let us go to the brahmin of Verañjā and take leave."
+<br>"Yes, Master."</p>
+
+<p id="p36"><span class="parno">36</span>Then the Master dressed, took his bowl and robe and, with Venerable Ānanda as his attendant, went to the dwelling of the brahmin of Verañjā and sat down on the prepared seat. Then the brahmin of Verañjā approached the Master, paid homage to him and sat down to one side. The Master then said to the brahmin of Verañjā:
+<br>"Brahmin, having stayed for the rainy season according to your invitation, we are taking leave of you. We wish to depart for a tour of the country."
+<br>"It is true, good Gotama, that you have stayed for the rainy season according to my invitation, but a gift has not been given. That is not good, nor is it because we did not want to give. It happened because household life is busy and there is much to do. May the good Gotama consent to a meal tomorrow together with the Saṅgha of monks."
+<br>The Master consented by keeping silence. Then the Master, having taught, roused, gladdened and delighted the brahmin of Verañjā with a talk on the Dhamma, rose from his seat and went away.</p>
+
+<p id="p37"><span class="parno">37</span>Then, when the night was over, the brahmin of Verañjā prepared various kinds of delicious food in his own home, and then informed the Master:
+<br>"It is time, good Gotama, the meal is ready."</p>
+
+<p id="p38"><span class="parno">38</span>Then the Master, having dressed in the morning, took his bowl and robe and, together with the Saṅgha of monks, he went to the dwelling of the brahmin of Verañjā and sat down on the prepared seat. Then, with his own hands, the brahmin of Verañjā served various kinds of delicious food to the Saṅgha of monks with the Buddha at its head. When they were satisfied and the Master had eaten and finished his meal, he gave the Master a set of three robes and a pair of robes to each monk. The Master instructed, roused, gladdened and delighted the brahmin of Verañjā with talk on the Dhamma, and then rose from his seat and departed.</p>
+
+<p id="p39"><span class="parno">39</span>The Master, having remained at Verañjā for as long as he liked, went to Payāgapatiṭṭhāna via Soreyya, Sankassa and Kaṇṇakujja. There he crossed the river Ganges and proceeded to Benares. Having remained at Benares for as long as he liked, he set out for Vesālī on tour. Wandering on tour by stages, he arrived at Vesālī. There he stayed in the Great Wood, in the hall with the peaked roof.</p>
+
+<p id="p40"><span class="parno">40</span>The chapter on Verañjā is finished.</p>
+
+</div><!--End English-->
+
+<div lang="pi"><!--Pali-->
+
+<p><span class="parno">1</span>Namo tassa Bhagavato Arahato Sammā­sambud­dhassa.</p>
+
+<p><span class="parno">2</span><span class="ms">p_1V_2</span>Tena samayena buddho bhagavā verañjāyaṁ viharati naḷeru­puci­man­da­mūle mahatā
+­bhik­khu­saṁ­ghena saddhiṁ pañcamattehi bhikkhusatehi. Assosi kho verañjo
+brāhmaṇo — “samaṇo khalu bho gotamo sakyaputto sakyakulā pabbajito verañjāyaṁ
+viharati naḷeru­puci­man­da­mūle mahatā ­bhik­khu­saṁ­ghena saddhiṁ pañcamattehi
+bhikkhusatehi. Taṁ kho pana bhavantaṁ gotamaṁ evaṁ kalyāṇo kittisaddo
+abbhuggato — ‘itipi so bhagavā arahaṁ sammāsambuddho vij­jācara­ṇa­sam­panno sugato
+lokavidū anuttaro purisa­damma­sāra­thi satthā devamanussānaṁ buddho <span class="var" title="bhagavāti (s1–3)" id="note1">bhagavā</span>’, so
+imaṁ lokaṁ sadevakaṁ samārakaṁ sabrahmakaṁ ­sassama­ṇab­rāhma­ṇiṁ pajaṁ
+sadevamanussaṁ sayaṁ abhiññā sacchikatvā pavedeti, so dhammaṁ deseti
+ādikalyāṇaṁ majjhekalyāṇaṁ pari&shy;­yosāna­kal­yāṇaṁ sātthaṁ sabyañjanaṁ;
+kevala­pari­puṇṇaṁ parisuddhaṁ brahmacariyaṁ pakāseti; sādhu kho pana
+tathārūpānaṁ arahataṁ dassanaṁ hotī”ti.</p>
+
+<p><span class="parno">3</span><span class="ms">p_1V_3</span>Atha kho verañjo brāhmaṇo yena bhagavā tenupasaṅkami; upasaṅkamitvā bhagavatā
+saddhiṁ sammodi. Sammodanīyaṁ kathaṁ <span class="var" title="sārāṇīyaṁ (bj, s1–3)" id="note3">sāraṇīyaṁ</span> vītisāretvā ekamantaṁ nisīdi.
+Ekamantaṁ nisinno kho verañjo brāhmaṇo bhagavantaṁ etadavoca — “sutaṁ metaṁ, bho
+gotama — ‘na samaṇo gotamo brāhmaṇe jiṇṇe vuḍḍhe mahallake addhagate
+vayoanuppatte abhivādeti vā paccuṭṭheti vā āsanena vā nimantetī’ti. Tayidaṁ,
+bho gotama, tatheva? Na hi bhavaṁ gotamo brāhmaṇe jiṇṇe vuḍḍhe mahallake
+addhagate vayoanuppatte abhivādeti vā paccuṭṭheti vā āsanena vā nimanteti?
+Tayidaṁ, bho gotama, na sampannamevā”ti.</p>
+
+<p><span class="parno">4</span><span class="ms">p_1V_4</span>“Nāhaṁ taṁ, brāhmaṇa, passāmi sadevake loke samārake sabrahmake
+­sassama­ṇab­rāhma­ṇiyā pajāya sade­va­manus­sāya yamahaṁ abhivādeyyaṁ vā
+paccuṭṭheyyaṁ vā āsanena vā nimanteyyaṁ. Yañhi, brāhmaṇa, tathāgato abhivādeyya
+vā paccuṭṭheyya vā āsanena vā nimanteyya, muddhāpi tassa vipateyyā”ti.</p>
+
+<p><span class="parno">5</span><span class="ms">p_1V_5</span>“Arasarūpo bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘arasarūpo samaṇo gotamo’ti. Ye te, brāhmaṇa,
+rūparasā saddarasā gandharasā rasarasā phoṭṭhabbarasā, te tathāgatassa pahīnā
+ucchinnamūlā tālāvatthukatā <span class="var" title="anabhāvakatā (bj) | anabhāvaṁ katā (s1–3) | anabhāvaṁ gatā (pts1)" id="note4">anabhāvaṁkatā</span> āyatiṁ anuppādadhammā. Ayaṁ kho,
+brāhmaṇa, pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘arasarūpo samaṇo
+gotamo’ti, no ca kho yaṁ tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">6</span><span class="ms">p_1V_6</span>“Nibbhogo bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘nibbhogo samaṇo gotamo’ti. Ye te, brāhmaṇa,
+rūpabhogā saddabhogā gandhabhogā rasabhogā ­phoṭṭhab­ba­bhogā, te tathāgatassa
+pahīnā ucchinnamūlā tālāvatthukatā anabhāvaṁkatā āyatiṁ anuppādadhammā. Ayaṁ
+kho, brāhmaṇa, pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘nibbhogo
+samaṇo gotamo’ti, no ca kho yaṁ tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">7</span><span class="ms">p_1V_7</span>“Akiriyavādo bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘akiriyavādo samaṇo gotamo’ti. Ahañhi,
+brāhmaṇa, akiriyaṁ vadāmi kāya­ducca­ritassa vacī­ducca­ritassa mano­ducca­ritassa.
+Anekavihitānaṁ pāpakānaṁ akusalānaṁ dhammānaṁ akiriyaṁ vadāmi. Ayaṁ kho,
+brāhmaṇa, pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘akiriyavādo
+samaṇo gotamo’ti, no ca kho yaṁ tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">8</span><span class="ms">p_1V_8</span>“Ucchedavādo bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘ucchedavādo samaṇo gotamo’ti. Ahañhi,
+brāhmaṇa, ucchedaṁ vadāmi rāgassa dosassa mohassa. Anekavihitānaṁ pāpakānaṁ
+akusalānaṁ dhammānaṁ ucchedaṁ vadāmi. Ayaṁ kho, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘ucchedavādo samaṇo gotamo’ti, no ca kho yaṁ
+tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">9</span><span class="ms">p_1V_9</span>“Jegucchī bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘jegucchī samaṇo gotamo’ti. Ahañhi, brāhmaṇa,
+jigucchāmi kāya­ducca­ritena vacī­ducca­ritena mano­ducca­ritena. Anekavihitānaṁ
+pāpakānaṁ akusalānaṁ dhammānaṁ samāpattiyā jigucchāmi. Ayaṁ kho, brāhmaṇa,
+pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘jegucchī samaṇo gotamo’ti,
+no ca kho yaṁ tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">10</span><span class="ms">p_1V_10</span>“Venayiko bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘venayiko samaṇo gotamo’ti. Ahañhi, brāhmaṇa,
+vinayāya dhammaṁ desemi rāgassa dosassa mohassa. Anekavihitānaṁ pāpakānaṁ
+akusalānaṁ dhammānaṁ vinayāya dhammaṁ desemi. Ayaṁ kho, brāhmaṇa, pariyāyo yena
+maṁ pariyāyena sammā vadamāno vadeyya — ‘venayiko samaṇo gotamo’ti, no ca kho yaṁ
+tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">11</span><span class="ms">p_1V_11</span>“Tapassī bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘tapassī samaṇo gotamo’ti. Tapanīyāhaṁ,
+brāhmaṇa, pāpake akusale dhamme vadāmi, kāyaduccaritaṁ vacīduccaritaṁ
+manoduccaritaṁ. Yassa kho, brāhmaṇa, tapanīyā pāpakā akusalā dhammā pahīnā
+ucchinnamūlā tālāvatthukatā anabhāvaṁkatā āyatiṁ anuppādadhammā tamahaṁ
+tapassīti vadāmi. Tathāgatassa kho, brāhmaṇa, tapanīyā pāpakā akusalā dhammā
+pahīnā ucchinnamūlā tālāvatthukatā anabhāvaṁkatā āyatiṁ anuppādadhammā. Ayaṁ
+kho, brāhmaṇa, pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘tapassī
+samaṇo gotamo’ti, no ca kho yaṁ tvaṁ sandhāya vadesī”ti.</p>
+
+<p><span class="parno">12</span><span class="ms">p_1V_12</span>“Apagabbho bhavaṁ gotamo”ti? “Atthi khvesa, brāhmaṇa, pariyāyo yena maṁ
+pariyāyena sammā vadamāno vadeyya — ‘apagabbho samaṇo gotamo’ti. Yassa kho,
+brāhmaṇa, āyatiṁ gabbhaseyyā punabbha­vā­bhi­nib­batti pahīnā ucchinnamūlā
+tālāvatthukatā anabhāvaṁkatā āyatiṁ anuppādadhammā tamahaṁ apagabbhoti vadāmi.
+Tathāgatassa kho, brāhmaṇa, āyatiṁ gabbhaseyyā punabbha­vā­bhi­nib­batti pahīnā
+ucchinnamūlā tālāvatthukatā anabhāvaṁkatā āyatiṁ anuppādadhammā. Ayaṁ kho,
+brāhmaṇa, pariyāyo yena maṁ pariyāyena sammā vadamāno vadeyya — ‘apagabbho samaṇo
+gotamo’ti, no ca kho yaṁ tvaṁ sandhāya vadesi.</p>
+
+<p><span class="parno">13</span><span class="ms">p_1V_13</span>Seyyathāpi, brāhmaṇa, kukkuṭiyā aṇḍāni aṭṭha vā dasa vā dvādasa vā. Tānassu
+kukkuṭiyā sammā adhisayitāni sammā pariseditāni sammā paribhāvitāni. Yo nu kho
+tesaṁ kukku­ṭac­chāpa­kā­naṁ paṭhamataraṁ pādana­kha­sikhāya vā mukhatuṇḍakena vā
+aṇḍakosaṁ padāletvā sotthinā abhi­nib­bhij­jeyya, kinti svāssa vacanīyo — ‘jeṭṭho vā
+kaniṭṭho vā’”ti? “Jeṭṭhotissa, bho gotama, vacanīyo. So hi nesaṁ jeṭṭho
+hotī”ti. “Evameva kho ahaṁ, brāhmaṇa, avijjāgatāya pajāya aṇḍabhūtāya
+pariyonaddhāya avijjaṇḍakosaṁ padāletvā ekova loke anuttaraṁ sammāsambodhiṁ
+abhisambuddho. Svāhaṁ, brāhmaṇa, jeṭṭho seṭṭho lokassa.</p>
+
+<p><span class="parno">14</span><span class="ms">p_1V_14</span>Āraddhaṁ kho pana me, brāhmaṇa, <span class="var" title="viriyaṁ (bj, s1–3, pts1)" id="note5">vīriyaṁ</span> ahosi asallīnaṁ, upaṭṭhitā sati
+<span class="var" title="appamuṭṭhā (s1–3)" id="note6">asammuṭṭhā</span>, passaddho kāyo asāraddho, samāhitaṁ cittaṁ ekaggaṁ. So kho ahaṁ,
+brāhmaṇa, vivicceva kāmehi vivicca akusalehi dhammehi savitakkaṁ savicāraṁ
+vivekajaṁ pītisukhaṁ paṭhamaṁ jhānaṁ upasampajja vihāsiṁ. Vitak­ka­vicārā­naṁ
+vūpasamā ajjhattaṁ sampasādanaṁ cetaso ekodibhāvaṁ avitakkaṁ avicāraṁ
+samādhijaṁ pītisukhaṁ dutiyaṁ jhānaṁ upasampajja vihāsiṁ. Pītiyā ca virāgā
+upekkhako ca vihāsiṁ sato ca sampajāno, sukhañca kāyena paṭisaṁvedesiṁ, yaṁ taṁ
+ariyā ācikkhanti — ‘upekkhako satimā sukhavihārī’ti tatiyaṁ jhānaṁ upasampajja
+vihāsiṁ. Sukhassa ca pahānā dukkhassa ca pahānā pubbeva somanas­sa­do­manas­sā­naṁ
+atthaṅgamā aduk­kha­ma­su­khaṁ upekkhā­sati­pāri­suddhiṁ catutthaṁ jhānaṁ upasampajja
+vihāsiṁ.</p>
+
+<p><span class="parno">15</span><span class="ms">p_1V_15</span>So evaṁ samāhite citte parisuddhe pariyodāte anaṅgaṇe viga­tū­pak­kilese mudubhūte
+kammaniye ṭhite āneñjappatte pubbe­nivāsā­nus­sati­ñāṇāya cittaṁ abhininnāmesiṁ. So
+anekavihitaṁ pubbenivāsaṁ anussarāmi, seyyathidaṁ — ekampi jātiṁ dvepi jātiyo
+tissopi jātiyo catassopi jātiyo pañcapi jātiyo dasapi jātiyo vīsampi jātiyo
+tiṁsampi jātiyo cattālīsampi jātiyo paññāsampi jātiyo jātisatampi,
+jātisahassampi jāti­sata­sahas­sampi, anekepi saṁvaṭṭakappe anekepi vivaṭṭakappe
+anekepi saṁ­vaṭṭa­vi­vaṭṭa­kappe — ‘amutrāsiṁ evaṁnāmo evaṁgotto evaṁvaṇṇo evamāhāro
+evaṁsu­kha­duk­khap­paṭi­saṁ­vedī evamā­yu­pariyanto; so tato cuto amutra udapādiṁ;
+tatrāpāsiṁ evaṁnāmo evaṁgotto evaṁvaṇṇo evamāhāro evaṁsu­kha­duk­khap­paṭi­saṁ­vedī
+evamā­yu­pariyanto; so tato cuto idhūpapanno’ti. Iti sākāraṁ sauddesaṁ
+anekavihitaṁ pubbenivāsaṁ anussarāmi. Ayaṁ kho me, brāhmaṇa, rattiyā paṭhame
+yāme paṭhamā vijjā adhigatā, avijjā vihatā, vijjā uppannā, tamo vihato, āloko
+uppanno — yathā taṁ appamattassa ātāpino pahitattassa viharato. Ayaṁ kho me,
+brāhmaṇa, paṭha­mā­&shy;bhi­nib­bhidā ahosi kukku­ṭac­chāpa­kas­seva aṇḍakosamhā.</p>
+
+<p><span class="parno">16</span><span class="ms">p_1V_16</span>So evaṁ samāhite citte parisuddhe pariyodāte anaṅgaṇe viga­tū­pak­kilese mudubhūte
+kammaniye ṭhite āneñjappatte sattānaṁ cutū­papāta­ñā­ṇāya cittaṁ abhininnāmesiṁ.
+So dibbena cakkhunā visuddhena <span class="var" title="atik­kanta­mānus­sa­kena (mr)" id="note7">atik­kanta­mānusa­kena</span> satte passāmi cavamāne
+upapajjamāne hīne paṇīte suvaṇṇe dubbaṇṇe sugate duggate, yathākammūpage satte
+pajānāmi — ‘ime vata bhonto sattā kāya­ducca­ritena samannāgatā vacī­ducca­ritena
+samannāgatā mano­ducca­ritena samannāgatā ariyānaṁ upavādakā micchādiṭṭhikā
+micchā­diṭṭhi­kamma­sa­mādānā; te kāyassa bhedā paraṁ maraṇā apāyaṁ duggatiṁ
+vinipātaṁ nirayaṁ upapannā. Ime vā pana bhonto sattā kāyasucaritena samannāgatā
+vacīsucaritena samannāgatā manosucaritena samannāgatā ariyānaṁ anupavādakā
+sammādiṭṭhikā sammā­diṭṭhi­kam­masamā­dānā; te kāyassa bhedā paraṁ maraṇā sugatiṁ
+saggaṁ lokaṁ upapannā’ti. Iti dibbena cakkhunā visuddhena atik­kanta­mānusa­kena
+satte passāmi cavamāne upapajjamāne hīne paṇīte suvaṇṇe dubbaṇṇe sugate
+duggate, yathākammūpage satte pajānāmi. Ayaṁ kho me, brāhmaṇa, rattiyā majjhime
+yāme dutiyā vijjā adhigatā, avijjā vihatā, vijjā uppannā, tamo vihato, āloko
+uppanno — yathā taṁ appamattassa ātāpino pahitattassa viharato. Ayaṁ kho me,
+brāhmaṇa, dutiyā­bhi­nib­bhidā ahosi kukku­ṭac­chāpa­kas­seva aṇḍakosamhā.</p>
+
+<p><span class="parno">17</span><span class="ms">p_1V_17</span>So evaṁ samāhite citte parisuddhe pariyodāte anaṅgaṇe viga­tū­pak­kilese mudubhūte
+kammaniye ṭhite āneñjappatte āsavānaṁ khayañāṇāya cittaṁ abhininnāmesiṁ. So
+‘idaṁ dukkhan’ti yathābhūtaṁ abbhaññāsiṁ, ‘ayaṁ dukkhasamudayo’ti yathābhūtaṁ
+abbhaññāsiṁ, ‘ayaṁ dukkhanirodho’ti yathābhūtaṁ abbhaññāsiṁ, ‘ayaṁ
+duk­kha­nirodha­gāminī paṭipadā’ti yathābhūtaṁ abbhaññāsiṁ; ‘ime āsavā’ti
+yathābhūtaṁ abbhaññāsiṁ, ‘ayaṁ āsavasamudayo’ti yathābhūtaṁ abbhaññāsiṁ, ‘ayaṁ
+āsavanirodho’ti yathābhūtaṁ abbhaññāsiṁ, ‘ayaṁ āsava­nirodha­gāminī paṭipadā’ti
+yathābhūtaṁ abbhaññāsiṁ. Tassa me evaṁ jānato evaṁ passato kāmāsavāpi cittaṁ
+vimuccittha bhavāsavāpi cittaṁ vimuccittha avijjāsavāpi cittaṁ vimuccittha.
+Vimuttasmiṁ vimuttamiti ñāṇaṁ ahosi. ‘Khīṇā jāti, vusitaṁ brahmacariyaṁ, kataṁ
+karaṇīyaṁ, nāparaṁ itthattāyā’ti abbhaññāsiṁ. Ayaṁ kho me, brāhmaṇa, rattiyā
+pacchime yāme tatiyā vijjā adhigatā, avijjā vihatā, vijjā uppannā, tamo vihato,
+āloko uppanno — yathā taṁ appamattassa ātāpino pahitattassa viharato. Ayaṁ kho
+me, brāhmaṇa, tatiyā­bhi­nib­bhidā ahosi — kukku­ṭac­chāpa­kas­seva aṇḍakosamhā”ti.</p>
+
+<p><span class="parno">18</span><span class="ms">p_1V_18</span>Evaṁ vutte, verañjo brāhmaṇo bhagavantaṁ etadavoca — “jeṭṭho bhavaṁ gotamo,
+seṭṭho bhavaṁ gotamo. Abhikkantaṁ, bho gotama, abhikkantaṁ, bho gotama.
+Seyyathāpi, bho gotama, nikkujjitaṁ vā ukkujjeyya, paṭicchannaṁ vā vivareyya,
+mūḷhassa vā maggaṁ ācikkheyya, andhakāre vā telapajjotaṁ dhāreyya — ‘cakkhumanto
+rūpāni dakkhantī’ti; evamevaṁ bhotā gotamena aneka­pariyā­yena dhammo pakāsito.
+Esāhaṁ bhavantaṁ gotamaṁ saraṇaṁ gacchāmi dhammañca ­bhik­khu­saṁ­ghañca. Upāsakaṁ
+maṁ bhavaṁ gotamo dhāretu ajjatagge pāṇupetaṁ saraṇaṁ gataṁ. Adhivāsetu ca me
+bhavaṁ gotamo verañjāyaṁ vassāvāsaṁ saddhiṁ ­bhik­khu­saṁ­ghenā”ti. Adhivāsesi
+bhagavā tuṇhībhāvena. Atha kho verañjo brāhmaṇo bhagavato adhivāsanaṁ viditvā
+uṭṭhāyāsanā bhagavantaṁ abhivādetvā padakkhiṇaṁ katvā pakkāmi.</p>
+
+<p><span class="parno">19</span><span class="ms">p_1V_19</span>Tena kho pana samayena verañjā dubbhikkhā hoti dvīhitikā setaṭṭhikā salākāvuttā
+na sukarā uñchena paggahena yāpetuṁ. Tena kho pana samayena uttarāpathakā
+<span class="var" title="assavaṇijā (mr)" id="note8">assavāṇijā</span> pañcamattehi assasatehi verañjaṁ vassāvāsaṁ upagatā honti. Tehi
+assa­maṇḍa­li­kāsu bhikkhūnaṁ <span class="var" title="pattha­pattha­pūlakaṁ (s1–3) | pattha­pattha­mūlakaṁ (pts1, mr)" id="note9">pattha­pattha­pulakaṁ</span> paññattaṁ hoti. Bhikkhū
+pubbaṇ­ha­samayaṁ nivāsetvā patta­cīvara­mādāya verañjaṁ piṇḍāya pavisitvā piṇḍaṁ
+alabhamānā assa­maṇḍa­li­kāsu piṇḍāya caritvā pattha­pattha­pulakaṁ ārāmaṁ āharitvā
+udukkhale koṭṭetvā koṭṭetvā paribhuñjanti. Āyasmā panānando patthapulakaṁ
+silāyaṁ pisitvā bhagavato upanāmeti. Taṁ bhagavā paribhuñjati.</p>
+
+<p><span class="parno">20</span><span class="ms">p_1V_20</span>Assosi kho bhagavā uduk­kha­la­saddaṁ. Jānantāpi tathāgatā pucchanti, jānantāpi na
+pucchanti; kālaṁ viditvā pucchanti, kālaṁ viditvā na pucchanti; atthasaṁhitaṁ
+tathāgatā pucchanti, no anat­tha­saṁhi­taṁ. Anatthasaṁhite setughāto tathāgatānaṁ.
+Dvīhi ākārehi buddhā bhagavanto bhikkhū paṭipucchanti — dhammaṁ vā desessāma,
+sāvakānaṁ vā sikkhāpadaṁ <span class="var" title="paññāpessāmāti (bj, s1–3, pts1)" id="note10">paññapessāmāti</span>.</p>
+
+<p><span class="parno">21</span><span class="ms">p_1V_21</span>Atha kho bhagavā āyasmantaṁ ānandaṁ āmantesi — “kiṁ nu kho so, ānanda,
+udukkhalasaddo”ti? Atha kho āyasmā ānando bhagavato etamatthaṁ ārocesi. “Sādhu
+sādhu, ānanda. Tumhehi, ānanda, sappurisehi vijitaṁ. Pacchimā janatā
+sālimaṁsodanaṁ atimaññissatī”ti.</p>
+
+<p><span class="parno">22</span><span class="ms">p_1V_22</span>Atha kho āyasmā <span class="var" title="mahāmoggalāno (mr)" id="note11">mahāmoggallāno</span> yena bhagavā tenupasaṅkami; upasaṅkamitvā
+bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā
+mahāmoggallāno bhagavantaṁ etadavoca — “etarahi, bhante, verañjā dubbhikkhā
+dvīhitikā setaṭṭhikā salākāvuttā. Na sukarā uñchena paggahena yāpetuṁ. Imissā,
+bhante, mahāpathaviyā heṭṭhimatalaṁ sampannaṁ — seyyathāpi khuddamadhuṁ anīlakaṁ;
+evamassādaṁ. Sādhāhaṁ, bhante, pathaviṁ parivatteyyaṁ. Bhikkhū pappaṭakojaṁ
+pari&shy;­bhuñjis­santī”ti. “Ye pana te, moggallāna, pathavinissitā pāṇā te kathaṁ
+karissasī”ti? “Ekāhaṁ, bhante, pāṇiṁ abhi­nimminis­sāmi — seyyathāpi mahāpathavī.
+Ye pathavinissitā pāṇā te tattha saṅkāmessāmi. Ekena hatthena pathaviṁ
+parivattessāmī”ti. “Alaṁ, moggallāna, mā te rucci pathaviṁ parivattetuṁ.
+Vipallāsampi sattā paṭilabheyyun”ti. “Sādhu, bhante, sabbo bhikkhusaṁgho
+uttarakuruṁ piṇḍāya gaccheyyā”ti. “Alaṁ, moggallāna, mā te rucci sabbassa
+­bhik­khu­saṁ­ghassa uttarakuruṁ piṇḍāya gamanan”ti.</p>
+
+<hr>
+<p><span class="parno">23</span><span class="ms">p_1V_23</span>Atha kho āyasmato sāriputtassa rahogatassa paṭisallīnassa evaṁ cetaso
+parivitakko udapādi — “katamesānaṁ kho buddhānaṁ bhagavantānaṁ brahmacariyaṁ na
+ciraṭṭhitikaṁ ahosi; katamesānaṁ buddhānaṁ bhagavantānaṁ brahmacariyaṁ
+ciraṭṭhitikaṁ ahosī”ti?</p>
+
+<p><span class="parno">24</span><span class="ms">p_1V_24</span>Atha kho āyasmā sāriputto <span class="var" title="sāyaṇhasamayaṁ (bj, s1–3, pts1)" id="note12">sāyanhasamayaṁ</span> paṭisallānā vuṭṭhito yena bhagavā
+tenupasaṅkami; upasaṅkamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi.
+Ekamantaṁ nisinno kho āyasmā sāriputto bhagavantaṁ etadavoca — “idha mayhaṁ,
+bhante, rahogatassa paṭisallīnassa evaṁ cetaso parivitakko udapādi — 
+‘katamesānaṁ kho buddhānaṁ bhagavantānaṁ brahmacariyaṁ na ciraṭṭhitikaṁ ahosi,
+katamesānaṁ buddhānaṁ bhagavantānaṁ brahmacariyaṁ ciraṭṭhitikaṁ ahosī’ti.
+Katamesānaṁ nu kho, bhante, buddhānaṁ bhagavantānaṁ brahmacariyaṁ na
+ciraṭṭhitikaṁ ahosi, katamesānaṁ buddhānaṁ bhagavantānaṁ brahmacariyaṁ
+ciraṭṭhitikaṁ ahosī”ti?</p>
+
+<hr>
+<p><span class="parno">25</span><span class="ms">p_1V_25</span>“Bhagavato ca, sāriputta, vipassissa bhagavato ca sikhissa bhagavato ca
+vessabhussa brahmacariyaṁ na ciraṭṭhitikaṁ ahosi. Bhagavato ca, sāriputta,
+kakusandhassa bhagavato ca koṇāgamanassa bhagavato ca kassapassa brahmacariyaṁ
+ciraṭṭhitikaṁ ahosī”ti.</p>
+
+<p><span class="parno">26</span><span class="ms">p_1V_26</span>“Ko nu kho, bhante, hetu ko paccayo, yena bhagavato ca vipassissa bhagavato ca
+sikhissa bhagavato ca vessabhussa brahmacariyaṁ na ciraṭṭhitikaṁ ahosī”ti?
+“Bhagavā ca, sāriputta, vipassī bhagavā ca sikhī bhagavā ca vessabhū kilāsuno
+ahesuṁ sāvakānaṁ vitthārena dhammaṁ desetuṁ. Appakañca nesaṁ ahosi suttaṁ
+geyyaṁ veyyākaraṇaṁ gāthā udānaṁ itivuttakaṁ jātakaṁ abbhutadhammaṁ vedallaṁ.
+Apaññattaṁ sāvakānaṁ sikkhāpadaṁ. Anuddiṭṭhaṁ pātimokkhaṁ. Tesaṁ buddhānaṁ
+bhagavantānaṁ antaradhānena bud­dhānu­buddhā­naṁ sāvakānaṁ antaradhānena ye te
+pacchimā sāvakā nānānāmā nānāgottā nānājaccā nānākulā pabbajitā te taṁ
+brahmacariyaṁ khippaññeva antaradhāpesuṁ. Seyyathāpi, sāriputta, nānāpupphāni
+phalake nikkhittāni suttena asaṅgahitāni tāni vāto vikirati vidhamati
+viddhaṁseti. Taṁ kissa hetu? Yathā taṁ suttena asaṅgahitattā. Evameva kho,
+sāriputta, tesaṁ buddhānaṁ bhagavantānaṁ antaradhānena bud­dhānu­buddhā­naṁ
+sāvakānaṁ antaradhānena ye te pacchimā sāvakā nānānāmā nānāgottā nānājaccā
+nānākulā pabbajitā te taṁ brahmacariyaṁ khippaññeva antaradhāpesuṁ.</p>
+
+<hr>
+<p><span class="parno">27</span><span class="ms">p_1V_27</span><span class="var" title="kilāsuno (s1–3)" id="note13">Akilāsuno</span> ca te bhagavanto ahesuṁ sāvake cetasā ceto paricca ovadituṁ.
+Bhūtapubbaṁ, sāriputta, vessabhū bhagavā arahaṁ sammāsambuddho aññatarasmiṁ
+<span class="var" title="bhīsanake (mr)" id="note14">bhiṁsanake</span> vanasaṇḍe sahassaṁ bhikkhusaṁghaṁ cetasā ceto paricca ovadati
+anusāsati — ‘evaṁ vitakketha, mā evaṁ vitakkayittha; evaṁ manasikarotha, mā evaṁ
+<span class="var" title="manasākarittha (mr)" id="note15">manasākattha</span>; idaṁ pajahatha, idaṁ upasampajja viharathā’ti. Atha kho,
+sāriputta, tassa ­bhik­khu­sahas­sassa vessabhunā bhagavatā arahatā
+sammā­sambud­dhena evaṁ ovadiyamānānaṁ evaṁ anusā­si­ya­mānānaṁ anupādāya āsavehi
+cittāni vimucciṁsu. Tatra sudaṁ, sāriputta, bhiṁsanakassa vanasaṇḍassa
+­bhiṁsa­na­ka­tasmiṁ hoti — yo koci avītarāgo taṁ vanasaṇḍaṁ pavisati, yebhuyyena
+lomāni haṁsanti. Ayaṁ kho, sāriputta, hetu ayaṁ paccayo yena bhagavato ca
+vipassissa bhagavato ca sikhissa bhagavato ca vessabhussa brahmacariyaṁ na
+ciraṭṭhitikaṁ ahosī”ti.</p>
+
+<p><span class="parno">28</span><span class="ms">p_1V_28</span>“Ko pana, bhante, hetu ko paccayo yena bhagavato ca kakusandhassa bhagavato ca
+koṇāgamanassa bhagavato ca kassapassa brahmacariyaṁ ciraṭṭhitikaṁ ahosī”ti?
+“Bhagavā ca, sāriputta, kakusandho bhagavā ca koṇāgamano bhagavā ca kassapo
+akilāsuno ahesuṁ sāvakānaṁ vitthārena dhammaṁ desetuṁ. Bahuñca nesaṁ ahosi
+suttaṁ geyyaṁ veyyākaraṇaṁ gāthā udānaṁ itivuttakaṁ jātakaṁ abbhutadhammaṁ
+vedallaṁ, paññattaṁ sāvakānaṁ sikkhāpadaṁ, uddiṭṭhaṁ pātimokkhaṁ. Tesaṁ
+buddhānaṁ bhagavantānaṁ antaradhānena bud­dhānu­buddhā­naṁ sāvakānaṁ antaradhānena
+ye te pacchimā sāvakā nānānāmā nānāgottā nānājaccā nānākulā pabbajitā te taṁ
+brahmacariyaṁ ciraṁ dīghamaddhānaṁ ṭhapesuṁ. Seyyathāpi, sāriputta,
+nānāpupphāni phalake nikkhittāni suttena susaṅgahitāni, tāni vāto na vikirati
+na vidhamati na viddhaṁseti. Taṁ kissa hetu? Yathā taṁ suttena susaṅgahitattā.
+Evameva kho, sāriputta, tesaṁ buddhānaṁ bhagavantānaṁ antaradhānena
+bud­dhānu­buddhā­naṁ sāvakānaṁ antaradhānena ye te pacchimā sāvakā nānānāmā
+nānāgottā nānājaccā nānākulā pabbajitā te taṁ brahmacariyaṁ ciraṁ
+dīghamaddhānaṁ ṭhapesuṁ. Ayaṁ kho, sāriputta, hetu ayaṁ paccayo yena bhagavato
+ca kakusandhassa bhagavato ca koṇāgamanassa bhagavato ca kassapassa
+brahmacariyaṁ ciraṭṭhitikaṁ ahosī”ti.</p>
+
+<hr>
+<p><span class="parno">29</span><span class="ms">p_1V_29</span>Atha kho āyasmā sāriputto uṭṭhāyāsanā ekaṁsaṁ uttarāsaṅgaṁ karitvā yena bhagavā
+tenañjaliṁ paṇāmetvā bhagavantaṁ etadavoca — “etassa, bhagavā, kālo. Etassa,
+sugata, kālo. Yaṁ bhagavā sāvakānaṁ sikkhāpadaṁ <span class="var" title="paññāpeyya (bj, s1–3, pts1)" id="note16">paññapeyya</span>, uddiseyya
+pātimokkhaṁ, yathayidaṁ brahmacariyaṁ addhaniyaṁ assa ciraṭṭhitikan”ti.
+“Āgamehi tvaṁ, sāriputta. Āgamehi tvaṁ, sāriputta. Tathāgatova tattha kālaṁ
+jānissati. Na tāva, sāriputta, satthā sāvakānaṁ sikkhāpadaṁ paññapeti <span class="var" title="na uddisati (bj)" id="note17">uddisati</span>pātimokkhaṁ yāva na idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti. Yato ca
+kho, sāriputta, idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti, atha satthā
+sāvakānaṁ sikkhāpadaṁ paññapeti uddisati pātimokkhaṁ tesaṁyeva āsavaṭ­ṭhānī­yā­naṁ
+dhammānaṁ paṭighātāya.</p>
+
+<p><span class="parno">30</span><span class="ms">p_1V_30</span>Na tāva, sāriputta, idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti yāva na
+saṁgho rattañ­ñu­mahat­taṁ patto hoti. Yato ca kho, sāriputta, saṁgho
+rattañ­ñu­mahat­taṁ patto hoti atha idhekacce āsavaṭṭhānīyā dhammā saṁghe
+pātubhavanti, atha satthā sāvakānaṁ sikkhāpadaṁ paññapeti uddisati pātimokkhaṁ
+tesaṁyeva āsavaṭ­ṭhānī­yā­naṁ dhammānaṁ paṭighātāya.</p>
+
+<p><span class="parno">31</span><span class="ms">p_1V_31</span>Na tāva, sāriputta, idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti, yāva na
+saṁgho vepulla­mahat­taṁ patto hoti. Yato ca kho, sāriputta, saṁgho
+vepulla­mahat­taṁ patto hoti, atha idhekacce āsavaṭṭhānīyā dhammā saṁghe
+pātubhavanti, atha satthā sāvakānaṁ sikkhāpadaṁ paññapeti uddisati pātimokkhaṁ
+tesaṁyeva āsavaṭ­ṭhānī­yā­naṁ dhammānaṁ paṭighātāya.</p>
+
+<p><span class="parno">32</span><span class="ms">p_1V_32</span>Na tāva, sāriputta, idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti, yāva na
+saṁgho lābhag­ga­mahat­taṁ patto hoti. Yato ca kho, sāriputta, saṁgho
+lābhag­ga­mahat­taṁ patto hoti, atha idhekacce āsavaṭṭhānīyā dhammā saṁghe
+pātubhavanti, atha satthā sāvakānaṁ sikkhāpadaṁ paññapeti uddisati pātimokkhaṁ
+tesaṁyeva āsavaṭ­ṭhānī­yā­naṁ dhammānaṁ paṭighātāya.</p>
+
+<p><span class="parno">33</span><span class="ms">p_1V_33</span>Na tāva, sāriputta, idhekacce āsavaṭṭhānīyā dhammā saṁghe pātubhavanti, yāva na
+saṁgho bāhu­sacca­mahat­taṁ patto hoti. Yato ca kho, sāriputta, saṁgho
+bāhu­sacca­mahat­taṁ patto hoti, atha idhekacce āsavaṭṭhānīyā dhammā saṁghe
+pātubhavanti, atha satthā sāvakānaṁ sikkhāpadaṁ paññapeti uddisati pātimokkhaṁ
+tesaṁyeva āsavaṭ­ṭhānī­yā­naṁ dhammānaṁ paṭighātāya.</p>
+
+<hr>
+<p><span class="parno">34</span><span class="ms">p_1V_34</span>Nirabbudo hi, sāriputta, bhikkhusaṁgho nirādīnavo apagatakāḷako suddho sāre
+patiṭṭhito. Imesañhi, sāriputta, pañcannaṁ bhikkhusatānaṁ yo pacchimako bhikkhu
+so sotāpanno avini­pāta­dhammo niyato sam­bodhi­parā­yaṇo”ti.</p>
+
+<p><span class="parno">35</span><span class="ms">p_1V_35</span>Atha kho bhagavā āyasmantaṁ ānandaṁ āmantesi — “āciṇṇaṁ kho panetaṁ, ānanda,
+tathāgatānaṁ yehi nimantitā vassaṁ vasanti, na te anapaloketvā jana­pada­cārikaṁ
+pakkamanti. Āyāmānanda, verañjaṁ brāhmaṇaṁ apalokessāmā”ti. “Evaṁ, bhante”ti
+kho āyasmā ānando bhagavato paccassosi.</p>
+
+<p><span class="parno">36</span><span class="ms">p_1V_36</span>Atha kho bhagavā nivāsetvā patta­cīvara­mādāya āyasmatā ānandena pacchāsamaṇena
+yena verañjassa brāhmaṇassa nivesanaṁ tenupasaṅkami; upasaṅkamitvā paññatte
+āsane nisīdi. Atha kho verañjo brāhmaṇo yena bhagavā tenupasaṅkami;
+upasaṅkamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinnaṁ kho
+verañjaṁ brāhmaṇaṁ bhagavā etadavoca — “nimantitamha tayā, brāhmaṇa,
+<span class="var" title="vassaṁ vutthā (bj, s1–3, pts1, mr)" id="note18">vassaṁvuṭṭhā</span>, apalokema taṁ, icchāma mayaṁ jana­pada­cārikaṁ pakkamitun”ti.
+“Saccaṁ, bho gotama, nimantitattha mayā vassaṁvuṭṭhā; api ca yo deyyadhammo so
+na dinno. Tañca kho no asantaṁ, nopi adātukamyatā, taṁ kutettha labbhā
+bahukiccā gharāvāsā bahukaraṇīyā. Adhivāsetu me bhavaṁ gotamo svātanāya bhattaṁ
+saddhiṁ ­bhik­khu­saṁ­ghenā”ti. Adhivāsesi bhagavā tuṇhībhāvena. Atha kho bhagavā
+verañjaṁ brāhmaṇaṁ dhammiyā kathāya sandassetvā samādapetvā samuttejetvā
+sampahaṁsetvā uṭṭhāyāsanā pakkāmi.</p>
+
+<p><span class="parno">37</span><span class="ms">p_1V_37</span>Atha kho verañjo brāhmaṇo tassā rattiyā accayena sake nivesane paṇītaṁ
+khādanīyaṁ bhojanīyaṁ paṭiyādāpetvā bhagavato kālaṁ ārocāpesi — “kālo, bho
+gotama, niṭṭhitaṁ bhattan”ti.</p>
+
+<p><span class="parno">38</span><span class="ms">p_1V_38</span>Atha kho bhagavā pubbaṇ­ha­samayaṁ nivāsetvā patta­cīvara­mādāya yena verañjassa
+brāhmaṇassa nivesanaṁ tenupasaṅkami; upasaṅkamitvā paññatte āsane nisīdi
+saddhiṁ ­bhik­khu­saṁ­ghena. Atha kho verañjo brāhmaṇo buddhap­pamu­khaṁ
+bhikkhusaṁghaṁ paṇītena khādanīyena bhojanīyena sahatthā santappetvā
+sampavāretvā bhagavantaṁ bhuttāviṁ <span class="var" title="oṇīta­patta­pāṇiṁ (mr)" id="note19">onīta­patta­pāṇiṁ</span> ticīvarena acchādesi,
+ekamekañca bhikkhuṁ ekamekena dussayugena acchādesi. Atha kho bhagavā verañjaṁ
+brāhmaṇaṁ dhammiyā kathāya sandassetvā samādapetvā samuttejetvā sampahaṁsetvā
+uṭṭhāyāsanā pakkāmi.</p>
+
+<p><span class="parno">39</span><span class="ms">p_1V_39</span>Atha kho bhagavā verañjāyaṁ yathābhirantaṁ viharitvā anupagamma soreyyaṁ
+saṅkassaṁ kaṇṇakujjaṁ yena payāga­patiṭ­ṭhā­naṁ tenupasaṅkami; upasaṅkamitvā
+payāga­patiṭ­ṭhāne gaṅgaṁ nadiṁ uttaritvā yena bārāṇasī tadavasari. Atha kho
+bhagavā bārāṇasiyaṁ yathābhirantaṁ viharitvā yena vesālī tena cārikaṁ pakkāmi.
+Anupubbena cārikaṁ caramāno yena vesālī tadavasari. Tatra sudaṁ bhagavā
+vesāliyaṁ viharati mahāvane kūṭā­gāra­sālāyanti.</p>
+
+<p class="endsection">
+<span class="parno">40</span><span class="ms">p_1V_40</span>Verañ­jabhā­ṇavāro niṭṭhito.</p>
+
+</div><!--End Pali-->
+</section>
+
+<div id="nextprev"><a id="previous-sutta" href="../vi/kd.html#content"></a><a id="next-sutta" href="../vi/kd2.html#content"></a></div>
+
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a>Vinaya Pitaka
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

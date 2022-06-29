@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Vinaya - Khandhaka&nbsp;17</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small pressed">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+   <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+<h2>Vinaya Pitaka - Monastic Rules</h2>
+ 
+ 	<div class="subnav6"> <!-- Div for sub-navigation -->
+ 		<a href="../vi/kd.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile w3-yellow">Bhikkhu<br>Khandaka</a>
+ 		<a href="../vi/bu-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Vibhanga</a>
+ 		<a href="../vi/bu-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhunī<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhuni<br>Vibhanga</a>
+ 		<a href="../bmc/bmc.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Buddhist<br>Monastic Code</a>
+ 	</div>	<!-- End div for sub-navigation -->
+ 
+ <div id="content">
+
+
+<p>&nbsp;</p>
+
+<h2>Khandhaka&nbsp;17 <span class="minor">(Culavagga 7)</span> - Schism</h2>
+
+<div id="metaarea">
+ 	<ul class="translator">
+ 		<li>©&nbsp;Translated from the Pali by I.B. Horner and Bhikkhu Brahmali&nbsp; &nbsp;<a href="../home/copyright.html#hornerbrahmali">(More copyright information)</a></li>
+ 	</ul>
+ </div>
+
+ <section class="raw_sutta">
+ <div lang="en">
+
+<h3>&nbsp;</h3>
+
+<p id="p1"><span class="parno">1</span>At one time the Awakened One, the Lord, was staying at Anupiyā. Anupiyā is a little town of the Mallas. Now at that time many distinguished Sakyan young men had gone forth in imitation of the Lord who had gone forth. Now at that time Mahānāma the Sakyan and Anuruddha the Sakyan were two brothers. Anuruddha the Sakyan was delicately nurtured. He had three palaces, one for the cold weather, one for the hot, one for the rains. Being waited on for four months in the palace for the rains by female musicians, he did not come down from that palace. Then it occurred to Mahānāma the Sakyan: "At present many distinguished Sakyan young men have gone forth in imitation of the Lord who has gone forth, but no one from our family has gone forth from home into homelessness. Suppose I should go forth, or Anuruddha?" Then Mahānāma the Sakyan approached Anuruddha the Sakyan; having approached, he spoke thus to Anuruddha the Sakyan: "At present, dear Anuruddha, many distinguished Sakyan young men … but no one from our family has gone forth from home into homelessness. Well now, either you go forth or I will go forth."</p>
+
+<hr>
+<p>"But I have been delicately nurtured, I am not able to go forth from home into homelessness. You go forth."</p>
+
+<p>"Come along, dear Anuruddha, I will instruct you in what belongs to the household life. First the fields have to be ploughed; having had them ploughed they must be sown; having had them sown water must be led in to them; having had water led in to them the water must be led away; having led the water away you must have the weeds dug up; having had the weeds dug up you must get the crop reaped; having had the crop reaped you must have it harvested; having had it harvested you must have it made into stooks; having had it made into stooks you must have it threshed; having had it threshed you must have the straw winnowed; having had the straw winnowed you must have the chaff winnowed; having had the chaff winnowed you must have it sifted; having had it sifted you must have it brought in; having had it brought in it is to be done just the same the next year, and it is to be done just the same the next year."</p>
+
+<p>"The operations do not stop, no end to the operations is to be seen. When will the operations stop? When will an end to the operations be seen? When will we, possessed of and provided with the fivefold strand of sense pleasures, amuse ourselves unconcernedly?"</p>
+
+<p>"But, dear Anuruddha, the operations do not stop, no end to the operations is to be seen. Even when our fathers and grandfathers passed away the operations were not stopped."</p>
+
+<p>"Well now, you understand just what belongs to the household life. I will go forth from home into homelessness."</p>
+
+<hr>
+<p id="p2"><span class="parno">2</span>Then Anuruddha the Sakyan approached his mother; having approached, he spoke thus to his mother: "I, mother, want to go forth from home into homelessness. Consent to my going forth from home into homelessness." When he had spoken thus, the mother of Anuruddha the Sakyan spoke thus to Anuruddha the Sakyan:</p>
+
+<p>"You two boys, dear Anuruddha, are dear to me, beloved, agreeable. In the case of your death I would be unwillingly separated from you. So how can I, while you are still living, allow a going forth from home into homelessness?" And a second time … And a third time Anuruddha the Sakyan spoke thus to his mother: … the mother of Anuruddha the
+Sakyan spoke thus to Anuruddha the Sakyan: " … how can I, while you are still living, allow a going forth from home into homelessness?"</p>
+
+<p id="p3"><span class="parno">3</span>Now at that time Bhaddiya the Sakyan chieftain was ruling over the Sakyans and was a friend of Anuruddha the Sakyan. Then the mother of Anuruddha the Sakyan thinking: "Now this Bhaddiya … is a friend of Anuruddha; he will not be able to go forth from home into homelessness," spoke thus to Anuruddha the Sakyan: "If, dear Anuruddha, Bhaddiya the Sakyan chieftain goes forth from home into homelessness you can go forth likewise."</p>
+
+<p>Then Anuruddha the Sakyan approached Bhaddiya the Sakyan chieftain; having approached, he spoke thus to Bhaddiya the Sakyan chieftain: "My going forth, friend, is dependent on yours."</p>
+
+<p>"If your going forth, friend, is dependent on mine, let it be independent. I, with you … Go forth according to your wish."</p>
+
+<p>"Come, friend, we will both go forth from home into homelessness."</p>
+
+<p>"I, friend, am not able to go forth from home into homelessness. Whatever else I am able to do for you, that will I do. You go forth."</p>
+
+<p>"My mother, friend, spoke thus to me: ‘If, dear Anuruddha, Bhaddiya the Sakyan chieftain goes forth from home into homelessness, you can go forth likewise.’ But, friend, these words were spoken by you: ‘If your going forth is dependent on mine, let it be independent. I, with you … Go forth according to your wish.’ Come, friend, we will both go forth from home into homelessness."</p>
+
+<p id="p4"><span class="parno">4</span>Now at that time people were speakers of truth, pledged to the truth. Then Bhaddiya the Sakyan chieftain spoke thus to Anuruddha the Sakyan: "Wait, friend, for seven years. After seven years we will both go forth from home into homelessness."</p>
+
+<hr>
+<p>"Seven years are too long, friend, I am not able to wait for seven years."</p>
+
+<p>"Wait, friend, for six years … live … four … three … two years … for one year."</p>
+
+<hr>
+<p>"One year is too long, friend, I am not able to wait one year."</p>
+
+<p>"Wait, friend, for seven months. After seven months we will both go forth from home into homelessness."</p>
+
+<p>"Seven months are too long, friend, I am not able to wait seven months."</p>
+
+<p>"Wait, friend, for six … five … four … three … two months … one month … for half a month, after half a month we will both go forth from home into homelessness."</p>
+
+<p>"Half a month is too long, friend, I am not able to wait half a month."</p>
+
+<p>"Wait, friend, for seven days until I hand over the kingdom to my sons and brothers."</p>
+
+<p>"Seven days are not too long, friend, I will wait."</p>
+
+<hr>
+<p id="p5"><span class="parno">5</span>Then Bhaddiya the Sakyan chieftain and Anuruddha and Ānanda and Bhagu and Kimbila and Devadatta with Upāli the barber as the seventh, as they had often previously gone out to a ground in a pleasure grove with a fourfold army, so did they (now) go out with a fourfold army. Having gone far, having sent back the army, having passed into other territory, having taken off their ornaments, having tied them up into a bundle with their upper robes, they spoke thus to Upāli the barber: "Come, good Upāli, return, this will be enough for your livelihood." Then it occurred to Upāli the barber as he was going back: "The Sakyans are fierce. Thinking: ‘This one has made the young men come forth,’ they may even kill me. But if these young Sakyan men will go forth from home into homelessness, why should not I?"</p>
+
+<p>Having loosened the bundle, having hung the goods up on a tree, and having said: "Whoever sees it, it is given (to him), let him take it," he approached the young Sakyan men. These young Sakyan men saw Upāli the barber coming in the distance; having seen him, then spoke thus to Upāli the barber: "Why have you, good Upāli, returned?"</p>
+
+<p>"Now, it occurred to me, young gentlemen, as I was going back, ‘The Sakyans are fierce … they may even kill me. But if these young Sakyan men will go forth from home into homelessness, why should not I?’ So I, young gentlemen, having loosened the bundle … ‘ … let him take it,’ returned again from there."</p>
+
+<p>"You did well, good Upāli, in that you did not go back. The Sakyans are fierce … they might even have killed you."</p>
+
+<hr>
+<p id="p6"><span class="parno">6</span>Then these young Sakyan men, taking Upāli the barber, approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. As they were sitting down at a respectful distance, these young Sakyan men spoke thus to the Lord:</p>
+
+<p>"We, Lord, are Sakyans, we are proud. Lord, this barber, Upāli, has been our attendant for a long time. May the Lord let him go forth first. We will greet him, rise up before him, salute him with joined palms, and do the proper duties. Thus will the Sakyan pride be humbled in us Sakyans."</p>
+
+<p id="p7"><span class="parno">7</span>Then the Lord let Upāli the barber go forth first, and afterwards these young Sakyan men. Then the venerable Bhaddiya within one year realised the threefold knowledge, the venerable Anuruddha obtained deva-sight, the venerable Ānanda realised the fruit of stream attainment, Devadatta acquired ordinary psychic power.</p>
+
+<p id="p8"><span class="parno">8</span>Now at that time the venerable Bhaddiya, dwelling in a forest and at the root of a tree and in an empty place, constantly uttered this utterance: "Ah, what happiness! Ah, what happiness!" Then several monks approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. As they were sitting down at a respectful distance, these monks spoke thus to the Lord:</p>
+
+<p>"Lord, the venerable Bhaddiya, dwelling in a forest utters this utterance: ‘Ah, what happiness! Ah, what happiness!’ Doubtless, Lord, the venerable Bhaddiya fares the Brahma-faring dissatisfied, and (although) dwelling in a forest and at the root of a tree and in an empty place, he utters this utterance, ‘Ah, what happiness! Ah, what happiness!’ while he is recalling the former joys of kingship."</p>
+
+<p id="p9"><span class="parno">9</span>Then the Lord addressed a certain monk, saying: "Come you, monk, in my name address the monk Bhaddiya saying: ‘The Teacher, reverend Bhaddiya, is summoning you’."</p>
+
+<p>"Very well, Lord," and that monk, having answered the Lord in assent, approached the venerable Bhaddiya; having approached, he spoke thus to the venerable Bhaddiya: "The Teacher, reverend Bhaddiya, is summoning you."</p>
+
+<p>"Very well, your reverence," and the venerable Bhaddiya, having answered that monk in assent, approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. The Lord spoke thus to the venerable Bhaddiya as he was sitting down at a respectful distance: "Is it true, as is said, that you, Bhaddiya, dwelling in a forest and at the root of a tree and in an empty place, are constantly uttering this utterance, ‘Ah, what happiness! Ah, what happiness!’?"</p>
+
+<hr>
+<p>"Yes, Lord."</p>
+
+<p>"What circumstances were you, Bhaddiya, taking into account when, dwelling in a forest and at the root of a tree and in an empty place, you constantly uttered this utterance, ‘Ah, what happiness! Ah, what happiness!’?"</p>
+
+<p>"Formerly, Lord, when I was a ruler there was a fully appointed guard both within my private quarters and outside my private quarters, there was a fully appointed guard both within the town and outside the town, and there was a fully appointed guard within the country districts. But I, Lord, although being guarded and warded thus, dwelt afraid, anxious fearful, alarmed. But now I, Lord, dwelling in a forest and at the root of a tree and in an empty place, am unafraid, not anxious, not fearful, not alarmed. I am unconcerned,
+unruffled, dependent on others, with a mind become as a wild creature’s. This, Lord, was the circumstance I was taking into account when, dwelling in a forest and at the root of a tree and in an empty place, I constantly uttered this utterance, ‘Ah, what happiness! Ah, what happiness!’"</p>
+
+<p>Then the Lord, having understood this matter, at that time uttered this utterance:</p>
+
+<p id="p10" class="verse"><span class="parno">10</span>"In whom there inly lurk no spites,
+<br>Who has overcome becoming and not becoming thus or thus,
+<br>Him, gone past fear, blissful, sorrowless,
+<br>The devas do not win to see."</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p11"><span class="parno">11</span>Then the Lord, having stayed at Anupiyā for as long as he found suiting, set out on almstour for Kosambī. Gradually, walking on tour, he arrived at Kosambī. The Lord stayed there at Kosambī in Ghosita’s monastery. Then as Devadatta was meditating in private a reasoning arose in his mind thus: "Whom now could I please, so that because he is pleased with me, much gain and honour would accrue (to me)?" Then it occurred to Devadatta: "This Prince Ajatāsattu is young and also has an auspicious future. What now if I were to make Prince Ajatāsattu pleased, so that because he is pleased with me, much gain and honour would accrue (to me)?"</p>
+
+<p id="p12"><span class="parno">12</span>Then Devadatta, having packed away his lodging, taking his bowl and robe, set out for Rājagaha; in due course he arrived at Rājagaha. Then Devadatta, having thrown off his own form, having assumed the form of a young boy clad in a girdle of snakes, became manifest in Prince Ajatāsattu’s lap. Then Prince Ajatāsattu was afraid, anxious, fearful, alarmed. Then Devadatta spoke thus to Prince Ajatāsattu: "Are you, prince, afraid of me?"</p>
+
+<p>"Yes, I am afraid. Who are you?"</p>
+
+<p>"I am Devadatta."</p>
+
+<hr>
+<p>"If you, honoured sir, are really master Devadatta, please become manifest in your own form." Then Devadatta, having thrown off the young boy’s form, stood, wearing his outer cloak and (other) robes and carrying his bowl, before Prince Ajatāsattu. Then Prince Ajatāsattu, greatly pleased with this wonder of psychic power on Devadatta’s part, morning and evening went to wait on him with five hundred chariots, and five hundred offerings of rice cooked in milk were brought as a gift of food. Then there arose to Devadatta, overcome by gains, honours and fame, his mind obsessed by them, some such longing as this: "It is I who will lead the Order of monks." But at the very occurrence of this thought Devadatta declined in his psychic power.</p>
+
+<p id="p13"><span class="parno">13</span>Now at that time Kakudha the Koliyan, the venerable Moggallāna the Great’s attendant, had just died and had arisen in a certain mind-made body, and such was the reinstatement of his individuality that it was like two or three Magadhan village fields, yet even with that reinstatement of individuality he injured neither himself nor another. Then Kakudha the young deva approached the venerable Moggallāna the Great; having approached, having greeted the venerable Moggallāna the Great, he stood at a respectful distance. As he was standing at a respectful distance, the young deva Kakudha spoke thus to the venerable Moggallāna the Great:</p>
+
+<p>"To Devadatta, honoured sir, overcome by gains, honours and fame, his mind obsessed by them, some such longing as this arose: ‘It is I who will lead the Order of monks’. But, honoured sir, at the very occurrence of this thought Devadatta declined in his psychic power." Thus spoke Kakudha the young deva. Having spoken thus, having greeted the venerable Moggallāna the Great, keeping his right side towards him he vanished then and there.</p>
+
+<hr>
+<p id="p14"><span class="parno">14</span>Then the venerable Moggallāna the Great approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Moggallāna the Great spoke thus to the Lord:</p>
+
+<hr>
+<p>"Kakudha the Koliyan, Lord, my attendant, has just died and has arisen in a certain mind-made body … Then Kakudha the young deva approached me … keeping his right side towards me, he vanished then and there."</p>
+
+<hr>
+<p id="p15"><span class="parno">15</span>"But, Moggallāna, does Kakudha the young deva so compass your mind with his mind for you to know that whatever Kakudha the young deva says, all that is so and not otherwise?"</p>
+
+<p>"Lord, Kakudha the young deva so compasses my mind with his mind for me to know that whatever Kakudha the young deva says, all that is so and not otherwise."</p>
+
+<p>"Mind what you say, Moggallāna, mind what you say, Moggallāna. This foolish man will now betray himself, by himself.</p>
+
+<h4>&nbsp;</h4>
+
+<p><span class="parno">16–20</span>"Moggallāna, these five teachers are found in the world. What five?
+<br> &nbsp;
+<br>"This is a case, Moggallāna, when some teacher, not pure in moral habit, pretends ‘I am pure in moral habit,’ and he says, ‘My moral habit is pure, clean, untarnished.’ Disciples know this about him: ‘This worthy teacher, not pure in moral habit pretends … untarnished.’ But they think: ‘If we should tell this to householders, he would not like it, and how could we carry out what he would not like? Moreover he consents to (accept) the requisites of robes, almsfood, lodgings and medicines for the sick. Whatever anyone shall do, even by that shall he be known.’ Moggallāna, disciples protect such a teacher in regard to moral habit and such a teacher expects protection from disciples in regard to moral habit.
+<br> &nbsp;
+<br>"And again, Moggallāna, this is a case when some teacher, not pure in mode of livelihood, pretends … not pure in teaching of dhamma, pretends … not pure in exposition … not pure in knowledge and vision, pretends … Moggallāna, disciples protect such a teacher in regard to knowledge and vision, and such a teacher expects protection from disciples in regard to knowledge and vision. These, Moggallāna, are the five teachers found in the world.</p>
+
+<hr>
+<p id="p21"><span class="parno">21</span>"But I, Moggallāna, am pure in moral habit, I acknowledge that I am pure in moral habit, that my moral habit is pure, clean, untarnished. And disciples do not protect me in regard to moral habit and I do not expect protection from disciples in regard to moral habit. I am pure in mode of livelihood … I am pure in dhamma teaching … I am pure in exposition … I am pure in knowledge and vision. I acknowledge that I am pure in knowledge and vision, that my knowledge and vision are pure, clean, untarnished. And disciples do not protect me in regard to knowledge and vision, and I do not expect protection from disciples in regard to knowledge and vision."</p>
+
+<hr>
+<p id="p22"><span class="parno">22</span>Then the Lord, having stayed at Kosambī for as long as he found suiting, set out on a tour for Rājagaha. Gradually, walking on tour, he arrived at Rājagaha. The Lord stayed there at Rājagaha in the Bamboo Grove at the squirrels’ feeding place. Then several monks approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. As they were sitting down at a respectful distance, these monks spoke thus to the Lord:</p>
+
+<p>"Prince Ajatāsattu, Lord, goes morning and evening to wait on Devadatta with five hundred chariots, and five hundred offerings of rice cooked in milk are brought as a gift of food."</p>
+
+<p>"Do not, monks, envy Devadatta’s gains and honours and fame. For as long, monks, as Prince Ajatāsattu goes morning and evening to wait on Devadatta with five hundred chariots and (as long as) five hundred offerings of rice cooked in milk are brought as a gift of food, there may be expected for Devadatta decline in skilled mental states, not growth.</p>
+
+<hr>
+<p id="p23"><span class="parno">23</span>It is as if, monks, they were to throw a bladder at a fierce dog’s nose — as that dog, monks, would become much fiercer, even so, monks, for as long as Prince Ajatāsattu goes morning and evening … there may be expected for Devadatta decline in skilled mental states, not growth.</p>
+
+<p id="p24"><span class="parno">24</span>Devadatta’s gains, honours and fame bring about his own hurt, Devadatta’s gains, honour and fame bring about his destruction.</p>
+
+<p id="p25"><span class="parno">25</span>As, monks, a plantain bears fruit to its own hurt, bears fruit to its destruction, even so, monks, do Devadatta’s gains, honours and fame bring about his own hurt, do Devadatta’s gains, honours and fame bring about his destruction.</p>
+
+<p id="p26"><span class="parno">26</span>As, monks, a bamboo bears fruit to its own hurt … even so, monks, do Devadatta’s gains, honours and fame bring about … his destruction. …</p>
+
+<p id="p27"><span class="parno">27</span>… a reed bears fruit to its own hurt … even so, monks, do Devadatta’s gains, honours and fame bring about … his destruction.</p>
+
+<p id="p28"><span class="parno">28</span>As, monks, a she-mule conceives to her own hurt, conceives to her destruction, even so, monks, do Devadatta’s gains, honours and fame bring about … his destruction.</p>
+
+<hr>
+<p id="p29" class="verse"><span class="parno">29</span>"Truly its fruit the plantain does destroy,
+<br>Its fruit the bamboo, its fruit the reed;
+<br>So honour does destroy the fool,
+<br>Just as its embryo the mule."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">30</span>Told is the First Portion for Repeating.</p>
+
+<h3>&nbsp;</h3>
+<h4>&nbsp;</h4>
+
+<p id="p31"><span class="parno">31</span>Now at that time the Lord was sitting down teaching dhamma surrounded by a large company, by a company which included the king. Then Devadatta, rising from his seat, having arranged his upper robe over one shoulder, having saluted the Lord with joined palms, spoke thus to the Lord: "Lord, the Lord is now old, worn, stricken in years, he has lived his span and is at the close of his life; Lord, let the Lord now be content to live devoted to abiding in ease here and now, let him hand over the Order of monks to me. It is I who will lead the Order of monks."</p>
+
+<hr>
+<p>"Enough, Devadatta, please do not lead the Order of monks."</p>
+
+<p id="p32"><span class="parno">32</span>And a second time … And a third time Devadatta spoke thus to the Lord: "Lord, the Lord is now old, worn, stricken in years … It is I who will lead the Order of monks."</p>
+
+<hr>
+<p id="p33"><span class="parno">33</span>"I, Devadatta, would not hand over the Order of monks even to Sāriputta and Moggallāna. How then could I to you, a wretched one to be vomited like spittle?"</p>
+
+<p>Then Devadatta, thinking: "The Lord in an assembly which included a king disparaged me by (using) the term, ‘one to be vomited like spittle,’ while he extolled Sāriputta and Moggallāna," angry, displeased, having greeted the Lord, departed keeping his right side towards him.</p>
+
+<p>And this was the first time that Devadatta felt malice towards the Lord.</p>
+
+<p id="p34"><span class="parno">34</span>Then the Lord addressed the monks, saying: "Well then, monks, let the Order carry out a (formal) act of Information against Devadatta in Rājagaha to the effect that whereas Devadatta’s nature was formerly of one kind, now it is of another kind; and that whatever Devadatta should do by gesture and by voice, in that neither the Awakened One nor
+
+dhamma nor the Order should be seen but in that only Devadatta should be seen. And thus, monks, should it be carried out: The Order should be informed by an experienced, competent monk, saying:</p>
+
+<hr>
+<p id="p35"><span class="parno">35</span>‘<span class="kamma">Honoured sirs, let the Order listen to me. If it seems right to the Order, let the Order carry out an act of Information against Devadatta in Rājagaha, to the effect that whereas Devadatta’s nature was formerly of one kind, now it is of another kind, and that whatever Devadatta should do … in that only Devadatta should be seen.</span> This is the motion.</p>
+
+<p id="p36"><span class="parno">36</span>Honoured sirs, let the Order listen to me. The Order is carrying out the (formal) act of Information against Devadatta in Rājagaha, to the effect that … in that only Devadatta should be seen. If the carrying out of the (formal) act of Information against Devadatta in Rājagaha to the effect that … in that only Devadatta should be seen is pleasing to the venerable ones, they should be silent; he to whom it is not pleasing should speak. The (formal) act of Information against Devadatta in Rājagaha to the effect that …</p>
+
+<p id="p37"><span class="parno">37</span>… in that only Devadatta should be seen is carried out by the Order. It is pleasing to the Order, therefore it is silent. Thus do I understand this’."</p>
+
+<hr>
+<p id="p38"><span class="parno">38</span>Then the Lord addressed the venerable Sāriputta, saying: "Well then, do you, Sāriputta, inform against Devadatta in Rājagaha."</p>
+
+<p>"Formerly, Lord, I spoke praise of Devadatta in Rājagaha saying: ‘Godhi’s son is of great psychic power, Godhi’s son is of great majesty.’ How can I, Lord, inform against Devadatta in Rājagaha?"</p>
+
+<p>"Was not the truth spoken by you, Sāriputta, when you spoke praise of Devadatta in Rājagaha saying: ‘Godhi’s son is of … great majesty’?"</p>
+
+<p>"Yes, Lord."</p>
+
+<p>"Even so, Sāriputta, when you inform against Devadatta in Rājagaha it will be just as true."</p>
+
+<p>"Very well, Lord," the venerable Sāriputta answered the Lord in assent.</p>
+
+<hr>
+<p id="p39"><span class="parno">39</span>Then the Lord addressed the monks, saying: "Well then, monks, let the Order agree for Sāriputta to inform against Devadatta in Rājagaha saying: ‘Formerly Devadatta’s nature was of such a kind, now it is of another kind, and that whatever
+
+ Devadatta should do by gesture and by voice, in that neither the Awakened One nor dhamma nor the Order should be seen, but in that only Devadatta should be seen.’ And thus, monks, should Sāriputta be agreed upon: First, Sāriputta should be asked; having been asked, the Order should be informed by an experienced, competent monk, saying:</p>
+
+<p id="p40"><span class="parno">40</span>‘<span class="kamma">Honoured sirs, let the Order listen to me. If it seems right to the Order, the Order may agree for the venerable Sāriputta to inform against Devadatta in Rājagaha saying: ‘Formerly Devadatta’s nature was of one kind … in that only Devadatta should be seen.’</span> This is the motion. If the agreement upon Sāriputta to inform against Devadatta in Rājagaha, saying:</p>
+
+<hr>
+<p id="p41"><span class="parno">41</span>‘Formerly Devadatta’s nature was of one kind … in that only Devadatta should be seen’ is pleasing to the venerable ones, they should be silent; he to whom it is not pleasing should speak. The venerable Sāriputta is agreed upon by the Order to inform against Devadatta in Rājagaha, saying:</p>
+
+<p id="p42"><span class="parno">42</span>‘Formerly Devadatta’s nature was of one kind … in that only Devadatta should be seen.’ … It is pleasing to the Order, therefore it is silent. Thus do I understand this’."</p>
+
+<hr>
+<p id="p43"><span class="parno">43</span>The venerable Sāriputta, (thus) agreed upon, having entered Rājagaha together with several monks, informed against Devadatta in Rājagaha to the effect that: "Formerly Devadatta’s nature was of one kind, now it is of another kind, and that whatever Devadatta should do by gesture and by voice, in that neither the Awakened One nor dhamma nor the Order should be seen, but in that only Devadatta should be seen." Those people who were of little faith, not believing, who were of poor intelligence, spoke thus: "These recluses, sons of the Sakyans are jealous, they are jealous of Devadatta’s gains and honours." But those people who had faith and were believing, who were wise, intelligent, spoke thus: "This can be no ordinary matter in that the Lord has Devadatta informed against in Rājagaha."</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p44"><span class="parno">44</span>Then Devadatta approached Prince Ajatāsattu; having approached, he spoke thus to Prince Ajatāsattu: "Formerly, prince, people were long-lived, nowadays they are short-lived, and it is possible that you, while still a prince, might pass away.
+
+ Well now, do you prince, having slain your father, become king. I, having slain the Lord, will become the Awakened One."</p>
+
+<p id="p45"><span class="parno">45</span>And Prince Ajatāsattu, thinking: "Now, master Devadatta is of great psychic power, of great majesty; master Devadatta must know (what is right)," having fastened a dagger against his thigh, at an early hour (although) afraid, anxious, fearful, alarmed, entered the (king’s) private quarters forcibly. But the chief ministers in attendance in the private quarters saw Prince Ajatāsattu at an early hour (although) afraid, anxious, fearful, alarmed, entering the (king’s) private quarters forcibly. Seeing him, they laid hold of him. These examining him, and having seen the dagger bound against his thigh, spoke thus to Prince Ajatāsattu: "What is it that you, prince, want to do?"</p>
+
+<p>"I want to slay my father."</p>
+
+<p>"By whom are you being incited?"</p>
+
+<hr>
+<p>"By master Devadatta." Some chief ministers gave this opinion: "The Prince should be slain and Devadatta and all the monks should be slain." Some chief ministers gave this opinion: "The monks should not be slain for the monks are not giving offence, but the Prince should be slain and Devadatta." Some chief ministers gave this opinion: "The Prince should not be slain, nor Devadatta, the monks should not be slain. The king should be told and we will do whatever the king says."</p>
+
+<p id="p46"><span class="parno">46</span>"Then these chief ministers, taking Prince Ajatāsattu, approached King Seniya Bimbisāra of Magadha; having approached, they told this matter to King Seniya Bimbisāra of Magadha. He said: "What opinion, my good men, have the chief ministers formed?"</p>
+
+<p>"Some chief ministers, Sire, gave this opinion … Some chief ministers gave this opinion … Some chief ministers gave this opinion: ‘The Prince should not be slain, nor Devadatta, the monks should not be slain. The king should be told and we will do whatever the king says’."</p>
+
+<hr>
+<p>"What, my good men, can the Awakened One or dhamma or the Order have to do (with this)? Has not the Lord already had Devadatta informed against in Rājagaha to the effect that formerly Devadatta’s nature was of one kind, now it is of another kind, and that whatever Devadatta may do by gesture or by speech, in that neither the Awakened One nor dhamma nor the Order is to be seen, but in that only Devadatta should be seen?"</p>
+
+<p>Those chief ministers who had given their opinion thus: "The Prince should be slain and Devadatta and all the monks should be slain," these he discharged. Those chief ministers who had given their opinion thus: "The monks should not be slain, for the monks do not give any offence, but the prince should be slain and Devadatta," these he set in lowly positions. Those chief ministers who had given their opinion thus: ‘The prince should not be slain, nor Devadatta, nor should the monks be slain. The king should be told and we will do whatever the king says," these he set in high positions. Then King Seniya Bimbisāra of Magadha spoke thus to Prince Ajatāsattu:</p>
+
+<p>"Why do you, prince, want to slay me?"</p>
+
+<p>"Sire, I have need of a kingdom."</p>
+
+<p>"If it be that you, prince, have need of a kingdom, this kingdom is yours," and he handed over the kingdom to Prince Ajatāsattu.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p47"><span class="parno">47</span>Then Devadatta approached Prince Ajatāsattu; having approached, he spoke thus to Prince Ajatāsattu:</p>
+
+<p>"Your Majesty, command your men so that they deprive the recluse Gotama of life." Then Prince Ajatāsattu commanded his men, saying: "My good men, do whatever master Devadatta says." Then Devadatta enjoined the men, saying: "Go along, friends, the recluse Gotama is staying at a certain place. Having deprived him of life, come back by a certain road," and he set two men on that road, saying: "Whatever man comes alone along this road, having deprived him of life, come back by this road," and having set four men on that road,
+
+saying: "Whatever couple of men come along by this road, having deprived them of life, come back by this road," and having set eight men on that road, saying: "Whatever four men come along by this road,
+
+ … come back by this road," and having set sixteen men on that road, he said: "Whatever eight men come along by this road, having deprived them of life, come back."</p>
+
+<p id="p48"><span class="parno">48</span>Then that man who was alone, having grasped a sword and shield, having bound on a bow and quiver, approached the Lord; having approached, when he was quite near the Lord he stood still, his body quite rigid afraid, anxious, fearful, alarmed. The Lord saw that man standing still, his body quite rigid, afraid … alarmed and seeing him, he spoke thus to that man: "Come, friend, do not be afraid." Then that man, having put his sword and shield to one side, having laid down his bow and quiver, approached the Lord; having approached, having inclined his head to the Lord’s feet, he spoke thus to the Lord:</p>
+
+<p>"Lord, a transgression has overcome me, foolish, misguided, wrong that I was, in that I was coming here with my mind malignant, my mind on murder. Lord, may the Lord acknowledge for me the transgression as a transgression for the sake of restraint in the future."</p>
+
+<p>"Truly, friend, a transgression overcame you, foolish, misguided, wrong that you were, in that you were coming here, with your mind malignant, your mind on murder. But if you, friend, having seen the transgression as a transgression, confess according to the rule, we acknowledge it for you; for friend in the discipline of the noble, this is growth: whoever having seen a transgression as a transgression, confesses according to the rule, he attains restraint in the future."</p>
+
+<p id="p49"><span class="parno">49</span>Then the Lord talked a progressive talk to this man, that is to say talk on giving, talk on moral habit, talk on heaven … sorrow, its uprising, stopping, the Way. Just as a clean cloth without black specks will take a dye easily, even so (as he was sitting) on that very seat did dhamma-vision, dustless, stainless, arise to that man, that "whatever is of a nature to arise, all that is of a nature to stop." Then that man as one who has seen dhamma, attained dhamma, known dhamma, plunged into dhamma, having crossed over doubt, having put away uncertainty, having attained without another’s help to full confidence in the Teacher’s instruction, spoke thus to the Lord:</p>
+
+<p>"Excellent, Lord: Lord, it is excellent. It is as if one were to set upright what has been upset … thus is dhamma explained in many a figure by the Lord. So I, Lord,  am going to the Lord for refuge and to dhamma and to the Order of monks. May the Lord accept me as a lay-follower going for refuge from this day forth for as long as life lasts."</p>
+
+<p>Then the Lord spoke thus to that man: "Do not you, friend, go by that road. Go by this road," and he sent him off by another road.</p>
+
+<hr>
+<p id="p50"><span class="parno">50</span>Then those two men, thinking: ‘Why is that man who is alone so slow in coming?’ going along to meet him saw the Lord sitting at the root of a tree. Seeing him, they approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. The Lord talked a progressive talk to these … to full confidence in the Teacher’s instruction, spoke thus to the Lord: "Excellent, Lord … May the Lord accept us as lay-followers going for refuge from this day forth for as long as life lasts." Then the Lord spoke thus to these men:</p>
+
+<p>"Do not you, friends, go by that road. Go by this road," and he sent them off by another road.</p>
+
+<hr>
+<p id="p51"><span class="parno">51</span>Then those four men, thinking: ‘Why are these two men so slow in coming?’ … and he sent them off by another road. Then those eight men, thinking: ‘Why are these four men so slow in coming?’ … and he sent them off by another road. Then those sixteen men, thinking: ‘Why are these eight men so slow in coming?’ … "May the Lord receive us as lay-followers going for refuge from this day forth for as long as life lasts."</p>
+
+<hr>
+<p id="p52"><span class="parno">52</span>Then that one man approached Devadatta; having approached, he spoke thus to Devadatta: "Honoured sir, I am not able to deprive that Lord of life, that Lord is of great psychic power, of great might."</p>
+
+<p>"All right, friend, do not you deprive the recluse Gotama of life. I myself will deprive the recluse Gotama of life."</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p53"><span class="parno">53</span>Now at that time the Lord was pacing up and down in the shade of Mount Vulture Peak. Then Devadatta, having climbed Mount Vulture Peak, hurled down a great stone, thinking: "With this I will deprive the recluse Gotama of life." But two mountain peaks, having met, crushed that stone, and (only) a fragment of it, having fallen down, drew blood on the Lord’s foot. Then the Lord, having looked upwards, spoke thus to Devadatta: "You have produced great demerit, foolish man, in that you, with your mind malignant, your mind on murder, drew the Truth-finder’s blood." Then the Lord addressed the monks, saying: "This, monks, is the first deed whose fruit comes with no delay accumulated by Devadatta since he, with his mind malignant, his mind on murder, drew the Truth-finder’s blood."</p>
+
+<p id="p54"><span class="parno">54</span>Monks heard: "It is said that Devadatta schemed to murder the Lord," and so these monks paced up and down on every side of the Lord’s dwelling-place doing their studies together with a loud noise, with a great noise for the protection, defence and warding of the Lord. The Lord heard the loud noise, the great noise, the noise of studying, and hearing it, he addressed the venerable Ānanda, saying:</p>
+
+<p>"What on earth, Ānanda, is this loud noise, this great noise, this noise of studying?"</p>
+
+<p>"Lord, the monks heard that Devadatta schemed to murder the Lord, and so, Lord, these monks are pacing up and down … for the protection, defence and warding of the Lord. This, Lord, is the loud noise, the great noise, the noise of studying."</p>
+
+<hr>
+<p>"Well now, Ānanda, address these monks in my name, saying: ‘The Teacher is summoning the venerable ones.’"</p>
+
+<p>"Very well, Lord," and the venerable Ānanda, having answered the Lord in assent, approached those monks; having approached, he spoke thus to those monks: "The Teacher is summoning the venerable ones."</p>
+
+<p>"Very well, your reverence," and these monks, having answered the venerable Ānanda in assent, approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. The Lord spoke thus to these monks as they were sitting down at a respectful distance:</p>
+
+<hr>
+<p id="p55"><span class="parno">55</span>"This is impossible, monks, it cannot come to pass that anyone could deprive a Truth-finder of life by aggression; monks, Truth-finders attain nibbāna not because of an attack.</p>
+
+<hr>
+<p><span class="parno">56–58</span>Monks, there are these five teachers found in the world. What five? … and I do not expect protection from disciples in respect of knowledge and vision. This is impossible, monks, it cannot come to pass that anyone could deprive a Truth-finder of life by aggression; monks, Truth-finders attain nibbāna not because of an attack. Go, monks, to your own dwelling-places; Truth-finders, monks, do not need to be protected."</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p59"><span class="parno">59</span>Now at that time there was a fierce elephant in Rājagaha, a man-slayer, called Nālāgiri. Then Devadatta, having entered Rājagaha, having gone to the elephant stable, spoke thus to the mahouts: "We, my good fellows, are relations of the king. We are competent to put in a high position one occupying a lowly position and to bring about an increase in food and wages. Well now, good fellows, when the recluse Gotama is coming along this carriage road, then, having let loose this elephant, Nālāgiri, bring him down this carriage road."</p>
+
+<p>"Very well, honoured sir," these mahouts answered Devadatta in assent.</p>
+
+<p>Then the Lord, having dressed in the morning, taking his bowl and robe, entered Rājagaha for almsfood together with several monks. Then the Lord went along that carriage road. Then those mahouts saw the Lord coming along that carriage-road; seeing him, having let loose the elephant Nālāgiri, they brought him down that carriage-road. The elephant Nālāgiri saw the Lord coming from afar; seeing him, having lifted up his trunk, he rushed towards the Lord, his ears and tail erect. Those monks saw the elephant Nālāgiri coming in the distance; seeing him, they spoke thus to the Lord:</p>
+
+<hr>
+<p>"Lord, this elephant Nālāgiri, coming along this carriage-road, is a fierce man-slayer; Lord, let the Lord turn back, let the well-farer turn back."</p>
+
+<p>"Wait, monks, do not be afraid; this is impossible, monks, it cannot come to pass that anyone should deprive a Truth-finder of life by aggression; monks, Truth-finders attain nibbāna not because of an attack."</p>
+
+<p id="p60"><span class="parno">60</span>And a second time … And a third time these monks spoke thus to the Lord: "Lord, this elephant Nālāgiri, … let the well-farer turn back."</p>
+
+<p>"Wait, monks, … Truth-finders attain nibbāna not because of an attack."</p>
+
+<hr>
+<p id="p61"><span class="parno">61</span>Now at that time people, having mounted up on to the long houses and the curved houses and the roofs, waited there. Those people who were of little faith, not believing, who were of poor intelligence, these spoke thus: "This great recluse is indeed lovely; he will be hurt by the bull elephant." But those people who had faith and were believing, who were wise and intelligent, these spoke thus: "Soon, good sirs, the bull-elephant will come into conflict with the elephant (among men)."</p>
+
+<p>Then the Lord suffused the elephant Nālāgiri with loving-kindness of mind. Then the elephant Nālāgiri, suffused by the Lord with loving-kindness of mind, having put down his trunk, approached the Lord; having approached, he stood in front of the Lord. Then the Lord, stroking the elephant Nālāgiri’s forehead with his right hand, addressed the elephant Nālāgiri with verses:</p>
+
+<hr>
+<p id="p62" class="verse"><span class="parno">62</span>"Do not, elephant, strike the elephant (among men),
+<br>for painful, elephant, is the striking of the elephant (among men),
+<br>For there is no good bourn, elephant,
+<br>for a slayer of the elephant (among men) when he is hence beyond.</p>
+
+<hr>
+<p id="p63" class="verse"><span class="parno">63</span>"Be not proud, be not wanton,
+<br>for the wanton reach not a good bourn;
+<br>Only that should you do by which
+<br>you will go to a good bourn."</p>
+
+<p id="p64"><span class="parno">64</span>Then the elephant Nālāgiri, having taken the dust of the Lord’s feet with his trunk, having scattered it over his head, moved back bowing while he gazed upon the Lord. Then the elephant Nālāgiri, having returned to the elephant stable, stood in his own place; and it was in this way that the elephant Nālāgiri became tamed. Now at that time people sang this verse:</p>
+
+<p id="p65" class="verse"><span class="parno">65</span>"Some are tamed by stick, by goads and whips.
+<br>The elephant was tamed by the great seer
+<br>without a stick, without a weapon."</p>
+
+<p id="p66"><span class="parno">66</span>People looked down upon, criticised, spread it about, saying: "How evil is this Devadatta, how inauspicious, in that he tried to murder the recluse Gotama who is of such great psychic power, of such great might," and Devadatta’s gains and honours declined; the Lord’s gains and honours increased.</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p67"><span class="parno">67</span>Now at that time Devadatta, gains and honours lost, ate with his friends, having asked and asked among households. People looked down upon, criticised, spread it about, saying:</p>
+
+<p>"How can these recluses, sons of the Sakyans eat, having asked and asked among households? Who is not fond of well-cooked things? Who does not like sweet things?"</p>
+
+<p>Monks heard these people who … spread it about. Those who were modest monks … spread it about, saying: "How can Devadatta eat with his friends, having asked and asked among households?" They told this matter to the Lord. He said:</p>
+
+<p>"Is it true, as is said, that you, Devadatta, ate with your friends, having asked and asked among households?"</p>
+
+<p>"It is true, Lord." Having rebuked him, having given reasoned talk, he addressed the monks, saying:</p>
+
+<hr>
+<p>"Well now, monks, I will lay down for monks the eating by a triad (of monks) among households — founded on three reasons: for the restraint of evil-minded individuals; for the living in comfort of well behaved monks lest those of evil desires should split the Order by means of a faction; out of compassion for families. In eating a group meal, one should be dealt with according to the rule."</p>
+
+<p id="p68"><span class="parno">68</span>Then Devadatta approached Kokālika, Kaṭamorakatissaka, the son of the lady Khaṇḍā, and Samuddadatta, having approached, he spoke thus to Kokālika, Kaṭamorakatissaka, the son of the lady Khaṇḍā, and Samuddadatta: "Come, we, your reverences, will make a schism in the recluse Gotama’s Order, a breaking of the concord." When he had spoken thus, Kokālika spoke thus to Devadatta:</p>
+
+<p>"But, your reverence, the recluse Gotama is of great psychic power, of great might. How can we make a schism in the recluse Gotama’s Order, a breaking of the concord?"</p>
+
+<p>"Come, we, your reverence, having approached the recluse Gotama, will ask for five items, saying: ‘Lord, the Lord in many a figure speaks in praise of desiring little, of being contented, of expunging (evil), of being punctilious, of what is gracious, of decrease (in the obstructions), of putting forth energy. Lord, these five items are in many a way conducive to desiring little, to contentment, to expunging (evil), to being punctilious, to what is gracious, to decrease (in the obstructions), to putting forth energy.</p>
+
+<p>It were good, Lord, if the monks, for as long as life lasted, might be forest-dwellers; whoever should betake himself to the neighbourhood of a village, sin would besmirch him.</p>
+
+<p>For as long as life lasts, let them be beggars for alms; whoever should accept an invitation, sin would besmirch him.</p>
+
+<p>For as long as life lasts, let them be rag-robe wearers; whoever should accept a robe given by a householder, sin would besmirch him.</p>
+
+<p>For as long as life lasts, let them live at the root of a tree; whoever should go under cover, sin would besmirch him.</p>
+
+<p>For as long as life lasts, let them not eat fish and flesh; whoever should eat fish and flesh, sin would besmirch him.’</p>
+
+<p>The recluse Gotama will not allow these. Then we will win over the people by means of these five items."</p>
+
+<p>"It is possible, your reverence, with these five items, to make a schism in the recluse Gotama’s Order, a breaking of the concord. For, your reverence, people esteem austerity."</p>
+
+<hr>
+<p id="p69"><span class="parno">69</span>Then Devadatta together with his friends approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, Devadatta spoke thus to the Lord:</p>
+
+<p>"Lord, the Lord in many a figure speaks in praise of desiring little … whoever should eat fish and flesh, sin would besmirch him."</p>
+
+<hr>
+<p>"Enough, Devadatta," he said. "Whoever wishes, let him be a forest-dweller; whoever wishes, let him stay in the neighbourhood of a village; whoever wishes, let him be a beggar for alms; whoever wishes, let him accept an invitation; whoever wishes, let him be a rag-robe wearer; whoever wishes, let him accept a householder’s robes. For eight months, Devadatta, lodging at the root of a tree is permitted by me. Fish and flesh are pure in respect of three points: if they are not seen, heard or suspected (to have been killed on purpose for him)."</p>
+
+<p>Then Devadatta, thinking: ‘The Lord does not permit these five items,’ joyful, elated, rising from his seat with his friends, having greeted the Lord, departed keeping his right side towards him.</p>
+
+<hr>
+<p id="p70"><span class="parno">70</span>Then Devadatta, having entered Rājagaha with his friends, taught the people by means of the five items, saying: "We, friends, having approached the recluse Gotama, asked for five items, saying: ‘Lord, the Lord in many a figure speaks in praise of desiring little … whoever should eat fish and flesh, sin would besmirch him’. The recluse Gotama does not allow these five items, but we live undertaking these five items."</p>
+
+<p id="p71"><span class="parno">71</span>Those people who were there of little faith, not believing, who were of poor intelligence, these spoke thus: "These recluses, sons of the Sakyans are punctilious, are expungers (of evil), but the recluse Gotama is for abundance and strives after abundance." But those people who had faith and were believing, who were wise and intelligent, these looked down upon, criticised, spread it about, saying: "How can this Devadatta go forward with a schism in the Lord’s Order, with a breaking of the concord?"</p>
+
+<hr>
+<p id="p72"><span class="parno">72</span>Monks heard these people who … spread it about. Those who were modest monks … spread it about, saying:</p>
+
+<hr>
+<p>"How can this Devadatta go forward with a schism in the Order, a breaking of the concord?"</p>
+
+<p id="p73"><span class="parno">73</span>Then these monks told this matter to the Lord. He said:</p>
+
+<p>"Is it true, as is said that you, Devadatta, went forward with a schism in the Order, a breaking of the concord?"</p>
+
+<p>"It is true, Lord."</p>
+
+<p>"Enough, Devadatta, do not let there be a schism in the Order, for a schism in the Order is a serious matter, Devadatta. Whoever, Devadatta, splits an Order that is united, he sets up demerit that endures for an aeon; he is boiled in hell for an aeon; but whoever, Devadatta, unites an Order that is split, he sets up sublime merit, he rejoices in heaven for an aeon. Enough, Devadatta, do not let there be a schism in the Order, for a schism in the Order is a serious matter, Devadatta."</p>
+
+<p id="p74"><span class="parno">74</span>Then the venerable Ānanda, having dressed in the morning, taking his bowl and robe, entered Rājagaha for almsfood. Devadatta saw the venerable Ānanda walking in Rājagaha for almsfood; seeing him, he approached the venerable Ānanda; having approached, he spoke thus to the venerable Ānanda: "Now from this day forth will I, reverend Ānanda, carry out Observance both in contradistinction to the Lord and in contradistinction to the Order of monks and will (so) carry out (formal) acts of the Order."</p>
+
+<p id="p75"><span class="parno">75</span>Then the venerable Ānanda, having walked in Rājagaha for almsfood, on returning from the almsround, after his meal, approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Ānanda spoke thus to the Lord:</p>
+
+<p>"Just now, Lord, I, having dressed in the morning, taking my bowl and robe, entered Rājagaha for almsfood. Devadatta, Lord, saw me walking in Rājagaha for almsfood; seeing me, he came up; having come up, he spoke thus to me: ‘Now from this day forth will I … (so) carry out (formal) acts of the Order.’ Today, Lord, Devadatta will split the Order."</p>
+
+<p>Then the Lord, having understood this matter, at that time uttered this utterance:</p>
+
+<p id="p76" class="verse"><span class="parno">76</span>"Easy is good for the good,
+<br>good for the evil is hard,
+<br>Evil for the evil is easy,
+<br>evil for the noble ones is hard."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">77</span>Told is the Second Portion for Repeating.</p>
+
+<h3>&nbsp;</h3>
+<h4>&nbsp;</h4>
+
+<p id="p78"><span class="parno">78</span>Then Devadatta on that Observance day rising from his seat gave out voting tickets, saying: "We, your reverences, having approached the recluse Gotama, asked for five items. … The recluse Gotama does not allow these, but we live undertaking these five items. If these five items are pleasing to the venerable ones, let each one take a voting ticket."</p>
+
+<hr>
+<p id="p79"><span class="parno">79</span>Now at that time as many as five hundred monks, Vajjis of Vesālī, were newly ordained and were not properly versed; and these, thinking: "This is the rule, this is discipline, this is the Teacher’s instruction," took voting tickets. Then Devadatta, having split the Order, set out for Gayā Head taking as many as the five hundred monks. Then Sāriputta and Moggallāna approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Sāriputta spoke thus to the Lord: "Devadatta, Lord, having split the Order, is setting out for Gayā Head with as many as five hundred monks."</p>
+
+<p>"Can there not be for you, Sāriputta and Moggallāna, compassion for these newly ordained monks? Go you along, Sāriputta and Moggallāna, before these monks fall into trouble and distress."</p>
+
+<p>"Very well, Lord," and Sāriputta and Moggallāna having answered the Lord in assent, rising from their seats, having greeted the Lord, keeping their right sides towards him,
+approached Gayā Head.</p>
+
+<p id="p80"><span class="parno">80</span>Now at that time a certain monk was standing weeping not far from the Lord. Then the Lord spoke thus to that monk: "Why are you, monk, weeping?"</p>
+
+<p>"Even those, Lord, who are the Lord’s chief disciples — Sāriputta and Moggallāna — even these are going to Devadatta approving of Devadatta’s dhamma."</p>
+
+<p>"This is not possible, monk, it cannot come to pass that Sāriputta and Moggallāna should approve Devadatta’s dhamma. They have merely gone so as to convince the monks."</p>
+
+<p id="p81"><span class="parno">81</span>Now at that time Devadatta, surrounded by the large company, was teaching dhamma sitting down. Then Devadatta saw Sāriputta and Moggallāna coming in the distance; seeing them, he addressed the monks, saying: "You see, monks, how well taught is dhamma by me that even these who are the recluse Gotama’s chief disciples — Sāriputta and Moggallāna — that even these are coming to me approving of my dhamma." When he had spoken thus Kokālika spoke thus to Devadatta: "Reverend Devadatta, do not put your trust in Sāriputta and Moggallāna,
+
+ Sāriputta and Moggallāna have evil desires and are under the influence of evil desires."</p>
+
+<p>"Enough, your reverence, let us give a welcome to these since they approve of my dhamma."</p>
+
+<p id="p82"><span class="parno">82</span>Then Devadatta invited the venerable Sāriputta to half his seat, saying: "Come, reverend Sāriputta, sit here."</p>
+
+<p>"No, your reverence," and the venerable Sāriputta, having taken another seat, sat down at a respectful distance; and the venerable Moggallāna too, having taken another seat, sat down at a respectful distance. Then Devadatta, having gladdened, rejoiced, roused, delighted the monks far into the night with talk on dhamma, asked the venerable Sāriputta, saying:</p>
+
+<p>"The Order of monks, reverend Sāriputta, is without sloth or drowsiness; may a talk on dhamma occur to you, reverend Sāriputta, for the monks. My back aches and I will stretch it."</p>
+
+<p>"Very well, your reverence," the venerable Sāriputta answered Devadatta in assent. Then Devadatta, having laid down his outer cloak folded in four, lay down to sleep on his right side, and as he was tired, forgetful and inattentive, he fell asleep that very moment.</p>
+
+<p id="p83"><span class="parno">83</span>Then the venerable Sāriputta exhorted, instructed the monks with dhamma-talk by means of an instruction on the wonders of thought-reading; the venerable Moggallāna exhorted, instructed the monks with dhamma-talk by means of an instruction on the wonders of psychic power. Then as the monks were being exhorted, instructed by the venerable Sāriputta with dhamma-talk by means of an instruction on the wonders of thought-reading; were being exhorted, instructed by the venerable Moggallāna with dhamma-talk by means of an instruction on the wonders of psychic power, dhamma-vision, dustless, stainless, arose to them, that ‘whatever is of the nature to uprise all that is of the nature to stop.’</p>
+
+<p id="p84"><span class="parno">84</span>Then the venerable Sāriputta addressed the monks, saying: "We are going, your reverences, to the Lord. Whoever approves of this Lord’s dhamma, let him come along." Then Sāriputta and Moggallāna, taking those five hundred monks, approached the Bamboo Grove. Then Kokālika wakened Devadatta, saying: "Wake up, reverend Devadatta, those monks have been led away by Sāriputta and Moggallāna. Now, did I not say to you, reverend Devadatta, ‘Reverend Devadatta, do not put your trust in Sāriputta and Moggallāna, Sāriputta and Moggallāna have evil desires and are under the influence of evil desires’?" Then at that very place hot blood issued from Devadatta’s mouth.</p>
+
+<p id="p85"><span class="parno">85</span>Then Sāriputta and Moggallāna approached the Lord; having approached, having greeted the Lord, they sat down at a respectful distance. As they were sitting down at a respectful distance, the venerable
+
+ Sāriputta spoke thus to the Lord: "It were well, Lord, if the monks who were partisans of the schismatics could be ordained again."</p>
+
+<p>"Be careful, Sāriputta, about any reordination of monks who were partisans of the schismatics. But do you, Sāriputta, make the monks who were partisans of the schismatics confess a grave offence. But what line of conduct, Sāriputta, did Devadatta follow in regard to you?"</p>
+
+<p>"Even, Lord, as the Lord, having gladdened, rejoiced, roused, delighted monks with dhamma-talk far into the night, he asked me: ‘The Order of monks, Sāriputta, is without sloth or drowsiness, may a talk on dhamma occur to you, Sāriputta, for the monks. My back aches and I will stretch it.’ Just this, Lord, was the line of conduct which Devadatta followed."</p>
+
+<p id="p86"><span class="parno">86</span>Then the Lord addressed the monks, saying: "Formerly, monks, there was a great pond in a stretch of forest; bull elephants lived near it and these, having plunged into that pond, having tugged out the lotus fibres and stalks with their trunks, having washed them well, and having chewed them free of mud, swallowed them. Thus there came to be for them both beauty and strength, and not for this reason did they incur death or suffering like unto death. But, monks, among these great bull elephants were young elephant calves and these, imitating them, having plunged into that pond, having tugged out the lotus fibres and stalks with their trunks, but not having washed them well, having chewed them with the mud, swallowed them. Thus there came to be for them neither beauty nor strength, and for this reason they incurred death or suffering like unto death. Likewise, monks, Devadatta will die, a wretched creature, copying me.</p>
+
+<hr>
+<p id="p87" class="verse"><span class="parno">87</span>"While the great beast is shaking the earth,
+<br>grazing on lotus stalks, keeping alert among the waters — 
+<br>Copying me, the wretched creature will die,
+<br>like a calf having eaten mire.</p>
+
+<p id="p88"><span class="parno">88</span>"Monks, a monk who is possessed of eight qualities is fit to go a message. What are the eight? Herein, monks, a monk is a hearer and one who makes others hear and a learner and an instructor and a knower and an expounder and one skilled in (recognising) conformity and non-conformity and not a maker of quarrels. Monks, if a monk is possessed of these eight qualities he is fit to go a message.</p>
+
+<p id="p89"><span class="parno">89</span>Monks, because he is possessed of these eight qualities, Sāriputta is fit to go a message. What are the eight? Herein, monks, Sāriputta is a learner … and not a maker of quarrels.</p>
+
+<p>Monks, because Sāriputta is possessed of these eight qualities he is fit to go a message.</p>
+
+<hr>
+<p id="p90" class="verse"><span class="parno">90</span>"Who, to some high assembled council come,
+<br>Wavers not, nor in discourse fails,
+<br>Nor hides the teaching,</p>
+
+<p id="p91" class="verse"><span class="parno">91</span>Nor speaks in doubtfulness,
+<br>And who, being questioned, is not agitated — 
+<br>A monk like this is fit to go a message.</p>
+
+<p id="p92"><span class="parno">92</span>"Monks, Devadatta, overcome and his mind controlled by eight wrong conditions, is doomed to the Downfall, to Niraya Hell, staying there for an aeon, incurable. What eight?</p>
+
+<hr>
+<ul style="list-style-type: none" >
+<li>Devadatta, monks, overcome and his mind controlled by gain is doomed to the Downfall … incurable. </li>
+<li>Devadatta, monks, overcome and his mind controlled by lack of gain …
+</li>
+<li> … by fame … </li>
+<li> … by lack of fame … </li>
+<li> … by honours … </li>
+<li> … by lack-of honours … </li>
+<li> … by evil desire … </li>
+<li> … by evil friendship is doomed to the Downfall … incurable.</li>
+</ul>
+
+<p>Monks, Devadatta, overcome and his mind controlled by these eight wrong conditions is doomed to the Downfall, to Niraya Hell, staying there for an aeon, incurable.</p>
+
+<hr>
+<p id="p93"><span class="parno">93</span>"Monks, it is well that a monk should live constantly overcoming gain that has arisen, lack of gain that has arisen, fame that has arisen, lack of fame that has arisen, honours that have arisen, lack of honours that has arisen, evil desire that has arisen, evil friendship that has arisen. And why, monks, for what good purpose should a monk live constantly overcoming gain … evil friendship that has arisen? Monks, if a monk live not constantly overcoming gain that has arisen, the cankers, that are destructive and consuming, may arise, but if he lives constantly overcoming gain that has arisen, then it follows that the cankers, that are destructive and consuming, will not be in him … if he lives constantly overcoming evil friendship that has arisen, then it follows that the cankers, destructive and consuming, will not be in him.</p>
+
+<p>"It is for this good purpose, monks, that a monk should live constantly overcoming gain that has arisen … evil friendship that has arisen. Wherefore, monks, saying, ‘We will live constantly overcoming gain that has arisen … evil friendship that has arisen’ — thus it is that you, monks, should train.</p>
+
+<hr>
+<p id="p94"><span class="parno">94</span>"Monks, Devadatta, overcome and his mind controlled by three wrong conditions, is doomed to the Downfall, to Niraya Hell, staying there for an aeon, incurable. What three? Evil desire, evil friendship, the coming to a halt midway in his career because his special attainments are of trifling value. Monks, a monk who is overcome … by these three wrong conditions is … incurable.</p>
+
+<p id="p95" class="verse"><span class="parno">95</span>"Never let anyone of evil desires arise in the world;
+<br>And know it by this: as the bourn of those of evil desires.</p>
+
+<p id="p96" class="verse"><span class="parno">96</span>Known as ‘sage,’ held as ‘one who made the self become,’
+<br>Devadatta stood shining as with fame — I heard tell.</p>
+
+<p id="p97" class="verse"><span class="parno">97</span>"He, falling into recklessness, assailing the Truth-finder,
+<br>Attained Avīci Hell, four-doored, frightful.</p>
+
+<hr>
+<p id="p98" class="verse"><span class="parno">98</span>For he who would injure one without hatred, not doing an evil deed — 
+<br>That evil touches only him of mind of hate, contemptuous.</p>
+
+<p id="p99" class="verse"><span class="parno">99</span>"Who should think to pollute the sea with pot of poison — 
+<br>He would not pollute it with that, for sublime is the great ocean.</p>
+
+<p id="p100" class="verse"><span class="parno">100</span>So he who with abuse afflicts the Truth-finder
+<br>Who has rightly gone, his mind tranquil — on him the abuse has no effect.</p>
+
+<p id="p101" class="verse"><span class="parno">101</span>"A wise man should make a friend of such a one and follow him,
+<br>A monk following the way of him should achieve destruction of ill."</p>
+
+<h4>&nbsp;</h4>
+
+<p id="p102"><span class="parno">102</span>Then the venerable Upāli approached the Lord, having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Upāli spoke thus to the Lord: "Lord, as to the words: Dissension in an Order, dissension in an Order — to what extent, Lord, is there dissension in an Order but not schism in an Order? And then to what extent is there dissension in an Order as well as schism in an Order?"</p>
+
+<p id="p103"><span class="parno">103</span>"If, Upāli, there is one on one side and two on another and if a fourth speaks out and offers a voting ticket, saying: ‘This is the rule, this is discipline, this is the Teacher’s instruction, take this (voting ticket), approve of this’ — this, Upāli, is dissension in an Order but not schism in an Order.</p>
+
+<p>"If, Upāli, there are two on one side and two on another and if a fifth speaks out … two on one side and three on another and if a sixth speaks out … three on one side and three on another and if a seventh speaks out … three on one side and four on another and if an eighth speaks out and offers a voting ticket, saying: ‘This is the rule, this is discipline, this is the Teacher’s instruction, take this (voting ticket), approve of this’ — this, Upāli, is dissension in an Order but not schism in an Order.</p>
+
+<p>"If, Upāli, there are four on one side and four on another and a ninth speaks out … this, Upāli, is dissension in an Order as well as schism in an Order. Dissension in an Order, Upāli, as well as schism in an Order is (due to there being) nine or more than nine. Upāli, a nun does not split an Order even if she goes forward with a schism … a probationer … a novice … a woman novice … a lay-follower … a woman lay-follower does not split an Order even if she goes forward with a schism. Only a regular monk, Upāli, belonging to the same communion, staying within the same boundary, splits an Order."</p>
+
+<p id="p104"><span class="parno">104</span>"Lord, as to the words: Schism in an Order, schism in an Order — to what extent, Lord, can an Order become split?"</p>
+
+<hr>
+<p><span class="parno">105–122</span>"As to this, Upāli, monks explain non-dhamma as dhamma, they explain dhamma as non-dhamma, they explain non-discipline as discipline, they explain discipline as non-discipline, they explain what was not spoken, not uttered by the Truth-finder as spoken, uttered by the Truth-finder, they explain what was spoken, uttered by the Truth-finder as not spoken, not uttered by the Truth-finder, they explain what was not practised by the Truth-finder as practised by the Truth-finder, they explain what was practised by the Truth-finder as not practised by the Truth-finder, they explain what was not laid down by the Truth-finder as laid down by the Truth-finder, they explain what was laid down by the Truth-finder as not laid down by the Truth-finder, they explain what is no offence as an offence, they explain an offence as no offence, they explain a slight offence as a serious offence, they explain a serious offence as a slight offence, they explain an offence that can be done away with as an offence that cannot be done away with, they explain an offence that cannot be done away with as an offence that can be done away with, they explain a bad offence as not a bad offence, they explain not a bad offence as a bad offence.</p>
+
+<hr>
+<p id="p123"><span class="parno">123</span>These, in regard to these eighteen points draw away and separate (a company), they carry out a separate Observance, they carry out a separate Invitation, they carry out a separate (formal) act of the Order. To this extent, Upāli, does an Order become split."</p>
+
+<p id="p124"><span class="parno">124</span>"Lord, as to the words: Harmony in an Order, harmony in an Order — to what extent, Lord, does an Order come to be harmonious?"</p>
+
+<hr>
+<p><span class="parno">125–142</span>"As to this, Upāli, monks explain non-dhamma as non-dhamma, they explain dhamma as dhamma … they explain not a bad offence as not a bad offence.</p>
+
+<hr>
+<p id="p143"><span class="parno">143</span>These, in regard to these eighteen points, do not draw away, do not separate (a company), they do not carry out a separate Observance, they do not carry out a separate Invitation, they do not carry out a separate (formal) act of the Order. To this extent, Upāli, an Order comes to be harmonious."</p>
+
+<p id="p144"><span class="parno">144</span>"But, Lord, having split an Order that was harmonious, what does he set up?"</p>
+
+<p>"Now, Upāli, having split an Order that was harmonious, he sets up demerit that endures for an aeon and he is boiled in hell for an aeon.</p>
+
+<hr>
+<p id="p145" class="verse"><span class="parno">145</span>"A schismatic in the Order,
+<br>doomed to the Downfall,
+<br>to Niraya Hell for an aeon,
+<br>To disharmony prone,
+<br>standing on non-dhamma,
+<br>falls away from peace from bondage.
+<br>Having split an harmonious Order,
+<br>he boils for an aeon in hell."</p>
+
+<p id="p146"><span class="parno">146</span>"But, Lord, having united an Order that was split, what does he set up?"</p>
+
+<p>"Now, Upāli, having united an Order that was split, he sets up sublime merit and he rejoices in heaven for an aeon.</p>
+
+<p id="p147" class="verse"><span class="parno">147</span>Blessed is harmony for an Order
+<br>and the friend of those who are harmonious,
+<br>"To harmony prone,
+<br>standing on dhamma,
+<br>falls not away from peace from bondage.
+<br>Making an Order harmonious,
+<br>he rejoices for an aeon in heaven."</p>
+
+<hr>
+<p id="p148"><span class="parno">148</span>"Now, could it not be, Lord, that a schismatic in the Order is doomed to the Downfall, to Niraya Hell, remaining there for an aeon, incurable?"</p>
+
+<p>"It could be, Upāli, that a schismatic in the Order is doomed to the Downfall … incurable."</p>
+
+<p id="p149"><span class="parno">149</span>"But could it be, Lord, that a schismatic in the Order is not doomed to the Downfall, not to Niraya Hell, not remaining there for an aeon, not incurable?"</p>
+
+<p>"It could be, Upāli, that a schismatic in the Order is not doomed to the Downfall … not incurable."</p>
+
+<hr>
+<p id="p150"><span class="parno">150</span>"But which (kind of) schismatic in an Order, Lord is doomed to the Downfall, to Niraya Hell, remaining there for an aeon, incurable?"</p>
+
+<p>"This is a case, Upāli, where a monk explains non-
+dhamma as dhamma; if he has the view that in this (explanation) there is non-dhamma, if he has the view that in schism there is non-dhamma, misrepresenting opinion, misrepresenting approval, misrepresenting pleasure, misrepresenting intention, and if he speaks out and offers a voting ticket, saying: ‘This is rule, this is discipline, this is the Teacher’s instruction; take this (voting ticket), approve of this’ — this schismatic in the Order, Upāli, is doomed to the Downfall, to Niraya Hell, remaining there for an aeon, incurable.</p>
+
+<p id="p151"><span class="parno">151</span>"And again, Upāli, if a monk explains non-dhamma as dhamma, if he has the view that in this (explanation) there is non-dhamma, if he has the view that in schism there is dhamma, misrepresenting opinion … incurable.</p>
+
+<hr>
+<p><span class="parno">152–154</span>"And again, Upāli, if he explains non-dhamma as dhamma, if he has the view that in this (explanation) there is non-dhamma, if he is doubtful as to a schism … if he has the view that in this (explanation) there is dhamma, if he has the view that in schism there is non-dhamma … if he has the view that in this (explanation) there is dhamma, if he is doubtful as to a schism … if he is doubtful as to this (explanation), if he has the view that in schism there is non-dhamma … if he is doubtful as to this (explanation), if he has the view that in schism there is dhamma … if he is doubtful as to this (explanation), if he is doubtful as to a schism, misrepresenting opinion … incurable."</p>
+
+<hr>
+<p id="p155"><span class="parno">155</span>"But which (kind of) schismatic in the Order, Lord, is not doomed to the Downfall, nor to Niraya Hell, not remaining there for an aeon, not incurable?"</p>
+
+<p>"This is a case, Upāli, where a monk explains non-dhamma as dhamma; if he has the view that in this (explanation) there is dhamma, if he has the view that in schism there is dhamma, yet not misrepresenting opinion, not misrepresenting approval, not misrepresenting pleasure, not misrepresenting intention, he speaks out and offers a voting ticket, saying, ‘This is rule, this is discipline, this is the Teacher’s instruction; take this (voting ticket), approve of this’ — even this schismatic in the Order, Upāli, is not doomed to the Downfall, not doomed to Niraya Hell, not remaining there for an aeon, not incurable.</p>
+
+<hr>
+<p id="p156"><span class="parno">156</span>"And again, Upāli, a monk explains dhamma as non-dhamma … explains a not bad offence as a bad offence, but (although) he has the view that in this (explanation) there is dhamma the view that in schism there is dhamma, yet not misrepresenting opinion … not incurable."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">157</span>Told is the Third Portion for Repeating.
+<br>Told is the Seventh Section: that on Schism in an Order.</p>
+
+<p id="p158"><span class="parno">158</span>This is its key:</p>
+
+<hr>
+<p id="p159" class="verse"><span class="parno">159</span>In Anupiyā, distinguished, the delicately nurtured one did not want to,
+<br>ploughing, sowing, leading in, led away, digging up and reaping,</p>
+
+<p id="p160" class="verse"><span class="parno">160</span>Harvesting, making into stooks, threshing and winnowing, sifting, bringing in,
+<br>the next and they do not stop, fathers and grandfathers.</p>
+
+<hr>
+<p id="p161" class="verse"><span class="parno">161</span>Bhaddiya, Anuruddha and Ānanda, Bhagu, Kimbila,
+<br>and the Sakyan pride, at Kosambī, he declined, and about Kakudha.</p>
+
+<p id="p162" class="verse"><span class="parno">162</span>He informed against, and a father’s, by a man, Nālāgiri,
+<br>a triad, five, a serious matter, he splits, and about a grave offence,
+<br>three, eight, three again, dissension, schism, "Could it not be?"</p>
+
+<p class="endsutta"><span class="parno">163</span></p>
+</div><!--End English-->
+
+<div lang="pi"><!--Pali-->
+
+<h3>Pathamaabhāṇavāra</h3>
+
+<p><span class="parno">1</span><span class="ms">p_4V_1492, msdiv330</span>Tena samayena buddho bhagavā anupiyāyaṁ viharati, anupiyaṁ nāma mallānaṁ nigamo. Tena kho pana samayena abhiññātā abhiññātā sakyakumārā bhagavantaṁ pabbajitaṁ anupabbajanti. Tena kho pana samayena mahānāmo ca sakko anuruddho ca sakko dvebhātikā honti. Anuruddho sakko sukhumālo hoti. Tassa tayo pāsādā honti — eko hemantiko, eko gimhiko, eko vassiko. So vassike pāsāde cattāro māse nippurisehi tūriyehi paricārayamāno na heṭṭhāpāsādaṁ orohati. Atha kho mahānāmassa sakkassa etadahosi — "etarahi kho abhiññātā abhiññātā sakyakumārā bhagavantaṁ pabbajitaṁ anupabbajanti. Amhākañca pana kulā natthi koci agārasmā anagāriyaṁ pabbajito. Yannūnāhaṁ vā pabbajeyyaṁ, anuruddho vā"ti. Atha kho mahānāmo sakko yena anuruddho sakko tenupasankami, upasankamitvā anuruddhaṁ sakkaṁ etadavoca — "etarahi, tāta anuruddha, abhiññātā abhiññātā sakyakumārā bhagavantaṁ pabbajitaṁ anupabbajanti. Amhākañca pana kulā natthi koci agārasmā anagāriyaṁ pabbajito. Tena hi tvaṁ vā pabbaja, ahaṁ vā pabbajissāmī"ti.</p>
+
+<hr>
+<p>"Ahaṁ kho sukhumālo, nāhaṁ sakkomi agārasmā anagāriyaṁ pabbajituṁ. Tvaṁ pabbajāhī"ti.</p>
+
+<p>"Ehi kho te, tāta anuruddha, gharāvāsatthaṁ anusāsissāmi. Paṭhamaṁ khettaṁ kasāpetabbaṁ. Kasāpetvā vapāpetabbaṁ. Vapāpetvā udakaṁ abhinetabbaṁ. Udakaṁ abhinetvā udakaṁ ninnetabbaṁ. Udakaṁ ninnetvā niddhāpetabbaṁ. Niddhāpetvā lavāpetabbaṁ. Lavāpetvā ubbāhāpetabbaṁ. Ubbāhāpetvā puñjaṁ kārāpetabbaṁ. Puñjaṁ kārāpetvā maddāpetabbaṁ. Maddāpetvā palālāni uddharāpetabbāni. Palālāni uddharāpetvā bhusikā uddharāpetabbā. Bhusikaṁ uddharāpetvā opunāpetabbaṁ. Opunāpetvā atiharāpetabbaṁ. Atiharāpetvā āyatimpi vassaṁ evameva kātabbaṁ, āyatimpi vassaṁ evameva kātabban"ti.</p>
+
+<p>"Na kammā khīyanti? Na kammānaṁ anto paññāyati? Kadā kammā khīyissanti? Kadā kammānaṁ anto paññāyissati? Kadā mayaṁ appossukkā pañcahi kāmaguṇehi samappitā samangībhūtā paricāressāmā"ti?</p>
+
+<p>"Na hi, tāta anuruddha, kammā khīyanti. Na kammānaṁ anto paññāyati. Akhīṇeva kamme pitaro ca pitāmahā ca kālankatā"ti.</p>
+
+<p>"Tena hi tvaññeva gharāvāsatthena upajānāhi. Ahaṁ agārasmā anagāriyaṁ pabbajissāmī"ti.</p>
+
+<hr>
+<p><span class="parno">2</span><span class="ms">p_4V_1493</span>Atha kho anuruddho sakko yena mātā tenupasankami, upasankamitvā mātaraṁ etadavoca — "icchāmahaṁ, amma, agārasmā anagāriyaṁ pabbajituṁ. Anujānāhi maṁ agārasmā anagāriyaṁ pabbajjāyā"ti. Evaṁ vutte, anuruddhassa sakkassa mātā anuruddhaṁ sakkaṁ etadavoca — </p>
+
+<p>"tumhe kho me, tāta anuruddha, dve puttā piyā manāpā appaṭikūlā. Māraṇenapi vo akāmakā vinā bhavissāmi. Kiṁ panāhaṁ tumhe jīvante anujānissāmi agārasmā anagāriyaṁ pabbajjāyā"ti? Dutiyampi kho … pe … tatiyampi kho anuruddho sakko mātaraṁ etadavoca — "icchāmahaṁ, amma, agārasmā anagāriyaṁ pabbajituṁ. Anujānāhi maṁ agārasmā anagāriyaṁ pabbajjāyā"ti.</p>
+
+<p><span class="parno">3</span><span class="ms">p_4V_1494</span>Tena kho pana samayena bhaddiyo sakyarājā sakyānaṁ rajjaṁ kāreti. So ca anuruddhassa sakkassa sahāyo hoti. Atha kho anuruddhassa sakkassa mātā — "ayaṁ kho bhaddiyo sakyarājā sakyānaṁ rajjaṁ kāreti; anuruddhassa sakkassa sahāyo; so na ussahati agārasmā anagāriyaṁ pabbajitun"ti — anuruddhaṁ sakkaṁ etadavoca — "sace, tāta anuruddha, bhaddiyo sakyarājā agārasmā anagāriyaṁ pabbajati, evaṁ tvampi pabbajāhī"ti.</p>
+
+<p>Atha kho anuruddho sakko yena bhaddiyo sakyarājā tenupasankami, upasankamitvā bhaddiyaṁ sakyarājānaṁ etadavoca — "mama kho, samma, pabbajjā tava paṭibaddhā"ti.</p>
+
+<p>"Sace te, samma, pabbajjā mama paṭibaddhā vā appaṭibaddhā vā sā hotu, ahaṁ tayā; yathā sukhaṁ pabbajāhī"ti.</p>
+
+<p>"Ehi, samma, ubho agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<p>"Nāhaṁ, samma, sakkomi agārasmā anagāriyaṁ pabbajitunti. Yaṁ te sakkā aññaṁ mayā kātuṁ, kyāhaṁ karissāmi. Tvaṁ pabbajāhī"ti.</p>
+
+<p>"Mātā kho maṁ, samma, evamāha — ‘sace, tāta anuruddha, bhaddiyo sakyarājā agārasmā anagāriyaṁ pabbajati, evaṁ tvampi pabbajāhī’"ti. "Bhāsitā kho pana te, samma, esā vācā. Sace te, samma, pabbajjā mama paṭibaddhā vā, appaṭibaddhā vā sā hotu, ahaṁ tayā; yathā sukhaṁ pabbajāhī"ti. "Ehi, samma, ubho agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<p><span class="parno">4</span><span class="ms">p_4V_1495</span>Tena kho pana samayena manussā saccavādino honti, saccapaṭiññā. Atha kho bhaddiyo sakyarājā anuruddhaṁ sakkaṁ etadavoca — "āgamehi, samma, sattavassāni. Sattannaṁ vassānaṁ accayena ubho agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<hr>
+<p>"Aticiraṁ, samma, sattavassāni. Nāhaṁ sakkomi sattavassāni āgametun"ti.</p>
+
+<p>"Āgamehi, samma, chavassāni … pe … pañcavassāni … cattāri vassāni … tīṇi vassāni … dve vassāni … ekaṁ vassaṁ. Ekassa vassassa accayena ubho agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<hr>
+<p>"Aticiraṁ, samma, ekavassaṁ. Nāhaṁ sakkomi ekaṁ vassaṁ āgametun"ti.</p>
+
+<p>"Āgamehi, samma, sattamāse. Sattannaṁ māsānaṁ accayena ubhopi agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<p>"Aticiraṁ, samma, sattamāsā. Nāhaṁ sakkomi sattamāse āgametun"ti.</p>
+
+<p>"Āgamehi, samma, cha māse … pe … pañca māse … cattāro māse … tayo māse … dve māse … ekaṁ māsaṁ … aḍḍhamāsaṁ. Aḍḍhamāsassa accayena ubhopi agārasmā anagāriyaṁ pabbajissāmā"ti.</p>
+
+<p>"Aticiraṁ, samma, aḍḍhamāso. Nāhaṁ sakkomi aḍḍhamāsaṁ āgametun"ti.</p>
+
+<p>"Āgamehi, samma, sattāhaṁ yāvāhaṁ putte ca bhātaro ca rajjaṁ niyyādemī"ti.</p>
+
+<p>"Na ciraṁ, samma, sattāho, āgamessāmī"ti.</p>
+
+<hr>
+<p><span class="parno">5</span><span class="ms">p_4V_1496, msdiv331</span>Atha kho bhaddiyo ca sakyarājā anuruddho ca ānando ca bhagu ca kimilo ca devadatto ca, upālikappakena sattamā, yathā pure caturanginiyā senāya uyyānabhūmiṁ niyyanti, evameva caturanginiyā senāya niyyiṁsu. Te dūraṁ gantvā senaṁ nivattāpetvā paravisayaṁ okkamitvā ābharaṇaṁ omuñcitvā uttarāsangena bhaṇḍikaṁ bandhitvā upāliṁ kappakaṁ etadavocuṁ — "handa, bhaṇe upāli, nivattassu; alaṁ te ettakaṁ jīvikāyā"ti. Atha kho upālissa kappakassa nivattantassa etadahosi — "caṇḍā kho sākiyā; iminā kumārā nippātitāti ghātāpeyyumpi maṁ. Ime hi nāma sakyakumārā agārasmā anagāriyaṁ pabbajissanti. Kimangaṁ panāhan"ti.</p>
+
+<p>Bhaṇḍikaṁ muñcitvā taṁ bhaṇḍaṁ rukkhe ālaggetvā "yo passati, dinnaṁyeva haratū"ti vatvā yena te sakyakumārā tenupasankami. Addasāsuṁ kho te sakyakumārā upāliṁ kappakaṁ dūratova āgacchantaṁ. Disvāna upāliṁ kappakaṁ etadavocuṁ — "kissa, bhaṇe upāli, nivattesī"ti?</p>
+
+<p>"Idha me, ayyaputtā, nivattantassa etadahosi — ‘caṇḍā kho sākiyā; iminā kumārā nippātitāti ghātāpeyyumpi maṁ. Ime hi nāma sakyakumārā agārasmā anagāriyaṁ pabbajissanti. Kimangaṁ panāhan’ti. So kho ahaṁ, ayyaputtā, bhaṇḍikaṁ muñcitvā taṁ bhaṇḍaṁ rukkhe ālaggetvā ‘yo passati, dinnaññeva haratū’ti vatvā tatomhi paṭinivatto"ti.</p>
+
+<p>"Suṭṭhu, bhaṇe upāli, akāsi yampi na nivatto. Caṇḍā kho sākiyā; iminā kumārā nippātitāti ghātāpeyyumpi tan"ti.</p>
+
+<hr>
+<p><span class="parno">6</span><span class="ms">p_4V_1497</span>Atha kho sakyakumārā upāliṁ kappakaṁ ādāya yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinnā kho te sakyakumārā bhagavantaṁ etadavocuṁ — </p>
+
+<p>"mayaṁ, bhante, sākiyā nāma mānassino. Ayaṁ, bhante, upāli kappako amhākaṁ dīgharattaṁ paricārako. Imaṁ bhagavā paṭhamaṁ pabbājetu. Imassa mayaṁ abhivāda&shy;napaccuṭṭhāna&shy;añjalikamm&shy;asāmīcikammaṁ karissāma. Evaṁ amhākaṁ sākiyānaṁ sākiyamāno nimmānāyissatī"ti.</p>
+
+<p><span class="parno">7</span><span class="ms">p_4V_1498</span>Atha kho bhagavā upāliṁ kappakaṁ paṭhamaṁ pabbājesi, pacchā te sakyakumāre. Atha kho āyasmā bhaddiyo teneva antaravassena tisso vijjā sacchākāsi. Āyasmā anuruddho dibbacakkhuṁ uppādesi. Āyasmā ānando sotāpattiphalaṁ sacchākāsi. Devadatto pothujjanikaṁ iddhiṁ abhinipphādesi.</p>
+
+<p><span class="parno">8</span><span class="ms">p_4V_1499, msdiv332</span>Tena kho pana samayena āyasmā bhaddiyo araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānesi — "aho sukhaṁ, aho sukhan"ti. Atha kho sambahulā bhikkhū yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinnā kho te bhikkhū bhagavantaṁ etadavocuṁ — </p>
+
+<p>"āyasmā, bhante, bhaddiyo araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānesi — ‘aho sukhaṁ, aho sukhan’ti. Nissaṁsayaṁ kho, bhante, āyasmā bhaddiyo anabhiratova brahmacariyaṁ carati. Taṁyeva vā purimaṁ rajjasukhaṁ samanussaranto araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānesi — ‘aho sukhaṁ, aho sukhan’"ti.</p>
+
+<p><span class="parno">9</span><span class="ms">p_4V_1500</span>Atha kho bhagavā aññataraṁ bhikkhuṁ āmantesi — "ehi tvaṁ, bhikkhu, mama vacanena bhaddiyaṁ bhikkhuṁ āmantehi — ‘satthā taṁ, āvuso bhaddiya, āmantetī’"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho so bhikkhu bhagavato paṭissutvā yenāyasmā bhaddiyo tenupasankami, upasankamitvā āyasmantaṁ bhaddiyaṁ etadavoca — "satthā taṁ, āvuso bhaddiya, āmantetī"ti.</p>
+
+<p>"Evamāvuso"ti kho āyasmā bhaddiyo tassa bhikkhuno paṭissutvā yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinnaṁ kho āyasmantaṁ bhaddiyaṁ bhagavā etadavoca — "saccaṁ kira tvaṁ, bhaddiya, araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānesi — ‘aho sukhaṁ, aho sukhan’"ti?</p>
+
+<hr>
+<p>"Evaṁ, bhante"ti.</p>
+
+<p>"Kiṁ pana tvaṁ, bhaddiya, atthavasaṁ sampassamāno araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānesi — ‘aho sukhaṁ, aho sukhan’"ti?</p>
+
+<p>"Pubbe me, bhante, rañño satopi antopi antepure rakkhā susaṁvihitā hoti, bahipi antepure rakkhā susaṁvihitā hoti, antopi nagare rakkhā susaṁvihitā hoti, bahipi nagare rakkhā susaṁvihitā hoti, antopi janapade rakkhā susaṁvihitā hoti, bahipi janapade rakkhā susaṁvihitā hoti. So kho ahaṁ, bhante, evaṁ rakkhitopi gopitopi santo bhīto ubbiggo ussankī utrasto viharāmi. Etarahi kho pana ahaṁ eko, bhante, araññagatopi rukkhamūlagatopi suññāgāragatopi abhīto anubbiggo anussankī anutrasto appossukko pannalomo paradattavutto migabhūtena cetasā viharāmīti. Imaṁ kho ahaṁ, bhante, atthavasaṁ sampassamāno araññagatopi rukkhamūlagatopi suññāgāragatopi abhikkhaṇaṁ udānaṁ udānemi — ‘aho sukhaṁ, aho sukhan’"ti.</p>
+
+<p>Atha kho bhagavā etamatthaṁ viditvā tāyaṁ velāyaṁ imaṁ udānaṁ udānesi — </p>
+
+<p class="verse"><span class="parno">10</span><span class="ms">p_4V_1501</span>"Yassantarato na santi kopā,
+<br>Iti bhavābhavatañca vītivatto;
+<br>Taṁ vigatabhayaṁ sukhiṁ asokaṁ,
+<br>Devā nānubhavanti dassanāyā"ti.</p>
+
+<h4>2 Devadattavatthu</h4>
+
+<p><span class="parno">11</span><span class="ms">p_4V_1502, msdiv333</span>Atha kho bhagavā anupiyāyaṁ yathābhirantaṁ viharitvā yena kosambī tena cārikaṁ pakkāmi. Anupubbena cārikaṁ caramāno yena kosambī tadavasari. Tatra sudaṁ bhagavā kosambiyaṁ viharati ghositārāme. Atha kho devadattassa rahogatassa paṭisallīnassa evaṁ cetaso parivitakko udapādi — "kaṁ nu kho ahaṁ pasādeyyaṁ, yasmiṁ me pasanne bahulābhasakkāro uppajjeyyā"ti? Atha kho devadattassa etadahosi — "ayaṁ kho ajātasattu kumāro taruṇo ceva āyatiṁ bhaddo ca. Yannūnāhaṁ ajātasattuṁ kumāraṁ pasādeyyaṁ. Tasmiṁ me pasanne bahulābhasakkāro uppajjissatī"ti.</p>
+
+<p><span class="parno">12</span><span class="ms">p_4V_1503</span>Atha kho devadatto senāsanaṁ saṁsāmetvā pattacīvaramādāya yena rājagahaṁ tena pakkāmi. Anupubbena yena rājagahaṁ tadavasari. Atha kho devadatto sakavaṇṇaṁ paṭisaṁharitvā kumārakavaṇṇaṁ abhinimminitvā ahimekhalikāya ajātasattussa kumārassa ucchange pāturahosi. Atha kho ajātasattu kumāro bhīto ahosi, ubbiggo ussankī utrasto. Atha kho devadatto ajātasattuṁ kumāraṁ etadavoca — "bhāyasi maṁ tvaṁ, kumārā"ti?</p>
+
+<p>"Āma bhāyāmi. Kosi tvan"ti?</p>
+
+<p>"Ahaṁ devadatto"ti.</p>
+
+<hr>
+<p>"Sace kho tvaṁ, bhante, ayyo devadatto, ingha sakeneva vaṇṇena pātubhavassū"ti. Atha kho devadatto kumārakavaṇṇaṁ paṭisaṁharitvā sanghāṭipattacīvaradharo ajātasattussa kumārassa purato aṭṭhāsi. Atha kho ajātasattu kumāro devadattassa iminā iddhipāṭihāriyena abhippasanno pañcahi rathasatehi sāyaṁ pātaṁ upaṭṭhānaṁ gacchati, pañca ca thālipākasatāni bhattābhihāro abhiharīyati. Atha kho devadattassa lābhasakkārasilokena abhibhūtassa pari&shy;yādinnacittassa evarūpaṁ icchāgataṁ uppajji — "ahaṁ bhikkhusaṇghaṁ pariharissāmī"ti. Saha cittuppādāva devadatto tassā iddhiyā parihāyi.</p>
+
+<p><span class="parno">13</span><span class="ms">p_4V_1504</span>Tena kho pana samayena kakudho nāma koḷiyaputto, āyasmato mahāmoggallānassa upaṭṭhāko, adhunā kālankato aññataraṁ manomayaṁ kāyaṁ upapanno. Tassa evarūpo attabhāvappaṭilābho hoti — seyyathāpi nāma dve vā tīṇi vā māgadhakāni gāmakkhettāni. So tena attabhāvappaṭilābhena neva attānaṁ na paraṁ byābādheti. Atha kho kakudho devaputto yenāyasmā mahāmoggallāno tenupasankami, upasankamitvā āyasmantaṁ mahāmoggallānaṁ abhivādetvā ekamantaṁ aṭṭhāsi. Ekamantaṁ ṭhito kho kakudho devaputto āyasmantaṁ mahāmoggallānaṁ etadavoca — </p>
+
+<p>"devadattassa, bhante, lābhasakkārasilokena abhibhūtassa pari&shy;yādinnacittassa evarūpaṁ icchāgataṁ uppajji — ‘ahaṁ bhikkhusaṇghaṁ pariharissāmī’ti. Saha cittuppādāva, bhante, devadatto tassā iddhiyā parihīno"ti. Idamavoca kakudho devaputto. Idaṁ vatvā āyasmantaṁ mahāmoggallānaṁ abhivādetvā padakkhiṇaṁ katvā tattheva antaradhāyi.</p>
+
+<hr>
+<p><span class="parno">14</span><span class="ms">p_4V_1505</span>Atha kho āyasmā mahāmoggallāno yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā mahāmoggallāno bhagavantaṁ etadavoca — </p>
+
+<hr>
+<p>"kakudho nāma, bhante, koḷiyaputto mama upaṭṭhāko adhunā kālankato aññataraṁ manomayaṁ kāyaṁ upapanno. Tassa evarūpo attabhāvappaṭilābho — seyyathāpi nāma dve vā tīṇi vā māgadhakāni gāmakkhettāni. So tena attabhāvappaṭilābhena neva attānaṁ na paraṁ byābādheti. Atha kho, bhante, kakudho devaputto yenāhaṁ tenupasankami, upasankamitvā maṁ abhivādetvā ekamantaṁ aṭṭhāsi. Ekamantaṁ ṭhito kho, bhante, kakudho devaputto maṁ etadavoca — ‘devadattassa, bhante, lābhasakkārasilokena abhibhūtassa pari&shy;yādinnacittassa evarūpaṁ icchāgataṁ uppajji — ahaṁ bhikkhusaṇghaṁ pari&shy;harissāmīti. Saha cittuppādāva, bhante, devadatto tassā iddhiyā parihīno’ti. Idamavoca, bhante, kakudho devaputto. Idaṁ vatvā maṁ abhivādetvā padakkhiṇaṁ katvā tattheva antaradhāyī"ti.</p>
+
+<hr>
+<p><span class="parno">15</span><span class="ms">p_4V_1506</span>"Kiṁ pana te, moggallāna, kakudho devaputto cetasā ceto paricca vidito? Yaṁ kiñci kakudho devaputto bhāsati sabbaṁ taṁ tatheva hoti, no aññathā"ti?</p>
+
+<p>"Cetasā ceto paricca vidito ca me, bhante, kakudho devaputto. Yaṁ kiñci kakudho devaputto bhāsati sabbaṁ taṁ tatheva hoti, no aññathā"ti.</p>
+
+<p>"Rakkhassetaṁ, moggallāna, vācaṁ. Rakkhassetaṁ, moggallāna, vācaṁ. Idāni so moghapuriso attanāva attānaṁ pātukarissati.</p>
+
+<h4>3 Pañca&shy;satthukathā</h4>
+
+<p><span class="parno">16</span><span class="ms">p_4V_1507, msdiv334</span>"pari&shy;suddhasīlomhī"ti paṭijānāti "parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, moggallāna, satthāraṁ sāvakā sīlato rakkhanti; evarūpo ca pana satthā sāvakehi sīlato rakkhaṁ paccāsīsati. Pañcime, moggallāna, satthāro santo saṁvijjamānā lokasmiṁ. Katame pañca? Idha, moggallāna, ekacco satthā apari&shy;suddhasīlo samāno ‘pari&shy;suddhasīlomhī’ti paṭijānāti ‘parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhasīlo samāno</p>
+
+<p><span class="parno">17</span><span class="ms">p_4V_1508</span>"pari&shy;suddhājīvomhī"ti paṭijānāti "parisuddho me ājīvo pariyodāto asaṁkiliṭṭho"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, moggallāna, satthāraṁ sāvakā ājīvato rakkhanti; evarūpo ca pana satthā sāvakehi ājīvato rakkhaṁ paccāsīsati. Puna caparaṁ, moggallāna, idhekacco satthā apari&shy;suddhājīvo samāno ‘pari&shy;suddhājīvomhī’ti paṭijānāti ‘parisuddho me ājīvo pariyodāto asaṁkiliṭṭho’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhājīvo samāno</p>
+
+<p><span class="parno">18</span><span class="ms">p_4V_1509</span>"pari&shy;suddhadhammadesanomhī"ti paṭijānāti "parisuddhā me dhammadesanā pariyodātā asaṁkiliṭṭhā"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, moggallāna, satthāraṁ sāvakā dhammadesanato rakkhanti; evarūpo ca pana satthā sāvakehi dhammadesanato rakkhaṁ paccāsīsati. Puna caparaṁ, moggallāna, idhekacco satthā apari&shy;suddhadhammadesano samāno ‘pari&shy;suddhadhammadesanomhī’ti paṭijānāti ‘parisuddhā me dhammadesanā pariyodātā asaṁkiliṭṭhā’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhadhammadesano samāno</p>
+
+<p><span class="parno">19</span><span class="ms">p_4V_1510</span>"pari&shy;suddhaveyyākaraṇomhī"ti paṭijānāti "parisuddhaṁ me veyyākaraṇaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, moggallāna, satthāraṁ sāvakā veyyākaraṇato rakkhanti; evarūpo ca pana satthā sāvakehi veyyākaraṇato rakkhaṁ paccāsīsati. Puna caparaṁ, moggallāna, idhekacco satthā apari&shy;suddhaveyyākaraṇo samāno ‘pari&shy;suddhaveyyākaraṇomhī’ti paṭijānāti ‘parisuddhaṁ me veyyākaraṇaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhaveyyākaraṇo samāno</p>
+
+<p><span class="parno">20</span><span class="ms">p_4V_1511</span>"pari&shy;suddhañāṇadassanomhī"ti paṭijānāti "parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, moggallāna, satthāraṁ sāvakā ñāṇadassanato rakkhanti; evarūpo ca pana satthā sāvakehi ñāṇadassanato rakkhaṁ paccāsīsatīti. Ime kho, moggallāna, pañca satthāro santo saṁvijjamānā lokasmiṁ. Puna caparaṁ, moggallāna, idhekacco satthā apari&shy;suddhañāṇadassano samāno ‘pari&shy;suddhañāṇadassanomhī’ti paṭijānāti ‘parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhañāṇadassano samāno</p>
+
+<hr>
+<p><span class="parno">21</span><span class="ms">p_4V_1512</span>Ahaṁ kho pana, moggallāna, parisuddhasīlo samāno ‘pari&shy;suddhasīlomhī’ti paṭijānāmi ‘parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Na ca maṁ sāvakā sīlato rakkhanti; na cāhaṁ sāvakehi sīlato rakkhaṁ paccāsīsāmi. Parisuddhājīvo samāno … pe … pari&shy;suddhadhammadesano samāno … pe … pari&shy;suddhaveyyākaraṇo samāno … pe … pari&shy;suddhañāṇadassano samāno ‘pari&shy;suddhañāṇadassanomhī’ti paṭijānāmi ‘parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Na ca maṁ sāvakā ñāṇadassanato rakkhanti; na cāhaṁ sāvakehi ñāṇadassanato rakkhaṁ paccāsīsāmī"ti.</p>
+
+<hr>
+<p><span class="parno">22</span><span class="ms">p_4V_1513, msdiv335</span>Atha kho bhagavā kosambiyaṁ yathābhirantaṁ viharitvā yena rājagahaṁ tena cārikaṁ pakkāmi. Anupubbena cārikaṁ caramāno yena rājagahaṁ tadavasari. Tatra sudaṁ bhagavā rājagahe viharati veḷuvane kalandakanivāpe. Atha kho sambahulā bhikkhū yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinnā kho te bhikkhū bhagavantaṁ etadavocuṁ — </p>
+
+<p>"devadattassa, bhante, ajātasattu kumāro pañcahi rathasatehi sāyaṁ pātaṁ upaṭṭhānaṁ gacchati; pañca ca thālipākasatāni bhattābhihāro abhiharīyatī"ti.</p>
+
+<p>"Mā, bhikkhave, devadattassa lābhasakkārasilokaṁ pihayittha. Yāvakīvañca, bhikkhave, devadattassa ajātasattu kumāro pañcahi rathasatehi sāyaṁ pātaṁ upaṭṭhānaṁ gamissati, pañca ca thālipākasatāni bhattābhihāro abhi&shy;harīyissati, hāniyeva, bhikkhave, devadattassa pāṭikankhā kusalesu dhammesu, no vuḍḍhi.</p>
+
+<hr>
+<p><span class="parno">23</span><span class="ms">p_4V_1514</span>Seyyathāpi, bhikkhave, caṇḍassa kukkurassa nāsāya pittaṁ bhindeyyuṁ, evañhi so, bhikkhave, kukkuro bhiyyoso mattāya caṇḍataro assa; evameva kho, bhikkhave, yāvakīvañca devadattassa ajātasattu kumāro pañcahi rathasatehi sāyaṁ pātaṁ upaṭṭhānaṁ gamissati, pañca ca thālipākasatāni bhattābhihāro abhi&shy;harīyissati, hāniyeva, bhikkhave, devadattassa pāṭikankhā kusalesu dhammesu, no vuḍḍhi.</p>
+
+<p><span class="parno">24</span><span class="ms">p_4V_1515</span>Attavadhāya, bhikkhave, devadattassa lābhasakkārasiloko udapādi, parābhavāya devadattassa lābhasakkārasiloko udapādi.</p>
+
+<p><span class="parno">25</span><span class="ms">p_4V_1516</span>Seyyathāpi, bhikkhave, kadalī attavadhāya phalaṁ deti, parābhavāya phalaṁ deti; evameva kho, bhikkhave, attavadhāya devadattassa lābhasakkārasiloko udapādi, parābhavāya devadattassa lābhasakkārasiloko udapādi.</p>
+
+<p><span class="parno">26</span><span class="ms">p_4V_1517</span>Seyyathāpi, bhikkhave, veḷu attavadhāya phalaṁ deti, parābhavāya phalaṁ deti; evameva kho, bhikkhave, attavadhāya devadattassa lābhasakkārasiloko udapādi, parābhavāya devadattassa lābhasakkārasiloko udapādi.</p>
+
+<p><span class="parno">27</span><span class="ms">p_4V_1518</span>Seyyathāpi, bhikkhave, naḷo attavadhāya phalaṁ deti, parābhavāya phalaṁ deti; evameva kho, bhikkhave, attavadhāya devadattassa lābhasakkārasiloko udapādi, parābhavāya devadattassa lābhasakkārasiloko udapādi.</p>
+
+<p><span class="parno">28</span><span class="ms">p_4V_1519</span>Seyyathāpi, bhikkhave, assatarī attavadhāya gabbhaṁ gaṇhāti, parābhavāya gabbhaṁ gaṇhāti; evameva kho, bhikkhave, attavadhāya devadattassa lābhasakkārasiloko udapādi, parābhavāya devadattassa lābhasakkārasiloko udapādīti.</p>
+
+<hr>
+<p class="verse"><span class="parno">29</span><span class="ms">p_4V_1520</span>Phalaṁ ve kadaliṁ hanti,
+<br>phalaṁ veḷuṁ phalaṁ naḷaṁ;
+<br>Sakkāro kāpurisaṁ hanti,
+<br>gabbho assatariṁ yathā"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">30</span><span class="ms">p_4V_1521</span>Paṭhama&shy;bhāṇavāro niṭṭhito.</p>
+
+<h3> Dutiyabhāṇavāra</h3>
+<h4>1 Pakāsanīyakamma</h4>
+
+<p><span class="parno">31</span><span class="ms">p_4V_1522, msdiv336</span>Tena kho pana samayena bhagavā mahatiyā parisāya parivuto dhammaṁ desento nisinno hoti sarājikāya parisāya. Atha kho devadatto uṭṭhāyāsanā ekaṁsaṁ uttarāsangaṁ karitvā yena bhagavā tenañjaliṁ paṇāmetvā bhagavantaṁ etadavoca — "jiṇṇo dāni, bhante, bhagavā vuḍḍho mahallako addhagato vayoanuppatto. Appossukko dāni, bhante, bhagavā diṭṭhadhammasukhavihāraṁ anuyutto viharatu, mamaṁ bhikkhusaṇghaṁ nissajjatu. Ahaṁ bhikkhusaṇghaṁ pariharissāmī"ti.</p>
+
+<hr>
+<p>"Alaṁ, devadatta, mā te rucci bhikkhusaṇghaṁ pariharitun"ti.</p>
+
+<p><span class="parno">32</span><span class="ms">p_4V_1523</span>Dutiyampi kho devadatto … pe … tatiyampi kho devadatto bhagavantaṁ etadavoca — "jiṇṇo dāni, bhante, bhagavā vuḍḍho mahallako addhagato vayoanuppatto. Appossukko dāni, bhante, bhagavā diṭṭhadhammasukhavihāraṁ anuyutto viharatu, mamaṁ bhikkhusaṇghaṁ nissajjatu. Ahaṁ bhikkhusaṇghaṁ pariharissāmī"ti.</p>
+
+<hr>
+<p><span class="parno">33</span><span class="ms">p_4V_1524</span>"Sāriputtamoggallānānampi kho ahaṁ, devadatta, bhikkhusaṇghaṁ na nissajjeyyaṁ, kiṁ pana tuyhaṁ chavassa kheḷāsakassā"ti.</p>
+
+<p>Atha kho devadatto — sarājikāya maṁ bhagavā parisāya kheḷāsakavādena apasādeti, sāriputtamoggallāneva&shy; ukkaṁsatīti — kupito anattamano bhagavantaṁ abhivādetvā padakkhiṇaṁ katvā pakkāmi.</p>
+
+<p>Ayañcarahi devadattassa bhagavati paṭhamo āghāto ahosi.</p>
+
+<p><span class="parno">34</span><span class="ms">p_4V_1525</span>Atha kho bhagavā bhikkhū āmantesi — "tena hi, bhikkhave, saṇgho devadattassa rājagahe pakāsanīyaṁ kammaṁ karotu — ‘pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo’ti. Evañca pana, bhikkhave, kātabbaṁ. Byattena bhikkhunā paṭibalena saṇgho ñāpetabbo — </p>
+
+<hr>
+<p><span class="parno">35</span><span class="ms">p_4V_1526, msdiv337</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Esā ñatti. ‘Suṇātu me, bhante, saṇgho. Yadi saṇghassa pattakallaṁ saṇgho devadattassa rājagahe pakāsanīyaṁ kammaṁ kareyya — </p>
+
+<p><span class="parno">36</span><span class="ms">p_4V_1527</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Yassāyasmato khamati devadattassa rājagahe pakāsanīyassa kammassa karaṇaṁ — "pubbe devadattassa aññā pakati ahosi, idāni aññā pakati, yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti — so tuṇhassa; yassa nakkhamati, so bhāseyya. Suṇātu me, bhante, saṇgho. Saṇgho devadattassa rājagahe pakāsanīyaṁ kammaṁ karoti — </p>
+
+<p><span class="parno">37</span><span class="ms">p_4V_1528</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Khamati saṇghassa, tasmā tuṇhī, evametaṁ dhārayāmī’"ti. Kataṁ saṇghena devadattassa rājagahe pakāsanīyaṁ kammaṁ — </p>
+
+<hr>
+<p><span class="parno">38</span><span class="ms">p_4V_1529, msdiv338</span>Atha kho bhagavā āyasmantaṁ sāriputtaṁ āmantesi — "tena hi tvaṁ, sāriputta, devadattaṁ rājagahe pakāsehī"ti.</p>
+
+<p>"Pubbe mayā, bhante, devadattassa rājagahe vaṇṇo bhāsito — ‘mahiddhiko godhiputto, mahānubhāvo godhiputto’ti. Kathāhaṁ, bhante, devadattaṁ rājagahe pakāsemī"ti?</p>
+
+<p>"Nanu tayā, sāriputta, bhūtoyeva devadattassa rājagahe vaṇṇo bhāsito — ‘mahiddhiko godhiputto, mahānubhāvo godhiputto’"ti?</p>
+
+<p>"Evaṁ, bhante"ti.</p>
+
+<p>"Evameva kho tvaṁ, sāriputta, bhūtaṁyeva devadattaṁ rājagahe pakāsehī"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho āyasmā sāriputto bhagavato paccassosi.</p>
+
+<hr>
+<p><span class="parno">39</span><span class="ms">p_4V_1530</span>Atha kho bhagavā bhikkhū āmantesi — "tena hi, bhikkhave, saṇgho sāriputtaṁ sammannatu devadattaṁ rājagahe pakāsetuṁ — ‘pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo’ti. Evañca pana, bhikkhave, sammannitabbo. Paṭhamaṁ sāriputto yācitabbo. Yācitvā byattena bhikkhunā paṭibalena saṇgho ñāpetabbo — </p>
+
+<p><span class="parno">40</span><span class="ms">p_4V_1531</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Esā ñatti. ‘Suṇātu me, bhante, saṇgho. Yadi saṇghassa pattakallaṁ, saṇgho āyasmantaṁ sāriputtaṁ sammanneyya devadattaṁ rājagahe pakāsetuṁ — </p>
+
+<hr>
+<p><span class="parno">41</span><span class="ms">p_4V_1532</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati, yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Yassāyasmato khamati, āyasmato sāriputtassa sammuti devadattaṁ rājagahe pakāsetuṁ — "pubbe devadattassa aññā pakati ahosi, idāni aññā pakati, yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti — so tuṇhassa; yassa nakkhamati, so bhāseyya. Suṇātu me, bhante, saṇgho. Saṇgho āyasmantaṁ sāriputtaṁ sammannati devadattaṁ rājagahe pakāsetuṁ — </p>
+
+<p><span class="parno">42</span><span class="ms">p_4V_1533</span>"pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Khamati saṇghassa, tasmā tuṇhī, evametaṁ dhārayāmī’"ti. Sammato saṇghena āyasmā sāriputto devadattaṁ rājagahe pakāsetuṁ — </p>
+
+<hr>
+<p><span class="parno">43</span><span class="ms">p_4V_1534</span>Sammato ca āyasmā sāriputto sambahulehi bhikkhūhi saddhiṁ rājagahaṁ pavisitvā devadattaṁ rājagahe pakāsesi — "pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo"ti. Tattha ye te manussā assaddhā appasannā dubbuddhino, te evamāhaṁsu — "usūyakā ime samaṇā sakyaputtiyā devadattassa lābhasakkāraṁ usūyantī"ti. Ye pana te manussā saddhā pasannā paṇḍitā byattā buddhimanto, te evamāhaṁsu — "na kho idaṁ orakaṁ bhavissati yathā bhagavā devadattaṁ rājagahe pakāsāpetī"ti.</p>
+
+<h4>2 Ajāta&shy;sattu&shy;kumāravatthu</h4>
+
+<p><span class="parno">44</span><span class="ms">p_4V_1535, msdiv339</span>Atha kho devadatto yena ajātasattu kumāro tenupasankami, upasankamitvā ajātasattuṁ kumāraṁ etadavoca — "pubbe kho, kumāra, manussā dīghāyukā, etarahi appāyukā. Ṭhānaṁ kho panetaṁ vijjati yaṁ tvaṁ kumārova samāno kālaṁ kareyyāsi. Tena hi tvaṁ, kumāra, pitaraṁ hantvā rājā hohi. Ahaṁ bhagavantaṁ hantvā buddho bhavissāmī"ti.</p>
+
+<p><span class="parno">45</span><span class="ms">p_4V_1536</span>Atha kho ajātasattu kumāro — "ayyo kho devadatto mahiddhiko mahānubhāvo, jāneyyāsi ayyo devadatto"ti — ūruyā potthanikaṁ bandhitvā divā divassa bhīto ubbiggo ussankī utrasto sahasā antepuraṁ pāvisi. Addasāsuṁ kho antepure upacārakā mahāmattā ajātasattuṁ kumāraṁ divā divassa bhītaṁ ubbiggaṁ ussankiṁ utrastaṁ sahasā antepuraṁ pavisantaṁ; disvāna aggahesuṁ. Te vicinantā ūruyā potthanikaṁ baddhaṁ disvāna ajātasattuṁ kumāraṁ etadavocuṁ — "kiṁ tvaṁ, kumāra, kattukāmosī"ti?</p>
+
+<p>"Pitaramhi hantukāmo"ti.</p>
+
+<p>"Kenāsi ussāhito"ti?</p>
+
+<hr>
+<p>"Ayyena devadattenā"ti. Ekacce mahāmattā evaṁ matiṁ akaṁsu — "kumāro ca hantabbo, devadatto ca, sabbe ca bhikkhū hantabbā"ti. Ekacce mahāmattā evaṁ matiṁ akaṁsu — "na bhikkhū hantabbā. Na bhikkhū kiñci aparajjhanti. Kumāro ca hantabbo, devadatto cā"ti. Ekacce mahāmattā evaṁ matiṁ akaṁsu — "na kumāro ca hantabbo, na devadatto. Na bhikkhū hantabbā. Rañño ārocetabbaṁ. Yathā rājā vakkhati tathā karissāmā"ti.</p>
+
+<p><span class="parno">46</span><span class="ms">p_4V_1537</span>Atha kho te mahāmattā ajātasattuṁ kumāraṁ ādāya yena rājā māgadho seniyo bimbisāro tenupasankamiṁsu, upasankamitvā rañño māgadhassa seniyassa bimbisārassa etamatthaṁ ārocesuṁ. "Kathaṁ, bhaṇe, mahāmattehi mati katā"ti?</p>
+
+<p>"Ekacce, deva, mahāmattā evaṁ matiṁ akaṁsu — ‘kumāro ca hantabbo, devadatto ca, sabbe ca bhikkhū hantabbā’ti. Ekacce mahāmattā evaṁ matiṁ akaṁsu — ‘na bhikkhū hantabbā. Na bhikkhū kiñci aparajjhanti. Kumāro ca hantabbo, devadatto cā’ti. Ekacce mahāmattā evaṁ matiṁ akaṁsu — ‘na kumāro ca hantabbo, na devadatto. Na bhikkhū hantabbā. Rañño ārocetabbaṁ. Yathā rājā vakkhati tathā karissāmā’"ti.</p>
+
+<hr>
+<p>"Kiṁ, bhaṇe, karissati buddho vā dhammo vā saṇgho vā? Nanu bhagavatā paṭikacceva devadatto rājagahe pakāsāpito — ‘pubbe devadattassa aññā pakati ahosi, idāni aññā pakati. Yaṁ devadatto kareyya kāyena vācāya, na tena buddho vā dhammo vā saṇgho vā daṭṭhabbo, devadattova tena daṭṭhabbo’"ti?</p>
+
+<p>Tattha ye te mahāmattā evaṁ matiṁ akaṁsu — "kumāro ca hantabbo devadatto ca; sabbe ca bhikkhū hantabbā"ti; te aṭṭhāne akāsi. Ye te mahāmattā evaṁ matiṁ akaṁsu — "na bhikkhū hantabbā; na bhikkhū kiñci aparajjhanti; kumāro ca hantabbo devadatto cā"ti; te nīce ṭhāne ṭhapesi. Ye te mahāmattā evaṁ matiṁ akaṁsu — "na kumāro ca hantabbo, na devadatto; na bhikkhū hantabbā; rañño ārocetabbaṁ; yathā rājā vakkhati tathā karissāmā"ti; te ucce ṭhāne ṭhapesi. Atha kho rājā māgadho seniyo bimbisāro ajātasattuṁ kumāraṁ etadavoca — </p>
+
+<p>"kissa maṁ tvaṁ, kumāra, hantukāmosī"ti?</p>
+
+<p>"Rajjenāmhi, deva, atthiko"ti.</p>
+
+<p>"Sace kho tvaṁ, kumāra, rajjena atthiko, etaṁ te rajjan"ti ajātasattussa kumārassa rajjaṁ niyyādesi.</p>
+
+<h4>3 Abhimārapesana</h4>
+
+<p><span class="parno">47</span><span class="ms">p_4V_1538, msdiv340</span>Atha kho devadatto yena ajātasattu kumāro tenupasankami, upasankamitvā ajātasattuṁ kumāraṁ etadavoca — </p>
+
+<p>"purise, mahārāja, āṇāpehi, ye samaṇaṁ gotamaṁ jīvitā voropessantī"ti. Atha kho ajātasattu kumāro manusse āṇāpesi — "yathā, bhaṇe, ayyo devadatto āha tathā kareyyāthā"ti. Atha kho devadatto ekaṁ purisaṁ āṇāpesi — "gacchāvuso, amukasmiṁ okāse samaṇo gotamo viharati. Taṁ jīvitā voropetvā iminā maggena āgacchā"ti. Tasmiṁ magge dve purise ṭhapesi — "yo iminā maggena eko puriso āgacchati, taṁ jīvitā voropetvā iminā maggena āgacchathā"ti. Tasmiṁ magge cattāro purise ṭhapesi — "ye iminā maggena dve purisā āgacchanti, te jīvitā voropetvā iminā maggena āgacchathā"ti. Tasmiṁ magge aṭṭha purise ṭhapesi — "ye iminā maggena cattāro purisā āgacchanti, te jīvitā voropetvā iminā maggena āgacchathā"ti. Tasmiṁ magge soḷasa purise ṭhapesi — "ye iminā maggena aṭṭha purisā āgacchanti, te jīvitā voropetvā āgacchathā"ti.</p>
+
+<p><span class="parno">48</span><span class="ms">p_4V_1539</span>Atha kho so eko puriso asicammaṁ gahetvā dhanukalāpaṁ sannayhitvā yena bhagavā tenupasankami, upasankamitvā bhagavato avidūre bhīto ubbiggo ussankī utrasto patthaddhena kāyena aṭṭhāsi. Addasā kho bhagavā taṁ purisaṁ bhītaṁ ubbiggaṁ ussankiṁ utrastaṁ patthaddhena kāyena ṭhitaṁ. Disvāna taṁ purisaṁ etadavoca — "ehāvuso, mā bhāyī"ti. Atha kho so puriso asicammaṁ ekamantaṁ karitvā dhanukalāpaṁ nikkhipitvā yena bhagavā tenupasankami, upasankamitvā bhagavato pādesu sirasā nipatitvā bhagavantaṁ etadavoca — </p>
+
+<p>"accayo maṁ, bhante, accagamā yathābālaṁ yathāmūḷhaṁ yathāakusalaṁ, yohaṁ duṭṭhacitto vadhakacitto idhūpasankanto. Tassa me, bhante, bhagavā accayaṁ accayato paṭiggaṇhātu āyatiṁ saṁvarāyā"ti.</p>
+
+<p>"Taggha tvaṁ, āvuso, accayo accagamā yathābālaṁ yathāmūḷhaṁ yathāakusalaṁ, yaṁ tvaṁ duṭṭhacitto vadhakacitto idhūpasankanto. Yato ca kho tvaṁ, āvuso, accayaṁ accayato disvā yathādhammaṁ paṭikarosi, taṁ te mayaṁ paṭiggaṇhāma. Vuḍḍhi hesā, āvuso, ariyassa vinaye — yo accayaṁ accayato disvā yathādhammaṁ paṭikaroti, āyatiṁ saṁvaraṁ āpajjatī"ti.</p>
+
+<p><span class="parno">49</span><span class="ms">p_4V_1540</span>Atha kho bhagavā tassa purisassa anupubbiṁ kathaṁ kathesi, seyyathidaṁ — dānakathaṁ sīlakathaṁ saggakathaṁ, kāmānaṁ ādīnavaṁ okāraṁ saṁkilesaṁ, nekkhamme ānisaṁsaṁ pakāsesi. Yadā taṁ bhagavā aññāsi kallacittaṁ, muducittaṁ, vinīvaraṇacittaṁ, udaggacittaṁ, pasannacittaṁ, atha yā buddhānaṁ sāmukkaṁsikā dhammadesanā taṁ pakāsesi — dukkhaṁ, samudayaṁ, nirodhaṁ, maggaṁ. Seyyathāpi nāma suddhaṁ vatthaṁ apagatakāḷakaṁ sammadeva rajanaṁ paṭiggaheyya; evameva tassa purisassa tasmiṁyeva āsane virajaṁ vītamalaṁ dhammacakkhuṁ udapādi — "yaṁ kiñci samudayadhammaṁ sabbaṁ taṁ nirodhadhamman"ti. Atha kho so puriso diṭṭhadhammo pattadhammo viditadhammo pari&shy;yogāḷhadhammo tiṇṇavicikiccho vigatakathaṁkatho vesārajjappatto aparappaccayo satthusāsane bhagavantaṁ etadavoca — </p>
+
+<p>"abhikkantaṁ, bhante, abhikkantaṁ, bhante. Seyyathāpi, bhante, nikkujjitaṁ vā ukkujjeyya, paṭicchannaṁ vā vivareyya, mūḷhassa vā maggaṁ ācikkheyya, andhakāre vā telapajjotaṁ dhāreyya — ‘cakkhumanto rūpāni dakkhantī’ti — evamevaṁ bhagavatā aneka&shy;pariyāyena dhammo pakāsito. Esāhaṁ, bhante, bhagavantaṁ saraṇaṁ gacchāmi, dhammañca, bhikkhusaṇghañca. Upāsakaṁ maṁ bhagavā dhāretu ajjatagge pāṇupetaṁ saraṇaṁ gatan"ti.</p>
+
+<p>Atha kho bhagavā taṁ purisaṁ etadavoca — "mā kho tvaṁ, āvuso, iminā maggena gaccha, iminā maggena gacchāhī"ti aññena maggena uyyojesi.</p>
+
+<hr>
+<p><span class="parno">50</span><span class="ms">p_4V_1541</span>Atha kho te dve purisā — "kiṁ nu kho so eko puriso cirena āgacchatī"ti — paṭipathaṁ gacchantā addasāsuṁ bhagavantaṁ aññatarasmiṁ rukkhamūle nisinnaṁ. Disvāna yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Tesaṁ bhagavā anupubbiṁ kathaṁ kathesi … pe … aparappaccayā satthusāsane bhagavantaṁ etadavocuṁ — "abhikkantaṁ, bhante … pe … upāsake no bhagavā dhāretu ajjatagge pāṇupetaṁ saraṇaṁ gate"ti. Atha kho bhagavā te purise etadavoca — </p>
+
+<p>"mā kho tumhe, āvuso, iminā maggena gacchittha, iminā maggena gacchathā"ti aññena maggena uyyojesi.</p>
+
+<hr>
+<p><span class="parno">51</span><span class="ms">p_4V_1542</span>Atha kho te cattāro purisā … pe … atha kho te aṭṭha purisā … pe … atha kho te soḷasa purisā — kiṁ nu kho te aṭṭha purisā cirena āgacchantīti — paṭipathaṁ gacchantā addasāsuṁ bhagavantaṁ aññatarasmiṁ rukkhamūle nisinnaṁ. Disvāna yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Tesaṁ bhagavā anupubbiṁ kathaṁ kathesi, seyyathidaṁ — dānakathaṁ … pe … aparappaccayā satthusāsane bhagavantaṁ etadavocuṁ — "abhikkantaṁ, bhante … pe … upāsake no bhagavā dhāretu ajjatagge pāṇupetaṁ saraṇaṁ gate"ti. Atha kho bhagavā te purise etadavoca — "mā kho tumhe, āvuso, iminā maggena gacchittha, iminā maggena gacchathā"ti aññena maggena uyyojesi.</p>
+
+<hr>
+<p><span class="parno">52</span><span class="ms">p_4V_1543</span>Atha kho so eko puriso yena devadatto tenupasankami, upasankamitvā devadattaṁ etadavoca — "nāhaṁ, bhante, sakkomi taṁ bhagavantaṁ jīvitā voropetuṁ; mahiddhiko so bhagavā mahānubhāvo"ti.</p>
+
+<p>"Alaṁ, āvuso; mā tvaṁ samaṇaṁ gotamaṁ jīvitā voropesi. Ahameva samaṇaṁ gotamaṁ jīvitā voropessāmī"ti.</p>
+
+<h4>4 Lohituppādakakamma</h4>
+
+<p><span class="parno">53</span><span class="ms">p_4V_1544, msdiv341</span>Tena kho pana samayena bhagavā gijjhakūṭassa pabbatassa chāyāyaṁ cankamati. Atha kho devadatto gijjhakūṭaṁ pabbataṁ āruhitvā mahatiṁ silaṁ pavijjhi — imāya samaṇaṁ gotamaṁ jīvitā voropessāmīti. Dve pabbatakūṭā samāgantvā taṁ silaṁ sampaṭicchiṁsu. Tato papatikā uppatitvā bhagavato pāde ruhiraṁ uppādesi. Atha kho bhagavā uddhaṁ ulloketvā devadattaṁ etadavoca — "bahuṁ tayā, moghapurisa, apuññaṁ pasutaṁ, yaṁ tvaṁ duṭṭhacitto vadhakacitto tathāgatassa ruhiraṁ uppādesī"ti. Atha kho bhagavā bhikkhū āmantesi — "idaṁ, bhikkhave, devadattena paṭhamaṁ ānantariyaṁ kammaṁ upacitaṁ, yaṁ duṭṭhacittena vadhakacittena tathāgatassa ruhiraṁ uppāditan"ti.</p>
+
+<p><span class="parno">54</span><span class="ms">p_4V_1545</span>Assosuṁ kho bhikkhū — "devadattena kira bhagavato vadho payutto"ti. Te ca bhikkhū bhagavato vihārassa parito parito cankamanti uccāsaddā mahāsaddā sajjhāyaṁ karontā, bhagavato rakkhāvaraṇaguttiyā. Assosi kho bhagavā uccāsaddaṁ mahāsaddaṁ sajjhāyasaddaṁ. Sutvāna āyasmantaṁ ānandaṁ āmantesi — </p>
+
+<p>"kiṁ nu kho so, ānanda, uccāsaddo mahāsaddo sajjhāyasaddo"ti?</p>
+
+<p>"Assosuṁ kho, bhante, bhikkhū — ‘devadattena kira bhagavato vadho payutto’ti. Te ca, bhante, bhikkhū bhagavato vihārassa parito parito cankamanti uccāsaddā mahāsaddā sajjhāyaṁ karontā, bhagavato rakkhāvaraṇaguttiyā. So eso, bhagavā, uccāsaddo mahāsaddo sajjhāyasaddo"ti.</p>
+
+<hr>
+<p>"Tena hānanda, mama vacanena te bhikkhū āmantehi — satthā āyasmante āmantetī"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho āyasmā ānando bhagavato paṭissutvā yena te bhikkhū tenupasankami, upasankamitvā te bhikkhū etadavoca — "satthā āyasmante āmantetī"ti.</p>
+
+<p>"Evamāvuso"ti kho te bhikkhū āyasmato ānandassa paṭissutvā yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinne kho te bhikkhū bhagavā etadavoca — </p>
+
+<hr>
+<p><span class="parno">55</span><span class="ms">p_4V_1546</span>"Aṭṭhānametaṁ, bhikkhave, anavakāso, yaṁ parūpakkamena tathāgataṁ jīvitā voropeyya. Anupakkamena, bhikkhave, tathāgatā parinibbāyanti.</p>
+
+<hr>
+<p><span class="parno">56</span><span class="ms">p_4V_1547</span>"pari&shy;suddhasīlomhī"ti paṭijānāti "parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ naṁ mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, bhikkhave, satthāraṁ sāvakā sīlato rakkhanti; evarūpo ca pana satthā sāvakehi sīlato rakkhaṁ paccāsīsati. Pañcime, bhikkhave, satthāro santo saṁvijjamānā lokasmiṁ. Katame pañca? Idha, bhikkhave, ekacco satthā apari&shy;suddhasīlo samāno ‘pari&shy;suddhasīlomhī’ti paṭijānāti ‘parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhasīlo samāno</p>
+
+<p><span class="parno">57</span><span class="ms">p_4V_1548</span>"pari&shy;suddhañāṇadassanomhī"ti paṭijānāti "parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca. Mayañceva kho pana gihīnaṁ āroceyyāma, nāssassa manāpaṁ. Yaṁ kho panassa amanāpaṁ, kathaṁ na mayaṁ tena samudācareyyāma? Sammannati kho pana cīvara&shy;piṇḍapāta&shy;senāsana&shy;gilānappaccaya&shy;bhesajja&shy;parikkhārena — yaṁ tumo karissati, tumova tena paññāyissatī’ti. Evarūpaṁ kho, bhikkhave, satthāraṁ sāvakā ñāṇadassanato rakkhanti; evarūpo ca pana satthā sāvakehi ñāṇadassanato rakkhaṁ paccāsīsati. Ime kho, bhikkhave, pañca satthāro santo saṁvijjamānā lokasmiṁ. Puna caparaṁ, bhikkhave, idhekacco satthā apari&shy;suddhājīvo samāno … pe … apari&shy;suddhadhammadesano samāno … pe … apari&shy;suddhaveyyākaraṇo samāno … pe … apari&shy;suddhañāṇadassano samāno ‘pari&shy;suddhañāṇadassanomhī’ti paṭijānāti ‘parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Tamenaṁ sāvakā evaṁ jānanti — ‘ayaṁ kho bhavaṁ satthā apari&shy;suddhañāṇadassano samāno</p>
+
+<p><span class="parno">58</span><span class="ms">p_4V_1549</span>Ahaṁ kho pana, bhikkhave, parisuddhasīlo samāno ‘pari&shy;suddhasīlomhī’ti paṭijānāmi ‘parisuddhaṁ me sīlaṁ pariyodātaṁ asaṁkiliṭṭhan’ti ca. Na ca maṁ sāvakā sīlato rakkhanti; na cāhaṁ sāvakehi sīlato rakkhaṁ paccāsīsāmi. Ahaṁ kho pana, bhikkhave, parisuddhājīvo samāno … pe … pari&shy;suddhadhammadesano samāno … pe … pari&shy;suddhaveyyākaraṇo samāno … pe … pari&shy;suddhañāṇadassano samāno "pari&shy;suddhañāṇadassanomhī"ti paṭijānāmi "parisuddhaṁ me ñāṇadassanaṁ pariyodātaṁ asaṁkiliṭṭhan"ti ca, na ca maṁ sāvakā ñāṇadassanato rakkhanti, na cāhaṁ sāvakehi ñāṇadassanato rakkhaṁ paccāsīsāmi. "Aṭṭhānametaṁ, bhikkhave, anavakāso, yaṁ parūpakkamena tathāgataṁ jīvitā voropeyya. Anupakkamena, bhikkhave, tathāgatā parinibbāyanti. Gacchatha tumhe, bhikkhave, yathāvihāraṁ. Arakkhiyā, bhikkhave, tathāgatā"ti.</p>
+
+<h4>5 Nāḷāgiripesana</h4>
+
+<p><span class="parno">59</span><span class="ms">p_4V_1550, msdiv342</span>Tena kho pana samayena rājagahe nāḷāgiri nāma hatthī caṇḍo hoti, manussaghātako. Atha kho devadatto rājagahaṁ pavisitvā hatthisālaṁ gantvā hatthibhaṇḍe etadavoca — "mayaṁ kho, bhaṇe, rājañātakā nāma paṭibalā nīcaṭṭhāniyaṁ uccaṭṭhāne ṭhapetuṁ, bhattampi vetanampi vaḍḍhāpetuṁ. Tena hi, bhaṇe, yadā samaṇo gotamo imaṁ racchaṁ paṭipanno hoti, tadā imaṁ nāḷāgiriṁ hatthiṁ muñcetvā imaṁ racchaṁ paṭipādethā"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho te hatthibhaṇḍā devadattassa paccassosuṁ.</p>
+
+<p>Atha kho bhagavā pubbaṇhasamayaṁ nivāsetvā pattacīvaramādāya sambahulehi bhikkhūhi saddhiṁ rājagahaṁ piṇḍāya pāvisi. Atha kho bhagavā taṁ racchaṁ paṭipajji. Addasāsuṁ kho te hatthibhaṇḍā bhagavantaṁ taṁ racchaṁ paṭipannaṁ. Disvāna nāḷāgiriṁ hatthiṁ muñcitvā taṁ racchaṁ paṭipādesuṁ. Addasā kho nāḷāgiri hatthī bhagavantaṁ dūratova āgacchantaṁ. Disvāna soṇḍaṁ ussāpetvā pahaṭ&shy;ṭhakaṇṇavālo yena bhagavā tena abhidhāvi. Addasāsuṁ kho te bhikkhū nāḷāgiriṁ hatthiṁ dūratova āgacchantaṁ. Disvāna bhagavantaṁ etadavocuṁ — </p>
+
+<hr>
+<p>"ayaṁ, bhante, nāḷāgiri hatthī caṇḍo manussaghātako imaṁ racchaṁ paṭipanno. Paṭikkamatu, bhante, bhagavā; paṭikkamatu sugato"ti.</p>
+
+<p>"Āgacchatha, bhikkhave, mā bhāyittha. Aṭṭhānametaṁ, bhikkhave, anavakāso, yaṁ parūpakkamena tathāgataṁ jīvitā voropeyya. Anupakkamena, bhikkhave, tathāgatā parinibbāyantī"ti.</p>
+
+<p><span class="parno">60</span><span class="ms">p_4V_1551</span>Dutiyampi kho te bhikkhū … pe … tatiyampi kho te bhikkhū bhagavantaṁ etadavocuṁ — "ayaṁ, bhante, nāḷāgiri hatthī caṇḍo manussaghātako imaṁ racchaṁ paṭipanno. Paṭikkamatu, bhante, bhagavā; paṭikkamatu sugato"ti.</p>
+
+<p>"Āgacchatha, bhikkhave, mā bhāyittha. Aṭṭhānametaṁ, bhikkhave, anavakāso, yaṁ parūpakkamena tathāgataṁ jīvitā voropeyya. Anupakkamena, bhikkhave, tathāgatā parinibbāyantī"ti.</p>
+
+<hr>
+<p><span class="parno">61</span><span class="ms">p_4V_1552</span>Tena kho pana samayena manussā pāsādesupi hammiyesupi chadanesupi āruḷhā acchanti. Tattha ye te manussā assaddhā appasannā dubbuddhino, te evamāhaṁsu — "abhirūpo vata, bho, mahāsamaṇo nāgena viheṭhīyissatī"ti. Ye pana te manussā saddhā pasannā paṇḍitā byattā buddhimanto, te evamāhaṁsu — "nacirassaṁ vata, bho, nāgo nāgena sangāmessatī"ti. Atha kho bhagavā nāḷāgiriṁ hatthiṁ mettena cittena phari.</p>
+
+<p>Atha kho nāḷāgiri hatthī bhagavato mettena cittena phuṭṭho soṇḍaṁ oropetvā yena bhagavā tenupasankami, upasankamitvā bhagavato purato aṭṭhāsi. Atha kho bhagavā dakkhiṇena hatthena nāḷāgirissa hatthissa kumbhaṁ parāmasanto nāḷāgiriṁ hatthiṁ imāhi gāthāhi ajjhabhāsi — </p>
+
+<hr>
+<p class="verse"><span class="parno">62</span><span class="ms">p_4V_1553</span>"Mā kuñjara nāgamāsado,
+<br>Dukkhañhi kuñjara nāgamāsado;
+<br>Na hi nāgahatassa kuñjara,
+<br>Sugati hoti ito paraṁ yato.</p>
+
+<hr>
+<p class="verse"><span class="parno">63</span><span class="ms">p_4V_1554</span>Mā ca mado mā ca pamādo,
+<br>Na hi pamattā sugatiṁ vajanti te;
+<br>Tvaññeva tathā karissasi,
+<br>Yena tvaṁ sugatiṁ gamissasī"ti.</p>
+
+<p><span class="parno">64</span><span class="ms">p_4V_1555</span>Atha kho nāḷāgiri hatthī soṇḍāya bhagavato pādapaṁsūni gahetvā uparimuddhani ākiritvā paṭikuṭiyova osakki, yāva bhagavantaṁ addakkhi. Atha kho nāḷāgiri hatthī hatthisālaṁ gantvā sake ṭhāne aṭṭhāsi. Tathā danto ca pana nāḷāgiri hatthī ahosi. Tena kho pana samayena manussā imaṁ gāthaṁ gāyanti — </p>
+
+<p class="verse"><span class="parno">65</span><span class="ms">p_4V_1556</span>"Daṇḍeneke damayanti,
+<br>ankusehi kasāhi ca;
+<br>Adaṇḍena asatthena,
+<br>nāgo danto mahesinā"ti.</p>
+
+<p><span class="parno">66</span><span class="ms">p_4V_1557</span>Manussā ujjhāyanti khiyyanti vipācenti — "yāva pāpo ayaṁ devadatto, alakkhiko, yatra hi nāma samaṇassa gotamassa evaṁmahiddhikassa evaṁmahānubhāvassa vadhāya parakkamissatī"ti. Devadattassa lābhasakkāro parihāyi. Bhagavato ca lābhasakkāro abhivaḍḍhi.</p>
+
+<h4>6 Pañca&shy;vatthuyācanakathā</h4>
+
+<p><span class="parno">67</span><span class="ms">p_4V_1558, msdiv343</span>Tena kho pana samayena devadatto pari&shy;hīnalābhasakkāro sapariso kulesu viññāpetvā viññāpetvā bhuñjati. Manussā ujjhāyanti khiyyanti vipācenti — </p>
+
+<p>"kathañhi nāma samaṇā sakyaputtiyā kulesu viññāpetvā viññāpetvā bhuñjissanti. Kassa sampannaṁ na manāpaṁ, kassa sāduṁ na ruccatī"ti.</p>
+
+<p>Assosuṁ kho bhikkhū tesaṁ manussānaṁ ujjhāyantānaṁ khiyyantānaṁ vipācentānaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma devadatto sapariso kulesu viññāpetvā viññāpetvā bhuñjissatī"ti. Bhagavato etamatthaṁ ārocesuṁ … pe …</p>
+
+<p>"saccaṁ kira tvaṁ, devadatta, sapariso kulesu viññāpetvā viññāpetvā bhuñjasī"ti?</p>
+
+<p>"Saccaṁ, bhagavā"ti … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<hr>
+<p>"tena hi, bhikkhave, bhikkhūnaṁ kulesu tikabhojanaṁ paññapessāmi tayo atthavase paṭicca — dummankūnaṁ puggalānaṁ niggahāya; pesalānaṁ bhikkhūnaṁ phāsuvihārāya, ‘mā pāpicchā pakkhaṁ nissāya saṇghaṁ bhindeyyun’ti; kulānuddayāya ca. Gaṇabhojane yathādhammo kāretabbo"ti.</p>
+
+<p><span class="parno">68</span><span class="ms">p_4V_1559</span>Atha kho devadatto yena kokāliko kaṭamodakatissako khaṇḍadeviyā putto samuddadatto tenupasankami, upasankamitvā kokālikaṁ kaṭamodakatissakaṁ khaṇḍadeviyā puttaṁ samuddadattaṁ etadavoca — "etha, mayaṁ, āvuso, samaṇassa gotamassa saṇghabhedaṁ karissāma cakkabhedan"ti. Evaṁ vutte, kokāliko devadattaṁ etadavoca — </p>
+
+<p>"samaṇo kho, āvuso, gotamo mahiddhiko mahānubhāvo. Kathaṁ mayaṁ samaṇassa gotamassa saṇghabhedaṁ karissāma cakkabhedan"ti?</p>
+
+<p>"Etha, mayaṁ, āvuso, samaṇaṁ gotamaṁ upasankamitvā pañca vatthūni yācissāma — ‘bhagavā, bhante, aneka&shy;pariyāyena appicchassa santuṭṭhassa sallekhassa dhutassa pāsādikassa apacayassa vīriyārambhassa vaṇṇavādī. Imāni, bhante, pañca vatthūni aneka&shy;pariyāyena appicchatāya santuṭṭhiyā sallekhāya dhutatāya pāsādikatāya apacayāya vīriyārambhāya saṁvattanti.</p>
+
+<p>Sādhu, bhante, bhikkhū yāvajīvaṁ āraññikā assu; yo gāmantaṁ osareyya, vajjaṁ naṁ phuseyya.</p>
+
+<p>Yāvajīvaṁ piṇḍapātikā assu; yo nimantanaṁ sādiyeyya, vajjaṁ naṁ phuseyya.</p>
+
+<p>Yāvajīvaṁ paṁsukūlikā assu; yo gahapaticīvaraṁ sādiyeyya, vajjaṁ naṁ phuseyya.</p>
+
+<p>Yāvajīvaṁ rukkhamūlikā assu; yo channaṁ upagaccheyya, vajjaṁ naṁ phuseyya.</p>
+
+<p>Yāvajīvaṁ macchamaṁsaṁ na khādeyyuṁ; yo macchamaṁsaṁ khādeyya, vajjaṁ naṁ phuseyyā’ti.</p>
+
+<p>Imāni pañca vatthūni samaṇo gotamo nānujānissati. Te mayaṁ imehi pañcahi vatthūhi janaṁ saññāpessāmā"ti.</p>
+
+<p>"Sakkā kho, āvuso, imehi pañcahi vatthūhi samaṇassa gotamassa saṇghabhedo kātuṁ cakkabhedo. Lūkhappasannā hi, āvuso, manussā"ti.</p>
+
+<hr>
+<p><span class="parno">69</span><span class="ms">p_4V_1560</span>Atha kho devadatto sapariso yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho devadatto bhagavantaṁ etadavoca — </p>
+
+<p>"bhagavā, bhante, aneka&shy;pariyāyena appicchassa santuṭṭhassa sallekhassa dhutassa pāsādikassa apacayassa vīriyārambhassa vaṇṇavādī. Imāni, bhante, pañca vatthūni aneka&shy;pariyāyena appicchatāya santuṭṭhiyā sallekhāya dhutatāya pāsādikatāya apacayāya vīriyārambhāya saṁvattanti. Sādhu, bhante, bhikkhū yāvajīvaṁ āraññikā assu; yo gāmantaṁ osareyya, vajjaṁ naṁ phuseyya. Yāvajīvaṁ piṇḍapātikā assu; yo nimantanaṁ sādiyeyya, vajjaṁ naṁ phuseyya. Yāvajīvaṁ paṁsukūlikā assu; yo gahapaticīvaraṁ sādiyeyya, vajjaṁ naṁ phuseyya. Yāvajīvaṁ rukkhamūlikā assu; yo channaṁ upagaccheyya, vajjaṁ naṁ phuseyya. Yāvajīvaṁ macchamaṁsaṁ na khādeyyuṁ; yo macchamaṁsaṁ khādeyya, vajjaṁ naṁ phuseyyā"ti.</p>
+
+<hr>
+<p>"Alaṁ, devadatta. Yo icchati, āraññiko hotu; yo icchati, gāmante viharatu. Yo icchati, piṇḍapātiko hotu; yo icchati, nimantanaṁ sādiyatu. Yo icchati, paṁsukūliko hotu; yo icchati, gahapaticīvaraṁ sādiyatu. Aṭṭhamāse kho mayā, devadatta, rukkhamūlasenāsanaṁ anuññātaṁ; tikoṭipari&shy;suddhaṁ macchamaṁsaṁ — adiṭṭhaṁ, assutaṁ, aparisankitan"ti.</p>
+
+<p>Atha kho devadatto — "na bhagavā imāni pañca vatthūni anujānātī"ti — haṭṭho udaggo sapariso uṭṭhāyāsanā bhagavantaṁ abhivādetvā padakkhiṇaṁ katvā pakkāmi.</p>
+
+<hr>
+<p><span class="parno">70</span><span class="ms">p_4V_1561</span>Atha kho devadatto sapariso rājagahaṁ pavisitvā pañcahi vatthūhi janaṁ saññāpesi — "mayaṁ, āvuso, samaṇaṁ gotamaṁ upasankamitvā pañca vatthūni yācimhā — ‘bhagavā, bhante, aneka&shy;pariyāyena appicchassa … pe … vīriyārambhassa vaṇṇavādī. Imāni, bhante, pañca vatthūni aneka&shy;pariyāyena appicchatāya … pe … vīriyārambhāya saṁvattanti. Sādhu, bhante, bhikkhū yāvajīvaṁ āraññikā assu; yo gāmantaṁ osareyya, vajjaṁ naṁ phuseyya … pe … yāvajīvaṁ macchamaṁsaṁ na khādeyyuṁ; yo macchamaṁsaṁ khādeyya, vajjaṁ naṁ phuseyyā’ti. Imāni pañca vatthūni samaṇo gotamo nānujānāti. Te mayaṁ imehi pañcahi vatthūhi samādāya vattāmā"ti.</p>
+
+<p><span class="parno">71</span><span class="ms">p_4V_1562</span>Tattha ye te manussā assaddhā appasannā dubbuddhino, te evamāhaṁsu — "ime kho samaṇā sakyaputtiyā dhutā sallekhavuttino. Samaṇo pana gotamo bāhulliko bāhullāya cetetī"ti. Ye pana te manussā saddhā pasannā paṇḍitā byattā buddhimanto, te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma devadatto bhagavato saṇghabhedāya parakkamissati cakkabhedāyā"ti.</p>
+
+<hr>
+<p><span class="parno">72</span><span class="ms">p_4V_1563</span>Assosuṁ kho bhikkhū tesaṁ manussānaṁ ujjhāyantānaṁ khiyyantānaṁ vipācentānaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — </p>
+
+<hr>
+<p>"kathañhi nāma devadatto saṇghabhedāya parakkamissati cakkabhedāyā"ti.</p>
+
+<p><span class="parno">73</span><span class="ms">p_4V_1564</span>Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ … pe …</p>
+
+<p>"saccaṁ kira tvaṁ, devadatta, saṇghabhedāya parakkamasi cakkabhedāyā"ti?</p>
+
+<p>"Saccaṁ, bhagavā"ti.</p>
+
+<p>"Alaṁ, devadatta. Mā te rucci saṇghabhedo. Garuko kho, devadatta, saṇghabhedo. Yo kho, devadatta, samaggaṁ saṇghaṁ bhindati, kappaṭṭhikaṁ kibbisaṁ pasavati, kappaṁ nirayamhi paccati. Yo ca kho, devadatta, bhinnaṁ saṇghaṁ samaggaṁ karoti, brahmaṁ puññaṁ pasavati, kappaṁ saggamhi modati. Alaṁ, devadatta. Mā te rucci saṇghabhedo. Garuko kho, devadatta, saṇghabhedo"ti.</p>
+
+<p><span class="parno">74</span><span class="ms">p_4V_1565</span>Atha kho āyasmā ānando pubbaṇhasamayaṁ nivāsetvā pattacīvaramādāya rājagahaṁ piṇḍāya pāvisi. Addasā kho devadatto āyasmantaṁ ānandaṁ rājagahe piṇḍāya carantaṁ. Disvāna yenāyasmā ānando tenupasankami, upasankamitvā āyasmantaṁ ānandaṁ etadavoca — "ajja&shy;taggedānāhaṁ, āvuso ānanda, aññatreva bhagavatā, aññatreva bhikkhusaṇghā, uposathaṁ karissāmi saṇghakammaṁ karissāmī"ti.</p>
+
+<p><span class="parno">75</span><span class="ms">p_4V_1566</span>Atha kho āyasmā ānando rājagahe piṇḍāya caritvā pacchābhattaṁ piṇḍapātapaṭikkanto yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā ānando bhagavantaṁ etadavoca — </p>
+
+<p>"idhāhaṁ, bhante, pubbaṇhasamayaṁ nivāsetvā pattacīvaramādāya rājagahaṁ piṇḍāya pāvisiṁ. Addasā kho maṁ, bhante, devadatto rājagahe piṇḍāya carantaṁ. Disvāna yenāhaṁ tenupasankami, upasankamitvā maṁ etadavoca — ‘ajja&shy;taggedānāhaṁ, āvuso ānanda, aññatreva bhagavatā, aññatreva bhikkhusaṇghā, uposathaṁ karissāmi saṇghakammaṁ karissāmī’ti. Ajjatagge, bhante, devadatto saṇghaṁ bhindissatī"ti. Atha kho bhagavā etamatthaṁ viditvā tāyaṁ velāyaṁ imaṁ udānaṁ udānesi — </p>
+
+<p class="verse"><span class="parno">76</span><span class="ms">p_4V_1567</span>"Sukaraṁ sādhunā sādhuṁ,
+<br>Sādhuṁ pāpena dukkaraṁ;
+<br>Pāpaṁ pāpena sukaraṁ,
+<br>Pāpamariyehi dukkaran"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">77</span><span class="ms">p_4V_1568</span>Dutiyabhāṇavāro niṭṭhito.</p>
+
+<h3> Tatiyabhāṇavāra</h3>
+<h4>1 Saṇghabheda&shy;kathā</h4>
+
+<p><span class="parno">78</span><span class="ms">p_4V_1569, msdiv344</span>Atha kho devadatto tadahuposathe uṭṭhāyāsanā salākaṁ gāhesi — "mayaṁ, āvuso, samaṇaṁ gotamaṁ upasankamitvā pañca vatthūni yācimhā — ‘bhagavā, bhante, aneka&shy;pariyāyena appicchassa … pe … vīriyārambhassa vaṇṇavādī. Imāni, bhante, pañca vatthūni aneka&shy;pariyāyena appicchatāya … pe … vīriyārambhāya saṁvattanti. Sādhu, bhante, bhikkhū yāvajīvaṁ āraññikā assu; yo gāmantaṁ osareyya, vajjaṁ naṁ phuseyya … pe … yāvajīvaṁ macchamaṁsaṁ na khādeyyuṁ; yo macchamaṁsaṁ khādeyya, vajjaṁ naṁ phuseyyā’ti. Imāni pañca vatthūni samaṇo gotamo nānujānāti. Te mayaṁ imehi pañcahi vatthūhi samādāya vattāma. Yassāyasmato imāni pañca vatthūni khamanti, so salākaṁ gaṇhātū"ti.</p>
+
+<hr>
+<p><span class="parno">79</span><span class="ms">p_4V_1570</span>Tena kho pana samayena vesālikā vajjiputtakā pañcamattāni bhikkhusatāni navakā ceva honti appakataññuno ca. Te — "ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanan"ti salākaṁ gaṇhiṁsu. Atha kho devadatto saṇghaṁ bhinditvā pañcamattāni bhikkhusatāni ādāya yena gayāsīsaṁ tena pakkāmi. Atha kho sāriputta&shy;moggallānā yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdiṁsu. Ekamantaṁ nisinno kho āyasmā sāriputto bhagavantaṁ etadavoca — "devadatto, bhante, saṇghaṁ bhinditvā pañcamattāni bhikkhusatāni ādāya yena gayāsīsaṁ tena pakkanto"ti.</p>
+
+<p>"Na hi nāma tumhākaṁ, sāriputtā, tesu navakesu bhikkhūsu kāruññampi bhavissati? Gacchatha tumhe, sāriputtā, purā te bhikkhū anayabyasanaṁ āpajjantī"ti.</p>
+
+<p>"Evaṁ, bhante"ti kho sāriputtamoggallānā bhagavato paṭissutvā uṭṭhāyāsanā bhagavantaṁ abhivādetvā padakkhiṇaṁ katvā yena gayāsīsaṁ tenupasankamiṁsu.</p>
+
+<p><span class="parno">80</span><span class="ms">p_4V_1571</span>Tena kho pana samayena aññataro bhikkhu bhagavato avidūre rodamāno ṭhito hoti. Atha kho bhagavā taṁ bhikkhuṁ etadavoca — "kissa tvaṁ, bhikkhu, rodasī"ti?</p>
+
+<p>"Yepi te, bhante, bhagavato aggasāvakā sāriputtamoggallānā tepi devadattassa santike gacchanti devadattassa dhammaṁ rocentā"ti.</p>
+
+<p>"Aṭṭhānametaṁ, bhikkhu, anavakāso, yaṁ sāriputtamoggallānā devadattassa dhammaṁ roceyyuṁ, api ca te gatā bhikkhūnaṁ saññattiyā"ti.</p>
+
+<p><span class="parno">81</span><span class="ms">p_4V_1572, msdiv345</span>Tena kho pana samayena devadatto mahatiyā parisāya parivuto dhammaṁ desento nisinno hoti. Addasā kho devadatto sāriputtamoggallāne dūratova āgacchante. Disvāna bhikkhū āmantesi — "passatha, bhikkhave, yāva svākkhāto mayā dhammo, yepi te samaṇassa gotamassa aggasāvakā sāriputtamoggallānā tepi mama santike āgacchanti. Mama dhammaṁ rocentā"ti. Evaṁ vutte, kokāliko devadattaṁ etadavoca — "mā, āvuso devadatta, sāriputtamoggallāne vissasi. Pāpicchā sāriputtamoggallānā, pāpikānaṁ icchānaṁ vasaṁ gatā"ti.</p>
+
+<p>"Alaṁ, āvuso. Svāgataṁ tesaṁ yato me dhammaṁ rocentī"ti.</p>
+
+<p><span class="parno">82</span><span class="ms">p_4V_1573</span>Atha kho devadatto āyasmantaṁ sāriputtaṁ upaḍḍhāsanena nimantesi — "ehāvuso sāriputta, idha nisīdāhī"ti.</p>
+
+<p>"Alaṁ, āvuso"ti kho āyasmā sāriputto aññataraṁ āsanaṁ gahetvā ekamantaṁ nisīdi. Āyasmāpi kho mahāmoggallāno aññataraṁ āsanaṁ gahetvā ekamantaṁ nisīdi. Atha kho devadatto bahudeva rattiṁ bhikkhū dhammiyā kathāya sandassetvā samādapetvā samuttejetvā sampahaṁsetvā āyasmantaṁ sāriputtaṁ ajjhesi — </p>
+
+<p>"vigatathinamiddho kho, āvuso sāriputta, bhikkhusaṇgho. Paṭibhātu taṁ, āvuso sāriputta, bhikkhūnaṁ dhammī kathā, piṭṭhi me āgilāyati, tamahaṁ āyamissāmī"ti.</p>
+
+<p>"Evamāvuso"ti kho āyasmā sāriputto devadattassa paccassosi. Atha kho devadatto catugguṇaṁ sanghāṭiṁ paññapetvā dakkhiṇena passena seyyaṁ kappesi. Tassa kilamantassa muṭṭhassatissa asampajānassa muhuttakeneva niddā okkami.</p>
+
+<p><span class="parno">83</span><span class="ms">p_4V_1574</span>Atha kho āyasmā sāriputto ādesanā&shy;pāṭihāriyānusāsaniyā bhikkhū dhammiyā kathāya ovadi anusāsi. Āyasmā mahāmoggallāno iddhipāṭihāriyānusāsaniyā bhikkhū dhammiyā kathāya ovadi anusāsi. Atha kho tesaṁ bhikkhūnaṁ āyasmatā sāriputtena ādesanā&shy;pāṭihāriyānusāsaniyā āyasmatā ca mahāmoggallānena iddhipāṭihāriyānusāsaniyā ovadiyamānānaṁ anusā&shy;siyamānānaṁ virajaṁ vītamalaṁ dhammacakkhuṁ udapādi — "yaṁ kiñci samudayadhammaṁ sabbaṁ taṁ nirodhadhamman"ti.</p>
+
+<p><span class="parno">84</span><span class="ms">p_4V_1575</span>Atha kho āyasmā sāriputto bhikkhū āmantesi — "gacchāma mayaṁ, āvuso, bhagavato santike. Yo tassa bhagavato dhammaṁ rocesi so āgacchatū"ti. Atha kho sāriputtamoggallānā tāni pañca&shy;bhikkhusatāni ādāya yena veḷuvanaṁ tenupasankamiṁsu. Atha kho kokāliko devadattaṁ uṭṭhāpesi — "uṭṭhehi, āvuso devadatta, nītā te bhikkhū sāriputtamoggallānehi. Nanu tvaṁ, āvuso devadatta, mayā vutto — ‘mā, āvuso devadatta, sāriputtamoggallāne vissāsi. Pāpicchā sāriputtamoggallānā, pāpikānaṁ icchānaṁ vasaṁ gatā’"ti? Atha kho devadattassa tattheva uṇhaṁ lohitaṁ mukhato uggañchi.</p>
+
+<p><span class="parno">85</span><span class="ms">p_4V_1576</span>Atha kho sāriputtamoggallānā yena bhagavā tenupasankamiṁsu, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdisuṁ. Ekamantaṁ nisinno kho āyasmā sāriputto bhagavantaṁ etadavoca — "sādhu, bhante, bhedakānuvattakā bhikkhū puna upasampajjeyyun"ti.</p>
+
+<p>"Alaṁ, sāriputta. Mā te rucci bhedakānuvattakānaṁ bhikkhūnaṁ puna upasampadā. Tena hi tvaṁ, sāriputta, bhedakānuvattake bhikkhū thullaccayaṁ desāpehi. Kathaṁ pana te, sāriputta, devadatto paṭipajjī"ti?</p>
+
+<p>"Yatheva, bhante, bhagavā bahudeva rattiṁ bhikkhū dhammiyā kathāya sandassetvā samādapetvā samuttejetvā sampahaṁsetvā maṁ ajjhesati — ‘vigatathinamiddho kho, sāriputta, bhikkhusaṇgho; paṭibhātu taṁ, sāriputta, bhikkhūnaṁ dhammī kathā, piṭṭhi me āgilāyati, tamahaṁ āyamissāmī’ti. Evameva kho, bhante, devadatto paṭipajjī"ti.</p>
+
+<p><span class="parno">86</span><span class="ms">p_4V_1577, msdiv346</span>Atha kho bhagavā bhikkhū āmantesi — "bhūtapubbaṁ, bhikkhave, araññāyatane mahāsarasī. Taṁ nāgā upanissāya vihariṁsu. Te taṁ sarasiṁ ogāhetvā, soṇḍāya bhisamuḷālaṁ abbuhitvā, suvikkhālitaṁ vikkhāletvā, akaddamaṁ sankhāditvā ajjhoharanti. Tesaṁ taṁ vaṇṇāya ceva hoti, balāya ca. Na ca tatonidānaṁ maraṇaṁ vā nigacchanti, maraṇamattaṁ vā dukkhaṁ. Tesaṁyeva kho pana, bhikkhave, mahānāgānaṁ anusikkhamānā taruṇā bhinkacchāpā. Te taṁ sarasiṁ ogāhetvā, soṇḍāya bhisamuḷālaṁ abbuhitvā, na suvikkhālitaṁ vikkhāletvā, sakaddamaṁ sankhāditvā, ajjhoharanti. Tesaṁ taṁ neva vaṇṇāya hoti, na balāya. Tatonidānañca maraṇaṁ vā nigacchanti, maraṇamattaṁ vā dukkhaṁ. Evameva kho, bhikkhave, devadatto mamānukrubbaṁ kapaṇo marissatīti.</p>
+
+<hr>
+<p class="verse"><span class="parno">87</span><span class="ms">p_4V_1578</span>Mahāvarāhassa mahiṁ vikrubbato,
+<br>Bhisaṁ ghasānassa nadīsu jaggato;
+<br>Bhinkova pankaṁ abhi&shy;bhakkhayitvā,
+<br>Mamānukrubbaṁ kapaṇo marissatīti.</p>
+
+<p><span class="parno">88</span><span class="ms">p_4V_1579, msdiv347</span>Aṭṭhahi, bhikkhave, angehi samannāgato bhikkhu dūteyyaṁ gantumarahati. Katamehi aṭṭhahi? Idha, bhikkhave, bhikkhu sotā ca hoti, sāvetā ca, uggahetā ca, dhāretā ca, viññātā ca, viññāpetā ca, kusalo ca sahitāsahitassa, no ca kalahakārako — imehi kho, bhikkhave, aṭṭhahangehi samannāgato bhikkhu dūteyyaṁ gantumarahati.</p>
+
+<p><span class="parno">89</span><span class="ms">p_4V_1580</span>Aṭṭhahi, bhikkhave, angehi samannāgato sāriputto dūteyyaṁ gantumarahati. Katamehi aṭṭhahi? Idha, bhikkhave, sāriputto sotā ca hoti, sāvetā ca, uggahetā ca, dhāretā ca, viññātā ca, viññāpetā ca, kusalo ca sahitāsahitassa, no ca kalahakārako — </p>
+
+<p>imehi kho, bhikkhave, aṭṭhahangehi samannāgato sāriputto dūteyyaṁ gantumarahatīti.</p>
+
+<hr>
+<p class="verse"><span class="parno">90</span><span class="ms">p_4V_1581</span>Yo ve na byathati patvā,
+<br>parisaṁ uggavādiniṁ;
+<br>Na ca hāpeti vacanaṁ,
+<br>na ca chādeti sāsanaṁ.</p>
+
+<p class="verse"><span class="parno">91</span><span class="ms">p_4V_1582</span>Asandiddho ca akkhāti,
+<br>Pucchito ca na kuppati;
+<br>Sa ve tādisako bhikkhu,
+<br>Dūteyyaṁ gantumarahatīti.</p>
+
+<p><span class="parno">92</span><span class="ms">p_4V_1583, msdiv348</span>Aṭṭhahi, bhikkhave, asaddhammehi abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekiccho. Katamehi aṭṭhahi?</p>
+
+<hr>
+<p>Lābhena, bhikkhave, abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekiccho; alābhena, bhikkhave … pe … yasena, bhikkhave … pe … ayasena, bhikkhave … pe … sakkārena, bhikkhave … pe … asakkārena, bhikkhave … pe … pāpicchatāya, bhikkhave … pe … pāpamittatāya bhikkhave, abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekiccho — </p>
+
+<p>imehi kho, bhikkhave, aṭṭhahi asaddhammehi abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekiccho.</p>
+
+<hr>
+<p><span class="parno">93</span><span class="ms">p_4V_1584, msdiv349</span>Sādhu, bhikkhave, bhikkhu uppannaṁ lābhaṁ abhibhuyya abhibhuyya vihareyya, uppannaṁ alābhaṁ … pe … uppannaṁ yasaṁ … uppannaṁ ayasaṁ … uppannaṁ sakkāraṁ … uppannaṁ asakkāraṁ … uppannaṁ pāpicchataṁ … uppannaṁ pāpamittataṁ abhibhuyya abhibhuyya vihareyya. Kathañca, bhikkhave, bhikkhu atthavasaṁ paṭicca uppannaṁ lābhaṁ abhibhuyya abhibhuyya vihareyya, uppannaṁ alābhaṁ … pe … uppannaṁ yasaṁ … uppannaṁ ayasaṁ … uppannaṁ sakkāraṁ … uppannaṁ asakkāraṁ … uppannaṁ pāpicchataṁ … uppannaṁ pāpamittataṁ abhibhuyya abhibhuyya vihareyya? Yaṁ hissa, bhikkhave, uppannaṁ lābhaṁ anabhibhuyya viharato uppajjeyyuṁ āsavā vighātapari&shy;ḷāhā, uppannaṁ lābhaṁ abhibhuyya abhibhuyya viharato evaṁsate āsavā vighātapari&shy;ḷāhā na honti. Yaṁ hissa, bhikkhave, uppannaṁ alābhaṁ … pe … uppannaṁ yasaṁ … uppannaṁ ayasaṁ … uppannaṁ sakkāraṁ … uppannaṁ asakkāraṁ … uppannaṁ pāpicchataṁ … uppannaṁ pāpamittataṁ anabhibhuyya viharato uppajjeyyuṁ āsavā vighātapari&shy;ḷāhā, uppannaṁ pāpamittataṁ abhibhuyya abhibhuyya viharato evaṁsate āsavā vighātapari&shy;ḷāhā na honti. Idaṁ kho, bhikkhave, atthavasaṁ paṭicca uppannaṁ lābhaṁ abhibhuyya abhibhuyya vihareyya, uppannaṁ alābhaṁ … pe … uppannaṁ yasaṁ … uppannaṁ ayasaṁ … uppannaṁ sakkāraṁ … uppannaṁ asakkāraṁ … uppannaṁ pāpicchataṁ … uppannaṁ pāpamittataṁ abhibhuyya abhibhuyya vihareyya. Tasmātiha, bhikkhave, uppannaṁ lābhaṁ abhibhuyya abhibhuyya viharissāma, uppannaṁ alābhaṁ … pe … uppannaṁ yasaṁ … uppannaṁ ayasaṁ … uppannaṁ sakkāraṁ … uppannaṁ asakkāraṁ … uppannaṁ pāpicchataṁ … uppannaṁ pāpamittataṁ abhibhuyya abhibhuyya viharissāmāti; evañhi vo, bhikkhave, sikkhitabbanti.</p>
+
+<hr>
+<p><span class="parno">94</span><span class="ms">p_4V_1585, msdiv350</span>Tīhi, bhikkhave, asaddhammehi abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekiccho. Katamehi tīhi? Pāpicchatā, pāpamittatā, oramattakena visesādhigamena antarā vosānaṁ āpādi — imehi kho, bhikkhave, tīhi asaddhammehi abhibhūto pari&shy;yādinnacitto devadatto āpāyiko nerayiko kappaṭṭho atekicchoti.</p>
+
+<p class="verse"><span class="parno">95</span><span class="ms">p_4V_1586</span>Mā jātu koci lokasmiṁ,
+<br>pāpiccho udapajjatha;
+<br>Tadamināpi jānātha,
+<br>pāpicchānaṁ yathāgati.</p>
+
+<p class="verse"><span class="parno">96</span><span class="ms">p_4V_1587</span>Paṇḍitoti samaññāto,
+<br>bhāvitattoti sammato;
+<br>Jalaṁva yasasā aṭṭhā,
+<br>devadattoti me sutaṁ.</p>
+
+<p class="verse"><span class="parno">97</span><span class="ms">p_4V_1588</span>So pamādaṁ anuciṇṇo,
+<br>āsajja naṁ tathāgataṁ;
+<br>Avīcinirayaṁ patto,
+<br>catudvāraṁ bhayānakaṁ.</p>
+
+<hr>
+<p class="verse"><span class="parno">98</span><span class="ms">p_4V_1589</span>Aduṭṭhassa hi yo dubbhe,
+<br>pāpakammaṁ akrubbato;
+<br>Tameva pāpaṁ phusati,
+<br>duṭṭhacittaṁ anādaraṁ.</p>
+
+<p class="verse"><span class="parno">99</span><span class="ms">p_4V_1590</span>Samuddaṁ visakumbhena,
+<br>yo maññeyya padūsituṁ;
+<br>Na so tena padūseyya,
+<br>bhesmā hi udadhī mahā.</p>
+
+<p class="verse"><span class="parno">100</span><span class="ms">p_4V_1591</span>Evameva tathāgataṁ,
+<br>yo vādenupahiṁsati;
+<br>Samaggataṁ santacittaṁ,
+<br>vādo tamhi na rūhati.</p>
+
+<p class="verse"><span class="parno">101</span><span class="ms">p_4V_1592</span>Tādisaṁ mittaṁ krubbetha,
+<br>tañca sevetha paṇḍito;
+<br>Yassa maggānugo bhikkhu,
+<br>khayaṁ dukkhassa pāpuṇe"ti.</p>
+
+<h4>2 Upālipañhā</h4>
+
+<p><span class="parno">102</span><span class="ms">p_4V_1593, msdiv351</span>Atha kho āyasmā upāli yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā upāli bhagavantaṁ etadavoca — "saṇgharāji saṇgharājīti, bhante, vuccati. Kittāvatā nu kho, bhante, saṇgharāji hoti, no ca saṇghabhedo? Kittāvatā ca pana saṇgharāji ceva hoti saṇghabhedo cā"ti?</p>
+
+<p><span class="parno">103</span><span class="ms">p_4V_1594</span>"Ekato, upāli, eko hoti, ekato dve, catuttho anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evampi kho, upāli, saṇgharāji hoti, no ca saṇghabhedo. Ekato, upāli, dve honti, ekato dve, pañcamo anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evampi kho, upāli, saṇgharāji hoti, no ca saṇghabhedo.</p>
+
+<p>Ekato, upāli, dve honti, ekato tayo, chaṭṭho anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evampi kho, upāli, saṇgharāji hoti, no ca saṇghabhedo. Ekato, upāli, tayo honti, ekato tayo, sattamo anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evampi kho, upāli, saṇgharāji hoti, no ca saṇghabhedo. Ekato, upāli, tayo honti, ekato cattāro, aṭṭhamo anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evampi kho, upāli, saṇgharāji hoti, no ca saṇghabhedo.</p>
+
+<p>Ekato, upāli, cattāro honti, ekato cattāro, navamo anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Evaṁ kho, upāli, saṇgharāji ceva hoti saṇghabhedo ca. Navannaṁ vā, upāli, atirekanavannaṁ vā saṇgharāji ceva hoti saṇghabhedo ca. Na kho, upāli, bhikkhunī saṇghaṁ bhindati, api ca bhedāya parakkamati, na sikkhamānā saṇghaṁ bhindati … pe … na sāmaṇero saṇghaṁ bhindati, na sāmaṇerī saṇghaṁ bhindati, na upāsako saṇghaṁ bhindati, na upāsikā saṇghaṁ bhindati, api ca bhedāya parakkamati. Bhikkhu kho, upāli, pakatatto, samānasaṁvāsako, samānasīmāyaṁ ṭhito, saṇghaṁ bhindatī"ti.</p>
+
+<p><span class="parno">104</span><span class="ms">p_4V_1595, msdiv352</span>"Saṇghabhedo saṇghabhedoti, bhante, vuccati. Kittāvatā nu kho, bhante, saṇgho bhinno hotī"ti?</p>
+
+<hr>
+<p><span class="parno">105</span><span class="ms">p_4V_1596</span>"Idhupāli, bhikkhū adhammaṁ dhammoti dīpenti. (1)</p>
+
+<p><span class="parno">106</span><span class="ms">p_4V_1597</span>Dhammaṁ adhammoti dīpenti. (2)</p>
+
+<p><span class="parno">107</span><span class="ms">p_4V_1598</span>Avinayaṁ vinayoti dīpenti. (3)</p>
+
+<p><span class="parno">108</span><span class="ms">p_4V_1599</span>Vinayaṁ avinayoti dīpenti. (4)</p>
+
+<p><span class="parno">109</span><span class="ms">p_4V_1600</span>Abhāsitaṁ alapitaṁ tathāgatena bhāsitaṁ lapitaṁ tathāgatenāti dīpenti. (5)</p>
+
+<p><span class="parno">110</span><span class="ms">p_4V_1601</span>Bhāsitaṁ lapitaṁ tathāgatena abhāsitaṁ alapitaṁ tathāgatenāti dīpenti. (6)</p>
+
+<p><span class="parno">111</span><span class="ms">p_4V_1602</span>Anāciṇṇaṁ tathāgatena āciṇṇaṁ tathāgatenāti dīpenti. (7)</p>
+
+<p><span class="parno">112</span><span class="ms">p_4V_1603</span>Āciṇṇaṁ tathāgatena anāciṇṇaṁ tathāgatenāti dīpenti. (8)</p>
+
+<p><span class="parno">113</span><span class="ms">p_4V_1604</span>Apaññattaṁ tathāgatena paññattaṁ tathāgatenāti dīpenti. (9)</p>
+
+<p><span class="parno">114</span><span class="ms">p_4V_1605</span>Paññattaṁ tathāgatena apaññattaṁ tathāgatenāti dīpenti. (10)</p>
+
+<p><span class="parno">115</span><span class="ms">p_4V_1606</span>Anāpattiṁ āpattīti dīpenti. (11)</p>
+
+<p><span class="parno">116</span><span class="ms">p_4V_1607</span>Āpattiṁ anāpattīti dīpenti. (12)</p>
+
+<p><span class="parno">117</span><span class="ms">p_4V_1608</span>Lahukaṁ āpattiṁ garukā āpattīti dīpenti. (13)</p>
+
+<p><span class="parno">118</span><span class="ms">p_4V_1609</span>Garukaṁ āpattiṁ lahukā āpattīti dīpenti. (14)</p>
+
+<p><span class="parno">119</span><span class="ms">p_4V_1610</span>Sāvasesaṁ āpattiṁ anavasesā āpattīti dīpenti. (15)</p>
+
+<p><span class="parno">120</span><span class="ms">p_4V_1611</span>Anavasesaṁ āpattiṁ sāvasesā āpattīti dīpenti. (16)</p>
+
+<p><span class="parno">121</span><span class="ms">p_4V_1612</span>Duṭṭhullaṁ āpattiṁ aduṭṭhullā āpattīti dīpenti. (17)</p>
+
+<p><span class="parno">122</span><span class="ms">p_4V_1613</span>Aduṭṭhullaṁ āpattiṁ duṭṭhullā āpattīti dīpenti. (18)</p>
+
+<hr>
+<p><span class="parno">123</span><span class="ms">p_4V_1614</span>Te imehi aṭṭhārasahi vatthūhi apakassanti, avapakassanti, āveniṁ uposathaṁ karonti, āveniṁ pavāraṇaṁ karonti, āveniṁ saṇghakammaṁ karonti. Ettāvatā kho, upāli, saṇgho bhinno hotī"ti.</p>
+
+<p><span class="parno">124</span><span class="ms">p_4V_1615, msdiv353</span>"Saṇghasāmaggī saṇghasāmaggīti, bhante, vuccati. Kittāvatā nu kho, bhante, saṇgho samaggo hotī"ti?</p>
+
+<hr>
+<p><span class="parno">125</span><span class="ms">p_4V_1616</span>"Idhupāli, bhikkhū adhammaṁ adhammoti dīpenti. (1)</p>
+
+<p><span class="parno">126</span><span class="ms">p_4V_1617</span>Dhammaṁ dhammoti dīpenti. (2)</p>
+
+<p><span class="parno">127</span><span class="ms">p_4V_1618</span>Avinayaṁ avinayoti dīpenti. (3)</p>
+
+<p><span class="parno">128</span><span class="ms">p_4V_1619</span>Vinayaṁ vinayoti dīpenti. (4)</p>
+
+<p><span class="parno">129</span><span class="ms">p_4V_1620</span>Abhāsitaṁ alapitaṁ tathāgatena abhāsitaṁ alapitaṁ tathāgatenāti dīpenti. (5)</p>
+
+<p><span class="parno">130</span><span class="ms">p_4V_1621</span>Bhāsitaṁ lapitaṁ tathāgatena bhāsitaṁ lapitaṁ tathāgatenāti dīpenti. (6)</p>
+
+<p><span class="parno">131</span><span class="ms">p_4V_1622</span>Anāciṇṇaṁ tathāgatena anāciṇṇaṁ tathāgatenāti dīpenti. (7)</p>
+
+<p><span class="parno">132</span><span class="ms">p_4V_1623</span>Āciṇṇaṁ tathāgatena āciṇṇaṁ tathāgatenāti dīpenti. (8)</p>
+
+<p><span class="parno">133</span><span class="ms">p_4V_1624</span>Apaññattaṁ tathāgatena apaññattaṁ tathāgatenāti dīpenti. (9)</p>
+
+<p><span class="parno">134</span><span class="ms">p_4V_1625</span>Paññattaṁ tathāgatena paññattaṁ tathāgatenāti dīpenti. (10)</p>
+
+<p><span class="parno">135</span><span class="ms">p_4V_1626</span>Anāpattiṁ anāpattīti dīpenti. (11)</p>
+
+<p><span class="parno">136</span><span class="ms">p_4V_1627</span>Āpattiṁ āpattīti dīpenti. (12)</p>
+
+<p><span class="parno">137</span><span class="ms">p_4V_1628</span>Lahukaṁ āpattiṁ lahukā āpattīti dīpenti. (13)</p>
+
+<p><span class="parno">138</span><span class="ms">p_4V_1629</span>Garukaṁ āpattiṁ garukā āpattīti dīpenti. (14)</p>
+
+<p><span class="parno">139</span><span class="ms">p_4V_1630</span>Sāvasesaṁ āpattiṁ sāvasesā āpattīti dīpenti. (15)</p>
+
+<p><span class="parno">140</span><span class="ms">p_4V_1631</span>Anavasesaṁ āpattiṁ anavasesā āpattīti dīpenti. (16)</p>
+
+<p><span class="parno">141</span><span class="ms">p_4V_1632</span>Duṭṭhullaṁ āpattiṁ duṭṭhullā āpattīti dīpenti. (17)</p>
+
+<p><span class="parno">142</span><span class="ms">p_4V_1633</span>Aduṭṭhullaṁ āpattiṁ aduṭṭhullā āpattīti dīpenti. (18)</p>
+
+<hr>
+<p><span class="parno">143</span><span class="ms">p_4V_1634</span>Te imehi aṭṭhārasahi vatthūhi na apakassanti, na avapakassanti, na āveniṁ uposathaṁ karonti, na āveniṁ pavāraṇaṁ karonti, na āveniṁ saṇghakammaṁ karonti. Ettāvatā kho, upāli, saṇgho samaggo hotī"ti.</p>
+
+<p><span class="parno">144</span><span class="ms">p_4V_1635, msdiv354</span>"Samaggaṁ pana, bhante, saṇghaṁ bhinditvā kiṁ so pasavatī"ti?</p>
+
+<p>"Samaggaṁ kho, upāli, saṇghaṁ bhinditvā kappaṭṭhikaṁ kibbisaṁ pasavati, kappaṁ nirayamhi paccatīti.</p>
+
+<hr>
+<div class="verse"> <p><span class="parno">145</span><span class="ms">p_4V_1636</span>Āpāyiko nerayiko,
+<br>Kappaṭṭho saṇghabhedako;
+<br>Vaggarato adhammaṭṭho,
+<br>Yogakkhemā padhaṁsati;
+<br>Saṇghaṁ samaggaṁ bhinditvā,
+<br>Kappaṁ nirayamhi paccatī"ti.</p></div>
+
+<p><span class="parno">146</span><span class="ms">p_4V_1637</span>"Bhinnaṁ pana, bhante, saṇghaṁ samaggaṁ katvā kiṁ so pasavatī"ti?</p>
+
+<p>"Bhinnaṁ kho, upāli, saṇghaṁ samaggaṁ katvā brahmaṁ puññaṁ pasavati, kappaṁ saggamhi modatīti.</p>
+
+<p class="verse"><span class="parno">147</span><span class="ms">p_4V_1638</span>Sukhā saṇghassa sāmaggī,
+<br>samaggānañca anuggaho;
+<br>Samaggarato dhammaṭṭho,
+<br>yogakkhemā na dhaṁsati;
+<br>Saṇghaṁ samaggaṁ katvāna,
+<br>kappaṁ saggamhi modatī"ti.</p>
+
+<hr>
+<p><span class="parno">148</span><span class="ms">p_4V_1639, msdiv355</span>"Siyā nu kho, bhante, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho"ti?</p>
+
+<p>"Siyā, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho"ti.</p>
+
+<p><span class="parno">149</span><span class="ms">p_4V_1640</span>"Siyā pana, bhante, saṇghabhedako na āpāyiko, na nerayiko, na kappaṭṭho, na atekiccho"ti?</p>
+
+<p>"Siyā, upāli, saṇghabhedako na āpāyiko, na nerayiko, na kappaṭṭho, na atekiccho"ti.</p>
+
+<hr>
+<p><span class="parno">150</span><span class="ms">p_4V_1641</span>"Katamo pana, bhante, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho"ti?</p>
+
+<p>"Idhupāli, bhikkhu adhammaṁ dhammoti dīpeti. Tasmiṁ adhammadiṭṭhi, bhede adhammadiṭṭhi, vinidhāya diṭṭhiṁ, vinidhāya khantiṁ, vinidhāya ruciṁ, vinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho.</p>
+
+<p><span class="parno">151</span><span class="ms">p_4V_1642</span>Puna caparaṁ, upāli, bhikkhu adhammaṁ dhammoti dīpeti. Tasmiṁ adhammadiṭṭhi, bhede dhammadiṭṭhi, vinidhāya diṭṭhiṁ, vinidhāya khantiṁ, vinidhāya ruciṁ, vinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho.</p>
+
+<hr>
+<p><span class="parno">152</span><span class="ms">p_4V_1643</span>Puna caparaṁ, upāli, bhikkhu adhammaṁ dhammoti dīpeti. Tasmiṁ adhammadiṭṭhi, bhede vematiko, vinidhāya diṭṭhiṁ, vinidhāya khantiṁ, vinidhāya ruciṁ, vinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho.</p>
+
+<p><span class="parno">153</span><span class="ms">p_4V_1644</span>Puna caparaṁ, upāli, bhikkhu adhammaṁ dhammoti dīpeti. Tasmiṁ dhammadiṭṭhi, bhede adhammadiṭṭhi … pe … tasmiṁ dhammadiṭṭhi bhede dhammadiṭṭhi. Tasmiṁ dhammadiṭṭhi bhede vematiko. Tasmiṁ vematiko bhede adhammadiṭṭhi. Tasmiṁ vematiko bhede dhammadiṭṭhi. Tasmiṁ vematiko bhede vematiko vinidhāya diṭṭhiṁ, vinidhāya khantiṁ, vinidhāya ruciṁ, vinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho.</p>
+
+<p><span class="parno">154</span><span class="ms">p_4V_1645</span>Puna caparaṁ, upāli, bhikkhu dhammaṁ adhammoti dīpeti … pe … avinayaṁ vinayoti dīpeti … vinayaṁ avinayoti dīpeti … abhāsitaṁ alapitaṁ tathāgatena bhāsitaṁ lapitaṁ tathāgatenāti dīpeti … bhāsitaṁ lapitaṁ tathāgatena abhāsitaṁ alapitaṁ tathāgatenāti dīpeti … anāciṇṇaṁ tathāgatena āciṇṇaṁ tathāgatenāti dīpeti … āciṇṇaṁ tathāgatena anāciṇṇaṁ tathāgatenāti dīpeti … apaññattaṁ tathāgatena paññattaṁ tathāgatenāti dīpeti … paññattaṁ tathāgatena apaññattaṁ tathāgatenāti dīpeti … anāpattiṁ āpattīti dīpeti … āpattiṁ anāpattīti dīpeti … lahukaṁ āpattiṁ garukā āpattīti dīpeti … garukaṁ āpattiṁ lahukā āpattīti dīpeti … sāvasesaṁ āpattiṁ anavasesā āpattīti dīpeti … anavasesaṁ āpattiṁ sāvasesā āpattīti dīpeti … duṭṭhullaṁ āpattiṁ aduṭṭhullā āpattīti dīpeti … aduṭṭhullaṁ āpattiṁ duṭṭhullā āpattīti dīpeti … tasmiṁ adhammadiṭṭhi, bhede adhammadiṭṭhi … pe … tasmiṁ adhammadiṭṭhi, bhede dhammadiṭṭhi … tasmiṁ adhammadiṭṭhi, bhede vematiko … tasmiṁ dhammadiṭṭhi, bhede adhammadiṭṭhi … tasmiṁ dhammadiṭṭhi, bhede dhammadiṭṭhi … tasmiṁ dhammadiṭṭhi, bhede vematiko … tasmiṁ vematiko, bhede adhammadiṭṭhi … tasmiṁ vematiko, bhede dhammadiṭṭhi … tasmiṁ vematiko, bhede vematiko, vinidhāya diṭṭhiṁ, vinidhāya khantiṁ, vinidhāya ruciṁ, vinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako āpāyiko, nerayiko, kappaṭṭho, atekiccho"ti.</p>
+
+<hr>
+<p><span class="parno">155</span><span class="ms">p_4V_1646</span>"Katamo pana, bhante, saṇghabhedako na āpāyiko, na nerayiko, na kappaṭṭho, na atekiccho"ti?</p>
+
+<p>"Idhupāli, bhikkhu adhammaṁ dhammoti dīpeti. Tasmiṁ dhammadiṭṭhi, bhede dhammadiṭṭhi, avinidhāya diṭṭhiṁ, avinidhāya khantiṁ, avinidhāya ruciṁ, avinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako na āpāyiko, na nerayiko, na kappaṭṭho, na atekiccho.</p>
+
+<hr>
+<p><span class="parno">156</span><span class="ms">p_4V_1647</span>Puna caparaṁ, upāli, bhikkhu dhammaṁ adhammoti dīpeti … pe … duṭṭhullaṁ āpattiṁ aduṭṭhullā āpattīti dīpeti. Tasmiṁ dhammadiṭṭhi, bhede dhammadiṭṭhi, avinidhāya diṭṭhiṁ, avinidhāya khantiṁ, avinidhāya ruciṁ, avinidhāya bhāvaṁ, anussāveti, salākaṁ gāheti — ‘ayaṁ dhammo, ayaṁ vinayo, idaṁ satthusāsanaṁ, imaṁ gaṇhatha, imaṁ rocethā’ti. Ayampi kho, upāli, saṇghabhedako na āpāyiko, na nerayiko, na kappaṭṭho, na atekiccho"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">157</span><span class="ms">p_4V_1648</span>Tatiyabhāṇavāro niṭṭhito.
+<br>Saṇghabhedakakkhandhako sattamo.</p>
+
+<p><span class="parno">158</span><span class="ms">p_4V_1649</span>Tassuddānaṁ</p>
+
+<hr>
+<p class="verse"><span class="parno">159</span><span class="ms">p_4V_1650</span>Anupiye abhiññātā,
+<br>sukhumālo na icchati;
+<br>Kasā vapā abhi ninne,
+<br>niddhā lāve ca ubbahe.</p>
+
+<p class="verse"><span class="parno">160</span><span class="ms">p_4V_1651</span>Puñjamaddapalālañca,
+<br>bhusaophuṇanīhare;
+<br>Āyatimpi na khīyanti,
+<br>pitaro ca pitāmahā.</p>
+
+<hr>
+<p class="verse"><span class="parno">161</span><span class="ms">p_4V_1652</span>Bhaddiyo anuruddho ca,
+<br>ānando bhagu kimilo;
+<br>Sakyamāno ca kosambiṁ,
+<br>parihāyi kakudhena ca.</p>
+
+<p class="verse"><span class="parno">162</span><span class="ms">p_4V_1653</span>Pakāsesi pituno ca,
+<br>purise silaṁ nāḷāgiriṁ;
+<br>Tikapañcagaruko kho,
+<br>bhindi thullaccayena ca;
+<br>Tayo aṭṭha puna tīṇi,
+<br>rāji bhedā siyā nu khoti.</p>
+
+<p class="endsection"><span class="parno">163</span><span class="ms">p_4V_1654</span>Saṇghabhedakakkhandhako niṭṭhito.</p>
+
+</div><!--End Pali-->
+</section>
+
+<div id="nextprev"><a id="previous-sutta" href="kd16.html#content"></a><a id="next-sutta" href="kd18.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../vi/vi.html">Vinaya Pitaka</a><a href="../vi/kd.html">Khandhaka</a>Khandhaka&nbsp;17 - Schism
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

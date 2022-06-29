@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Vinaya - Khandhaka&nbsp;12</title>
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Loading third party fonts -->
+  	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+  	<!-- Loading main and menu stylesheets -->
+  	<link rel="stylesheet" href="../css/w3.css">
+  	<link rel="stylesheet" href="../css/css.css">
+  	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
+<body>
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small pressed">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+ 
+ 
+ 
+   <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+<h2>Vinaya Pitaka - Monastic Rules</h2>
+ 
+ 	<div class="subnav6"> <!-- Div for sub-navigation -->
+ 		<a href="../vi/kd.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile w3-yellow">Bhikkhu<br>Khandaka</a>
+ 		<a href="../vi/bu-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Vibhanga</a>
+ 		<a href="../vi/bu-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhu<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-pt.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhunī<br>Pāṭimokkha</a>
+ 		<a href="../vi/bi-vb.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Bhikkhuni<br>Vibhanga</a>
+ 		<a href="../bmc/bmc.html#content" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile">Buddhist<br>Monastic Code</a>
+ 	</div>	<!-- End div for sub-navigation -->
+ 
+ <div id="content">
+
+
+<p>&nbsp;</p>
+
+<h2>Khandhaka&nbsp;12 <span class="minor">(Culavagga 2)</span> - Penance and Probation</h2>
+
+<div id="metaarea">
+ 	<ul class="translator">
+ 		<li>©&nbsp;Translated from the Pali by I.B. Horner and Bhikkhu Brahmali&nbsp; &nbsp;<a href="../home/copyright.html#hornerbrahmali">(More copyright information)</a></li>
+ 	</ul>
+ </div>
+
+ <section class="raw_sutta">
+ <div lang="en">
+
+<p id="p1"><span class="parno">1</span>At one time, the Awakened One, the Lord was staying at Sāvatthī in the Jeta Grove in Anāthapiṇḍika’s monastery. Now at that time monks under probation consented to regular monks greeting them, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging. Those who were modest monks looked down upon, criticised, spread it about, saying: "How can these monks who are under probation consent to regular monks greeting … treating their backs by massaging?" Then these monks told this matter to the Lord.</p>
+
+<hr>
+<p id="p2"><span class="parno">2</span>Then the Lord on this occasion, in this connection, having had the Order of monks convened, questioned the monks, saying:</p>
+
+<p>"Is it true, as is said, monks, that monks who are under probation consent to regular monks greeting … treating their backs by massaging?"</p>
+
+<p>"It is true, Lord." The Awakened One, the Lord rebuked them, saying:</p>
+
+<p>"How, monks, can these monks who are under probation consent to regular monks … treating their backs by massaging? It is not, monks, for pleasing those who are not (yet) pleased … " And having rebuked them, having given reasoned talk, he addressed the monks, saying:</p>
+
+<p>"A monk who is under probation, monks, should not consent to regular monks greeting him … treating his back by massaging. Whoever should consent to (any of these actions), there is an offence of wrong-doing.</p>
+
+<hr>
+<p id="p3"><span class="parno">3</span>I allow, monks, the mutual greeting, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging between monks who are under probation according to their seniority.</p>
+
+<p id="p4"><span class="parno">4</span>I allow, monks, five things for monks under probation according to their seniority: Observance, Invitation, cloths for the rains, gifts (to the Order) rice.</p>
+
+<p>"Well now, monks, I will lay down the conduct for monks under probation, so that monks under probation may conduct themselves according to it.</p>
+
+<p id="p5"><span class="parno">5</span>A monk under probation, monks, should conduct himself properly. This is the proper conduct in this case:</p>
+
+<p id="p6"><span class="parno">6</span>He should not ordain, he should not give guidance, a novice should not attend him, he should not consent to an agreement to exhort nuns, even if agreed upon he should not exhort nuns, he should not fall into that same offence for which he was granted probation, nor into another that is similar, nor into one that is worse, he should not find fault with the (formal) act, he should not find fault with those who carry out the (formal) act, he should not suspend a regular monk’s Observance, he should not suspend his Invitation, he should not issue commands, should not set up authority, he should not ask for leave, he should not reprove, he should not make remember, he should not quarrel with monks.</p>
+
+<p id="p7"><span class="parno">7</span>Nor, monks, should a monk under probation walk in front of a regular monk, nor sit down in front of him. Whatever is the Order’s last seat, last sleeping-place, last dwelling-place — that should be given to him and he should consent to it.</p>
+
+<p id="p8"><span class="parno">8</span>Monks, a monk under probation should not approach the families of a regular monk either as the novice who walks in front of him or as the novice who walks behind him. He should not undertake the forest-practice, he should not undertake the almsman’s practice, he should not have almsfood taken back for this reason: that he thinks, ‘Do not let them find out about me’.</p>
+
+<p id="p9"><span class="parno">9</span>Monks, a monk under probation should announce it when he is in-coming, he should announce it to (another who is) in-coming, he should announce it at the Observance, he should announce it at the Invitation, if he is ill he should also announce it by means of a messenger.</p>
+
+<hr>
+<p id="p10"><span class="parno">10</span>"Monks, a monk under probation should not go from a residence where there are monks to a residence where there are no monks, except with a regular (monk), unless there is a danger.</p>
+
+<p id="p11"><span class="parno">11</span>Monks, a monk under probation should not go from, a residence where there are monks to what is not a residence where there are no monks, except with a regular (monk), unless there is a danger.</p>
+
+<hr>
+<p id="p12"><span class="parno">12</span>Monks, a monk under probation should not go from a residence where there are monks to a residence or to what is not a residence where there are no monks, except with a regular (monk), unless there is a danger.</p>
+
+<p id="p13"><span class="parno">13</span>Monks, a monk under probation should not go from what is not a residence where there are monks to a residence where there are no monks … to what is not a residence where there are no monks … to a residence or to what is not a residence where there are no monks, except with a regular (monk), unless there is a danger.</p>
+
+<p id="p14"><span class="parno">14</span>Monks, a monk under probation should not go from a residence, or from what is not a residence where there are monks to a residence where there are no monks … to what is not a residence where there are no monks … to a residence or to what is not a residence where there are no monks, except with a regular (monk), unless there is a danger.</p>
+
+<hr>
+<p id="p15"><span class="parno">15</span>"Monks, a monk under probation should not go from a residence where there are monks to a residence where there are monks if the monks there should belong to a different communion, except with a regular (monk), unless there is a danger. Monks, a monk under probation should not go from residence where there are monks to what is not a residence where there are monks … should not go from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks if the monks there should belong to a different communion, except with a regular (monk), unless there is a danger.</p>
+
+<hr>
+<p><span class="parno">16–25</span>"Monks, a monk under probation may go from a residence where there are monks to a residence where there are monks if the monks there should belong to the same communion and if he knows, ‘I am able to arrive this very day.’ Monks, a monk under probation may go from a residence where there are monks to what is not a residence where there are monks … may go from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks if the monks there should belong to the same communion and if he knows, ‘I am able to arrive this very day.’</p>
+
+<hr>
+<p id="p26"><span class="parno">26</span>"Monks, a monk under probation should not stay in a residence under one roofing with a regular monk, he should not stay in what is not a residence under one roofing (with him), he should not stay in a residence or in what is not a residence under one roofing (with him). Having seen a regular monk, he should get up from his seat. He should offer his seat to the regular monk. A monk under probation should not sit down on the same seat with a regular monk, he should not sit down on a high seat if he is sitting down on a low seat, he should not sit down on a seat if he is sitting on the ground, he should not pace up and down in the same place for pacing up and down in, he should not pace up and down in a high place for pacing up and down in if he is pacing up and down in a low place for pacing up and down in, he should not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground.</p>
+
+<p id="p27"><span class="parno">27</span>"Monks, a monk under probation should not stay in a residence under one roofing with a senior monk who is under probation … with a monk who deserves to be sent back to the beginning … with a monk who deserves <i>mānatta</i> (discipline) … with a monk who is undergoing <i>mānatta</i> (discipline) … with a monk who deserves rehabilitation, he should not stay in what is not a residence under one roofing (with him) … he should not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground.</p>
+
+<p id="p28"><span class="parno">28</span>If, monks, one under probation as the fourth (member) should grant probation, should send back to the beginning, should inflict <i>mānatta</i> (discipline), if, as twentieth (member) he should rehabilitate, it is not a (formal) act and ought not to be carried out."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">29</span>Told are the Ninety-four Observances for one under Probation.</p>
+
+<hr>
+<p id="p30"><span class="parno">30</span>Then the venerable Upāli approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Upāli spoke thus to the Lord: "Now, Lord, how many (kinds of) interruptions are there for a monk under probation?"</p>
+
+<p>"There are three (kinds of) interruptions, Upāli, for a monk under probation: dwelling with; dwelling away, separated from; not announcing. These, Upāli, are the three (kinds of) interruptions for a monk under probation."</p>
+
+<p><p id="p31"><span class="parno">31</span>Now at that time a large Order of monks had gathered together at Sāvatthī; monks under probation were not able to carry through their probation. They told this matter to the Lord. He said:</p>
+
+<p>"<span class="allowance">I allow you, monks, to postpone probation.</span> And thus, monks, should it be postponed: That monk who is under probation, having approached one monk, having arranged his upper robe over one shoulder, having sat down on his haunches, having saluted with joined palms, should speak thus to him: ‘<span class="kamma">I am postponing probation</span>’ — probation comes to be postponed; ‘<span class="kamma">I am postponing the observance</span>’, — probation comes to be postponed."</p>
+
+<hr>
+<p id="p32"><span class="parno">32</span>Now at that time monks went away from Sāvatthī to this place and that; monks under probation were not able to carry through their probation. They told this matter to the Lord. He said:</p>
+
+<p>"<span class="allowance">I allow you, monks, to take up probation.</span> And thus, monks, should it be taken up: If that monk who is under probation, having approached one monk … having saluted with joined palms, should speak thus to him: ‘<span class="kamma">I am taking up probation</span>’ — probation comes to be taken up; ‘<span class="kamma">I am taking up the observance</span>’ — probation comes to be taken up."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">33</span>Told is the Observance for one under Probation.</p>
+
+<h3>&nbsp;</h3>
+
+<p id="p34"><span class="parno">34</span>Now at that time monks who deserved to be sent back to the beginning consented to regular monks greeting them, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging. Those who were modest monks looked down upon, criticised, spread it about, saying: "How can these monks who deserve to be sent back to the beginning consent to regular monks greeting … treating their backs by massaging?" Then these monks told this matter to the Lord.</p>
+
+<p id="p35"><span class="parno">35</span>Then the Lord on this occasion, in this connection, having had the Order of monks convened, questioned the monks, saying:</p>
+
+<p>"Is it true, as is said, monks, that monks who deserve to be sent back to the beginning consent to regular monks greeting … treating their backs by massaging?"</p>
+
+<hr>
+<p>"It is true, Lord." The Awakened One, the Lord rebuked them, saying:</p>
+
+<p>"How, monks, can these monks who deserve to be sent back to the beginning consent to regular monks … treating their backs by massaging? It is not, monks, for pleasing those who are not (yet) pleased … " And having rebuked them, having given reasoned talk, he addressed the monks, saying:</p>
+
+<p>"A monk who deserves to be sent back to the beginning, monks, should not consent to regular monks greeting him … treating his back by massaging. Whoever should consent to (any of these actions), there is an offence of wrong-doing.</p>
+
+<hr>
+<p>I allow, monks, the mutual greeting, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging between monks who are under probation according to their seniority.</p>
+
+<p>I allow, monks, five things for monks who deserve to be sent back to the beginning according to their seniority: Observance, Invitation, cloths for the rains, gifts (to the Order) rice.</p>
+
+<p>"Well now, monks, I will lay down the conduct for monks who deserve to be sent back to the beginning, so that monks who deserve to be sent back to the beginning may conduct themselves according to it.</p>
+
+<hr>
+<p id="p36"><span class="parno">36</span>A monk who deserves to be sent back to the beginning, monks, should conduct himself properly. This is the proper conduct in this case:
+
+<br>
+<p id="p37"><span class="parno">37</span>He should not ordain, he should not give guidance, a novice should not attend him, he should not consent to an agreement to exhort nuns, even if agreed upon he should not exhort nuns, he should not fall into that same offence for which he deserves to be sent back to the beginning, nor into another that is similar, nor into one that is worse, he should not find fault with the (formal) act, he should not find fault with those who carry out the (formal) act, he should not suspend a regular monk’s Observance, he should not suspend his Invitation, he should not issue commands, should not set up authority, he should not ask for leave, he should not reprove, he should not make remember, he should not quarrel with monks.
+
+<br>
+<p id="p38"><span class="parno">38</span>Nor, monks, should a monk who deserves to be sent back to the beginning walk in front of a regular monk, nor sit down in front of him. Whatever is the Order’s last seat, last sleeping-place, last dwelling-place — that should be given to him and he should consent to it.</p>
+
+<hr>
+<p><span class="parno">39–50</span> Monks, monks who deserve to be sent back to the beginning should not approach the families of a regular monk either as the novice who walks in front of him or as the novice who walks behind him. He should not undertake the forest-practice, he should not undertake the almsman’s practice, he should not have almsfood taken back for this reason: that he thinks, ‘Do not let them find out about me’. Monks, a monk who deserves to be sent back to the beginning should not go from a residence where there are monks to a residence where there are monks, except with a regular (monk), unless there is a danger … from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks, except with a regular (monk), unless there is a danger. Monks, a monk who deserves to be sent back to the beginning may go from a residence where there are monks to a residence where there are monks … from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks if the monks there should belong to the same communion and if he knows, ‘I am able to arrive this very day.’</p>
+
+<hr>
+<p id="p51"><span class="parno">51</span>Monks, a monk who deserves to be sent back to the beginning should not stay in a residence under one roofing with a regular monk, he should not stay in what is not a residence under one roofing (with him), he should not stay in a residence or in what is not a residence under one roofing (with him). Having seen a regular monk, he should get up from his seat. He should offer his seat to the regular monk. A monk who deserves to be sent back to the beginning should not sit down on the same seat with a regular monk, he should not sit down on a high seat if he is sitting down on a low seat, he should not sit down on a seat if he is sitting on the ground, he should not pace up and down in the same place for pacing up and down in, he should not pace up and down in a high place for pacing up and down in if he is pacing up and down in a low place for pacing up and down in, he should not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground.</p>
+
+<hr>
+<p id="p52"><span class="parno">52</span>Monks, a monk who deserves to be sent back to the beginning should not stay in a residence under one roofing with a monk under probation … with a senior monk … with a monk who deserves <i>mānatta</i> (discipline) … with a monk undergoing <i>mānatta</i> (discipline) … with a monk who deserves rehabilitation … he should not pace up and down in a place to pace up and down in if he is pacing up and down on the ground.</p>
+
+<hr>
+<p id="p53"><span class="parno">53</span>If, monks, one who deserves to be sent back to the beginning as the fourth (member) should grant probation, should send back to the beginning, should inflict <i>mānatta</i> (discipline), if, as the twentieth (member), he should rehabilitate, it is not a (formal) act and ought not to be carried out.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">54</span>The section on being sent back to the beginning is finished.</p>
+
+<h3>&nbsp;</h3>
+
+<p id="p55"><span class="parno">55</span>Now at that time monks deserving <i>mānatta</i> (discipline) consented to regular monks greeting them, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging. Those who were modest monks looked down upon, criticised, spread it about, saying: "How can these monks deserving <i>mānatta</i> consent to regular monks greeting … treating their backs by massaging?" Then these monks told this matter to the Lord.</p>
+
+<hr>
+<p>Then the Lord on this occasion, in this connection, having had the Order of monks convened, questioned the monks, saying:</p>
+
+<p>"Is it true, as is said, monks, that monks deserving <i>mānatta</i> consent to regular monks greeting … treating their backs by massaging?"</p>
+
+<hr>
+<p>"It is true, Lord." The Awakened One, the Lord rebuked them, saying:</p>
+
+<p>"How, monks, can these monks deserving <i>mānatta</i> consent to regular monks … treating their backs by massaging? It is not, monks, for pleasing those who are not (yet) pleased … " And having rebuked them, having given reasoned talk, he addressed the monks, saying:</p>
+
+<hr>
+<p>"A monk deserving <i>mānatta</i>, monks, should not consent to regular monks greeting him … treating his back by massaging. Whoever should consent to (any of these actions), there is an offence of wrong-doing.</p>
+
+<p>I allow, monks, the mutual greeting, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging between monks deserving <i>mānatta</i> according to their seniority.</p>
+
+<p>I allow, monks, five things for monks deserving <i>mānatta</i> according to their seniority: Observance, Invitation, cloths for the rains, gifts (to the Order) rice.</p>
+
+<p>"Well now, monks, I will lay down the conduct for monks deserving <i>mānatta</i>, so that monks deserving <i>mānatta</i> may conduct themselves according to it.</p>
+
+<hr>
+<p id="p56"><span class="parno">56</span>A monk deserving <i>mānatta</i>, monks, should conduct himself properly. This is the proper conduct in this case:</p>
+
+<hr>
+<p><span class="parno">57–67</span>He should not ordain, he should not give guidance, a novice should not attend him, he should not consent to an agreement to exhort nuns, even if agreed upon he should not exhort nuns, he should not fall into that same offence for which he was granted probation, nor into another that is similar, nor into one that is worse, he should not find fault with the (formal) act, he should not find fault with those who carry out the (formal) act, he should not suspend a regular monk’s Observance, he should not suspend his Invitation, he should not issue commands, should not set up authority, he should not ask for leave, he should not reprove, he should not make remember, he should not quarrel with monks.</p>
+
+<hr>
+<p id="p68"><span class="parno">68</span>Nor, monks, should a monk deserving <i>mānatta</i> walk in front of a regular monk, nor sit down in front of him. Whatever is the Order’s last seat, last sleeping-place, last dwelling-place — that should be given to him and he should consent to it.</p>
+
+<p id="p69"><span class="parno">69</span>Monks, a monk deserving <i>mānatta</i> should not approach the families of a regular monk either as the novice who walks in front of him or as the novice who walks behind him. He should not undertake the forest-practice, he should not undertake the almsman’s practice, he should not have almsfood taken back for this reason: that he thinks, ‘Do not let them find out about me’.</p>
+
+<p id="p70"><span class="parno">70</span>Monks, a monk deserving <i>mānatta</i> should announce it when he is in-coming, he should announce it to (another who is) in-coming, he should announce it at the Observance, he should announce it at the Invitation, if he is ill he should also announce it by means of a messenger.</p>
+
+<hr>
+<p><span class="parno">71–73</span>" … ‘Do not let them find out about me’. Monks, a monk deserving <i>mānatta</i> (discipline) should not go from a residence where there are monks to a residence where there are no monks, except with a regular (monk), unless there is a danger … <span class="add">=<a class="cr" href="../vi/kd12.html#Kd.12.1.3">Kd.12.1.3</a>, <a class="cr" href="../vi/kd12.html#Kd.12.1.4">Kd.12.1.4</a></span> … he should not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground. Monks, a monk who deserves <i>mānatta</i> (discipline) should not stay in a residence under one roofing with a monk who is under probation … with a monk who deserves to be sent back to the beginning … with a senior monk who deserves <i>mānatta</i> (discipline) … with a monk undergoing <i>mānatta</i> (discipline) … with a monk who deserves rehabilitation … and ought not to be carried out."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">74</span>The section on Mānattacārika is finished.</p>
+
+<h3>&nbsp;</h3>
+
+<p id="p75"><span class="parno">75</span>Now at that time monks undergoing <i>mānatta</i> (discipline) consented to regular monks greeting them, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging. Those who were modest monks looked down upon, criticised, spread it about, saying: "How can these monks undergoing <i>mānatta</i> (discipline) consent to regular monks greeting … treating their backs by massaging?" Then these monks told this matter to the Lord.</p>
+
+<p id="p76"><span class="parno">76</span>Then the Lord on this occasion, in this connection, having had the Order of monks convened, questioned the monks, saying:</p>
+
+<p>"Is it true, as is said, monks, that monks who are undergoing <i>mānatta</i> consent to regular monks greeting … treating their backs by massaging?"</p>
+
+<p>"It is true, Lord." The Awakened One, the Lord rebuked them, saying:</p>
+
+<p>"How, monks, can these monks who are undergoing <i>mānatta</i> consent to regular monks … treating their backs by massaging? It is not, monks, for pleasing those who are not (yet) pleased … " And having rebuked them, having given reasoned talk, he addressed the monks, saying:</p>
+
+<hr>
+<p id="p77"><span class="parno">77</span>"A monk who is undergoing <i>mānatta</i>, monks, should not consent to regular monks greeting him … treating his back by massaging. Whoever should consent to (any of these actions), there is an offence of wrong-doing.</p>
+
+<hr>
+<p>I allow, monks, the mutual greeting, standing up before them, saluting with joined palms, doing the proper duties, bringing forward a seat, bringing forward a sleeping-place, water for (washing) the feet, a footstool, a foot-stand, receiving the bowl and robe, treating their backs by massaging between monks who are undergoing <i>mānatta</i> according to their seniority.</p>
+
+<hr>
+<p>I allow, monks, five things for monks undergoing <i>mānatta</i> according to their seniority: Observance, Invitation, cloths for the rains, gifts (to the Order) rice.</p>
+
+<p>"Well now, monks, I will lay down the conduct for monks undergoing <i>mānatta</i>, so that monks under probation may conduct themselves according to it.</p>
+
+<hr>
+<p id="p78"><span class="parno">78</span>A monk undergoing <i>mānatta</i>, monks, should conduct himself properly. This is the proper conduct in this case:</p>
+
+<p id="p79"><span class="parno">79</span>He should not ordain, he should not give guidance, a novice should not attend him, he should not consent to an agreement to exhort nuns, even if agreed upon he should not exhort nuns, he should not fall into that same offence for which he was granted probation, nor into another that is similar, nor into one that is worse, he should not find fault with the (formal) act, he should not find fault with those who carry out the (formal) act, he should not suspend a regular monk’s Observance, he should not suspend his Invitation, he should not issue commands, should not set up authority, he should not ask for leave, he should not reprove, he should not make remember, he should not quarrel with monks.</p>
+
+<hr>
+<p id="p80"><span class="parno">80</span>Nor, monks, should a monk undergoing <i>mānatta</i> walk in front of a regular monk, nor sit down in front of him. Whatever is the Order’s last seat, last sleeping-place, last dwelling-place — that should be given to him and he should consent to it.</p>
+
+<p id="p81"><span class="parno">81</span>Monks, a monk undergoing <i>mānatta</i> should not approach the families of a regular monk either as the novice who walks in front of him or as the novice who walks behind him. He should not undertake the forest-practice, he should not undertake the almsman’s practice, he should not have almsfood taken back for this reason: that he thinks, ‘Do not let them find out about me’.</p>
+
+<p id="p82"><span class="parno">82</span>Monks, a monk undergoing <i>mānatta</i> (discipline) should announce it when he is incoming, he should announce it to (another who is) incoming, he should announce it at the Observance, he should announce it at the Invitation, he should announce it daily, if he is ill he should announce it by means of a messenger.</p>
+
+<hr>
+<p><span class="parno">83–93</span>Monks, a monk undergoing <i>mānatta</i> (discipline) should not go from a residence where there are monks to a residence where there are no monks, except with an Order, unless there is a danger … should not go from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are no monks, except with an Order, unless there is a danger … should not go from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks if the monks there should belong to a different communion, except with an Order, unless there is a danger. Monks, a monk undergoing <i>mānatta</i> (discipline) may go from a residence where there are monks to a residence where there are monks … from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks if the monks there should belong to the same communion and if he knows, ‘I am able to arrive this very day.’</p>
+
+<hr>
+<p id="p94"><span class="parno">94</span>Monks, a monk undergoing <i>mānatta</i> (discipline) should not stay in a residence under one roofing with a regular monk, he should not stay in what is not a residence under one roofing (with him), he should not stay in a residence or in what is not a residence under one roofing (with him). Having seen a regular monk, he should get up from his seat. He should offer his seat to the regular monk. A monk undergoing <i>mānatta</i> should not sit down on the same seat with a regular monk, he should not sit down on a high seat if he is sitting down on a low seat, he should not sit down on a seat if he is sitting on the ground, he should not pace up and down in the same place for pacing up and down in, he should not pace up and down in a high place for pacing up and down in if he is pacing up and down in a low place for pacing up and down in, he should not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground.</p>
+
+<p><span class="parno">95–96</span>"Monks, a monk undergoing <i>mānatta</i> should not stay in a residence under one roofing with a senior monk who is under probation … with a monk who deserves to be sent back to the beginning … with a monk who deserves <i>mānatta</i> (discipline) … with a monk who is undergoing <i>mānatta</i> (discipline) … with a monk who deserves rehabilitation, he should not stay in what is not a residence under one roofing (with him), he should not pace up and down in a place to pace up and down in if he is pacing up and down on the ground. Monks, a monk undergoing <i>mānatta</i> (discipline) should not stay in a residence under one roofing with a monk under probation … with a monk who deserves to be sent back to the beginning … with a monk who deserves <i>mānatta</i> (discipline) … with a senior monk who is undergoing <i>mānatta</i> (discipline) … with a monk who deserves rehabilitation … and ought not to be carried out."</p>
+
+<hr>
+<p id="p97"><span class="parno">97</span>Then the venerable Upāli approached the Lord; having approached, having greeted the Lord, he sat down at a respectful distance. As he was sitting down at a respectful distance, the venerable Upāli spoke thus to the Lord: "Now, Lord, how many (kinds of) interruptions are there for a monk who is undergoing <i>mānatta</i> (discipline)?"</p>
+
+<p>"There are four (kinds of) interruptions, Upāli, for a monk who is undergoing <i>mānatta</i> (discipline): dwelling with; dwelling away, separated from; not announcing; going about with less than a group. These, Upāli, are the four (kinds of) interruptions for a monk who is undergoing <i>mānatta</i> (discipline)."</p>
+
+<hr>
+<p id="p98"><span class="parno">98</span>Now at that time a large Order of monks had gathered together at Sāvatthī; monks undergoing <i>mānatta</i> (discipline) were unable to carry through their <i>mānatta</i>. They told this matter to the Lord. He said:</p>
+
+<p>"<span class="allowance">I allow you, monks, to postpone <i>mānatta</i>.</span> And thus, monks, should it be postponed: That monk who is undergoing <i>mānatta</i>, having approached one monk, having arranged his upper robe over one shoulder, having sat down on his haunches, having saluted with joined palms, should speak thus to him: ‘<span class="kamma">I am postponing <i>mānatta</i></span>’ — <i>mānatta</i> comes to be postponed; ‘<span class="kamma">I am postponing the observance</span>’, — <i>mānatta</i> comes to be postponed."</p>
+
+<p id="p99"><span class="parno">99</span>Now at that time monks went away from Sāvatthī to this place and that; monks undergoing <i>mānatta</i> were not able to carry through their <i>mānatta</i>. They told this matter to the Lord. He said:</p>
+
+<p>"<span class="allowance">I allow you, monks, to take up <i>mānatta</i>.</span> And thus, monks, should it be taken up: If that monk is undergoing <i>mānatta</i>, having approached one monk … having saluted with joined palms, should speak thus to him: ‘<span class="kamma">I am taking up <i>mānatta</i></span>’ — <i>mānatta</i> comes to be taken up; ‘<span class="kamma">I am taking up the observance</span>’ — <i>mānatta</i> comes to be taken up."</p>
+
+<p id="p100"><span class="parno">100</span><h3>&nbsp;</h3>
+
+<p><span class="parno">101–112</span>Now at that time monks who deserved rehabilitation consented to regular monks greeting them …
+<br> &nbsp;
+<br>… ‘Do not let him find out about me.’ Monks, a monk who deserves rehabilitation should not go from a residence where there are monks to a residence where there are no monks … from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are no monks, except with a regular (monk), unless there is a danger. Monks, a monk who deserves rehabilitation may go from a residence where there are monks to a residence where there are monks … may go from a residence or from what is not a residence where there are monks to a residence or to what is not a residence where there are monks, if the monks there should belong to the same communion, and if he knows, ‘I am able to arrive this very day.’ Monks, a monk who deserves rehabilitation should not stay in a residence under one roofing with a regular monk … he should I not pace up and down in a place for pacing up and down in if he is pacing up and down on the ground. Monks, a monk who deserves rehabilitation should not stay in a residence under one roofing with a monk under probation … with a monk who deserves to be sent back to the beginning … with a monk who deserves <i>mānatta</i> (discipline) … with a monk undergoing <i>mānatta</i> (discipline) … with a senior monk who deserves rehabilitation … and ought not to be carried out."</p>
+
+<hr>
+<p class="endsutta"><span class="parno">113</span>Told is the Second Section: that on Being under Probation.</p>
+
+<hr>
+<p id="p114"><span class="parno">114</span>In this Section are five items. This is its key:</p>
+
+<p id="p115" class="verse"><span class="parno">115</span>Those under probation consent to a regular monk’s greeting,
+<br>standing up before, joined palms, proper duties, seat,</p>
+
+<p id="p116" class="verse"><span class="parno">116</span>Bringing forward a sleeping-place, water for the feet, a footstool, a footstand,
+<br>the bowl, treating the back by massaging,
+<br>and well-behaved ones looked down upon.</p>
+
+<p id="p117" class="verse"><span class="parno">117</span>If one consents there is wrong-doing, mutual, five things according to seniority:
+<br>Observance, Invitation, (cloths for) the rains, gifts, food.</p>
+
+<p id="p118" class="verse"><span class="parno">118</span>And proper conduct, the carriage there, in regard to a regular monk,
+<br>and whatever is the last, neither as the novice in front of nor behind,</p>
+
+<hr>
+<p id="p119" class="verse"><span class="parno">119</span>Forest, bringing back food, when coming in, at the Observance,
+<br>and at the Invitation, and by a messenger, and he may go to where there are monks.</p>
+
+<p id="p120" class="verse"><span class="parno">120</span>Under one roofing and getting up and likewise in regard to offering,
+<br>on a seat, in a high place for pacing up and down in,
+<br>on the ground and not in a place for pacing up and down in,</p>
+
+<p id="p121" class="verse"><span class="parno">121</span>With a senior — not a (formal) act, interruptions and carryings through,
+<br>postponing, taking up should be stated (by) one under probation.</p>
+
+<p id="p122" class="verse"><span class="parno">122</span>To the beginning, those deserving <i>mānatta</i>, likewise those undergoing <i>mānatta</i>,
+<br>and also he who deserves rehabilitation — again the composing by the method.</p>
+
+<hr>
+<p id="p123" class="verse"><span class="parno">123</span>Three for those under probation, four for one undergoing <i>mānatta</i>.
+
+<br> As with the three interruptions, so there is ‘daily’ for those undergoing <i>mānatta</i>.
+<br>Two (formal) acts are similar, the remaining three (formal) acts are exactly the same.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">124</span></p>
+</div><!--End English-->
+
+<div lang="pi"><!--Pali-->
+
+<p><span class="parno">1</span><span class="ms">p_4V_374, msdiv75</span>Tena samayena buddho bhagavā sāvatthiyaṁ viharati jetavane anāthap&shy;iṇḍikassa ārāme. Tena kho pana samayena pārivāsikā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma pārivāsikā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kamman"ti. Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<hr>
+<p><span class="parno">2</span><span class="ms">p_4V_375</span>Atha kho bhagavā etasmiṁ nidāne etasmiṁ pakaraṇe bhikkhusaṇghaṁ sannipātāpetvā bhikkhū paṭipucchi — </p>
+
+<p>"saccaṁ kira, bhikkhave, pārivāsikā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kamman"ti?</p>
+
+<p>"Saccaṁ, bhagavā"ti. Vigarahi buddho bhagavā — </p>
+
+<p>"ananucchavikaṁ … pe … kathañhi nāma, bhikkhave, pārivāsikā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Netaṁ, bhikkhave, appasannānaṁ vā pasādāya … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<p>"na, bhikkhave, pārivāsikena bhikkhunā sāditabbaṁ pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāro, seyyābhihāro, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Yo sādiyeyya, āpatti dukkaṭassa.</p>
+
+<hr>
+<p><span class="parno">3</span><span class="ms">p_4V_376</span>Anujānāmi, bhikkhave, pārivāsikānaṁ bhikkhūnaṁ mithu yathāvuḍḍhaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ.</p>
+
+<p><span class="parno">4</span><span class="ms">p_4V_377</span>Anujānāmi, bhikkhave, pārivāsikānaṁ bhikkhūnaṁ pañca yathāvuḍḍhaṁ — uposathaṁ, pavāraṇaṁ, vassikasāṭikaṁ, oṇojanaṁ, bhattaṁ.</p>
+
+<p>Tena hi, bhikkhave, pārivāsikānaṁ bhikkhūnaṁ vattaṁ paññapessāmi yathā pārivāsikehi bhikkhūhi vattitabbaṁ.</p>
+
+<p><span class="parno">5</span><span class="ms">p_4V_378, msdiv76</span>Pārivāsikena, bhikkhave, bhikkhunā sammā vattitabbaṁ. Tatrāyaṁ sammāvattanā — </p>
+
+<p><span class="parno">6</span><span class="ms">p_4V_379</span>Na upasampādetabbaṁ, na nissayo dātabbo, na sāmaṇero upaṭṭhāpetabbo, na bhikkhunovādakasammuti sāditabbā, sammatenapi bhikkhuniyo na ovaditabbā. Yāya āpattiyā saṇghena parivāso dinno hoti sā āpatti na āpajjitabbā, aññā vā tādisikā, tato vā pāpiṭṭhatarā; kammaṁ na garahitabbaṁ, kammikā na garahitabbā. Na pakatattassa bhikkhuno uposatho ṭhapetabbo, na pavāraṇā ṭhapetabbā, na savacanīyaṁ kātabbaṁ, na anuvādo paṭṭhapetabbo, na okāso kāretabbo, na codetabbo, na sāretabbo, na bhikkhūhi sampayojetabbaṁ.</p>
+
+<p><span class="parno">7</span><span class="ms">p_4V_380</span>Na, bhikkhave, pārivāsikena bhikkhunā pakatattassa bhikkhuno purato gantabbaṁ, na purato nisīditabbaṁ. Yo hoti saṇghassa āsanapariyanto seyyāpariyanto vihārapari&shy;yanto so tassa padātabbo. Tena ca so sāditabbo.</p>
+
+<p><span class="parno">8</span><span class="ms">p_4V_381</span>Na, bhikkhave, pārivāsikena bhikkhunā pakatattena bhikkhunā puresamaṇena vā pacchāsamaṇena vā kulāni upasankamitabbāni, na āraññikangaṁ samādātabbaṁ, na piṇḍapātikangaṁ samādātabbaṁ, na ca tappaccayā piṇḍapāto nīharāpetabbo — mā maṁ jāniṁsūti.</p>
+
+<p><span class="parno">9</span><span class="ms">p_4V_382, msdiv77</span>Pārivāsikena, bhikkhave, bhikkhunā āgantukena ārocetabbaṁ, āgantukassa ārocetabbaṁ, uposathe ārocetabbaṁ, pavāraṇāya ārocetabbaṁ. Sace gilāno hoti, dūtenapi ārocetabbaṁ.</p>
+
+<hr>
+<p><span class="parno">10</span><span class="ms">p_4V_383</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">11</span><span class="ms">p_4V_384</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<hr>
+<p><span class="parno">12</span><span class="ms">p_4V_385</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">13</span><span class="ms">p_4V_386</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">14</span><span class="ms">p_4V_387, msdiv78</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko anāvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<hr>
+<p><span class="parno">15</span><span class="ms">p_4V_388</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko anāvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<hr>
+<p><span class="parno">16</span><span class="ms">p_4V_389, msdiv79</span>Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko anāvāso gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā. Na, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">17</span><span class="ms">p_4V_390, msdiv80</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">18</span><span class="ms">p_4V_391</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko anāvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">19</span><span class="ms">p_4V_392</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">20</span><span class="ms">p_4V_393</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">21</span><span class="ms">p_4V_394</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko anāvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">22</span><span class="ms">p_4V_395</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">23</span><span class="ms">p_4V_396</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">24</span><span class="ms">p_4V_397</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko anāvāso, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">25</span><span class="ms">p_4V_398</span>Gantabbo, bhikkhave, pārivāsikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<hr>
+<p><span class="parno">26</span><span class="ms">p_4V_399, msdiv81</span>Na, bhikkhave, pārivāsikena bhikkhunā pakatattena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ. Pakatattaṁ bhikkhuṁ disvā āsanā vuṭṭhātabbaṁ. Pakatatto bhikkhu āsanena nimantetabbo. Na pakatattena bhikkhunā saddhiṁ ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">27</span><span class="ms">p_4V_400, msdiv82</span>Na, bhikkhave, pārivāsikena bhikkhunā pārivāsikena vuḍḍhatarena bhikkhunā saddhiṁ … pe … mūlāyapaṭikassanārahena bhikkhunā saddhiṁ … pe … mānattārahena bhikkhunā saddhiṁ … pe … mānattacārikena bhikkhunā saddhiṁ … pe … abbhānārahena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; na ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">28</span><span class="ms">p_4V_401</span>Pārivāsikacatuttho ce, bhikkhave, parivāsaṁ dadeyya, mūlāya paṭikasseyya, mānattaṁ dadeyya, taṁvīso abbheyya, akammaṁ, na ca karaṇīyan"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">29</span><span class="ms">p_4V_402</span>Catunnavutipārivāsikavattaṁ niṭṭhitaṁ.</p>
+
+<hr>
+<p><span class="parno">30</span><span class="ms">p_4V_403, msdiv83</span>Atha kho āyasmā upāli yena bhagavā tenupasankami. Upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā upāli bhagavantaṁ etadavoca — "kati nu kho, bhante, pārivāsikassa bhikkhuno ratticchedā"ti?</p>
+
+<p>"Tayo kho, upāli, pārivāsikassa bhikkhuno ratticchedā. Sahavāso, vippavāso, anārocanā — ime kho, upāli, tayo pārivāsikassa bhikkhuno ratticchedā"ti.</p>
+
+<p><span class="parno">31</span><span class="ms">p_4V_404, msdiv84</span>Tena kho pana samayena sāvatthiyaṁ mahābhikkhusaṇgho sannipatito hoti. Na sakkonti pārivāsikā bhikkhū parivāsaṁ sodhetuṁ. Bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p>"Anujānāmi, bhikkhave, parivāsaṁ nikkhipituṁ. Evañca pana, bhikkhave, nikkhipitabbo. Tena pārivāsikena bhikkhunā ekaṁ bhikkhuṁ upasankamitvā ekaṁsaṁ uttarāsangaṁ karitvā ukkuṭikaṁ nisīditvā añjaliṁ paggahetvā evamassa vacanīyo — ‘parivāsaṁ nikkhipāmī’ti. Nikkhitto hoti parivāso. ‘Vattaṁ nikkhipāmī’ti. Nikkhitto hoti parivāso".</p>
+
+<hr>
+<p><span class="parno">32</span><span class="ms">p_4V_405, msdiv85</span>Tena kho pana samayena sāvatthiyā bhikkhū tahaṁ tahaṁ pakkamiṁsu. Sakkonti pārivāsikā bhikkhū parivāsaṁ sodhetuṁ. Bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p>"Anujānāmi, bhikkhave, parivāsaṁ samādiyituṁ. Evañca pana, bhikkhave, samādiyitabbo. Tena pārivāsikena bhikkhunā ekaṁ bhikkhuṁ upasankamitvā ekaṁsaṁ uttarāsangaṁ karitvā ukkuṭikaṁ nisīditvā añjaliṁ paggahetvā evamassa vacanīyo — ‘parivāsaṁ samādiyāmī’ti. Samādinno hoti parivāso. ‘Vattaṁ samādiyāmī’ti. Samādinno hoti parivāso".</p>
+
+<hr>
+<p class="endsutta"><span class="parno">33</span><span class="ms">p_4V_406</span>Pārivāsikavattaṁ niṭṭhitaṁ.</p>
+
+<h3>2 Mūlāyapaṭikassanārahavatta</h3>
+
+<p><span class="parno">34</span><span class="ms">p_4V_407, msdiv86</span>Tena kho pana samayena mūlāyapaṭikassanārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma mūlāyapaṭikassanārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti. Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p><span class="parno">35</span><span class="ms">p_4V_408</span>Atha kho bhagavā etasmiṁ nidāne etasmiṁ pakaraṇe bhikkhusaṇghaṁ sannipātāpetvā bhikkhū paṭipucchi — </p>
+
+<p>"saccaṁ kira, bhikkhave, mūlāyapaṭikassanārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti?</p>
+
+<hr>
+<p>"Saccaṁ, bhagavā"ti. Vigarahi buddho bhagavā — </p>
+
+<p>"ananucchavikaṁ … pe … kathañhi nāma, bhikkhave, mūlāyapaṭikassanārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Netaṁ bhikkhave, appasannānaṁ vā pasādāya … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<p>"na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sāditabbaṁ pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāro, seyyābhihāro, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Yo sādiyeyya, āpatti dukkaṭassa.</p>
+
+<hr>
+<p>Anujānāmi, bhikkhave, mūlāyapaṭikassanārahānaṁ bhikkhūnaṁ mithu yathāvuḍḍhaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ.</p>
+
+<p>Anujānāmi, bhikkhave, mūlāyapaṭikassanārahānaṁ bhikkhūnaṁ pañca yathāvuḍḍhaṁ — uposathaṁ, pavāraṇaṁ, vassikasāṭikaṁ, oṇojanaṁ, bhattaṁ.</p>
+
+<p>Tena hi, bhikkhave, mūlāyapaṭikassanārahānaṁ bhikkhūnaṁ vattaṁ paññapessāmi yathā mūlāyapaṭikassanārahehi bhikkhūhi vattitabbaṁ.</p>
+
+<hr>
+<p><span class="parno">36</span><span class="ms">p_4V_409, msdiv87</span>Mūlāyapaṭikassanārahena, bhikkhave, bhikkhunā sammā vattitabbaṁ. Tatrāyaṁ sammāvattanā — </p>
+
+<p><span class="parno">37</span><span class="ms">p_4V_410</span>Na upasampādetabbaṁ, na nissayo dātabbo, na sāmaṇero upaṭṭhāpetabbo, na bhikkhunovādakasammuti sāditabbā, sammatenapi bhikkhuniyo na ovaditabbā. Yāya āpattiyā saṇghena mūlāyapaṭikassanāraho kato hoti sā āpatti na āpajjitabbā, aññā vā tādisikā, tato vā pāpiṭṭhatarā; kammaṁ na garahitabbaṁ, kammikā na garahitabbā. Na pakatattassa bhikkhuno uposatho ṭhapetabbo, na pavāraṇā ṭhapetabbā, na savacanīyaṁ kātabbaṁ, na anuvādo paṭṭhapetabbo, na okāso kāretabbo, na codetabbo, na sāretabbo, na bhikkhūhi sampayojetabbaṁ.</p>
+
+<p><span class="parno">38</span><span class="ms">p_4V_411</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā pakatattassa bhikkhuno purato gantabbaṁ, na purato nisīditabbaṁ. Yo hoti saṇghassa āsanapariyanto seyyāpariyanto vihārapari&shy;yanto so tassa padātabbo. Tena ca so sāditabbo.</p>
+
+<hr>
+<p><span class="parno">39</span><span class="ms">p_4V_412</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā pakatattena bhikkhunā puresamaṇena vā pacchāsamaṇena vā kulāni upasankamitabbāni, na āraññikangaṁ samādātabbaṁ, na piṇḍapātikangaṁ samādātabbaṁ, na ca tappaccayā piṇḍapāto nīharāpetabbo — mā maṁ jāniṁsūti.</p>
+
+<p><span class="parno">40</span><span class="ms">p_4V_413</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">41</span><span class="ms">p_4V_414</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">42</span><span class="ms">p_4V_415</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">43</span><span class="ms">p_4V_416</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā anāvāsā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">44</span><span class="ms">p_4V_417</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">45</span><span class="ms">p_4V_418</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">46</span><span class="ms">p_4V_419</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">47</span><span class="ms">p_4V_420</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">48</span><span class="ms">p_4V_421</span>Gantabbo, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">49</span><span class="ms">p_4V_422</span>Gantabbo, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">50</span><span class="ms">p_4V_423</span>Gantabbo, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<hr>
+<p><span class="parno">51</span><span class="ms">p_4V_424</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā pakatattena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; pakatattaṁ bhikkhuṁ disvā āsanā vuṭṭhātabbaṁ, pakatatto bhikkhu āsanena nimantetabbo; na pakatattena bhikkhunā saddhiṁ ekāsane nisīditabbaṁ; na nīce āsane nisinne ucce āsane nisīditabbaṁ; na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<hr>
+<p><span class="parno">52</span><span class="ms">p_4V_425</span>Na, bhikkhave, mūlāyapaṭikassanārahena bhikkhunā pārivāsikena bhikkhunā saddhiṁ … pe … mūlāyapaṭikassanārahena vuḍḍhatarena bhikkhunā saddhiṁ … pe … mānattārahena bhikkhunā saddhiṁ … pe … mānattacārikena bhikkhunā saddhiṁ … pe … abbhānārahena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; na ekāsane nisīditabbaṁ; na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<hr>
+<p><span class="parno">53</span><span class="ms">p_4V_426</span>Mūlāyapaṭikassanārahacatuttho ce, bhikkhave, parivāsaṁ dadeyya, mūlāya paṭikasseyya, mānattaṁ dadeyya, taṁvīso abbheyya, akammaṁ, na ca karaṇīyan"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">54</span><span class="ms">p_4V_427</span>Mūlāyapaṭikassanārahavattaṁ niṭṭhitaṁ.</p>
+
+<h3>3 Mānattārahavatta</h3>
+
+<p><span class="parno">55</span><span class="ms">p_4V_428, msdiv88</span>Tena kho pana samayena mānattārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma mānattārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kamman"ti.</p>
+
+<hr>
+<p>Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ … pe …</p>
+
+<p>"saccaṁ kira, bhikkhave, mānattārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti?</p>
+
+<hr>
+<p>"Saccaṁ, bhagavā"ti. Vigarahi buddho bhagavā — </p>
+
+<p>"ananucchavikaṁ … pe … kathañhi nāma, bhikkhave, mānattārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Netaṁ, bhikkhave, appasannānaṁ vā pasādāya … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<hr>
+<p>"na, bhikkhave, mānattārahena bhikkhunā sāditabbaṁ pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Yo sādiyeyya, āpatti dukkaṭassa.</p>
+
+<p>Anujānāmi, bhikkhave, mānattārahānaṁ bhikkhūnaṁ mithu yathāvuḍḍhaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ.</p>
+
+<p>Anujānāmi, bhikkhave, mānattārahānaṁ bhikkhūnaṁ pañca yathāvuḍḍhaṁ — uposathaṁ, pavāraṇaṁ, vassikasāṭikaṁ, oṇojanaṁ, bhattaṁ.</p>
+
+<p>Tena hi, bhikkhave, mānattārahānaṁ bhikkhūnaṁ vattaṁ paññapessāmi yathā mānattārahehi bhikkhūhi vattitabbaṁ.</p>
+
+<hr>
+<p><span class="parno">56</span><span class="ms">p_4V_429, msdiv89</span>Mānattārahena, bhikkhave, bhikkhunā sammā vattitabbaṁ. Tatrāyaṁ sammāvattanā — </p>
+
+<hr>
+<p><span class="parno">57</span><span class="ms">p_4V_430</span>Na upasampādetabbaṁ … pe … (yathā mūlāyapaṭikassanā, tathā vitthāretabbaṁ.) Na bhikkhūhi sampayojetabbaṁ.</p>
+
+<p><span class="parno">58</span><span class="ms">p_4V_431</span>Na, bhikkhave, mānattārahena bhikkhunā pakatattassa bhikkhuno purato gantabbaṁ, na purato nisīditabbaṁ. Yo hoti saṇghassa āsanapariyanto seyyāpariyanto vihārapari&shy;yanto so tassa padātabbo. Tena ca so sāditabbo.</p>
+
+<p><span class="parno">59</span><span class="ms">p_4V_432</span>Na, bhikkhave, mānattārahena bhikkhunā pakatattena bhikkhunā puresamaṇena vā pacchāsamaṇena vā kulāni upasankamitabbāni, na āraññikangaṁ samādātabbaṁ, na piṇḍapātikangaṁ samādātabbaṁ, na ca tappaccayā piṇḍapāto nīharāpetabbo — mā maṁ jāniṁsūti.</p>
+
+<p><span class="parno">60</span><span class="ms">p_4V_433</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">61</span><span class="ms">p_4V_434</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">62</span><span class="ms">p_4V_435</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">63</span><span class="ms">p_4V_436</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā anāvāsā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">64</span><span class="ms">p_4V_437</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">65</span><span class="ms">p_4V_438</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">66</span><span class="ms">p_4V_439</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">67</span><span class="ms">p_4V_440</span>Na, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra pakatattena, aññatra antarāyā.</p>
+
+<hr>
+<p><span class="parno">68</span><span class="ms">p_4V_441</span>Gantabbo, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">69</span><span class="ms">p_4V_442</span>Gantabbo, bhikkhave, mānattārahena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">70</span><span class="ms">p_4V_443</span>Gantabbo, bhikkhave, mānattārahena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<hr>
+<p><span class="parno">71</span><span class="ms">p_4V_444</span>Na, bhikkhave, mānattārahena bhikkhunā pakatattena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ. Pakatattaṁ bhikkhuṁ disvā āsanā vuṭṭhātabbaṁ. Pakatatto bhikkhu āsanena nimantetabbo. Na pakatattena bhikkhunā saddhiṁ ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">72</span><span class="ms">p_4V_445</span>Na, bhikkhave, mānattārahena bhikkhunā pārivāsikena bhikkhunā saddhiṁ … pe … mūlāyapaṭikassanārahena bhikkhunā saddhiṁ … pe … mānattārahena vuḍḍhatarena bhikkhunā saddhiṁ … pe … mānattacārikena bhikkhunā saddhiṁ … pe … abbhānārahena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; na ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">73</span><span class="ms">p_4V_446</span>Mānattārahacatuttho ce, bhikkhave, parivāsaṁ dadeyya, mūlāya paṭikasseyya, mānattaṁ dadeyya, taṁvīso abbheyya, akammaṁ, na ca karaṇīyan"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">74</span><span class="ms">p_4V_447</span>Mānattārahavattaṁ niṭṭhitaṁ.</p>
+
+<h3>4 Mānattacārikavatta</h3>
+
+<p><span class="parno">75</span><span class="ms">p_4V_448, msdiv90</span>Tena kho pana samayena mānattacārikā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāraṁ, seyyābhihāraṁ, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma mānattacārikā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti. Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p><span class="parno">76</span><span class="ms">p_4V_449</span>Atha kho bhagavā etasmiṁ nidāne etasmiṁ pakaraṇe bhikkhusaṇghaṁ sannipātāpetvā bhikkhū paṭipucchi — </p>
+
+<p>"saccaṁ kira, bhikkhave, mānattacārikā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti?</p>
+
+<p>"Saccaṁ, bhagavā"ti. Vigarahi buddho bhagavā — </p>
+
+<p>"ananucchavikaṁ … pe … kathañhi nāma, bhikkhave, mānattacārikā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Netaṁ, bhikkhave, appasannānaṁ vā pasādāya … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — </p>
+
+<hr>
+<p><span class="parno">77</span><span class="ms">p_4V_450</span> "Na, bhikkhave, mānattacārikena bhikkhunā sāditabbaṁ pakatattānaṁ bhikkhūnaṁ abhivādanaṁ, paccuṭṭhānaṁ, añjalikammaṁ, sāmīcikammaṁ, āsanābhihāro, seyyābhihāro, pādodakaṁ pādapīṭhaṁ, pādakathalikaṁ, pattacīvarappaṭiggahaṇaṁ, nahāne piṭṭhipari&shy;kammaṁ. Yo sādiyeyya, āpatti dukkaṭassa.</p>
+
+<hr>
+<p>Anujānāmi, bhikkhave, mānattacārikānaṁ bhikkhūnaṁ mithu yathāvuḍḍhaṁ abhivādanaṁ, paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ.</p>
+
+<hr>
+<p>Anujānāmi, bhikkhave, mānattacārikānaṁ bhikkhūnaṁ pañca yathāvuḍḍhaṁ — uposathaṁ, pavāraṇaṁ, vassikasāṭikaṁ, oṇojanaṁ, bhattaṁ.</p>
+
+<p>Tena hi, bhikkhave, mānattacārikānaṁ bhikkhūnaṁ vattaṁ paññapessāmi yathā mānattacārikehi bhikkhūhi vattitabbaṁ.</p>
+
+<hr>
+<p><span class="parno">78</span><span class="ms">p_4V_451, msdiv91</span>Mānattacārikena, bhikkhave, bhikkhunā sammā vattitabbaṁ. Tatrāyaṁ sammāvattanā — </p>
+
+<p><span class="parno">79</span><span class="ms">p_4V_452</span>Na upasampādetabbaṁ, na nissayo dātabbo, na sāmaṇero upaṭṭhāpetabbo, na bhikkhunovādakasammuti sāditabbā, sammatenapi bhikkhuniyo na ovaditabbā. Yāya āpattiyā saṇghena mānattaṁ dinnaṁ hoti sā āpatti na āpajjitabbā, aññā vā tādisikā, tato vā pāpiṭṭhatarā; kammaṁ na garahitabbaṁ, kammikā na garahitabbā. Na pakatattassa bhikkhuno uposatho ṭhapetabbo, na pavāraṇā ṭhapetabbā, na savacanīyaṁ kātabbaṁ, na anuvādo paṭṭhapetabbo, na okāso kāretabbo, na codetabbo, na sāretabbo, na bhikkhūhi sampayojetabbaṁ.</p>
+
+<hr>
+<p><span class="parno">80</span><span class="ms">p_4V_453</span>Na, bhikkhave, mānattacārikena bhikkhunā pakatattassa bhikkhuno purato gantabbaṁ, na purato nisīditabbaṁ. Yo hoti saṇghassa āsanapariyanto seyyāpariyanto vihārapari&shy;yanto so tassa padātabbo. Tena ca so sāditabbo.</p>
+
+<p><span class="parno">81</span><span class="ms">p_4V_454</span>Na, bhikkhave, mānattacārikena bhikkhunā pakatattena bhikkhunā puresamaṇena vā pacchāsamaṇena vā kulāni upasankamitabbāni, na āraññikangaṁ samādātabbaṁ, na piṇḍapātikangaṁ samādātabbaṁ, na ca tappaccayā piṇḍapāto nīharāpetabbo — mā maṁ jāniṁsūti.</p>
+
+<p><span class="parno">82</span><span class="ms">p_4V_455</span>Mānattacārikena, bhikkhave, bhikkhunā āgantukena ārocetabbaṁ, āgantukassa ārocetabbaṁ, uposathe ārocetabbaṁ, pavāraṇāya ārocetabbaṁ, devasikaṁ ārocetabbaṁ. Sace gilāno hoti, dūtenapi ārocetabbaṁ.</p>
+
+<hr>
+<p><span class="parno">83</span><span class="ms">p_4V_456</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso gantabbo, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">84</span><span class="ms">p_4V_457</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā abhikkhuko anāvāso gantabbo, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">85</span><span class="ms">p_4V_458</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">86</span><span class="ms">p_4V_459</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā anāvāsā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">87</span><span class="ms">p_4V_460</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā abhikkhuko āvāso gantabbo … pe … abhikkhuko anāvāso gantabbo … pe … abhikkhuko āvāso vā anāvāso vā gantabbo, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">88</span><span class="ms">p_4V_461</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">89</span><span class="ms">p_4V_462</span>Na bhikkhave, mānattacārikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">90</span><span class="ms">p_4V_463</span>Na, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso gantabbo … pe … sabhikkhuko anāvāso gantabbo … pe … sabhikkhuko āvāso vā anāvāso vā gantabbo, yatthassu bhikkhū nānāsaṁvāsakā, aññatra saṇghena, aññatra antarāyā.</p>
+
+<p><span class="parno">91</span><span class="ms">p_4V_464</span>Gantabbo, bhikkhave mānattacārikena bhikkhunā sabhikkhukā āvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">92</span><span class="ms">p_4V_465</span>Gantabbo, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā anāvāsā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">93</span><span class="ms">p_4V_466</span>Gantabbo, bhikkhave, mānattacārikena bhikkhunā sabhikkhukā āvāsā vā anāvāsā vā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<hr>
+<p><span class="parno">94</span><span class="ms">p_4V_467</span>Na, bhikkhave, mānattacārikena bhikkhunā pakatattena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ. Pakatattaṁ bhikkhuṁ disvā āsanā vuṭṭhātabbaṁ. Pakatatto bhikkhu āsanena nimantetabbo. Na pakatattena bhikkhunā saddhiṁ ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">95</span><span class="ms">p_4V_468</span>Na, bhikkhave, mānattacārikena bhikkhunā pārivāsikena bhikkhunā saddhiṁ … pe … mūlāyapaṭikassanārahena bhikkhunā saddhiṁ … pe … mānattārahena bhikkhunā saddhiṁ … pe … mānattacārikena vuḍḍhatarena bhikkhunā saddhiṁ … pe … abbhānārahena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; na ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">96</span><span class="ms">p_4V_469</span>Mānattacārikacatuttho ce, bhikkhave, parivāsaṁ dadeyya, mūlāya paṭikasseyya, mānattaṁ dadeyya, taṁvīso abbheyya, akammaṁ, na ca karaṇīyan"ti.</p>
+
+<hr>
+<p><span class="parno">97</span><span class="ms">p_4V_470, msdiv92</span>Atha kho āyasmā upāli yena bhagavā tenupasankami, upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā upāli bhagavantaṁ etadavoca — "kati nu kho, bhante, mānattacārikassa bhikkhuno ratticchedā"ti?</p>
+
+<p>"Cattāro kho, upāli, mānattacārikassa bhikkhuno ratticchedā. Sahavāso, vippavāso, anārocanā, ūne gaṇe caraṇaṁ — ime kho, upāli, cattāro mānattacārikassa bhikkhuno ratticchedā"ti.</p>
+
+<hr>
+<p><span class="parno">98</span><span class="ms">p_4V_471, msdiv93</span>Tena kho pana samayena sāvatthiyaṁ mahābhikkhusaṇgho sannipatito hoti. Na sakkonti mānattacārikā bhikkhū mānattaṁ sodhetuṁ. Bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p>"Anujānāmi, bhikkhave, mānattaṁ nikkhipituṁ. Evañca pana, bhikkhave, nikkhipitabbaṁ. Tena mānattacārikena bhikkhunā ekaṁ bhikkhuṁ upasankamitvā ekaṁsaṁ uttarāsangaṁ karitvā ukkuṭikaṁ nisīditvā añjaliṁ paggahetvā evamassa vacanīyo — ‘mānattaṁ nikkhipāmī’ti. Nikkhittaṁ hoti mānattaṁ. ‘Vattaṁ nikkhipāmī’ti. Nikkhittaṁ hoti mānattan"ti.</p>
+
+<p><span class="parno">99</span><span class="ms">p_4V_472, msdiv94</span>Tena kho pana samayena sāvatthiyā bhikkhū tahaṁ tahaṁ pakkamiṁsu. Sakkonti mānattacārikā bhikkhū mānattaṁ sodhetuṁ. Bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p>"Anujānāmi, bhikkhave, mānattaṁ samādiyituṁ. Evañca pana, bhikkhave, samādiyitabbaṁ. Tena mānattacārikena bhikkhunā ekaṁ bhikkhuṁ upasankamitvā ekaṁsaṁ uttarāsangaṁ karitvā ukkuṭikaṁ nisīditvā añjaliṁ paggahetvā, evamassa vacanīyo — ‘mānattaṁ samādiyāmī’ti. Samādinnaṁ hoti mānattaṁ. ‘Vattaṁ samādiyāmī’ti. Samādinnaṁ hoti mānattan"ti.</p>
+
+<p class="endsutta"><span class="parno">100</span><span class="ms">p_4V_473</span>Mānattacārikavattaṁ niṭṭhitaṁ.</p>
+
+<h3>5 Abbhānā&shy;rahavatta</h3>
+
+<p><span class="parno">101</span><span class="ms">p_4V_474, msdiv95</span>Tena kho pana samayena abbhānārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Ye te bhikkhū appicchā … pe … te ujjhāyanti khiyyanti vipācenti — "kathañhi nāma abbhānārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti. Atha kho te bhikkhū bhagavato etamatthaṁ ārocesuṁ.</p>
+
+<p><span class="parno">102</span><span class="ms">p_4V_475</span>Atha kho bhagavā etasmiṁ nidāne etasmiṁ pakaraṇe bhikkhusaṇghaṁ sannipātāpetvā bhikkhū paṭipucchi — "saccaṁ kira, bhikkhave, abbhānārahā bhikkhū sādiyanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kamman"ti? "Saccaṁ, bhagavā"ti. Vigarahi buddho bhagavā — "ananucchavikaṁ … pe … kathañhi nāma, bhikkhave, abbhānārahā bhikkhū sādiyissanti pakatattānaṁ bhikkhūnaṁ abhivādanaṁ paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Netaṁ, bhikkhave, appasannānaṁ vā pasādāya … pe … vigarahitvā … pe … dhammiṁ kathaṁ katvā bhikkhū āmantesi — "na, bhikkhave, abbhānārahena bhikkhunā sāditabbaṁ pakatattānaṁ bhikkhūnaṁ abhivādanaṁ paccupaṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Yo sādiyeyya, āpatti dukkaṭassa. Anujānāmi, bhikkhave, abbhānārahānaṁ bhikkhūnaṁ mithu yathāvuḍḍhaṁ abhivādanaṁ paccuṭṭhānaṁ … pe … nahāne piṭṭhipari&shy;kammaṁ. Anujānāmi, bhikkhave, abbhānārahānaṁ bhikkhūnaṁ pañca yathāvuḍḍhaṁ — uposathaṁ, pavāraṇaṁ, vassikasāṭikaṁ, oṇojanaṁ, bhattaṁ. Tena hi, bhikkhave, abbhānārahānaṁ bhikkhūnaṁ vattaṁ paññapessāmi yathā abbhānārahehi bhikkhūhi vattitabbaṁ.</p>
+
+<p><span class="parno">103</span><span class="ms">p_4V_476, msdiv96</span>Abbhānārahena, bhikkhave, bhikkhunā sammā vattitabbaṁ. Tatrāyaṁ sammāvattanā — </p>
+
+<p><span class="parno">104</span><span class="ms">p_4V_477</span>Na upasampādetabbaṁ … pe … (yathā heṭṭhā, tathā vitthāretabbaṁ) na bhikkhūhi sampayojetabbaṁ.</p>
+
+<p><span class="parno">105</span><span class="ms">p_4V_478</span>Na, bhikkhave, abbhānārahena bhikkhunā pakatattassa bhikkhuno purato gantabbaṁ, na purato nisīditabbaṁ. Yo hoti saṇghassa āsanapariyanto seyyāpariyanto vihārapari&shy;yanto so tassa padātabbo. Tena ca so sāditabbo.</p>
+
+<p><span class="parno">106</span><span class="ms">p_4V_479</span>Na, bhikkhave, abbhānārahena bhikkhunā pakatattena bhikkhunā puresamaṇena vā pacchāsamaṇena vā kulāni upasankamitabbāni; na āraññikangaṁ samādātabbaṁ; na piṇḍapātikangaṁ samādātabbaṁ; na ca tappaccayā piṇḍapāto nīharāpetabbo — mā maṁ jāniṁsūti.</p>
+
+<p><span class="parno">107</span><span class="ms">p_4V_480</span>Na, bhikkhave, abbhānārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko āvāso gantabbo, aññatra pakatattena, aññatra antarāyā.</p>
+
+<p><span class="parno">108</span><span class="ms">p_4V_481</span>Na, bhikkhave, abbhānārahena bhikkhunā sabhikkhukā āvāsā abhikkhuko anāvāso gantabbo, aññatra pakatattena, aññatra antarāyā … pe …  . (Yathā heṭṭhā, tathā vitthāretabbā.)</p>
+
+<p><span class="parno">109</span><span class="ms">p_4V_482</span>Gantabbo, bhikkhave, abbhānārahena bhikkhunā sabhikkhukā āvāsā … pe … anāvāsā … pe … āvāsā vā anāvāsā vā sabhikkhuko āvāso … pe … sabhikkhuko anāvāso … pe … sabhikkhuko āvāso vā anāvāso vā, yatthassu bhikkhū samānasaṁvāsakā, yaṁ jaññā sakkomi ajjeva gantunti.</p>
+
+<p><span class="parno">110</span><span class="ms">p_4V_483</span>Na, bhikkhave, abbhānārahena bhikkhunā pakatattena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ, na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; pakatattaṁ bhikkhuṁ disvā āsanā vuṭṭhātabbaṁ, pakatatto bhikkhu āsanena nimantetabbo; na pakatattena bhikkhunā saddhiṁ ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">111</span><span class="ms">p_4V_484</span>Na, bhikkhave, abbhānārahena bhikkhunā pārivāsikena bhikkhunā saddhiṁ … pe … mūlāyapaṭikassanārahena bhikkhunā saddhiṁ … pe … mānattārahena bhikkhunā saddhiṁ … pe … mānattacārikena bhikkhunā saddhiṁ … pe … abbhānārahena vuḍḍhatarena bhikkhunā saddhiṁ ekacchanne āvāse vatthabbaṁ, na ekacchanne anāvāse vatthabbaṁ; na ekacchanne āvāse vā anāvāse vā vatthabbaṁ; na ekāsane nisīditabbaṁ, na nīce āsane nisinne ucce āsane nisīditabbaṁ, na chamāyaṁ nisinne āsane nisīditabbaṁ; na ekacankame cankamitabbaṁ, na nīce cankame cankamante ucce cankame cankamitabbaṁ, na chamāyaṁ cankamante cankame cankamitabbaṁ.</p>
+
+<p><span class="parno">112</span><span class="ms">p_4V_485</span>Abbhānāraha&shy;catuttho ce, bhikkhave, parivāsaṁ dadeyya, mūlāya paṭikasseyya, mānattaṁ dadeyya, taṁvīso abbheyya, akammaṁ, na ca karaṇīyan"ti.</p>
+
+<hr>
+<p class="endsutta"><span class="parno">113</span><span class="ms">p_4V_486</span>Abbhānā&shy;rahavattaṁ niṭṭhitaṁ.
+<br>Pārivāsikakkhandhako dutiyo.
+<br>Imamhi khandhake vatthū pañca.</p>
+
+<hr>
+<p><span class="parno">114</span><span class="ms">p_4V_487</span>Tassuddānaṁ</p>
+
+<p class="verse"><span class="parno">115</span><span class="ms">p_4V_488</span>Pārivāsikā sādenti,
+<br>pakatattāna bhikkhunaṁ;
+<br>Abhivādanaṁ paccuṭṭhānaṁ,
+<br>añjaliñca sāmīciyaṁ.</p>
+
+<p class="verse"><span class="parno">116</span><span class="ms">p_4V_489</span> Āsanaṁ seyyābhihāraṁ,
+<br>pādo pīṭhaṁ kathalikaṁ;
+<br>Pattaṁ nahāne parikammaṁ,
+<br>ujjhāyanti ca pesalā.</p>
+
+<p class="verse"><span class="parno">117</span><span class="ms">p_4V_490</span>Dukkaṭaṁ sādiyantassa,
+<br>Mithu pañca yathāvuḍḍhaṁ;
+<br>Uposathaṁ pavāraṇaṁ,
+<br>Vassikoṇojabhojanaṁ.</p>
+
+<p class="verse"><span class="parno">118</span><span class="ms">p_4V_491</span>Sammā ca vattanā tattha,
+<br>pakatattassa gacchantaṁ;
+<br>Yo ca hoti pariyanto,
+<br>pure pacchā tatheva ca.</p>
+
+<hr>
+<p class="verse"><span class="parno">119</span><span class="ms">p_4V_492</span> Āraññapiṇḍanīhāro,
+<br>āgantuke uposathe;
+<br>Pavāraṇāya dūtena,
+<br>gantabbo ca sabhikkhuko.</p>
+
+<p class="verse"><span class="parno">120</span><span class="ms">p_4V_493</span>Ekacchanne ca vuṭṭhānaṁ,
+<br>tatheva ca nimantaye;
+<br>Āsane nīce cankame,
+<br>chamāyaṁ cankamena ca.</p>
+
+<p class="verse"><span class="parno">121</span><span class="ms">p_4V_494</span>Vuḍḍhatarena akammaṁ,
+<br>ratticchedā ca sodhanā;
+<br>Nikkhipanaṁ samādānaṁ,
+<br>vattaṁva pārivāsike.</p>
+
+<p class="verse"><span class="parno">122</span><span class="ms">p_4V_495</span>Mūlāya mānattārahā,
+<br>tathā mānattacārikā;
+<br>Abbhānārahe nayo cāpi,
+<br>sambhedaṁ nayato puna.</p>
+
+<hr>
+<p class="verse"><span class="parno">123</span><span class="ms">p_4V_496</span>Pārivāsikesu tayo,
+<br>catu mānattacārike;
+<br>Na samenti ratticchedesu,
+<br>mānattesu ca devasi;
+<br>Dve kammā sadisā sesā,
+<br>tayo kammā samāsamāti.</p>
+
+<hr>
+<p class="endsection"><span class="parno">124</span><span class="ms">p_4V_497</span>Pārivāsikakkhandhakaṁ niṭṭhitaṁ.</p>
+
+</div><!--End Pali-->
+</section>
+
+<div id="nextprev"><a id="previous-sutta" href="kd11.html#content"></a><a id="next-sutta" href="kd13.html#content"></a></div>
+</div><!--content-->
+	  <!-- Footer -->
+	<footer>
+ 		<div class="w3-white .bwcontainer2">
+ 			<div id="breadcrumbs"><a href="../home/index.html">Home</a><a href="../vi/vi.html">Vinaya Pitaka</a><a href="../vi/kd.html">Khandhaka</a>Khandhaka&nbsp;12 - Penance and Probation
+</div>
+	</div>  <!-- End .bwcontainer2 for breadcrumbs -->
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+ </div>  <!-- End page content -->
+ 
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+		</body>
+ </html>

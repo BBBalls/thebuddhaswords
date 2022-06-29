@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>A Treasury of Dhamma</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="theme-color" content="#ffd700">
+ 	<!-- Loading manifest -->
+   		<link rel="manifest" href="../home/manifest.json">
+ 	<!-- Loading third party fonts -->
+ 	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<!-- Loading main, menu and Apple touch icon stylesheets -->
+ 		<link rel="stylesheet" href="../css/w3.css">
+ 		<link rel="stylesheet" href="../css/css.css">
+ 		<link rel="stylesheet" href="../css/menu.css">
+ 		<link rel="apple-touch-icon" href="../images/buddha192.png">
+	 		<script src="../js/jquery-1.10.2.min.js"></script>
+ 			<script src="../js/controlpanel.js"></script>
+ 		</head>
+<body>
+
+
+<!--  <header>-->
+    
+    <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+    	<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+      <div class="w3-bar bwcontainer">
+                <a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+        <a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></div>        
+      </div>
+    </div>    
+    
+<!-- Top menu -->
+<div class="w3-main w3-white bwcontainer2">  <!-- Top menu container-->
+  <div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>  <!-- Hamburger container-->
+    <div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+      <ul id="css3menu0">
+        <li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+        <li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+        <li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+        <li class="topmenu" id="sn"><a href="../sn/sn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+        <ul>
+          <li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+          <li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+          <li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+          <li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+          <li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+        </ul>
+      <li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+        <ul>
+          <li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+          <li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+          <li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+          <li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+          <li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+          <li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+          <li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+          <li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+          <li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+          <li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+          <li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+        </ul>
+      </li>
+      <li class="topmenu" id="kn"><a href="../kn/kn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+        <ul>
+          <li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+          <li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+          <li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
+          <li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+          <li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+          <li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+          <li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+        </ul>
+      </li>
+      <li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+        <ul>
+          <li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+          <li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+          <li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+          <li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+          <li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+          <li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+          
+        </ul>
+      </li>
+      </ul>
+    </div> <!-- End navbar-->	
+  </div><!-- End hamburger container-->
+<!--  </header>-->
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+  
+    <div class="w3-bar-block w3-white">
+      <a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+      <a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+      <a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+      <a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+      <a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+      <a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+      <a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a> 
+    </div>
+  </nav>
+
+<!-- !PAGE CONTENT! --> 
+<div class="w3-main w3-content w3-left-align bwcontainer4">
+
+ <h2>Saṁyutta Nikāya — The Linked Discourses</h2>
+
+				<div class="w3-bar w3-light-grey center">  <!-- Div for SN sub-navigation -->
+ 					<a href="sn01.html#content" title="The Book of the Verses" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 1:<br>Verses<br>SN1-11</a>
+ 					<a href="sn02.html#content" title="The Book of Causation" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 2:<br>Causation<br>SN12-21</a>
+ 					<a href="sn03.html#content" title="The Book of the Aggregates" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 3:<br>Aggregates<br>SN22-34</a>
+ 					<a href="sn04.html#content" title="The Book of the Six Sense Bases" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 4:<br>Sense Bases<br>SN35-44</a>
+ 					<a href="sn05.html#content" title="The Great Book" class="w3-bar-item w3-button w3-border w3-mobile w3-hover-yellow" style="width:20%">Vol 5:<br>Great Book<br>SN45-56</a>
+ 				</div>  <!-- End div for SN sub-navigation -->
+
+<div class="w3-responsive">
+		<table class="w3-striped suttalist">
+				<tr>
+     <th><a href="sn01.html" title="Sagātthāvagga — The Book with Verses">Part 1: The Book with Verses - Sagātthāvagga</a></th></tr>
+				<tr>
+				<td><a href="./sn1.html">SN1&nbsp;&nbsp;- 1. Devatāsaṁyutta: On Deities</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn2.html">SN2&nbsp;&nbsp;- 2. Devaputtasaṁyutta: On Gods</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn3.html">SN3&nbsp;&nbsp;- 3. Kosalasaṁyutta: With the Kosalan</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn4.html">SN4&nbsp;&nbsp;- 4. Mārasaṁyutta: With Māra</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn5.html">SN5&nbsp;&nbsp;-5. Bhikunīsaṁyutta: With Nuns</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn6.html">SN6&nbsp;&nbsp;- 6. Brahmasaṁyutta: With Brahmās</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn7.html">SN7&nbsp;&nbsp;- 7. Brāhmaṇasaṁyutta: With Brahmins</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn8.html">SN8&nbsp;&nbsp;- 8. Vaṅgīsasaṁyutta: With Vaṅgīsa</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn9.html">SN9&nbsp;&nbsp;- 9. Vanasaṁyutta: In the Woods</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn10.html">SN10&nbsp;&nbsp;- 10. Yakkhasaṁyutta: With Spirits</a></td>
+				</tr>
+				<tr>
+				<td><a href="./sn11.html">SN11&nbsp;&nbsp;- 11. Sakkasaṁyutta: With Sakka</a></td>
+				</tr>
+		</table>
+	</div>
+<br>
+	<div class="w3-responsive">
+		<table class="w3-striped suttalist">
+		<tr>
+   <th colspan="2"><a href="sn02.html" title="Nidānavagga — The Book of Causation">Part 2: The Book of Causation - Nidānavagga</a>
+   </th>
+  </tr>
+		<tr>
+		<td><a href="./sn12.html">SN12:</a></td>
+		<td><a href="./sn12.html">12. Nidānasaṁyutta: On Causation</a></td>
+		<td><a href="./sn12.html">&nbsp;</a></td>
+		</tr>
+		<tr>
+		<td><a href="./sn13.html">SN13:</a></td>
+		<td><a href="./sn13.html">13. Abhisamayasaṁyutta: On the Breakthrough</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn14.html">SN14:</a></td>
+		<td><a href="./sn14.html">14. Dhātusaṁyutta: On the Elements</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn15.html">SN15:</a></td>
+		<td><a href="./sn15.html">15. Anamataggasaṁyutta: On the Unknowable Beginning</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn16.html">SN16:</a></td>
+		<td><a href="./sn16.html">16. Kassapasaṁyutta: With Kassapa</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn17.html">SN17:</a></td>
+		<td><a href="./sn17.html">17. Lābhasakkārasaṁyutta: On Gains and Honor</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn18.html">SN18:</a></td>
+		<td><a href="./sn18.html">18. Rāhulasaṁyutta: With Rāhula</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn19.html">SN19:</a></td>
+		<td><a href="./sn19.html">19. Lakkhaṇasaṁyutta: With Lakkhaṇa</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn20.html">SN20:</a></td>
+		<td><a href="./sn20.html">20. Opammasaṁyutta: With Similes</a></td>
+
+		</tr>
+		<tr>
+		<td><a href="./sn21.html">SN21:</a></td>
+		<td><a href="./sn21.html">21. Bhikkhusaṁyutta: With Monks</a></td>
+		</tr>
+		</table>
+</div>
+  
+<br>
+
+			<div class="w3-responsive">
+		<table class="w3-striped suttalist">
+		<tr>
+   <th colspan="2"><a href="sn03.html" title="Khandavagga — The Book of the Aggregates">Part 3: The Book of the Aggregates - Khandavagga</a></th>
+  </tr>
+<tr>
+ <td><a href="./sn22.html">SN22:</a></td>
+ <td><a href="./sn22.html">22. Khandhasaṁyutta: On the Aggregates</a></td>
+</tr>
+<tr>
+ <td><a href="./sn23.html">SN23:</a></td>
+ <td><a href="./sn23.html">23. Rādhasaṁyutta: With Rādha</a></td>
+</tr>
+<tr>
+ <td><a href="./sn24.html">SN24:</a></td>
+ <td><a href="./sn24.html">24. Diṭṭhisaṁyutta: On View</a></td>
+</tr>
+<tr>
+ <td><a href="./sn25.html">SN25:</a></td>
+ <td><a href="./sn25.html">25. Okkantasaṁyutta: On Arrival</a></td>
+</tr>
+<tr>
+ <td><a href="./sn26.html">SN26:</a></td>
+ <td><a href="./sn26.html">26. Uppādasaṁyutta: On Arising</a></td>
+</tr>
+<tr>
+ <td><a href="./sn27.html">SN27:</a></td>
+ <td><a href="./sn27.html">27. Kilesasaṁyutta: On Corruptions</a></td>
+</tr>
+<tr>
+ <td><a href="./sn28.html">SN28:</a></td>
+ <td><a href="./sn28.html">28. Sāriputtasaṁyutta: With Sāriputta</a></td>
+</tr>
+<tr>
+ <td><a href="./sn29.html">SN29:</a></td>
+ <td><a href="./sn29.html">29. Nāgasaṁyutta: On Dragons</a></td>
+</tr>
+<tr>
+ <td><a href="./sn30.html">SN30:</a></td>
+ <td><a href="./sn30.html">30. Supaṇṇasaṁyutta: On Phoenixes</a></td>
+</tr>
+<tr>
+ <td><a href="./sn31.html">SN31:</a></td>
+ <td><a href="./sn31.html">31. Gandhabbakāyasaṁyutta: On Fairies</a></td>
+</tr>
+<tr>
+ <td><a href="./sn32.html">SN32:</a></td>
+ <td><a href="./sn32.html">32. Valāhakasaṁyutta: On Cloud Gods</a></td>
+</tr>
+<tr>
+ <td><a href="./sn33.html">SN33:</a></td>
+ <td><a href="./sn33.html">33. Vacchagottasaṁyutta: With Vacchagotta</a></td>
+</tr>
+<tr>
+ <td><a href="./sn34.html">SN34:</a></td>
+ <td><a href="./sn34.html">34. Jhānasaṁyutta: On Absorption</a></td>
+</tr>
+			</table>
+</div>
+
+<br>
+
+			<div class="w3-responsive">
+		<table class="w3-striped suttalist">
+			<tr>
+    <th colspan="2"><a href="sn04.html" title="Salāyatanavagga — The Book of the Six Sense Bases">Part 4: The Book of the Six Sense Bases - Salāyatanavagga</a>
+    </th>
+   </tr>
+<tr>
+ <td><a href="./sn35.html">SN35:</a></td>
+ <td><a href="./sn35.html">35. Saḷāyatanasaṁyutta: On the Six Sense Fields</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn36.html">SN36:</a></td>
+ <td><a href="./sn36.html">36. Vedanāsaṁyutta: On Feelings</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn37.html">SN37:</a></td>
+ <td><a href="./sn37.html">37. Mātugāmasaṁyutta: On Females</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn38.html">SN38:</a></td>
+ <td><a href="./sn38.html">38. Jambukhādakasaṁyutta: With Jambukhādaka</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn39.html">SN39:</a></td>
+ <td><a href="./sn39.html">39. Sāmaṇḍakasaṁyutta: With Sāmaṇḍaka</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn40.html">SN40:</a></td>
+ <td><a href="./sn40.html">40. Moggallānasaṁyutta: With Moggallāna</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn41.html">SN41:</a></td>
+ <td><a href="./sn41.html">41. Cittasaṁyutta: With Citta</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn42.html">SN42:</a></td>
+ <td><a href="./sn42.html">42. Gāmaṇisaṁyutta: With Chiefs</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn43.html">SN43:</a></td>
+ <td><a href="./sn43.html">43. Asaṅkhatasaṁyutta: On the Unconditioned</a></td>
+</tr>
+<tr>
+ <td><a href="./sn44.html">SN44:</a></td>
+ <td><a href="./sn44.html">44. Abyākatasaṁyutta: On the Undeclared</a></td>
+</tr>
+</table>
+</div>
+
+<br>
+
+			<div class="w3-responsive">
+		<table class="w3-striped suttalist">
+<tr>
+ <th colspan="2"><a href="sn05.html" title="Mahāvagga — The Great Book">Part 5: The Great Book - Mahāvagga</a>
+ </th>
+</tr>
+<tr>
+ <td><a href="./sn45.html">SN45:</a></td>
+ <td><a href="./sn45.html">45. Maggasaṁyutta: On the Path</a></td>
+
+</tr>
+<tr>
+ <td><a href="./sn46.html">SN46:</a></td>
+ <td><a href="./sn46.html">46. Bojjhaṅgasaṁyutta: On the Awakening Factors</a></td>
+</tr>
+<tr>
+ <td><a href="./sn47.html">SN47:</a></td>
+ <td><a href="./sn47.html">47. Satipaṭṭhānasaṁyutta: On Mindfulness Meditation</a></td>
+</tr>
+<tr>
+ <td><a href="./sn48.html">SN48:</a></td>
+ <td><a href="./sn48.html">48. Indriyasaṁyutta: On the Faculties</a></td>
+</tr>
+<tr>
+ <td><a href="./sn49.html">SN49:</a></td>
+ <td><a href="./sn49.html">49. Sammappadhānasaṁyutta: On the Right Efforts</a></td>
+</tr>
+<tr>
+ <td><a href="./sn50.html">SN50:</a></td>
+ <td><a href="./sn50.html">50. Balasaṁyutta: On the Five Powers</a></td>
+</tr>
+<tr>
+ <td><a href="./sn51.html">SN51:</a></td>
+ <td><a href="./sn51.html">51. Iddhipādasaṁyutta: On the Bases of Psychic Power</a></td>
+</tr>
+<tr>
+ <td><a href="./sn52.html">SN52:</a></td>
+ <td><a href="./sn52.html">52. Anuruddhasaṁyutta: With Anuruddha</a></td>
+</tr>
+<tr>
+ <td><a href="./sn53.html">SN53:</a></td>
+ <td><a href="./sn53.html">53. Jhānasaṁyutta: On Absorption</a></td>
+</tr>
+<tr>
+ <td><a href="./sn54.html">SN54:</a></td>
+ <td><a href="./sn54.html">54. Ānāpānasaṁyutta: On Breath Meditation</a></td>
+</tr>
+<tr>
+ <td><a href="./sn55.html">SN55:</a></td>
+ <td><a href="./sn55.html">55. Sotāpattisaṁyutta: On Stream-Entry</a></td>
+</tr>
+<tr>
+ <td><a href="./sn56.html">SN56:</a></td>
+ <td><a href="./sn56.html">56. Saccasaṁyutta: On the Truths</a></td>
+</tr>
+</table>
+</div>
+  
+<br>
+<div id="nextprev"><a id="next-sutta" href="./sn9.1.html#content"></a></div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="w3-white .bwcontainer2"> <!-- Breadcrumbs container -->
+    <div id="breadcrumbs"><a href="../home/index.html">Home</a> Samyutta Nikaya</div>    
+  </div>  <!-- End breadcrumbs container -->
+   <!-- Bottom links-->
+      <div class="bottomlinks"> <!-- Bottom links container -->
+        <a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+        <a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+        <a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+        <a href="../home/copyright.html"><span class="w3-bar-item">&copy;&nbsp;Copyright</span></a>
+        <a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>        
+      </div>  <!-- End bottom links container -->
+  </footer>
+</div>
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-yellow";
+}
+</script>
+
+<script src="../js/footer.js"></script>
+	<script src="/sw.js"></script>
+</body>
+</html>

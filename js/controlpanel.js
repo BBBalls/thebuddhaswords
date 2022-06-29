@@ -1,0 +1,1 @@
+document.write('<div class="controlpanel" id="controlpanel"><ul><li><ul class="inner"><li><a href="#" title="Page Top">▲</a><li class="nextprev"><button class="palitoggle"id="pali"type="button"title="Display Pali and activate Lookup Dictionary"style="width:3em;">Pali&nbsp;</button></li><li><a href="javascript:document.body.scrollIntoView(false);">▼</a></ul></li></ul></div>');

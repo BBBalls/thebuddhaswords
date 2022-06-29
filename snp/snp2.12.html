@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+ 	<title>Sutta Nipata 2.12</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="theme-color" content="#ffd700">
+ 	<!-- Loading manifest -->
+   		<link rel="manifest" href="../home/manifest.json">
+ 	<!-- Loading third party fonts -->
+ 	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<!-- Loading main, menu and Apple touch icon stylesheets -->
+ 		<link rel="stylesheet" href="../css/w3.css">
+ 		<link rel="stylesheet" href="../css/css.css">
+ 		<link rel="stylesheet" href="../css/menu.css">
+ 		<link rel="apple-touch-icon" href="../images/buddha192.png">
+	 		<script src="../js/jquery-1.10.2.min.js"></script>
+ 			<script src="../js/controlpanel.js"></script>
+ 		</head>
+<body>
+
+
+ 	<!--  <header>-->
+ 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 		</div>
+ 	</div>
+ 
+ <!-- Top menu -->
+ <div class="w3-main w3-white bwcontainer2">
+ 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
+ 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
+ 			<ul id="css3menu0">
+ 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
+ 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
+ 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
+ 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
+ 					<ul>
+ 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
+ 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
+ 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
+ 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
+ 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
+ 					</ul>
+ 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
+ 					<ul>
+ 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
+ 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
+ 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
+ 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
+ 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
+ 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
+ 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
+ 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
+ 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
+ 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
+ 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
+ 					<ul>
+ 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
+ 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
+ 						<li><a href="snp.html" class="pressed w3-hide-small">Sutta Nipata</a></li>
+ 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
+ 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
+ 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
+ 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
+ 					</ul>
+ 				</li>
+ 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
+ 					<ul>
+ 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
+ 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
+ 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
+ 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
+ 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
+ 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
+ 						
+ 					</ul>
+ 				</li>
+ 			</ul>
+ 			</div>
+ 		</div> <!--navbar-->
+
+<!-- Sidebar (hidden by default) -->
+ <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
+ 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
+ 		<div class="w3-bar-block w3-white">
+ 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
+ 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
+ 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
+ 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
+ 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
+ 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
+ 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
+ 		</div>
+ </nav>
+  
+ 
+		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
+ 
+ <h2>Khuddaka Nikaya - The Minor Texts</h2>
+ 
+ <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
+ 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
+ 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
+ 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
+ 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
+ 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
+ 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
+ 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
+ </div><!-- End div for lower Dhp sub-navigation -->
+ 
+ <h2>Sutta Nipata</h2>
+ <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
+ 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
+ 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button active">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
+ 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
+ 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
+ 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
+ </div><!-- End div for lower Snp sub-navigation -->
+ 
+ <!-- Snp content begins here -->
+ 
+ <div id="content">
+ 
+ <h2>Sutta Nipata Chapter 2: The Minor Chapter</h2>
+
+	<h3>2:12 Vaṅgīsa’s Questions, Buddha’s Answer</h3>	
+	<div id="metarea"> <!-- metarea div -->
+		<ul class="translator"><!-- Translator div -->
+			<li>Translated from the Pali by Laurence Khantipalo Mills<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
+		</ul>
+	</div><!-- End metarea div -->
+		
+<section class="raw_sutta">
+<div lang="en">
+
+<h2>2:12 Vaṅgīsa’s Questions, Buddha’s Answer</h2>
+
+<p><span class="evam">Thus have I heard</span>:
+
+<br><br>At one time the Lord dwelt at Āḷāvī, at the Aggāḷava Shrine. Not long before, the venerable Vaṅgīsa’s preceptor, by name the elder Nigrodhakappa, had become completely Cool at the Aggāḷava Shrine. Then in Vaṅgīsa’s mind, being at one and in solitude, arose this thought: “Has my preceptor become completely Cool or has he not?"</p>
+
+<p>Later in the day Vaṅgīsa left his solitude and went to the Lord and having drawn near him, paid his respects and sat to one side. While sitting there Vaṅgīsa said this to the Lord: “While I was sitting in meditation this thought arose in my mind: ‘Has my preceptor become completely Cool or has he not?’"</p>
+
+<hr>
+
+<p>Vaṅgīsa then arose from his seat, placed his upper robe over one shoulder and, lotussing his hands respectfully, addressed the Lord with these verses.</p>
+
+<div class="verse">
+<p><span class="speaker">Vaṅgīsa</span>
+<br><span class="parno">343</span>We ask now the Teacher of wisdom supreme — 
+<br>who’s cut off all doubts in this very life,
+<br>that Aggāḷava bhikkhu who died recently,
+<br>famous, well-known, was he truly Cool-become?</p>
+
+<p id="p344"><span class="parno">344</span>His name Nigrodhakappa was,
+<br>to that brahmin given by the Radiant One,
+<br>he went around revering you, and, strenuous
+<br>seeking Liberation, O Seer of the Secure.</p>
+
+<p id="p345"><span class="parno">345</span>O Sakya, All-Seeing, we all wish to know
+<br>concerning this hearkener, Kappa by name,
+<br>all of our ears are ready to hear — 
+<br>the Teacher you are, the One unsurpassed.</p>
+
+<p id="p346"><span class="parno">346</span>Sever our doubt and tell me of this:
+<br>that he knew complete Cool, O Wisdom Profound:
+<br>tell this in our midst, O All-Seeing One,
+<br>as thousand-eyed Sakka by devas ringed.</p>
+
+<p id="p347"><span class="parno">347</span>Whatever here deluded paths bring on the bondages,
+<br>on ignorance’s side, the bases for all doubts,
+<br>on reaching the Tathāgatha they cease to be,
+<br>for certainly his Eye is supreme among men.</p>
+
+<p id="p348"><span class="parno">348</span>If never, no one, could defilements disperse,
+<br>as forceful wind a piled-up mass of clouds,
+<br>enshrouded would be, for sure, the whole world,
+<br>and even the illustrious would have no chance to shine.</p>
+</div>
+<hr>
+<div class="verse">
+<p id="p349"><span class="parno">349</span>But the Wise in this world are the makers of light
+<br>and you, a Wise One, are such I conceive,
+<br>we have come upon Him who Knows and who Sees — 
+<br>to those here assembled, Kappa clearly reveal.</p>
+
+<p id="p350"><span class="parno">350</span>Swiftly send forth fair speech, O Fairest One,
+<br>as swan (its neck) stretches sounding softly forth;
+<br>with your melodious voice so well-modulated
+<br>to it we listen, all of us, attentively.</p>
+
+<p id="p351"><span class="parno">351</span>Remainderless, you’ve let go of birth and death — 
+<br>I’ll urge the One who’s Cleansed to Dharma teach;
+<br>ordinary persons cannot act out their desires,
+<br>but with discrimination Tathāgatas act.</p>
+
+<p id="p352"><span class="parno">352</span>(Your) expositions (of Dharma) so thoroughly based
+<br>on straightforward wisdom then thoroughly grasped;
+<br>(and he) last lotussed his hands with greatest respect:
+<br>so do not delude us, You of wisdom supreme.</p>
+
+<p id="p353"><span class="parno">353</span>Having known the Dharma noble, the basics and refined,
+<br>You the Energetic One who Knows, do not delude.
+<br>I long for your words as for water one does
+<br>in summer season by heat overcome.
+<br>Rain down on our ears!</p>
+
+<p id="p354"><span class="parno">354</span>That purpose for which Kappāyana led
+<br>the life of purity — surely it wasn’t in vain;
+<br>did he become Cool or did residues remain — 
+<br>tell of his Freedom, that we long to hear.</p>
+</div>
+<hr>
+<div class="verse">
+<p><span class="speaker">Buddha</span>
+<br><span class="parno">355</span>Craving he cut for mind and body both — 
+<br>craving’s stream that long had lain within him;
+<br>completely he has crossed beyond all birth and death — 
+<br>So the Blessed One spoke, the Fore before the Five.</p>
+
+<p><span class="speaker">Vaṅgīsa</span>
+<br><span class="parno">356</span>Hearing your word, O Seventh of Seers,
+<br>I’m both pleased and truly satisfied.
+<br>Truly my question’s not in vain — 
+<br>that brahmin did elude me not!</p>
+
+<p id="p357"><span class="parno">357</span>As he spoke, he acted so,
+<br>one of the Buddha’s hearkeners
+<br>who rent the deceiver Māra’s net,
+<br>spread wide and very strong.</p>
+
+<p id="p358"><span class="parno">358</span>Lord, Kappa the capable
+<br>saw graspings’, clingings’ source;
+<br>Kappāyana has gone beyond
+<br>death’s realm so hard to cross.</p>
+</div>
+</div>
+
+<div lang="pi">
+<h2>Nigrodhakappa (vangīsa) sutta</h2>
+
+<p><span class="evam">Evaṁ me sutaṁ — ​</span>   <br>
+
+<br>ekaṁ samayaṁ bhagavā āḷaviyaṁ viharati aggāḷave cetiye. Tena kho pana samayena āyasmato vangīsassa upajjhāyo nigrodhakappo nāma thero aggāḷave cetiye acirap&shy;arinibbuto hoti. Atha kho āyasmato vangīsassa rahogatassa paṭisallīnassa evaṁ cetaso parivitakko udapādi – parinibbuto nu kho me upajjhāyo udāhu no parinibbutoti? </p>
+
+<p>Atha kho āyasmā vangīso sāyanhasamayaṁ paṭisallānā vuṭṭhito yena bhagavā tenupasankami; upasankamitvā bhagavantaṁ abhivādetvā ekamantaṁ nisīdi. Ekamantaṁ nisinno kho āyasmā vangīso bhagavantaṁ etadavoca – idha mayhaṁ, bhante, rahogatassa paṭisallīnassa evaṁ cetaso parivitakko udapādi – parinibbuto nu kho me upajjhāyo, udāhu no parinibbutoti. </p>
+
+<hr>
+
+<p>Atha kho āyasmā vangīso uṭṭhāyāsanā ekaṁsaṁ cīvaraṁ katvā yena bhagavā tenañjaliṁ paṇāmetvā bhagavantaṁ gāthāya ajjhabhāsi: </p>
+
+<div class="verse">
+<p></p>
+
+<p><span class="parno">343</span>"Pucchāmi satthāramanomapaññaṁ,<br> Diṭṭheva dhamme yo vicikicchānaṁ chettā;
+<br>Aggāḷave kālamakāsi bhikkhu,
+<br>Ñāto yasassī abhinibbutatto.</p>
+
+<p><span class="parno">344</span><a class="brnum" id="br2"></a>
+Nigrodhakappo iti tassa nāmaṁ,<br> Tayā kataṁ bhagavā brāhmaṇassa;
+<br>So taṁ namassaṁ acari mutyapekkho,
+<br>Āraddhaviriyo daḷhadhammadassī.</p>
+
+<p><span class="parno">345</span><a class="brnum" id="br3"></a>
+Taṁ sāvakaṁ sakya mayampi sabbe,<br> Aññātumicchāma samantacakkhu;
+<br>Samavaṭṭhitā no savanāya sotā,
+<br>Tuvaṁ no satthā tvamanuttarosi.</p>
+
+<p><span class="parno">346</span><a class="brnum" id="br4"></a>
+Chindeva no vicikicchaṁ brūhi metaṁ,<br> Parinibbutaṁ vedaya bhūripañña;
+<br>Majjheva no bhāsa samantacakkhu,
+<br>Sakkova devāna sahassanetto.</p>
+
+<p><span class="parno">347</span><a class="brnum" id="br5"></a>
+Ye keci ganthā idha mohamaggā,<br> Aññāṇapakkhā vicikicchaṭhānā;
+<br>Tathāgataṁ patvā na te bhavanti,
+<br>Cakkhuñhi etaṁ paramaṁ narānaṁ.</p>
+
+<p><span class="parno">348</span><a class="brnum" id="br6"></a>
+No ce hi jātu puriso kilese,<br> Vāto yathā abbhaghanaṁ vihāne;
+<br>Tamovassa nivuto sabbaloko,
+<br>Na jotimantopi narā tapeyyuṁ.</p>
+</div>
+<hr>
+<div class="verse">
+<p><span class="parno">349</span><a class="brnum" id="br7"></a>
+Dhīrā ca pajjotakarā bhavanti,<br> Taṁ taṁ ahaṁ vīra tatheva maññe;
+<br>Vipassinaṁ jānamupāgamumhā,
+<br>Parisāsu no āvikarohi kappaṁ.</p>
+
+<p><span class="parno">350</span><a class="brnum" id="br8"></a>
+Khippaṁ giraṁ eraya vaggu vagguṁ,<br> Haṁsova paggayha saṇikaṁ nikūja;
+<br>Bindussarena suvikappitena,
+<br>Sabbeva te ujjugatā suṇoma.</p>
+
+<p><span class="parno">351</span><a class="brnum" id="br9"></a>
+Pahīna&shy;jātimaraṇaṁ asesaṁ,<br> Niggayha dhonaṁ vadessāmi dhammaṁ;
+<br>Na kāmakāro hi puthujjanānaṁ,
+<br>Sankheyyakāro ca tathāgatānaṁ.</p>
+
+<p><span class="parno">352</span><a class="brnum" id="br10"></a>
+Sampannaveyyākaraṇaṁ tavedaṁ,<br> Samujjupaññassa samuggahītaṁ;
+<br>Ayamañjalī pacchimo suppaṇāmito,
+<br>Mā mohayī jānamanomapañña.</p>
+
+<p><span class="parno">353</span><a class="brnum" id="br11"></a>
+Parovaraṁ ariyadhammaṁ viditvā,<br> Mā mohayī jānamanomavīra;
+<br>Vāriṁ yathā ghammani ghammatatto,
+<br>Vācābhikankhāmi sutaṁ pavassa.</p>
+
+<p><span class="parno">354</span><a class="brnum" id="br12"></a>
+Yadatthikaṁ brahmacariyaṁ acarī,<br> Kappāyano kaccissa taṁ amoghaṁ;
+<br>Nibbāyi so ādu saupādiseso,
+<br>Yathā vimutto ahu taṁ suṇoma".</p>
+</div>
+<hr>
+<div class="verse">
+<p><span class="speaker">(iti bhagavā):</span>
+<br><span class="parno">355</span><a class="brnum" id="br13"></a> "Acchecchi taṇhaṁ idha nāmarūpe,<br> Kaṇhassa sotaṁ dīgharattānusayitaṁ;
+<br>Atāri jātiṁ maraṇaṁ asesaṁ",
+<br>Iccabravī bhagavā pañcaseṭṭho.</p>
+
+<p></p>
+
+<p><span class="parno">356</span><a class="brnum" id="br14"></a>
+"Esa sutvā pasīdāmi,<br> Vaco te isisattama;
+<br>Amoghaṁ kira me puṭṭhaṁ,
+<br>Na maṁ vañcesi brāhmaṇo.</p>
+
+<p><span class="parno">357</span><a class="brnum" id="br15"></a>
+Yathāvādī tathākārī,<br> Ahu buddhassa sāvako;
+<br>Acchidā maccuno jālaṁ,
+<br>Tataṁ māyāvino daḷhaṁ.</p>
+
+<p><span class="parno">358</span><a class="brnum" id="br16"></a>
+Addasā bhagavā ādiṁ,<br> Upādānassa kappiyo;
+<br>Accagā vata kappāyano,
+<br>Maccudheyyaṁ suduttaran"ti.</p>
+</div>
+<p class="endsection">Nigrodhakappasuttaṁ dvādasamaṁ.</p>
+
+</div>
+</section>
+<div id="nextprev"><a id="previous-sutta" href="../snp/snp2.11.html#content"></a><a id="next-sutta" href="../snp/snp2.13.html#content"></a></div>
+</div><!--content-->
+<footer>
+<div id="breadcrumbs">
+<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp2.html">Chapter 2: The Minor Chapter</a>2:12 Vaṅgīsa’s Questions, Buddha’s Answer
+</div>
+	
+ 	<div class="bottomlinks">
+ 		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
+ 		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
+ 		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
+ 	</div>  <!-- End bottom links -->
+ </footer>
+
+</div>
+  
+ <script>
+ // Script to open and close sidebar
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+  
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+ <script src="../js/footer.js"></script>
+	<script src="/sw.js"></script>
+		</body>
+ </html>
