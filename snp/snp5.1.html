@@ -4,8 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Sutta Nipata 5:1</title>
- 		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<!-- Loading third party fonts -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
  			 		<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
  			<!-- Loading main and menu stylesheets -->
  			<link rel="stylesheet" href="../css/w3.css">
@@ -13,589 +15,15 @@
  			<link rel="stylesheet" href="../css/menu.css">
  			<script src="../js/jquery-1.10.2.min.js"></script>
  			<script src="../js/controlpanel.js"></script>
- <body>
- 
- <!-- header -->
+ <body> 
+ <!--  <header>-->
  <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 	<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- <div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
- 			<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- </div>
- 
- <!-- Top menu -->
- <div class="w3-main w3-white bwcontainer2">
- 		<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
- 			<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
- 				<ul id="css3menu0">
- 					<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
- 					<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
- 					<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
- 					<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
- 				<ul>
- 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
- 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
- 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
- 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
- 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
- 					</ul>
- 					<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
- 						<ul>
- 							<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
- 							<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
- 							<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
- 							<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
- 							<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
- 							<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
- 							<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
- 							<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
- 							<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
- 							<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
- 							<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
- 						</ul>
- 					</li>
- 					<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
- 						<ul>
- 							<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
- 							<li><a href="../dhp/dhp.html" class="pressed w3-hide-small">The Dhammapada</a></li>
- 							<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
- 							<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
- 							<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
- 							<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
- 							<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
- 						</ul>
- 					</li>
- 					<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
- 						<ul>
- 							<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 							<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
- 							<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
- 							<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
- 							<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
- 							<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
- 
- 						</ul>
- 					</li>
- 				</ul>
- 				</div>
- 			</div> <!--navbar-->
- 
- <!-- Sidebar (hidden by default) -->
- 	<nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
- 		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
- 			<div class="w3-bar-block w3-white">
- 				<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
- 				<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
- 				<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
- 				<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
- 				<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
- 				<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
- 				<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
- 			</div>
- 	</nav>
- 
- 						<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
- 
- <h2>Khuddaka Nikaya - The Minor Texts</h2>
- 
- <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
- 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
- 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
- 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
- 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
- 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
- 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
- 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
- </div><!-- End div for lower Dhp sub-navigation -->
- 
- <h2>Sutta Nipata</h2>
- <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
- 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
- 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
- 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
- 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
- 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button active">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
- </div><!-- End div for lower Snp sub-navigation -->
- 
- <!-- Snp content begins here -->
- 
- <div id="content">
- 
- <h2>Sutta Nipata Chapter 5: The Chapter of the Way to the Beyond- Parayanavagga</h2>
-
-
-
-	<h3>5:1 Introductory Verses</h3>	
-	
-
-	<div id="metaarea"><!-- metarea div -->
-		<ul class="translator">
-			<li>Translated from the Pali by Ānandajoti Bhikkhu<br><a href="../home/copyright.html#aj">(More copyright information)</a></li>
-		</ul>
-	</div><!-- End metarea div -->
-
-			
-<section class="raw_sutta">
-<div lang="en">
-
-<h2>5:1 Introductory Verses</h2>
-<div class="verse">
-<p id="p976"><span class="parno">976</span><a class="snp-vagga-verse" id="snp-vagga-verse5.1"></a><a class="verse-num-pts" id="verse-num-pts976"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.1"></a>From the delightful city of the Kosalans to the Southern lands went
-<br>one who wanted to have no possessions, a brahmin perfect in the Vedas.</p>
-
-<p id="p977"><span class="parno">977</span><a class="snp-vagga-verse" id="snp-vagga-verse5.2"></a><a class="verse-num-pts" id="verse-num-pts977"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.2"></a>In the locality of Assaka, and near to Mūḷaka
-<br>close to the bank of the Godhāvari he lived on gleanings and fruit.</p>
-
-<p id="p978"><span class="parno">978</span><a class="snp-vagga-verse" id="snp-vagga-verse5.3"></a><a class="verse-num-pts" id="verse-num-pts978"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.3"></a>In the vicinity <span class="supplied">of the river</span> there was a large village,
-<br>and with the income that arose from that he offered a great sacrifice.</p>
-
-<p id="p979"><span class="parno">979</span><a class="snp-vagga-verse" id="snp-vagga-verse5.4"></a><a class="verse-num-pts" id="verse-num-pts979"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.4"></a>When that great sacrifice had been given he entered his hermitage again,
-<br>and when he had re-entered it, another brahmin came along — </p>
-
-<p id="p980"><span class="parno">980</span><a class="snp-vagga-verse" id="snp-vagga-verse5.5"></a><a class="verse-num-pts" id="verse-num-pts980"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.5"></a>he had sore feet, and was thirsty, with dirty teeth, and dust on his head — 
-<br>and after approaching <span class="supplied">the first brahmin</span>, he begged for five hundred <span class="supplied">coins</span>.</p>
-
-<p id="p981"><span class="parno">981</span><a class="snp-vagga-verse" id="snp-vagga-verse5.6"></a><a class="verse-num-pts" id="verse-num-pts981"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.6"></a>After seeing him Bāvari invited him to take a seat,
-<br>and he asked after his happiness and welfare, and this is the word he spoke:</p>
-
-<p id="p982"><span class="parno">982</span><a class="snp-vagga-verse" id="snp-vagga-verse5.7"></a><a class="verse-num-pts" id="verse-num-pts982"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.7"></a>“Whatever kind of gift I had, all that has been given away by me,
-<br>please excuse me brahmin, I do not have the five hundred."</p>
-
-<p id="p983"><span class="parno">983</span><a class="snp-vagga-verse" id="snp-vagga-verse5.8"></a><a class="verse-num-pts" id="verse-num-pts983"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.8"></a>“If your honour will not give me what I am begging for,
-<br>then within seven days may your head split into seven pieces!"</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p984"><span class="parno">984</span><a class="snp-vagga-verse" id="snp-vagga-verse5.9"></a><a class="verse-num-pts" id="verse-num-pts984"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.9"></a>Having made <span class="supplied">a scene</span> the dishonest man proclaimed this fearful thing.
-<br>After hearing this word of his, Bāvari became miserable.</p>
-
-<p id="p985"><span class="parno">985</span><a class="snp-vagga-verse" id="snp-vagga-verse5.10"></a><a class="verse-num-pts" id="verse-num-pts985"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.10"></a><span class="supplied">Going</span> without food he dried up, and was affected by the dart of grief,
-<br>and when his heart was like that his mind did not delight in meditation.</p>
-
-<p id="p986"><span class="parno">986</span><a class="snp-vagga-verse" id="snp-vagga-verse5.11"></a><a class="verse-num-pts" id="verse-num-pts986"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.11"></a>Having seen him terrified and miserable, a God who desired his welfare,
-<br>approached Bāvari, and this is the word he spoke:</p>
-
-<p id="p987"><span class="parno">987</span><a class="snp-vagga-verse" id="snp-vagga-verse5.12"></a><a class="verse-num-pts" id="verse-num-pts987"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.12"></a>“He does not know the head — he is a dishonest man who wants wealth!
-<br>He does not have knowledge about the head or head-splitting."</p>
-
-<p id="p988"><span class="parno">988</span><a class="snp-vagga-verse" id="snp-vagga-verse5.13"></a><a class="verse-num-pts" id="verse-num-pts988"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.13"></a>“But now your honour knows! Please explain this to me when asked:
-<br>the head and head-splitting, may we hear that word of yours."</p>
-
-<p id="p989"><span class="parno">989</span><a class="snp-vagga-verse" id="snp-vagga-verse5.14"></a><a class="verse-num-pts" id="verse-num-pts989"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.14"></a>“I also do not know about this, I do not have this knowledge here.
-<br>The head and head-splitting! Indeed only Victors see this!"</p>
-
-<p id="p990"><span class="parno">990</span><a class="snp-vagga-verse" id="snp-vagga-verse5.15"></a><a class="verse-num-pts" id="verse-num-pts990"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.15"></a>“Then who knows about the head and head-splitting
-<br>on the face of the earth? O God, please explain this to me."</p>
-
-<p id="p991"><span class="parno">991</span><a class="snp-vagga-verse" id="snp-vagga-verse5.16"></a><a class="verse-num-pts" id="verse-num-pts991"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.16"></a>“From out of the city of Kapilavatthu a world leader has renounced,
-<br>he is of king Okkāka’s line, a Sakyan’s son, a light-maker.
-<br>He is a Sambuddha, brahmin, in everything he is perfect,</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p992"><span class="parno">992</span><a class="snp-vagga-verse" id="snp-vagga-verse5.17"></a><a class="verse-num-pts" id="verse-num-pts992"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.17"></a>“Having attained all deep knowledges and strengths, endowed with Vision regarding all things,
-<br>he has come to the end of all actions, in the end of all clinging he is freed.</p>
-
-<p id="p993"><span class="parno">993</span><a class="snp-vagga-verse" id="snp-vagga-verse5.18"></a><a class="verse-num-pts" id="verse-num-pts993"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.18"></a>“He is the Buddha in the world, the Gracious One, the Visionary who teaches Teaching,
-<br>after going there you can ask him about it, he will explain it to you."</p>
-
-<p id="p994"><span class="parno">994</span><a class="snp-vagga-verse" id="snp-vagga-verse5.19"></a><a class="verse-num-pts" id="verse-num-pts994"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.19"></a>Having heard the word ‘Sambuddha’, Bāvari became elated,
-<br>then his grief became but little, and he received great happiness.</p>
-
-<p id="p995"><span class="parno">995</span><a class="snp-vagga-verse" id="snp-vagga-verse5.20"></a><a class="verse-num-pts" id="verse-num-pts995"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.20"></a>Bāvari, uplifted and elated,
-<br>enthusiastically asked that God:
-<br>“In which village, or again in which town,
-<br>in which country, is the Lord of the World?
-<br>Where having gone to can we revere the Sambuddha, the Supreme Human Being?"</p>
-
-<p id="p996"><span class="parno">996</span><a class="snp-vagga-verse" id="snp-vagga-verse5.21"></a><a class="verse-num-pts" id="verse-num-pts996"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.21"></a>“The Victor is in the Kosalan’s city, Sāvatthī,
-<br>he has much wisdom, excellent and great intelligence,
-<br>that Sakyan’s son, who is free from burden and pollutant,
-<br>that Bull of a Man has understanding of head-splitting."</p>
-
-<p id="p997"><span class="parno">997</span><a class="snp-vagga-verse" id="snp-vagga-verse5.22"></a><a class="verse-num-pts" id="verse-num-pts997"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.22"></a>So then the brahmin addressed his students, who were perfect in the Vedas:
-<br>“Come, young men, and I shall explain, please listen to this word of mine:</p>
-
-<p id="p998"><span class="parno">998</span><a class="snp-vagga-verse" id="snp-vagga-verse5.23"></a><a class="verse-num-pts" id="verse-num-pts998"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.23"></a>“He whose manifestation in the world is always exceptional,
-<br>has now arisen in the world, renowned as one called a ‘Sambuddha’.
-<br>Having gone quickly to Sāvatthī, you can see the Supreme Human Being."</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p999"><span class="parno">999</span><a class="snp-vagga-verse" id="snp-vagga-verse5.24"></a><a class="verse-num-pts" id="verse-num-pts999"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.24"></a>“Having seen him how will we know that he is the ‘Buddha’, O brahmin?
-<br>You must tell us who do not know, how we can know it is him."</p>
-
-<p id="p1000"><span class="parno">1000</span><a class="snp-vagga-verse" id="snp-vagga-verse5.25"></a><a class="verse-num-pts" id="verse-num-pts1000"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.25"></a>“There has come down to us in the Vedas the marks of a Great Man,
-<br>they are explained as thirty-two, complete in regular order.</p>
-
-<p id="p1001"><span class="parno">1001</span><a class="snp-vagga-verse" id="snp-vagga-verse5.26"></a><a class="verse-num-pts" id="verse-num-pts1001"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.26"></a>“For whoever has on his limbs the marks of a Great Man,
-<br>there can be just two destinies, for a third cannot be found:</p>
-
-<p id="p1002"><span class="parno">1002</span><a class="snp-vagga-verse" id="snp-vagga-verse5.27"></a><a class="verse-num-pts" id="verse-num-pts1002"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.27"></a>“If he lives in a house, when he has been victorious over this earth,
-<br>without a stick or a sword he will rule according to the Teaching.</p>
-
-<p id="p1003"><span class="parno">1003</span><a class="snp-vagga-verse" id="snp-vagga-verse5.28"></a><a class="verse-num-pts" id="verse-num-pts1003"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.28"></a>“But if he goes forth from the house to the houseless life,
-<br>he becomes a Cover-Remover, a Sambuddha, a Worthy One, unexcelled.</p>
-
-<p id="p1004"><span class="parno">1004</span><a class="snp-vagga-verse" id="snp-vagga-verse5.29"></a><a class="verse-num-pts" id="verse-num-pts1004"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.29"></a>“About my birth, family, and marks; lore, students and other things,
-<br>about the head and head-splitting, you must ask in your mind.</p>
-
-<p id="p1005"><span class="parno">1005</span><a class="snp-vagga-verse" id="snp-vagga-verse5.30"></a><a class="verse-num-pts" id="verse-num-pts1005"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.30"></a>“If he should be a Buddha, one who sees without obstruction,
-<br>the questions that are asked in your mind he will answer by way of speech."</p>
-
-<p id="p1006"><span class="parno">1006</span><a class="snp-vagga-verse" id="snp-vagga-verse5.31"></a><a class="verse-num-pts" id="verse-num-pts1006"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.31"></a>After hearing Bāvari’s words, the sixteen brahmin students:
-<br>Ajita, Tissa Metteyya, Puṇṇaka, also Mettagū,</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1007"><span class="parno">1007</span><a class="snp-vagga-verse" id="snp-vagga-verse5.32"></a><a class="verse-num-pts" id="verse-num-pts1007"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.32"></a>Dhotaka, and Upasīva, Nanda, and also Hemaka,
-<br>the two: Todeyya and Kappa, and Jatukaṇṇī, the one who is wise,</p>
-
-<p id="p1008"><span class="parno">1008</span><a class="snp-vagga-verse" id="snp-vagga-verse5.33"></a><a class="verse-num-pts" id="verse-num-pts1008"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.33"></a>Bhadrāvudha and Udaya, and also the brahmin Posāla,
-<br>Mogharāja, the intelligent one, and the great seer, Piṅgiya,</p>
-
-<p id="p1009"><span class="parno">1009</span><a class="snp-vagga-verse" id="snp-vagga-verse5.34"></a><a class="verse-num-pts" id="verse-num-pts1009"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.34"></a>each one with his own group, renowned throughout the whole world,
-<br>meditators delighting in meditation, wise ones, influenced by their pre-dispositions,</p>
-
-<p id="p1010"><span class="parno">1010</span><a class="snp-vagga-verse" id="snp-vagga-verse5.35"></a><a class="verse-num-pts" id="verse-num-pts1010"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.35"></a>after worshipping Bāvari, and circumambulating him,
-<br>they all, wearing matted-hair and deer-skins, set out for the North:</p>
-
-<p id="p1011"><span class="parno">1011</span><a class="snp-vagga-verse" id="snp-vagga-verse5.36"></a><a class="verse-num-pts" id="verse-num-pts1011"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.36"></a>From Mūḷaka to Patiṭṭhāna first, then on to Mahissati,
-<br>to Ujjenī, and Gonaddha, to Vedisa, and to the place called Vanasa,</p>
-
-<p id="p1012"><span class="parno">1012</span><a class="snp-vagga-verse" id="snp-vagga-verse5.37"></a><a class="verse-num-pts" id="verse-num-pts1012"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.37"></a>to Kosambī, and Sāketa, and Sāvatthī, the city supreme,
-<br>to Setabya, and Kapilavatthu, and to the city of Kusinārā,</p>
-
-<p id="p1013"><span class="parno">1013</span><a class="snp-vagga-verse" id="snp-vagga-verse5.38"></a><a class="verse-num-pts" id="verse-num-pts1013"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.38"></a>to Pāva, to Bhoganagara, to Vesāli, and to the Magadhan city <span class="supplied">Rājagaha</span>,
-<br>and to the Pāsāṇaka shrine, delightful, it is the mind’s delight.</p>
-
-<p id="p1014"><span class="parno">1014</span><a class="snp-vagga-verse" id="snp-vagga-verse5.39"></a><a class="verse-num-pts" id="verse-num-pts1014"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.39"></a>Just like a thirsty man to cool water, or like a trader to great gain,
-<br>like one scorched by the heat to shade, quickly he climbed the mountain.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1015"><span class="parno">1015</span><a class="snp-vagga-verse" id="snp-vagga-verse5.40"></a><a class="verse-num-pts" id="verse-num-pts1015"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.40"></a>Now at that time the Gracious One was in front of the Community of monks,
-<br>teaching the Teaching to the bhikkhus, roaring like a lion in a forest,</p>
-
-<p id="p1016"><span class="parno">1016</span><a class="snp-vagga-verse" id="snp-vagga-verse5.41"></a><a class="verse-num-pts" id="verse-num-pts1016"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.41"></a>Ajita saw the Sambuddha, brilliant like the hundred-rayed sun,
-<br>like the moon which has reached fullness on the fifteenth day of the month,</p>
-
-<p id="p1017"><span class="parno">1017</span><a class="snp-vagga-verse" id="snp-vagga-verse5.42"></a><a class="verse-num-pts" id="verse-num-pts1017"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.42"></a>and after seeing on his limbs the characteristics in their fullness,
-<br>standing cheerfully on one side he asked a question in his mind:</p>
-
-<p id="p1018"><span class="parno">1018</span><a class="snp-vagga-verse" id="snp-vagga-verse5.43"></a><a class="verse-num-pts" id="verse-num-pts1018"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.43"></a>“Speak and point out his birth, speak of his family, and marks,
-<br>speak of his perfection in the Vedas, how many does the brahmin school?"</p>
-
-<p id="p1019"><span class="parno">1019</span><a class="snp-vagga-verse" id="snp-vagga-verse5.44"></a><a class="verse-num-pts" id="verse-num-pts1019"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.44"></a>“One hundred and twenty years his age, his family is Bāvari,
-<br>three marks are on his limbs, he is perfect in the three Vedas.</p>
-
-<p id="p1020"><span class="parno">1020</span><a class="snp-vagga-verse" id="snp-vagga-verse5.45"></a><a class="verse-num-pts" id="verse-num-pts1020"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.45"></a>“In the marks, and the traditions, with the glossaries, and the ritual,
-<br>he schools five hundred, in his own teaching he is perfect."</p>
-
-<p id="p1021"><span class="parno">1021</span><a class="snp-vagga-verse" id="snp-vagga-verse5.46"></a><a class="verse-num-pts" id="verse-num-pts1021"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.46"></a>“<span class="supplied">Your</span> investigation of Bāvari’s marks, O One Supreme among Men,
-<br>O craving-cutter, make that clear, so that we are not left doubting."</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1022"><span class="parno">1022</span><a class="snp-vagga-verse" id="snp-vagga-verse5.47"></a><a class="verse-num-pts" id="verse-num-pts1022"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.47"></a>“He can cover his face with his tongue, there is hair between his eyebrows,
-<br>what is covered by a cloth is ensheathed: know it is so young man."</p>
-
-<p id="p1023"><span class="parno">1023</span><a class="snp-vagga-verse" id="snp-vagga-verse5.48"></a><a class="verse-num-pts" id="verse-num-pts1023"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.48"></a>Not hearing any question, but having heard the questions answered,
-<br>all the people were enthusiastic, and raised their hands, thinking:</p>
-
-<p id="p1024"><span class="parno">1024</span><a class="snp-vagga-verse" id="snp-vagga-verse5.49"></a><a class="verse-num-pts" id="verse-num-pts1024"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.49"></a>“Now who was it, a God, or a Brahma, or Inda, the lord of Sujā,
-<br>who asked those questions with the mind? To whom did he make reply?"</p>
-
-<p id="p1025"><span class="parno">1025</span><a class="snp-vagga-verse" id="snp-vagga-verse5.50"></a><a class="verse-num-pts" id="verse-num-pts1025"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.50"></a>“About the head and head-splitting, Bāvari asks <span class="supplied">this question</span>,
-<br>please explain that O Gracious One, please remove our doubts, O seer."</p>
-
-<p id="p1026"><span class="parno">1026</span><a class="snp-vagga-verse" id="snp-vagga-verse5.51"></a><a class="verse-num-pts" id="verse-num-pts1026"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.51"></a>“Know ignorance is called the head, and understanding is the head-splitter,
-<br>joined with confidence, mindfulness, concentration, desire, and energy."</p>
-
-<p id="p1027"><span class="parno">1027</span><a class="snp-vagga-verse" id="snp-vagga-verse5.52"></a><a class="verse-num-pts" id="verse-num-pts1027"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.52"></a>Then with great enthusiasm, being resolute, the young man,
-<br>having put his deer-skin on one shoulder, fell placing his head at <span class="supplied">the Buddha’s</span> feet:</p>
-
-<p id="p1028"><span class="parno">1028</span><a class="snp-vagga-verse" id="snp-vagga-verse5.53"></a><a class="verse-num-pts" id="verse-num-pts1028"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.53"></a>“The honourable brahmin Bāvari, and his students, dear Sir,
-<br>elated in heart, and happy in mind, worships your feet, O Visionary One."</p>
-
-<p id="p1029"><span class="parno">1029</span><a class="snp-vagga-verse" id="snp-vagga-verse5.54"></a><a class="verse-num-pts" id="verse-num-pts1029"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.54"></a>“May the brahmin Bāvari, together with his students, be happy!
-<br>And may you also be happy! May you live for a long time, young man!</p>
-
-<p id="p1030"><span class="parno">1030</span><a class="snp-vagga-verse" id="snp-vagga-verse5.55"></a><a class="verse-num-pts" id="verse-num-pts1030"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.55"></a>“All of the doubts that Bāvari, or you, or anyone else has,
-<br>having received leave, ask whatever you long <span class="supplied">to know</span> in the mind."</p>
-
-<p id="p1031"><span class="parno">1031</span><a class="snp-vagga-verse" id="snp-vagga-verse5.56"></a><a class="verse-num-pts" id="verse-num-pts1031"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.1.56"></a>Having received leave from the Sambuddha, sitting with hands raised in reverence,
-<br>Ajita asked the Realised One the first question in that place:</p>
-</div>
-<p class="endsection">The Introductory Verses are Finished</p>
-
-</div>
-
-<div lang="pi">
-<h2>Vatthugāthā</h2>
-<div class="verse">
-<p><span class="parno">976</span><a class="brnum" id="br1"></a>Kosalānaṁ purā rammā,<br> agamā dakkhiṇāpathaṁ;
-<br>Ākiñcaññaṁ patthayāno,
-<br>brāhmaṇo mantapāragū.</p>
-
-<p><span class="parno">977</span><a class="brnum" id="br2"></a>So assakassa visaye,<br> aḷakassa samāsane;
-<br>Vasi godhāvarīkūle,
-<br>uñchena ca phalena ca.</p>
-
-<p><span class="parno">978</span><a class="brnum" id="br3"></a>Tasseva upanissāya,<br> gāmo ca vipulo ahu;
-<br>Tato jātena āyena,
-<br>mahāyaññamakappayi.</p>
-
-<p><span class="parno">979</span><a class="brnum" id="br4"></a>Mahāyaññaṁ yajitvāna,<br> puna pāvisi assamaṁ;
-<br>Tasmiṁ paṭipaviṭṭhamhi,
-<br>añño āgañchi brāhmaṇo.</p>
-
-<p><span class="parno">980</span><a class="brnum" id="br5"></a>Ugghaṭṭapādo tasito,<br> pankadanto rajassiro;
-<br>So ca naṁ upasankamma,
-<br>satāni pañca yācati.</p>
-
-<p><span class="parno">981</span><a class="brnum" id="br6"></a>Tamenaṁ bāvarī disvā,<br> āsanena nimantayi;
-<br>Sukhañca kusalaṁ pucchi,
-<br>idaṁ vacanamabravi.</p>
-
-<p><span class="parno">982</span><a class="brnum" id="br7"></a>"Yaṁ kho mama deyyadhammaṁ,<br> Sabbaṁ visajjitaṁ mayā;
-<br>Anujānāhi me brahme,
-<br>Natthi pañcasatāni me".</p>
-
-<p><span class="parno">983</span><a class="brnum" id="br8"></a>"Sace me yācamānassa,<br> bhavaṁ nānupadassati;
-<br>Sattame divase tuyhaṁ,
-<br>muddhā phalatu sattadhā".</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">984</span><a class="brnum" id="br9"></a>Abhi&shy;sankharitvā kuhako,<br> bheravaṁ so akittayi;
-<br>Tassa taṁ vacanaṁ sutvā,
-<br>bāvarī dukkhito ahu.</p>
-
-<p><span class="parno">985</span><a class="brnum" id="br10"></a>Ussussati anāhāro,<br> Sokasallasamappito;
-<br>Athopi evaṁ cittassa,
-<br>Jhāne na ramatī mano.</p>
-
-<p><span class="parno">986</span><a class="brnum" id="br11"></a>Utrastaṁ dukkhitaṁ disvā,<br> Devatā atthakāminī;
-<br>Bāvariṁ upasankamma,
-<br>Idaṁ vacanamabravi.</p>
-
-<p><span class="parno">987</span><a class="brnum" id="br12"></a>"Na so muddhaṁ pajānāti,<br> Kuhako so dhanatthiko;
-<br>Muddhani muddhapāte vā,
-<br>Ñāṇaṁ tassa na vijjati".</p>
-
-<p><span class="parno">988</span><a class="brnum" id="br13"></a>"Bhotī carahi jānāsi,<br> Taṁ me akkhāhi pucchitā;
-<br>Muddhaṁ muddhādhipātañca,
-<br>Taṁ suṇoma vaco tava".</p>
-
-<p><span class="parno">989</span><a class="brnum" id="br14"></a>"Ahampetaṁ na jānāmi,<br> Ñāṇamettha na vijjati;
-<br>Muddhani muddhādhipāte ca,
-<br>Jinānaṁ hettha dassanaṁ".</p>
-
-<p><span class="parno">990</span><a class="brnum" id="br15"></a>"Atha ko carahi jānāti,<br> Asmiṁ pathavimaṇḍale;
-<br>Muddhaṁ muddhādhipātañca,
-<br>Taṁ me akkhāhi devate".</p>
-
-<p><span class="parno">991</span><a class="brnum" id="br16"></a>"Purā kapilavatthumhā,<br> Nikkhanto lokanāyako;
-<br>Apacco okkākarājassa,
-<br>Sakyaputto pabhankaro.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">992</span><a class="brnum" id="br17"></a>So hi brāhmaṇa sambuddho,<br> Sabbadhammāna pāragū;
-<br>Sabbābhiññābalappatto,
-<br>Sabbadhammesu cakkhumā;
-<br>Sabbakammakkhayaṁ patto,
-<br>Vimutto upadhikkhaye.</p>
-
-<p><span class="parno">993</span><a class="brnum" id="br18"></a>Buddho so bhagavā loke,<br> Dhammaṁ deseti cakkhumā;
-<br>Taṁ tvaṁ gantvāna pucchassu,
-<br>So te taṁ byākarissati".</p>
-
-<p><span class="parno">994</span><a class="brnum" id="br19"></a>Sambuddhoti vaco sutvā,<br> Udaggo bāvarī ahu;
-<br>Sokassa tanuko āsi,
-<br>Pītiñca vipulaṁ labhi.</p>
-
-<p><span class="parno">995</span><a class="brnum" id="br20"></a>So bāvarī attamano udaggo,<br> Taṁ devataṁ pucchati vedajāto;
-<br><span class="dquo">"</span>Katamamhi gāme nigamamhi vā pana,<br> Katamamhi vā janapade lokanātho;
-<br>Yattha gantvāna passemu,
-<br>Sambuddhaṁ dvipaduttamaṁ".</p>
-
-<p><span class="parno">996</span><a class="brnum" id="br21"></a>"Sāvatthiyaṁ kosalamandire jino,<br> Pahūtapañño varabhūrimedhaso;
-<br>So sakyaputto vidhuro anāsavo,
-<br>Muddhādhipātassa vidū narāsabho".</p>
-
-<p><span class="parno">997</span><a class="brnum" id="br22"></a>Tato āmantayī sisse,<br> Brāhmaṇe mantapārage;
-<br><span class="dquo">"</span>Etha māṇavā akkhissaṁ,<br> Suṇātha vacanaṁ mama.</p>
-
-<p><span class="parno">998</span><a class="brnum" id="br23"></a>Yasseso dullabho loke,<br> Pātubhāvo abhiṇhaso;
-<br>Svājja lokamhi uppanno,
-<br>Sambuddho iti vissuto;
-<br>Khippaṁ gantvāna sāvatthiṁ,
-<br>Passavho dvipaduttamaṁ".</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">999</span><a class="brnum" id="br24"></a>"Kathaṁ carahi jānemu,<br> Disvā buddhoti brāhmaṇa;
-<br>Ajānataṁ no pabrūhi,
-<br>Yathā jānemu taṁ mayaṁ".</p>
-
-<p><span class="parno">1000</span><a class="brnum" id="br25"></a>"Āgatāni hi mantesu,<br> Mahāpurisalakkhaṇā;
-<br>Dvattiṁsāni ca byākkhātā,
-<br>Samattā anupubbaso.</p>
-
-<p><span class="parno">1001</span><a class="brnum" id="br26"></a>Yassete honti gattesu,<br> Mahāpurisalakkhaṇā;
-<br>Dveyeva tassa gatiyo,
-<br>Tatiyā hi na vijjati.</p>
-
-<p><span class="parno">1002</span><a class="brnum" id="br27"></a>Sace agāraṁ āvasati,<br> Vijeyya pathaviṁ imaṁ;
-<br>Adaṇḍena asatthena,
-<br>Dhammena manusāsati.</p>
-
-<p><span class="parno">1003</span><a class="brnum" id="br28"></a>Sace ca so pabbajati,<br> Agārā anagāriyaṁ;
-<br>Vivaṭṭacchado sambuddho,
-<br>Arahā bhavati anuttaro.</p>
-
-<p><span class="parno">1004</span><a class="brnum" id="br29"></a>Jātiṁ gottañca lakkhaṇaṁ,<br> Mante sisse punāpare;
-<br>Muddhaṁ muddhādhipātañca,
-<br>Manasāyeva pucchatha.</p>
-
-<p><span class="parno">1005</span><a class="brnum" id="br30"></a>Anāvaraṇa&shy;dassāvī,<br> Yadi buddho bhavissati;
-<br>Manasā pucchite pañhe,
-<br>Vācāya vissajessati".</p>
-
-<p><span class="parno">1006</span><a class="brnum" id="br31"></a>Bāvarissa vaco sutvā,<br> Sissā soḷasa brāhmaṇā;
-<br>Ajito tissametteyyo,
-<br>Puṇṇako atha mettagū.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1007</span><a class="brnum" id="br32"></a>Dhotako upasīvo ca,<br> Nando ca atha hemako;
-<br>Todeyya-kappā dubhayo,
-<br>Jatukaṇṇī ca paṇḍito.</p>
-
-<p><span class="parno">1008</span><a class="brnum" id="br33"></a>Bhadrāvudho udayo ca,<br> Posālo cāpi brāhmaṇo;
-<br>Mogharājā ca medhāvī,
-<br>Pingiyo ca mahāisi.</p>
-
-<p><span class="parno">1009</span><a class="brnum" id="br34"></a>Paccekagaṇino sabbe,<br> Sabbalokassa vissutā;
-<br>Jhāyī jhānaratā dhīrā,
-<br>Pubbavāsanavāsitā.</p>
-
-<p><span class="parno">1010</span><a class="brnum" id="br35"></a>Bāvariṁ abhivādetvā,<br> Katvā ca naṁ padakkhiṇaṁ;
-<br>Jaṭājinadharā sabbe,
-<br>Pakkāmuṁ uttarāmukhā.</p>
-
-<p><span class="parno">1011</span><a class="brnum" id="br36"></a>Aḷakassa patiṭṭhānaṁ,<br> Purimāhissatiṁ tadā;
-<br>Ujjeniñcāpi gonaddhaṁ,
-<br>Vedisaṁ vanasavhayaṁ.</p>
-
-<p><span class="parno">1012</span><a class="brnum" id="br37"></a>Kosambiñcāpi sāketaṁ,<br> Sāvatthiñca puruttamaṁ;
-<br>Setabyaṁ kapilavatthuṁ,
-<br>Kusinārañca mandiraṁ.</p>
-
-<p><span class="parno">1013</span><a class="brnum" id="br38"></a>Pāvañca bhoganagaraṁ,<br> Vesāliṁ māgadhaṁ puraṁ;
-<br>Pāsāṇakaṁ cetiyañca,
-<br>Ramaṇīyaṁ manoramaṁ.</p>
-
-<p><span class="parno">1014</span><a class="brnum" id="br39"></a>Tasitovudakaṁ sītaṁ,<br> Mahālābhaṁva vāṇijo;
-<br>Chāyaṁ ghammābhitattova,
-<br>Turitā pabbatamāruhuṁ.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1015</span><a class="brnum" id="br40"></a>Bhagavā tamhi samaye,<br> Bhikkhusanghapurakkhato;
-<br>Bhikkhūnaṁ dhammaṁ deseti,
-<br>Sīhova nadatī vane.</p>
-
-<p><span class="parno">1016</span><a class="brnum" id="br41"></a>Ajito addasa buddhaṁ,<br> Sataraṁsiṁva bhāṇumaṁ;
-<br>Candaṁ yathā pannarase,
-<br>Pāripūriṁ upāgataṁ.</p>
-
-<p><span class="parno">1017</span><a class="brnum" id="br42"></a>Athassa gatte disvāna,<br> Paripūrañca byañjanaṁ;
-<br>Ekamantaṁ ṭhito haṭṭho,
-<br>Manopañhe apucchatha.</p>
-
-<p><span class="parno">1018</span><a class="brnum" id="br43"></a>"Ādissa jammanaṁ brūhi,<br> Gottaṁ brūhi salakkhaṇaṁ;
-<br>Mantesu pāramiṁ brūhi,
-<br>Kati vāceti brāhmaṇo".</p>
-
-<p><span class="parno">1019</span><a class="brnum" id="br44"></a>"Vīsaṁ vassasataṁ āyu,<br> So ca gottena bāvarī;
-<br>Tīṇissa lakkhaṇā gatte,
-<br>Tiṇṇaṁ vedāna pāragū.</p>
-
-<p><span class="parno">1020</span><a class="brnum" id="br45"></a>Lakkhaṇe itihāse ca,<br> Sanighaṇḍusakeṭubhe;
-<br>Pañcasatāni vāceti,
-<br>Sadhamme pāramiṁ gato".</p>
-
-<p><span class="parno">1021</span><a class="brnum" id="br46"></a>"Lakkhaṇānaṁ pavicayaṁ,<br> Bāvarissa naruttama;
-<br>Kankhacchida pakāsehi,
-<br>Mā no kankhāyitaṁ ahu".</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1022</span><a class="brnum" id="br47"></a>"Mukhaṁ jivhāya chādeti,<br> Uṇṇassa bhamukantare;
-<br>Kosohitaṁ vatthaguyhaṁ,
-<br>Evaṁ jānāhi māṇava".</p>
-
-<p><span class="parno">1023</span><a class="brnum" id="br48"></a>Pucchañhi kiñci asuṇanto,<br> Sutvā pañhe viyākate;
-<br>Vicinteti jano sabbo,
-<br>Vedajāto katañjalī.</p>
-
-<p><span class="parno">1024</span><a class="brnum" id="br49"></a>"Ko nu devo vā brahmā vā,<br> Indo vāpi sujampati;
-<br>Manasā pucchite pañhe,
-<br>Kametaṁ paṭibhāsati".</p>
-
-<p><span class="parno">1025</span><a class="brnum" id="br50"></a>"Muddhaṁ muddhādhipātañca,<br> Bāvarī paripucchati;
-<br>Taṁ byākarohi bhagavā,
-<br>Kankhaṁ vinaya no ise".</p>
-
-<p><span class="parno">1026</span><a class="brnum" id="br51"></a>"Avijjā muddhāti jānāhi,<br> Vijjā muddhādhipātinī;
-<br>Saddhāsatisamādhīhi,
-<br>Chandaviriyena saṁyutā".</p>
-
-<p><span class="parno">1027</span><a class="brnum" id="br52"></a>Tato vedena mahatā,<br> Santhambhitvāna māṇavo;
-<br>Ekaṁsaṁ ajinaṁ katvā,
-<br>Pādesu sirasā pati.</p>
-
-<p><span class="parno">1028</span><a class="brnum" id="br53"></a>"Bāvarī brāhmaṇo bhoto,<br> Saha sissehi mārisa;
-<br>Udaggacitto sumano,
-<br>Pāde vandati cakkhuma".</p>
-
-<p><span class="parno">1029</span><a class="brnum" id="br54"></a>"Sukhito bāvarī hotu,<br> Saha sissehi brāhmaṇo;
-<br>Tvañcāpi sukhito hohi,
-<br>Ciraṁ jīvāhi māṇava.</p>
-
-<p><span class="parno">1030</span><a class="brnum" id="br55"></a>Bāvarissa ca tuyhaṁ vā,<br> Sabbesaṁ sabbasaṁsayaṁ;
-<br>Katāvakāsā pucchavho,
-<br>Yaṁ kiñci manasicchatha".</p>
-
-<p><span class="parno">1031</span><a class="brnum" id="br56"></a>Sambuddhena katokāso,<br> Nisīditvāna pañjalī;
-<br>Ajito paṭhamaṁ pañhaṁ,
-<br>Tattha pucchi tathāgataṁ.</p>
-</div>
-<p class="endsection">Vatthugāthā niṭṭhitā.</p>
-</div>
-</section>
-<div id="nextprev"><a id="previous-sutta" href="../snp/snp5.0.html#content"></a><a id="next-sutta" href="../snp/snp5.2.html#content"></a></div>
-</div><!--content-->
-<footer>
-<div id="breadcrumbs">
-<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp5.html">Chapter 5: The Chapter of the Way to Beyond</a>5:1 Introductory Verses
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp5.html">Chapter 5: The Chapter of the Way to Beyond</a>5:1 Introductory Verses
 </div>
 	
  	<div class="bottomlinks">
@@ -605,20 +33,47 @@
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
-
+  </footer>
 </div>
-  
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

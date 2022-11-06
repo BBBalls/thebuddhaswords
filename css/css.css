@@ -56,20 +56,24 @@ body {
  box-shadow-right: 7px #292929;
  box-shadow-bottom: none;
  box-shadow-left: 7px #292929;
-
- /*-moz-box-shadow: 0px 2px 7px #292929;*/
+ transition: background-color .3s;
 -webkit-box-shadow: 0px 2px 7px #292929;
-
  border-radius: 10px;
  -moz-border-radius: 10px;
  -webkit-border-radius: 10px;
 	}
+
+body[light-mode=dark] {
+    background-color: #141516;
+    color: white;
+}
 
 #content,
 #footer,
 #breadcrumbs {
  padding: 15px;
 }
+
 .bwcontainer {
   max-width:1640px;
   margin-top:2px;
@@ -101,16 +105,42 @@ max-width:1610px
   width:100%;
   max-width:320px;
 }
+
 #mySidebar {
   display:none;
   z-index:2;
   width:40%;
   min-width:300px;
 }
+
+.searchform {
+font-weight:bold;
+color:gray;
+background-color:white;
+}
+
+[light-mode=dark] .searchform {
+  background-color: #141516;
+color:white;
+}
 /* style for red font awesome "close window" icon  */
 .red-color {
 color:red;
 }
+
+[light-mode=dark] #snheading {
+  background-color: #141516;
+}
+
+[light-mode=dark] #searchlinks a {
+color: blue;
+}
+
+
+[light-mode=dark] #searchlinks a:visited, a:link, a:active {
+color: blue;
+}
+
 
 td, th {
 	vertical-align:top;
@@ -133,6 +163,7 @@ h1,h2,h3,h4,h5,h6 {
  font-weight:bold;
  margin: 0 0 .5em 0 ;
 }
+
 h1 { /* h1 spans the two "pairs" columns -- not used */
  font-size: 100%;
 }
@@ -190,6 +221,7 @@ p, .p {
  font-style: italic;
  padding-bottom:1.75em;
 	}
+
 .pairs h3 {
 	font-size: 110%;
  }
@@ -200,7 +232,6 @@ p, .p {
 
 .pairs h5, .pairs h6 {
 	font-size: 80%;
-/* font: normal bold 95%/110% tahoma, sans-serif; */
 	}
 
 .pairs h6 {
@@ -230,20 +261,38 @@ a:link {
   color: blue;
 }
 
+[light-mode=dark] a:link {
+  color: #add8e6;
+}
+
 /* visited link */
 a:visited {
   color: blue;
 }
 
+[light-mode=dark] a:visited {
+  color: #add8e6;
+}
+
 /* mouse over link */
 a:hover {
   color: blue;
+font-weight:bold;
 }
 
 /* selected link */
 a:active {
   color: blue;
 }
+
+[light-mode=dark] a:active {
+  color: #add8e6;
+}
+
+/*
+[light-mode=dark] .w3-bar w3-light-grey center {
+background-color: grey;
+}*/
 
 header {
 	padding: 0px;
@@ -274,9 +323,11 @@ footer {
 #vbnav {
  margin-top:0.75em;
 }
+
 .homenav a:hover, a:visited, a:link, a:active {
 	text-decoration: none;
 }
+
 .logotext {
 	height: 123px;
 	float: none;
@@ -289,7 +340,6 @@ footer {
 }
 
 .help a {
-
 	position: absolute;
 	z-index: 2;
 	margin-top: 5px;
@@ -311,6 +361,7 @@ footer {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
+
 /* Navigation tabs for AN and SN etc */
 /* Style the buttons inside the tab */
 .tab button {
@@ -367,6 +418,12 @@ footer {
 	color: orange;
 }
 
+[light-mode=dark] #breadcrumbs {
+  background-color: #141516;
+color:white;
+}
+
+
 .bottomlinks {
   width: 100%;
   background-color: #555;
@@ -376,7 +433,7 @@ footer {
 .bottomlinks a {
   float: left;
   padding: 12px;
-  color: white;
+  color: #add8e6 !important;
   text-decoration: none;
   font-size: 17px;
   width: 20%; /* Four links of equal widths */
@@ -384,28 +441,43 @@ footer {
 }
 
 .bottomlinks a:hover {
-  background-color: #000;
+  font-weight: bold;
+  color:#add8e6; 
 }
 
 .bottomlinks a.active {
   background-color: #4CAF50;
 }
 
-.bwnav {
 
+[light-mode=dark] #bottom_links a:visited, a:link {
+color: white;
+}
+
+[light-mode=dark] #bottom_links a:hover {
+color: #add8e6;
+}
+
+[light-mode=dark] #bottom_links a:visited {
+color: #add8e6 !important;
+}
+
+.bwnav {
   background-color: white;
   overflow: auto;
-  color: black;
   text-align: center;
+}
+
+[light-mode=dark] .bwnav {
+  color: blue;
 }
 
 .bwnav a {
   padding: 5px;
-  color: black;
   text-decoration: none;
   font-size: 18px;
   background-color: white;
-  margin: 1,25em auto;
+  margin:1.25em auto;
   text-align: center;
 }
 
@@ -416,6 +488,16 @@ footer {
 
 .bwnav a.active {
   font-weight: bold;
+}
+
+[light-mode=dark] .bwnav a {
+color: blue;
+}
+
+[light-mode=dark] .bwnav a:hover {
+  color:blue;
+  font-weight: bold;
+  background-color: white;
 }
 
 @media screen and (max-width: 500px) {
@@ -462,6 +544,7 @@ footer {
 .subnav3 a {
  width:33%;  /* Three links of equal widths */
 }
+
 .subnav6 a {
  width:16.66%;  /* Six links of equal widths */
 }
@@ -472,6 +555,10 @@ footer {
 
 .subnav .subnav6 .subnav3 .subnav11 a.active {
   background-color: yellow;
+}
+
+[light-mode=dark] .subnav a, .subnav6 a, .subnav3 a, .subnav11 a {
+color: blue !important;
 }
 
 .bwsubmenu2  {
@@ -499,7 +586,7 @@ background:#fdf2b8;
 
 .information {
 	font-size: 95%;
-	color: gray;
+	color: #141516;
 	text-align: center;
 	float: none;
 	z-index: 2;
@@ -510,7 +597,7 @@ background:#fdf2b8;
 	position: relative;
 	z-index: 2;
 	font-size: 80%;
-	color: black;
+	color: #141516;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -520,11 +607,12 @@ background:#fdf2b8;
 	position: relative;
 	z-index: 2;
 	font-size: 80%;
-	color: black;
+	color: #141516;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
 	padding-bottom: 20px;
 	}
+
 #firsttableheading {
 display: block;
 font-size: 1.5em;
@@ -544,7 +632,7 @@ font-weight: bold;
 	right: 25px;
 	z-index: 9000;
 	font-family: Arial, Helvetica, sans-serif;
-	color: black;
+	color: #141516;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 80%;
@@ -560,6 +648,7 @@ font-weight: bold;
 	margin: 0;
 	padding: 0;
 }
+
 #controlpanel li {
 	text-align:center;
 	margin: 0 !important;
@@ -585,14 +674,14 @@ font-weight: bold;
 #controlpanel a, #controlpanel button {
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: #141516;
 	font-size: 90%;
 }
 
 #pali.palitoggle {
 	font-weight: bold;
 	text-decoration: none;
-	color: gray;
+	color: #141516;
 	margin-top: -3px;
 }
 
@@ -614,7 +703,7 @@ font-weight: bold;
  border: 2px outset #3366CC;
  font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: #141516;
 	}
 
 #controlpanel button.palitoggle:hover {
@@ -634,12 +723,15 @@ font-weight: bold;
 	line-height: 1.5em;
 	padding: 3px;
 }
+
 #next-sutta {
 	right: 5px;
 }
+
 #previous-sutta {
 	left:5px;
 }
+
 #previous-sutta:after {
 	content: "◀"; /* " ◀ "; */
 }
@@ -658,6 +750,7 @@ font-weight: bold;
 	padding-top: 0;
 	background: rgba(255, 255, 255, 0.6 );
 }
+
 .page-topbot {
 	color:red;
 }
@@ -670,9 +763,7 @@ font-weight: bold;
  left: 460px;
  top: 20px;
  border-radius: 10px;
-/* background:transparent; */
-/* background:#ffde8b; */
-		background-image: url("../images/find-bkgrd.png");
+	background-image: url("../images/find-bkgrd.png");
  transition: 0.5s;
  z-index: 5400;
 }
@@ -699,6 +790,7 @@ font-weight: bold;
  font-weight: normal;
  z-index: 1;
 }
+
 #find_string inputbox {
 	height:90%;
 }
@@ -732,26 +824,15 @@ font-weight: bold;
 	font-weight: bold;
 }
 
-.footer a {
-
-}
-
-/* .pairs p font definition not present previously! */
 .pairs p {
-/*	font-family:"gentium basic";
-	font-size: 125% */
 }
 
 .pairs td {
-/*	width: 45%;
-	margin: 0 5%; */
-
 	width: 50%;
 	margin: 0;
 }
 
 .pairs td:last-child p {
-	/* font-style: italic; */
 	font-size: 125%
 }
 
@@ -774,6 +855,7 @@ input, select, textarea, .inputbox {
  font-size: 100%;
  padding: 3px 5px;
 }
+
 .inputbox { border: 1px solid #ccc; background: #fff; }
 
 .inputbox:hover, .inputbox:focus { background: #ffffcc; }
@@ -797,13 +879,19 @@ th { font-weight: bold; padding: 5px; text-align: left; }
 
 td { font-size: 120%; padding: 5px;} /* Make font larger in java generated table English and Pali */
 
-thead tr th { background: gray; color: #fff; padding: 0px; }
+thead tr th { background: #141516; color: #fff; padding: 0px; }
 
-thead tr th { }
+[light-mode=dark] .th {
+background:  #141516 !important;
+color: white !important;
+} 
+
+/*thead tr th { }
 
 thead tr th a,
 thead tr th a:hover,
-thead tr th a:focus,
+thead tr th a:focus,*/
+
 thead tr th a:active { color: #fff;}
 
 /* Format Sutta Indexes */
@@ -811,9 +899,7 @@ thead tr th a:active { color: #fff;}
 table.suttalist {
 	margin-left:10px;
 	font-size: 110%;
-/*	min-width: 600px;*/
  overflow: hidden;
-
 }
 
 .suttalist tr {
@@ -825,6 +911,11 @@ table.suttalist {
 
 .suttalist tr:hover a {background-color: #ffffcc}
 
+[light-mode=dark] .suttalist tr:hover a {
+background-color: #ffffcc;
+color: blue;
+}
+
 .suttalist td {
 	padding: 0;
 }
@@ -834,11 +925,18 @@ table.suttalist {
 	display: inline-block;
 	width:100%;
 	padding: 5px;
+color: blue;
 }
+
+[light-mode=dark] .suttalist td a {
+	color: white;
+background-color: #141516;
+}
+
 
 .suttalist td:first-child {
 	text-align:left;
-	padding-right: 8px;
+	padding-right: 1px;
 	white-space:nowrap;
 	}
 
@@ -851,7 +949,6 @@ table.suttalist {
 table.suttalist2 {
 	margin-left:40px;
 	font-size: 110%;
-/*	min-width: 600px;*/
 }
 
 .suttalist2 tr {
@@ -906,19 +1003,24 @@ td.c1 {
  max-width:700px;
 }
 
-.translator {
+ .translator {
 	font-family: Arial, Helvetica, sans-serif;
-	color: gray;
+	color: #141516;
 	font-size: 95%;
 	list-style: none;
 	text-align:center; /* updated by U */
 			}
 
+[light-mode=dark] .translator {
+	color: #f0f8ff;
+			}
+
 .minor {
-	color: gray;
+	color: #141516;
 	font-size: 95%;
 	list-style: none;
 			}
+
 #metaarea {
 	font-size: 95%;
 	}
@@ -930,10 +1032,15 @@ td.c1 {
  div #metaarea {
  margin: 1em 0 1.5em 0;
  }
+
 .add, .add1 {
-/*	font-family: 'Gentium Basic'; */
-	color: gray !important;
+	color: #141516 !important;
 		}
+
+[light-mode=dark] .add , .add1 {
+color: white !important;
+}
+
 
 .add:before, .add1:before {
 	content: "[";
@@ -955,12 +1062,12 @@ td.c1 {
 }
 
 .note {
-/*  display: none; */
  background: url(../images/info.png) no-repeat;
 	border-radius: 2px;
 	padding-left: .9em;
 	font-weight: normal;
 		}
+
 h2 .note {
 		font-size: .7em;
 }
@@ -989,8 +1096,23 @@ a.seesutta {
  margin:0 auto;
  margin-right:2em;
  padding: .25em .5em;
-
 }
+
+
+[light-mode=dark] .details {
+background: black;
+border: 2px solid palegoldenrod;
+}
+
+[light-mode=dark] .details a {
+color: #9ADBD6;
+}
+
+[light-mode=dark] .details a hover {
+font-weight: bold;
+}
+
+
 .note:hover .details {
  visibility:visible;
  opacity: 1;
@@ -1035,6 +1157,19 @@ a.seesutta {
  transition: 0.12s;
 }
 
+.copyright, .copyright a, a:visited, a:link, a:active {
+color:blue;
+}
+
+[light-mode=dark].copyright a:visited, a:link, a:active {
+color: blue;
+}
+
+[light-mode=dark].copyright a:hover {
+color: blue !important;
+font-weight: bold;
+}
+
 /* Pali Lookup */
 
 .lookup {
@@ -1046,11 +1181,9 @@ a.seesutta {
  visibility: hidden;
  display:block;
  opacity: 0;
-
  bottom: 1.6em;
  left: -7em;
  z-index: 1001;
-
  border: 1px solid darkorchid;
  background: pink;
  border-radius: 5px;
@@ -1060,12 +1193,17 @@ a.seesutta {
  text-decoration: none;
  text-align: left;
  padding: 0.1em 0.5em;
-
  margin-top:1em;
  min-width:10em;
  max-width:20em;
  transition: 100ms;
 }
+
+[light-mode=dark] .meaning {
+ background: #a52a2a;
+ border: 2px solid #E6BFAD;
+}
+
 
 .lookup:hover .meaning {
  visibility:visible;
@@ -1077,22 +1215,9 @@ a.seesutta {
  font-weight: bold;
 }
 
-/* Paragraph Numbers */
-
-.ms[id]:before,
-.msdiv[id]:before,
-.ms_pali[id]:before,
-.ms_eng[id]:before,
-.pts_pn[id]:before{
-	content:attr(id);
-	color:gray;
-	font-size: 85%;
-	padding: 0 .25em;
-}
-
 .ms_pali,.ms_eng,.bps {
 	float:left;
-	color: gray;
+	color: #141516;
 	font-size: 90%;
 	margin-left: -1em;
 	padding-right: .7em;
@@ -1127,7 +1252,7 @@ a.seesutta {
 .pts-vp-en,
 .pts-vp-pi
  {
-	color:gray;
+	color:#141516;
 	font-size: 85%;
 	padding: 0 .25em;
 	content:attr(id);
@@ -1135,22 +1260,30 @@ a.seesutta {
 }
 
 .parno {
-	color:gray;
+	color:#141516;
 	font-size: 85%;
 	padding-right:.5em;
+}
+
+[light-mode=dark] .parno {
+color: white;
 }
 
 .endsection, .endsutta, .endbook { text-align: center; }
 
 .speaker {
 	font-weight:bold;
-	color:gray;
+	color:#141516;
 	}
 
 .var, p span.var {
 	background-color: #FFE4C4 !important; /* Bisque */
-	/* text-decoration: underline !important; */
 }
+
+[light-mode=dark] .var, p span.var {
+	background-color: #B8D167 !important; 
+}
+
 
 .verse {
 	margin-left:1.5em !important;
@@ -1169,12 +1302,71 @@ hr, .pairs hr {
 .half {
  margin-bottom:0.5em;
 }
+/* Light Mode Button - "Dark" toggle ball  */
+.light-mode-button {
+    background:0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0);
+    position: static;
+    top:20px;
+    left:40px;
+}
 
+.light-mode-button:focus {
+    outline:none; /* Not ideal for accessibility */
+}
+/* Light Mode Button - Surround */
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top:17px;
+    left:21px;
+    width: 30px;
+    height:16px;
+    background-color: #d6d7db;
+    border-radius: 9px;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
 
+/* Light Mode Button - "Light" toggle ball  */
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top:20px;
+    left:24px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+/* Light & Dark Mode Styles */ 
+body[light-mode=dark] .light-mode-button span:nth-child(2) {
+    left: 37px;
+    background-color: #141516;
+}
+
+/* Label for the Light & Dark Mode button */ 
+.box-lbl {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #141516;
+  font-size: 80%;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top:16px;
+  left:55px;
+}
 
 /* The following rules are for assisting in the editing process by accentuating <hr> and heading elements. *\
 /* For Publishing ... The end comment needs to be at the bottom of this page.
-/* For Editing ... Move the end comment at the end of this page to the end of this line.
+/* For Editing ... Move the end comment at the end of this page to the end of this line.    
 
  h1,h2,h3,h4,h5,h6, .pairs h1, .pairs h3, .pairs h4, .pairs h5, .pairs h6 {
  background-color: gold;
@@ -1185,5 +1377,4 @@ hr, .pairs hr {
  margin-bottom:0;
  background-color:lime;
 
-
- */
+*/

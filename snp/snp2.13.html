@@ -4,8 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Sutta Nipata 2.13</title>
- 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<!-- Loading third party fonts -->
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
   	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
   	<!-- Loading main and menu stylesheets -->
   	<link rel="stylesheet" href="../css/w3.css">
@@ -13,329 +15,15 @@
   	<link rel="stylesheet" href="../css/menu.css">
 			<script src="../js/jquery-1.10.2.min.js"></script>
 			<script src="../js/controlpanel.js"></script>
-<body>
-
- 	<!--  <header>-->
- 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- 		<div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
-				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- 	</div>
- 
- <!-- Top menu -->
- <div class="w3-main w3-white bwcontainer2">
- 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
- 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
- 			<ul id="css3menu0">
- 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
- 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
- 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
- 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
- 					<ul>
- 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
- 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
- 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
- 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
- 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
- 					</ul>
- 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
- 					<ul>
- 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
- 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
- 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
- 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
- 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
- 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
- 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
- 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
- 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
- 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
- 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
- 					</ul>
- 				</li>
- 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
- 					<ul>
- 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
- 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
- 						<li><a href="snp.html" class="pressed w3-hide-small">Sutta Nipata</a></li>
- 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
- 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
- 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
- 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
- 					</ul>
- 				</li>
- 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
- 					<ul>
- 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
- 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
- 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
- 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
- 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
- 						
- 					</ul>
- 				</li>
- 			</ul>
- 			</div>
- 		</div> <!--navbar-->
-
-<!-- Sidebar (hidden by default) -->
- <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
- 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
- 		<div class="w3-bar-block w3-white">
- 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
- 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
- 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
- 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
- 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
- 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
- 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
- 		</div>
- </nav>
-  
- 
-		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
- 
- <h2>Khuddaka Nikaya - The Minor Texts</h2>
- 
- <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
- 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
- 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
- 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
- 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
- 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
- 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
- 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
- </div><!-- End div for lower Dhp sub-navigation -->
- 
- <h2>Sutta Nipata</h2>
- <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
- 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
- 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button active">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
- 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
- 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
- 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
- </div><!-- End div for lower Snp sub-navigation -->
- 
- <!-- Snp content begins here -->
- 
- <div id="content">
- 
- <h2>Sutta Nipata Chapter 2: The Minor Chapter</h2>
-
-	<h3>2:13 Perfection in the Wandering Life</h3>	
-	<div id="metarea"> <!-- metarea div -->
-		<ul class="translator"><!-- Translator div -->
-			<li>Translated from the Pali by Laurence Khantipalo Mills<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
-		</ul>
-	</div><!-- End metarea div -->
-		
-<section class="raw_sutta">
-<div lang="en">
-
-<h2>2:13 Perfection in the Wandering Life</h2>
-<div class="verse">
-<p><span class="speaker">Question</span>
-<br><span class="parno">359</span>Of the Sage of great wisdom, one gone across,
-<br>to the further shore gone, completely Cool, poised
-<br>who’s renounced a house,
-<br>sense-pleasures dispelled, I ask:
-<br>How would a bhikkhu rightly wander in the world?</p>
-
-<p><span class="speaker">Buddha</span>
-<br><span class="parno">360</span>Who has destroyed (belief) in omens, in luck,
-<br>the occurrence of dreams and other signs such,
-<br>who is rid of the bane of what is auspicious,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p361"><span class="parno">361</span>Who sensuality is able to divert — 
-<br>both varieties, human and divine — such a bhikkhu
-<br>passed beyond being, knowing Dharma well,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p362"><span class="parno">362</span>Anger and avarice by the bhikkhu abandoned,
-<br>his back having turned upon slander as well,
-<br>compliance, opposition, completely disappeared,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p363"><span class="parno">363</span>Letting go the pleasant, what’s unpleasant too,
-<br>ungrasping, unsupported by nothing at all,
-<br>from all the causes for the fetters — completely free,
-<br>such a one rightly would wander in the world.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p364"><span class="parno">364</span>Seeing no essence in mental substrata,
-<br>dispelled passionate desire for what can be grasped,
-<br>not being dependent or led by another,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p365"><span class="parno">365</span>In speech, mind and deed to others unopposed
-<br>and knowing very well the Dharma’s full extent,
-<br>and one who is aspiring to the state of Nirvāṇa,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p366"><span class="parno">366</span>The bhikkhu not conceited thinking, “Me he reveres",
-<br>nor on being abused does he retaliate,
-<br>nor thrilled with others donations of food,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p367"><span class="parno">367</span>For greed and for being, the bhikkhu’s let go,
-<br>as for injury and bondage it’s not done by him
-<br>crossed over doubts, removed is the dart,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p368"><span class="parno">368</span>A bhikkhu who knows what he himself enjoys
-<br>would not be one who harms others in the world;
-<br>realizing the Dharma as it really is,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p369"><span class="parno">369</span>in whom are no hidden tendencies at all — 
-<br>the roots of evil completely removed,
-<br>for them no longings left, no yearnings come anew
-<br>such a one rightly would wander in the world.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p370"><span class="parno">370</span>Inﬂows eradicated and conceit let go
-<br>and transcended the path of sexual desire,
-<br>one tamed, completely Cool and imperturbable,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p371"><span class="parno">371</span>Confident and learned, one who Sees the Way,
-<br>one Wise who among sects is no sectarian;
-<br>who greed has diverted, hatred, ill-will too,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p372"><span class="parno">372</span>A conqueror — purity perfected, remover of the veil,
-<br>with majesty of dharmas, far-shorer, inturbulent,
-<br>skilful with knowledge of conditioned things’ cessation,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p373"><span class="parno">373</span>Of wisdom purified surmounting both
-<br>past and the future, gone beyond time,
-<br>and in every way free from sense-bases,
-<br>such a one rightly would wander in the world.</p>
-
-<p id="p374"><span class="parno">374</span>Final Knowledge of the State, having realized the Dharma,
-<br>having seen openly the letting-go of inﬂows,
-<br>with all the substrata completely dissolved,
-<br>such a one rightly would wander in the world.</p>
-
-<p><span class="speaker">Question</span>
-<br><span class="parno">375</span>Indeed, O Blessed One, certainly it is thus,
-<br>for that bhikkhu tamed, living like this — 
-<br>one who beyond all the fetters has passed,
-<br>such a one rightly would wander in the world.</p>
-</div>
-</div>
-
-<div lang="pi">
-<h2>Sammāparibbājanīyasutta</h2>
-<div class="verse">
-<p><span class="parno">359</span>"Pucchāmi muniṁ pahūtapaññaṁ,<br> Tiṇṇaṁ pārangataṁ parinibbutaṁ ṭhitattaṁ;
-<br>Nikkhamma gharā panujja kāme,
-<br>Kathaṁ bhikkhu sammā so loke paribbajeyya".</p>
-
-<p><span class="speaker">(iti bhagavā):</span>
-<br><span class="parno">360</span><a class="brnum" id="br2"></a> "Yassa mangalā samūhatā,<br> Uppātā supinā ca lakkhaṇā ca;
-<br>So mangaladosavippahīno,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">361</span><a class="brnum" id="br3"></a>
-Rāgaṁ vinayetha mānusesu,<br> Dibbesu kāmesu cāpi bhikkhu;
-<br>Atikkamma bhavaṁ samecca dhammaṁ,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">362</span><a class="brnum" id="br4"></a>
-Vipiṭṭhikatvāna pesuṇāni,<br> Kodhaṁ kadarīyaṁ jaheyya bhikkhu;
-<br>Anurodha&shy;virodhavippahīno,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">363</span><a class="brnum" id="br5"></a>
-Hitvāna piyañca appiyañca,<br> Anupādāya anissito kuhiñci;
-<br>Saṁyojaniyehi vippamutto,
-<br>Sammā so loke paribbajeyya.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">364</span><a class="brnum" id="br6"></a>
-Na so upadhīsu sārameti,<br> Ādānesu vineyya chandarāgaṁ;
-<br>So anissito anaññaneyyo,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">365</span><a class="brnum" id="br7"></a>
-Vacasā manasā ca kammunā ca,<br> Aviruddho sammā viditvā dhammaṁ;
-<br>Nibbānapadābhipatthayāno,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">366</span><a class="brnum" id="br8"></a>
-Yo vandati manti nunnameyya,<br> Akkuṭṭhopi na sandhiyetha bhikkhu;
-<br>Laddhā parabhojanaṁ na majje,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">367</span><a class="brnum" id="br9"></a>
-Lobhañca bhavañca vippahāya,<br> Virato chedanabandhanā ca bhikkhu;
-<br>So tiṇṇakathankatho visallo,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">368</span><a class="brnum" id="br10"></a>
-Sāruppaṁ attano viditvā,<br> No ca bhikkhu hiṁseyya kañci loke;
-<br>Yathātathiyaṁ viditvā dhammaṁ,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">369</span><a class="brnum" id="br11"></a>
-Yassānusayā na santi keci,<br> Mūlā ca akusalā samūhatāse;
-<br>So nirāso anāsisāno,
-<br>Sammā so loke paribbajeyya.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">370</span><a class="brnum" id="br12"></a>
-Āsavakhīṇo pahīnamāno,<br> Sabbaṁ rāgapathaṁ upātivatto;
-<br>Danto parinibbuto ṭhitatto,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">371</span><a class="brnum" id="br13"></a>
-Saddho sutavā niyāmadassī,<br> Vaggagatesu na vaggasāri dhīro;
-<br>Lobhaṁ dosaṁ vineyya paṭighaṁ,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">372</span><a class="brnum" id="br14"></a>
-Saṁsuddhajino vivaṭṭacchado,<br> Dhammesu vasī pāragū anejo;
-<br>Sankhāranirodha&shy;ñāṇakusalo,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">373</span><a class="brnum" id="br15"></a>
-Atītesu anāgatesu cāpi,<br> Kappātīto aticcasuddhipañño;
-<br>Sabbāyatanehi vippamutto,
-<br>Sammā so loke paribbajeyya.</p>
-
-<p><span class="parno">374</span><a class="brnum" id="br16"></a>
-Aññāya padaṁ samecca dhammaṁ,<br> Vivaṭaṁ disvāna pahānam&shy;āsavānaṁ;
-<br>Sabbupadhīnaṁ parikkhayāno,
-<br>Sammā so loke paribbajeyya".</p>
-
-<p><span class="parno">375</span><a class="brnum" id="br17"></a>
-"Addhā hi bhagavā tatheva etaṁ,<br> Yo so evaṁvihārī danto bhikkhu;
-<br>Sabbasaṁyojanayogavītivatto,
-<br>Sammā so loke paribbajeyyā"ti.</p>
-</div>
-<p class="endsection">Sammāparibbājanīyasuttaṁ terasamaṁ.</p>
-</div>
-</section>
-<div id="nextprev"><a id="previous-sutta" href="../snp/snp2.12.html#content"></a><a id="next-sutta" href="../snp/snp2.14.html#content"></a></div>
-</div><!--content-->
-<footer>
-<div id="breadcrumbs">
-<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp2.html">Chapter 2: The Minor Chapter</a>2:13 Perfection in the Wandering Life
+<body> 
+ <!--  <header>-->
+ <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp2.html">Chapter 2: The Minor Chapter</a>2:13 Perfection in the Wandering Life
 </div>
 	
  	<div class="bottomlinks">
@@ -345,20 +33,47 @@ Aññāya padaṁ samecca dhammaṁ,<br> Vivaṭaṁ disvāna pahānam&shy;āsav
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
-
+  </footer>
 </div>
-  
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

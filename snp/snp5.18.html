@@ -4,8 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Sutta Nipata 5:18</title>
- 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<!-- Loading third party fonts -->
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
   	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
   	<!-- Loading main and menu stylesheets -->
   	<link rel="stylesheet" href="../css/w3.css">
@@ -13,388 +15,15 @@
   	<link rel="stylesheet" href="../css/menu.css">
 			<script src="../js/jquery-1.10.2.min.js"></script>
 			<script src="../js/controlpanel.js"></script>
-<body>
-
- 	<!--  <header>-->
- 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- 		<div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
-				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- 	</div>
- 
- <!-- Top menu -->
- <div class="w3-main w3-white bwcontainer2">
- 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
- 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
- 			<ul id="css3menu0">
- 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
- 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
- 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
- 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
- 					<ul>
- 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
- 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
- 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
- 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
- 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
- 					</ul>
- 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
- 					<ul>
- 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
- 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
- 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
- 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
- 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
- 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
- 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
- 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
- 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
- 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
- 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
- 					</ul>
- 				</li>
- 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
- 					<ul>
- 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
- 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
- 						<li><a href="snp.html" class="pressed w3-hide-small">Sutta Nipata</a></li>
- 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
- 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
- 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
- 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
- 					</ul>
- 				</li>
- 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
- 					<ul>
- 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
- 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
- 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
- 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
- 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
- 						
- 					</ul>
- 				</li>
- 			</ul>
- 			</div>
- 		</div> <!--navbar-->
-
-<!-- Sidebar (hidden by default) -->
- <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
- 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
- 		<div class="w3-bar-block w3-white">
- 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
- 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
- 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
- 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
- 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
- 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
- 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
- 		</div>
- </nav>
-  
- 
-		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
- 
- <h2>Khuddaka Nikaya - The Minor Texts</h2>
- 
- <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
- 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
- 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
- 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
- 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
- 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
- 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
- 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
- </div><!-- End div for lower Dhp sub-navigation -->
- 
- <h2>Sutta Nipata</h2>
- <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
- 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
- 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
- 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
- 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
- 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button active">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
- </div><!-- End div for lower Snp sub-navigation -->
- 
- <!-- Snp content begins here -->
- 
- <div id="content">
- 
- <h2>Sutta Nipata Chapter 5: The Way to the Beyond</h2>
-
-	<h3>5:18 Epilogue</h3>	
-	
-
-	<div id="metaarea"><!-- metarea div -->
-		<ul class="translator">
-			<li>Translated from the Pali by Ānandajoti Bhikkhu<br><a href="../home/copyright.html#aj">(More copyright information)</a></li>
-		</ul>
-	</div><!-- End metarea div -->
-
-			
-<section class="raw_sutta">
-<div lang="en">
-
-<h2>5:18 Epilogue</h2>
-
-<p>This was said by the Gracious One while living among the Magadhans at the Pāsāṇaka shrine. The sixteen attendent brahmins requested, asked, and asked, and he answered the questions. If, knowing the meaning of each question, knowing the Teaching, he would practice in conformity with the Teaching, he would surely go beyond old age and death. It is said “These teachings go to the beyond," therefore this presentation of the Teaching is indeed called “The Way to the Beyond".</p>
-
-<div class="verse">
-<p id="p1124"><span class="parno">1124</span><a class="snp-vagga-verse" id="snp-vagga-verse5.149"></a><a class="verse-num-pts" id="verse-num-pts1124"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.2"></a>Ajita, Tissa Metteyya, Puṇṇaka, also Mettagū,
-<br>Dhotaka, and Upasīva, Nanda, and also Hemaka,
-<br>the two: Todeyya, and Kappa, and Jatukaṇṇī, the one who is wise,</p>
-
-<p id="p1125"><span class="parno">1125</span><a class="snp-vagga-verse" id="snp-vagga-verse5.150"></a><a class="verse-num-pts" id="verse-num-pts1125"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.3"></a>Bhadrāvudha, and Udaya, also the brahmin Posāla,
-<br>Mogharāja, the intelligent one, and the great seer Piṅgiya.</p>
-
-<p id="p1126"><span class="parno">1126</span><a class="snp-vagga-verse" id="snp-vagga-verse5.151"></a><a class="verse-num-pts" id="verse-num-pts1126"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.4"></a>These went to the Buddha, to the seer with perfect conduct,
-<br>asking subtle questions, they went to the Buddha who is best.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1127"><span class="parno">1127</span><a class="snp-vagga-verse" id="snp-vagga-verse5.152"></a><a class="verse-num-pts" id="verse-num-pts1127"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.5"></a>The Buddha answered as it truly is the questions that they asked,
-<br>and by answering the questions the sage satisfied those brahmins.</p>
-
-<p id="p1128"><span class="parno">1128</span><a class="snp-vagga-verse" id="snp-vagga-verse5.153"></a><a class="verse-num-pts" id="verse-num-pts1128"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.6"></a>They, being satisfied by the Visionary, the Buddha, the kinsman of the sun,
-<br>lived the spiritual life under the One With Excellent Wisdom.</p>
-
-<p id="p1129"><span class="parno">1129</span><a class="snp-vagga-verse" id="snp-vagga-verse5.154"></a><a class="verse-num-pts" id="verse-num-pts1129"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.7"></a>The Buddha taught like this <span class="supplied">in response</span> to the questions one by one,
-<br>he who practices like this can go from here to the beyond.</p>
-
-<p id="p1130"><span class="parno">1130</span><a class="snp-vagga-verse" id="snp-vagga-verse5.155"></a><a class="verse-num-pts" id="verse-num-pts1130"></a><a class="snp-vagga-section-verse" id="snp-vagga-section-verse5.18.8"></a>From here to the beyond he can go by developing the supreme path.
-<br>This is the path for going to the beyond, therefore it is called The Way to the Beyond.</p>
-</div>
-
-<hr>
-<div class="verse">
-
-<br>
-<p id="p1131"><span class="parno">1131</span>"I will recite the Way to the Beyond," said venerable Pingiya,
-<br>"as he saw it, so he explained: unstained, with great intelligence,
-<br>the one free from sense desire, the unentangled one, the Strong One, why should he speak falsely?</p>
-
-<p id="p1132"><span class="parno">1132</span>"Of the one who gave up stain and delusion, who gave up conceit and malevolence,
-<br>come now, I will proclaim this lyric which is endowed with beauty:</p>
-
-<p id="p1133"><span class="parno">1133</span>"The Buddha, the darkness-dispeller, the All-Seeing Visionary,
-<br>who has gone to the end of the world, transcended all of existence
-<br>given up all suffering, the one pollutant-free,
-<br>whose very name is truth — O brahmin, <span class="supplied">you are</span> worshipped by me.</p>
-
-<p id="p1134"><span class="parno">1134</span>"Just as a bird who has given up a barren woodland,
-<br>might live in a forest which has much fruit,
-<br>so too I have given up those of little wisdom,
-<br>like a swan who has arrived at the great sea.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1135"><span class="parno">1135</span>"Those who explained <span class="supplied">things</span> to me in the past, before Gotama's teaching,
-<br>saying ‘it was so, and so it will be’, all that was just hearsay,
-<br>all that just increased my thoughts.</p>
-
-<p id="p1136"><span class="parno">1136</span>"Alone sits the Darkness-Dispeller, the Bright One, the Light-Maker,
-<br>Gotama of Great Knowledge, Gotama of Great Intelligence.</p>
-
-<p id="p1137"><span class="parno">1137</span>"He who taught the Teaching to me, which is visible, not subject to time,
-<br>the end of craving, beyond calamity, for which there is nowhere a likeness."</p>
-
-<p id="p1138"><span class="parno">1138</span><span class="supplied">Bāvari</span>: "Then why do you dwell apart from him, even for a second, Pingiya,
-<br>from Gotama of Great Knowledge, Gotama of Great Intelligence,</p>
-
-<p id="p1139"><span class="parno">1139</span>"He who taught the Teaching to you, which is visible, not subject to time,
-<br>the end of craving, beyond calamity, for which there is nowhere a likeness?"</p>
-
-<p id="p1140"><span class="parno">1140</span>"I would not dwell apart from him even for a second, brahmin,
-<br>from Gotama of Great Knowledge, Gotama of Great Intelligence,</p>
-
-<p id="p1141"><span class="parno">1141</span>"He who taught the Teaching to me, which is visible, not subject to time,
-<br>the end of craving, beyond calamity, for which there is nowhere a likeness.</p>
-
-<p id="p1142"><span class="parno">1142</span>"I see him in my mind as though with the eye,<br><span class="supplied">as I dwell</span> heedful night and day, brahmin.
-<br>"Revering him I make the night pass by,
-<br>for that reason I think there is no <span class="supplied">real</span> dwelling apart.</p>
-
-<p id="p1143"><span class="parno">1143</span>"My confidence, happiness, mind, and mindfulness,
-<br>do not depart from Gotama's teaching.
-<br>Whatever direction the One of Great Wisdom goes to
-<br>it is that very place that I am inclined.</p>
-
-<p id="p1144"><span class="parno">1144</span>"I am old, without strength and feeble,
-<br>because of that my body does not go there,
-<br>but by an effort of thought I always go,
-<br>for my mind, Brahmin, is joined to him.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p id="p1145"><span class="parno">1145</span>"Lying down in a quagmire I was trembling,
-<br>I drifted from island to island,
-<br>then I saw the Sambuddha, the flood-crosser, the one pollutant-free."</p>
-
-<p id="p1146"><span class="parno">1146</span><span class="supplied">The Buddha said:</span> "Just as Vakkali released his confidence — 
-<br>and Bhadrāvudha, and Āḷavi-Gotama — 
-<br>just like that you must release your confidence,
-<br>and you will go, Pingiya, beyond the realm of Death."</p>
-
-<p id="p1147"><span class="parno">1147</span>"I am more and more sure about this, having heard the sage's word,
-<br>the cover-remover, the Sambuddha, who is unhindered, assured in speech,</p>
-
-<p id="p1148"><span class="parno">1148</span>"Who knows the great gods, who has understood everything far and near,
-<br>the Teacher who makes an end to questions in those who have doubts, and make them known.</p>
-
-<p id="1149"><span class="parno">1149</span>The Indestructible, the Unagitated, for which there is nowhere a likeness,
-<br>Surely I will go there, about this I have no doubt,
-<br>thus bear me in mind as one whose heart is intent <span class="supplied">on Nibbāna</span>."</p>
-</div>
-<hr>
-<p class="endsection">The Discourse on Pingiya, the Sixteenth</p>
-<p class="endsutta">The Way to the Beyond is Finished</p>
-</div>
-
-<div lang="pi">
-<h2>Pārāyanatthutigāthā</h2>
-
-<p>Idamavoca bhagavā magadhesu viharanto pāsāṇake cetiye, pari&shy;cārakasoḷasānaṁ brāhmaṇānaṁ ajjhiṭṭho puṭṭho puṭṭho pañhaṁ byākāsi. Ekamekassa cepi pañhassa atthamaññāya dhammamaññāya dhammānudhammaṁ paṭipajjeyya, gaccheyyeva jarāmaraṇassa pāraṁ. Pārangamanīyā ime dhammāti, tasmā imassa dhammapariyāyassa pārāyananteva adhivacanaṁ.</p>
-
-<div class="verse">
-<p><span class="parno">1124</span><a class="brnum" id="br1"></a>Ajito tissametteyyo,<br> puṇṇako atha mettagū;
-<br>Dhotako upasīvo ca,
-<br>nando ca atha hemako.</p>
-
-<p><span class="parno">1125</span><a class="brnum" id="br2"></a>Todeyya-kappā dubhayo,<br> jatukaṇṇī ca paṇḍito;
-<br>Bhadrāvudho udayo ca,
-<br>posālo cāpi brāhmaṇo;
-<br>Mogharājā ca medhāvī,
-<br>pingiyo ca mahāisi.</p>
-
-<p><span class="parno">1126</span><a class="brnum" id="br3"></a>Ete buddhaṁ upāgacchuṁ,<br> sampannacaraṇaṁ isiṁ;
-<br>Pucchantā nipuṇe pañhe,
-<br>buddhaseṭṭhaṁ upāgamuṁ.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1127</span><a class="brnum" id="br4"></a>Tesaṁ buddho pabyākāsi,<br> pañhe puṭṭho yathātathaṁ;
-<br>Pañhānaṁ veyyākaraṇena,
-<br>tosesi brāhmaṇe muni.</p>
-
-<p><span class="parno">1128</span><a class="brnum" id="br5"></a>Te tositā cakkhumatā,<br> buddhenādiccabandhunā;
-<br>Brahmacariyamacariṁsu,
-<br>varapaññassa santike.</p>
-
-<p><span class="parno">1129</span><a class="brnum" id="br6"></a>Ekamekassa pañhassa,<br> yathā buddhena desitaṁ;
-<br>Tathā yo paṭipajjeyya,
-<br>gacche pāraṁ apārato.</p>
-
-<p><span class="parno">1130</span><a class="brnum" id="br7"></a>Apārā pāraṁ gaccheyya,<br> bhāvento maggamuttamaṁ;
-<br>Maggo so pāraṁ gamanāya,
-<br>tasmā pārāyanaṁ iti.</p>
-</div>
-
-<h2>Pārāyanānu&shy;gītigāthā</h2>
-<div class="verse">
-<p><span class="speaker">(iccāyasmā pingiyo):</span></p>
-
-<p><span class="parno">1131</span><a class="brnum" id="br1."></a> "Pārāyanamanugāyissaṁ,<br> Yathāddakkhi tathākkhāsi;
-<br>Vimalo bhūrimedhaso,
-<br>Nikkāmo nibbano nāgo;
-<br>Kissa hetu musā bhaṇe.</p>
-
-<p><span class="parno">1132</span><a class="brnum" id="br2."></a>Pahīna&shy;malamohassa,<br> mānamakkhappahāyino;
-<br>Handāhaṁ kittayissāmi,
-<br>giraṁ vaṇṇūpasañhitaṁ.</p>
-
-<p><span class="parno">1133</span><a class="brnum" id="br3."></a>Tamonudo buddho samantacakkhu,<br> Lokantagū sabbabhavātivatto;
-<br>Anāsavo sabbadukkhappahīno,
-<br>Saccavhayo brahme upāsito me.</p>
-
-<p><span class="parno">1134</span><a class="brnum" id="br4."></a>Dijo yathā kubbanakaṁ pahāya,<br> Bahupphalaṁ kānanamāvaseyya;
-<br>Evampahaṁ appadasse pahāya,
-<br>Mahodadhiṁ haṁsoriva ajjhapatto.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1135</span><a class="brnum" id="br5."></a>Ye me pubbe viyākaṁsu,<br> Huraṁ gotamasāsanā;
-<br>Iccāsi iti bhavissati,
-<br>Sabbaṁ taṁ itihītihaṁ;
-<br>Sabbaṁ taṁ takkavaḍḍhanaṁ.</p>
-
-<p><span class="parno">1136</span><a class="brnum" id="br6."></a>Eko tamanudāsino,<br> jutimā so pabhankaro;
-<br>Gotamo bhūripaññāṇo,
-<br>gotamo bhūrimedhaso.</p>
-
-<p><span class="parno">1137</span><a class="brnum" id="br7."></a>Yo me dhammamadesesi,<br> Sandiṭṭhikamakālikaṁ;
-<br>Taṇhakkhayamanītikaṁ,
-<br>Yassa natthi upamā kvaci".</p>
-
-<p><span class="parno">1138</span><a class="brnum" id="br8"></a>"Kiṁ nu tamhā vippavasasi,<br> muhuttamapi pingiya;
-<br>Gotamā bhūripaññāṇā,
-<br>gotamā bhūrimedhasā.</p>
-
-<p><span class="parno">1139</span><a class="brnum" id="br9"></a>Yo te dhammamadesesi,<br> Sandiṭṭhikamakālikaṁ;
-<br>Taṇhakkhayamanītikaṁ,
-<br>Yassa natthi upamā kvaci".</p>
-
-<p><span class="parno">1140</span><a class="brnum" id="br10"></a>"Nāhaṁ tamhā vippavasāmi,<br> Muhuttamapi brāhmaṇa;
-<br>Gotamā bhūripaññāṇā,
-<br>Gotamā bhūrimedhasā.</p>
-
-<p><span class="parno">1141</span><a class="brnum" id="br11"></a>Yo me dhammamadesesi,<br> Sandiṭṭhikamakālikaṁ;
-<br>Taṇhakkhayamanītikaṁ,
-<br>Yassa natthi upamā kvaci.</p>
-
-<p><span class="parno">1142</span><a class="brnum" id="br12"></a>Passāmi naṁ manasā cakkhunāva,<br> Rattindivaṁ brāhmaṇa appamatto;
-<br>Namassamāno vivasemi rattiṁ,
-<br>Teneva maññāmi avippavāsaṁ.</p>
-
-<p><span class="parno">1143</span><a class="brnum" id="br13"></a>Saddhā ca pīti ca mano sati ca,<br> Nāpentime gotamasāsanamhā;
-<br>Yaṁ yaṁ disaṁ vajati bhūripañño,
-<br>Sa tena teneva natohamasmi.</p>
-
-<p><span class="parno">1144</span><a class="brnum" id="br14"></a>Jiṇṇassa me dubbalathāmakassa,<br> Teneva kāyo na paleti tattha;
-<br>Sankappayantāya vajāmi niccaṁ,
-<br>Mano hi me brāhmaṇa tena yutto.</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">1145</span><a class="brnum" id="br15"></a>Panke sayāno pariphandamāno,<br> Dīpā dīpaṁ upaplaviṁ;
-<br>Athaddasāsiṁ sambuddhaṁ,
-<br>Oghatiṇṇam&shy;anāsavaṁ".</p>
-
-<p><span class="parno">1146</span><a class="brnum" id="br16"></a>"Yathā ahū vakkali muttasaddho,<br> Bhadrāvudho āḷavigotamo ca;
-<br>Evamevaṁ tvampi pamuñcassu saddhaṁ,
-<br>Gamissasi tvaṁ pingiya maccudheyyassa pāraṁ".</p>
-
-<p><span class="parno">1147</span><a class="brnum" id="br17"></a>"Esa bhiyyo pasīdāmi,<br> Sutvāna munino vaco;
-<br>Vivaṭṭacchado sambuddho,
-<br>Akhilo paṭibhānavā.</p>
-
-<p><span class="parno">1148</span><a class="brnum" id="br18"></a>Adhideve abhiññāya,<br> Sabbaṁ vedi varovaraṁ;
-<br>Pañhānantakaro satthā,
-<br>Kankhīnaṁ paṭijānataṁ.</p>
-
-<p><span class="parno">1149</span><a class="brnum" id="br19"></a>Asaṁhīraṁ asankuppaṁ,<br> Yassa natthi upamā kvaci;
-<br>Addhā gamissāmi na mettha kankhā,
-<br>Evaṁ maṁ dhārehi adhimutta&shy;cittan"ti.</p>
-</div>
-<hr>
-<p class="endsutta">Pārāyanavaggo pañcamo.</p>
-</div>
-</section>
-<div id="nextprev"><a id="previous-sutta" href="../snp/snp5.17.html#content"></a></div>
-
-</div><!--content-->
-<footer>
-<div id="breadcrumbs">
-<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp5.html">Chapter 5: The Chapter of the Way to Beyond</a>5:18 Epilogue
+<body> 
+ <!--  <header>-->
+ <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp5.html">Chapter 5: The Chapter of the Way to Beyond</a>5:18 Epilogue
 </div>
 	
  	<div class="bottomlinks">
@@ -404,20 +33,47 @@
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
-
+  </footer>
 </div>
-  
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

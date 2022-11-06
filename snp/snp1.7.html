@@ -4,8 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Sutta Nipata 1.7</title>
- 		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<!-- Loading third party fonts -->
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
  			 		<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
  			<!-- Loading main and menu stylesheets -->
  			<link rel="stylesheet" href="../css/w3.css">
@@ -13,471 +15,15 @@
  			<link rel="stylesheet" href="../css/menu.css">
  			<script src="../js/jquery-1.10.2.min.js"></script>
  			<script src="../js/controlpanel.js"></script>
- <body>
- 
- <!-- header -->
+ <body> 
+ <!--  <header>-->
  <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 	<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- <div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
- 			<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- </div>
- 
- <!-- Top menu -->
- <div class="w3-main w3-white bwcontainer2">
- 		<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
- 			<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
- 				<ul id="css3menu0">
- 					<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
- 					<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
- 					<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
- 					<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
- 				<ul>
- 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
- 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
- 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
- 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
- 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
- 					</ul>
- 					<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
- 						<ul>
- 							<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
- 							<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
- 							<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
- 							<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
- 							<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
- 							<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
- 							<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
- 							<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
- 							<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
- 							<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
- 							<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
- 						</ul>
- 					</li>
- 					<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
- 						<ul>
- 							<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
- 							<li><a href="../dhp/dhp.html" class="pressed w3-hide-small">The Dhammapada</a></li>
- 							<li><a href="../snp/snp.html" class="w3-hide-small">Sutta Nipata</a></li>
- 							<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
- 							<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
- 							<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
- 							<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
- 						</ul>
- 					</li>
- 					<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
- 						<ul>
- 							<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 							<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
- 							<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
- 							<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
- 							<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
- 							<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
- 
- 						</ul>
- 					</li>
- 				</ul>
- 				</div>
- 			</div> <!--navbar-->
- 
- <!-- Sidebar (hidden by default) -->
- 	<nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
- 		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
- 			<div class="w3-bar-block w3-white">
- 				<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
- 				<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
- 				<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
- 				<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
- 				<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
- 				<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
- 				<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
- 			</div>
- 	</nav>
- 
- 				<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
- 
- <h2>Khuddaka Nikaya - The Minor Texts</h2>
- 
- <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
- 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
- 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
- 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
- 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
- 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
- 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
- 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
- </div><!-- End div for lower Dhp sub-navigation -->
- 
- <h2>Sutta Nipata</h2>
- <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
- 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button active">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
- 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
- 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
- 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button">4: The Eights<br>(verses 4:1 to 4:16)</a>
- 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
- </div><!-- End div for lower Snp sub-navigation -->
- 
- <!-- Snp content begins here -->
- 
- <div id="content">
- 
- <h2>Sutta Nipata Chapter 1: The Chapter of the Snake - Uragavagga</h2>
-
-
-	<h3>1.7 - Vasala Sutta: Who is the Outcast?</h3>	
-	<div id="metarea"> <!-- metarea div -->
-		<ul class="translator"><!-- Translator div -->
-			<li>Translated from the Pali by Laurence Khantipalo Mills<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
-		</ul>
-	</div><!-- End metarea div -->
-		
-<section class="raw_sutta">
-<div lang="en">
-
-
-<h2>1.7 - Vasala Sutta: Who is the Outcast?</h2>
-
-<p><span class="evam">Thus have I heard</span>:<br>
-
-<br>At one time the Radiant One was dwelling at Sāvatthī in the Jeta Grove, Anāthapiṇḍika’s Park. Then in the morning the Radiant One dressed and, taking bowl and robes, entered Sāvatthī for almsfood. At that time the sacrificial fire was burning in the house of the brahmin Aggika-Bhāradvāja and the offering was held aloft. Then the Radiant One walking in almsround, house by house within Sāvatthī, came to the house of brahmin Aggika-Bhāradvāja.</p>
-
-<p>The brahmin saw the Radiant One coming from a distance and called out this to him: “Stop there, mere shaveling, stop there, vile ascetic, stop there, foul outcast!"</p>
-
-<p>When this was said, the Radiant One said to the brahmin: “Do you know, brahmin, what an outcast is or what things make a person ‘outcast’?"</p>
-
-<p>“I do not know good Gotama what an outcast is or what things make one an outcast. It would be good for me if the venerable Gotama were to teach me Dharma, so that I might know an outcast and what things make an outcast."<br>
-
-<br>“Then listen, brahmin, pay attention and I shall tell you."<br>
-
-<br>“Yes, venerable sir", replied the brahmin.</p>
-
-<div class="verse">
-<p><span class="speaker">Buddha</span></p>
-
-<p id="p116"><span class="parno">116</span>An angry person, rancorous,
-<br>with evils of hypocrisy,
-<br>deceitful and of fallen views,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p117"><span class="parno">117</span>Whether once or twice-born then
-<br>if one should living beings harm,
-<br>compassion for them — none at all,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p118"><span class="parno">118</span>Who kills in towns and villages,
-<br>destruction brings, and then behaves
-<br>oppressively — well-known for that,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p119"><span class="parno">119</span>Whoso in forest or in town
-<br>steals whatever is not given,
-<br>from others to whom it’s valuable,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p120"><span class="parno">120</span>Whoever does a debt contract
-<br>but urged to repay, then retorts,
-<br>“No debt have I to you indeed",
-<br>as “outcast" such a one is known.</p>
-
-<p id="p121"><span class="parno">121</span>Who, for a trifle that’s desired
-<br>from traveller along the road,
-<br>kills, that trifle to possess,
-<br>as “outcast" such a one is known.</p>
-</div>
-<hr>
-<div class="verse">
-<p id="p122"><span class="parno">122</span>Whoso for self or others’ wealth,
-<br>or else for benefit of wealth
-<br>when questioned on this, falsehood speaks,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p123"><span class="parno">123</span>Whoso is “seen" with others’ wives,
-<br>of relatives and friends, those
-<br>consenting mutually or forced,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p124"><span class="parno">124</span>Whoso towards their mum or dad
-<br>whose youth is gone and age attained,
-<br>though prosperous, supports them not,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p125"><span class="parno">125</span>Whoever strikes, or utters hate
-<br>against mother, father, brother too,
-<br>sister or a mother-in law,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p126"><span class="parno">126</span>Who, asked for good advice responds
-<br>by giving bad advice, and then
-<br>giving advice with a hidden agenda,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p127"><span class="parno">127</span>Whoever evil karma makes
-<br>wishing others may not know,
-<br>and then conceals these actions bad,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p128"><span class="parno">128</span>Who, gone to another’s house,
-<br>enjoys fine hospitality,
-<br>then honours not the other back,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p129"><span class="parno">129</span>Whoever, brahmin, samaṇa,
-<br>or even indigents who beg,
-<br>deceives with false and lying speech,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p130"><span class="parno">130</span>Whoso when mealtime has arrived
-<br>abuses brahmins, samaṇas
-<br>and then gives not a thing to them,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p131"><span class="parno">131</span>As blanketed, delusion-wrapped,
-<br>who predicts untruthful things
-<br>desiring even trifling gain,
-<br>as “outcast" such a one is known.</p>
-</div>
-<hr>
-<div class="verse">
-<p id="p132"><span class="parno">132</span>Whoever does exalt themselves
-<br>while looking down on others, though
-<br>inferior, caused by self-conceit,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p133"><span class="parno">133</span>Provocative and selfish too,
-<br>of evil wishes, miserly,
-<br>cunning, shameless, no remorse,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p134"><span class="parno">134</span>Whoso the Buddha does revile,
-<br>insulting his disciples too
-<br>whether left home or laity,
-<br>as “outcast" such a one is known.</p>
-
-<p id="p135"><span class="parno">135</span>Who, though not an Arahant,
-<br>yet pretends to be — is Thief — 
-<br>in this world with Brahmin gods,
-<br>the lowest outcast of them all,
-<br>These indeed are “outcast" called
-<br>as I’ve declared to you.</p>
-
-<p id="p136"><span class="parno">136</span>One’s not an outcast caused by “birth",
-<br>not by “birth" a brahmin is;
-<br>caused by karma one’s outcast,
-<br>a brahmin is by karma caused.</p>
-
-<p id="p137"><span class="parno">137</span>Know this is true according to
-<br>the example following here:
-<br>An outcast boy well-known to you
-<br>as Mātaṅga of the Sopakas.</p>
-
-<p id="p138"><span class="parno">138</span>Mātaṅga gained the highest fame,
-<br>so hard a thing for him to gain;
-<br>then warriors, brahmins, others too,
-<br>many came to serve him.</p>
-
-<p id="p139"><span class="parno">139</span>Upon the way to deva-worlds,
-<br>set forth along the spotless path
-<br>and cleansed of sense-desired,
-<br>attained to Brahma’s world, they say;
-<br>unhindered he by “birth" at all
-<br>he won to Brahma-worlds.</p>
-
-<p id="p140"><span class="parno">140</span>Though born in Veda-chanting clan,
-<br>brahmins with mantras as their kin,
-<br>frequently indeed they’re seen
-<br>while making evil karmas,</p>
-
-<p id="p141"><span class="parno">141</span>Even in this world they’re blamed,
-<br>the next for them’s a painful bourn;
-<br>birth hinders not a painful bourn,
-<br>nor from being blamed.</p>
-
-<p id="p142"><span class="parno">142</span>One’s not an outcast caused by “birth",
-<br>not by “birth" a brahmin is;
-<br>caused by karma one’s outcast,
-<br>a brahmin is by karma caused.</p>
-</div>
-<hr>
-<p>When this was said, the brahmin Aggika-bhāradvāja exclaimed to the Radiant One: “Magnificent, Master Gotama! The Dharma has been clarified by the Master Gotama in many ways, as though he was righting what was overthrown, revealing what was hidden, showing the way to one who was lost, or holding a lamp in the dark so that those with eyes can see forms. I go for refuge to Master Gotama, to the Dharma and to the Saṅgha. May Master Gotama remember me as an <i>upāsaka</i> who from today has Gone for Refuge for life."</p>
-
-</div>
-
-<div lang="pi">
-<h2>Vasalasutta</h2>
-
-<p><span class="evam">Evaṁ me sutaṁ — ​</span>   <br>
-
-<br>ekaṁ samayaṁ bhagavā sāvatthiyaṁ viharati jetavane anāthap&shy;iṇḍikassa ārāme. Atha kho bhagavā pubbaṇhasamayaṁ nivāsetvā pattacīvaramādāya sāvatthiṁ piṇḍāya pāvisi. Tena kho pana samayena aggika&shy;bhāradvājassa brāhmaṇassa nivesane aggi pajjalito hoti āhuti paggahitā. Atha kho bhagavā sāvatthiyaṁ sapadānaṁ piṇḍāya caramāno yena aggika&shy;bhāradvājassa brāhmaṇassa nivesanaṁ tenupasankami.</p>
-
-<p>Addasā kho aggika&shy;bhāradvājo brāhmaṇo bhagavantaṁ dūratova āgacchantaṁ. Disvāna bhagavantaṁ etadavoca:  "tatreva, muṇḍaka; tatreva, samaṇaka; tatreva, vasalaka, tiṭṭhāhī"ti.</p>
-
-<p>Evaṁ vutte, bhagavā aggika&shy;bhāradvājaṁ brāhmaṇaṁ etadavoca:  "jānāsi pana tvaṁ, brāhmaṇa, vasalaṁ vā vasalakaraṇe vā dhamme"ti? <br>
-
-<br>" Na khvāhaṁ, bho gotama, jānāmi vasalaṁ vā vasalakaraṇe vā dhamme; sādhu me bhavaṁ gotamo tathā dhammaṁ desetu, yathāhaṁ jāneyyaṁ vasalaṁ vā vasalakaraṇe vā dhamme"ti. <br>
-
-<br>" Tena hi, brāhmaṇa, suṇāhi, sādhukaṁ manasi karohi; bhāsissāmī"ti. <br>
-
-<br>" Evaṁ, bho"ti kho aggika&shy;bhāradvājo brāhmaṇo bhagavato paccassosi. Bhagavā etadavoca: </p>
-
-<div class="verse">
-<p></p>
-
-<p><span class="parno">116</span>"Kodhano upanāhī ca,<br> pāpamakkhī ca yo naro;
-<br>Vipannadiṭṭhi māyāvī,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">117</span><a class="brnum" id="br2"></a>
-Ekajaṁ vā dvijaṁ vāpi,<br> yodha pāṇaṁ vihiṁsati;
-<br>Yassa pāṇe dayā natthi,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">118</span><a class="brnum" id="br3"></a>
-Yo hanti parirundhati,<br> gāmāni nigamāni ca;
-<br>Niggāhako samaññāto,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">119</span><a class="brnum" id="br4"></a>
-Gāme vā yadi vā raññe,<br> yaṁ paresaṁ mamāyitaṁ;
-<br>Theyyā adinnamādeti,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">120</span><a class="brnum" id="br5"></a>
-Yo have iṇamādāya,<br> cujjamāno palāyati;
-<br>Na hi te iṇamatthīti,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">121</span><a class="brnum" id="br6"></a>
-Yo ve kiñcikkhakamyatā,<br> panthasmiṁ vajantaṁ janaṁ;
-<br>Hantvā kiñcikkhamādeti,
-<br>taṁ jaññā vasalo iti.</p>
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">122</span><a class="brnum" id="br7"></a>
-Attahetu parahetu,<br> dhanahetu ca yo naro;
-<br>Sakkhipuṭṭho musā brūti,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">123</span><a class="brnum" id="br8"></a>
-Yo ñātīnaṁ sakhīnaṁ vā,<br> dāresu paṭidissati;
-<br>Sāhasā sampiyena vā,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">124</span><a class="brnum" id="br9"></a>
-Yo mātaraṁ pitaraṁ vā,<br> jiṇṇakaṁ gatayobbanaṁ;
-<br>Pahu santo na bharati,
-<br>taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">125</span><a class="brnum" id="br10"></a>
-Yo mātaraṁ pitaraṁ vā,<br> Bhātaraṁ bhaginiṁ sasuṁ;
-<br>Hanti roseti vācāya,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">126</span><a class="brnum" id="br11"></a>
-Yo atthaṁ pucchito santo,<br> Anatth&shy;amanusāsati;
-<br>Paṭicchannena manteti,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">127</span><a class="brnum" id="br12"></a>
-Yo katvā pāpakaṁ kammaṁ,<br> Mā maṁ jaññāti icchati;
-<br>Yo paṭicchannakammanto,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">128</span><a class="brnum" id="br13"></a>
-Yo ve parakulaṁ gantvā,<br> Bhutvāna sucibhojanaṁ;
-<br>Āgataṁ nappaṭipūjeti,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">129</span><a class="brnum" id="br14"></a>
-Yo brāhmaṇaṁ samaṇaṁ vā,<br> Aññaṁ vāpi vanibbakaṁ;
-<br>Musāvādena vañceti,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">130</span><a class="brnum" id="br15"></a>
-Yo brāhmaṇaṁ samaṇaṁ vā,<br> Bhattakāle upaṭṭhite;
-<br>Roseti vācā na ca deti,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">131</span><a class="brnum" id="br16"></a>
-Asataṁ yodha pabrūti,<br> Mohena paliguṇṭhito;
-<br>Kiñcikkhaṁ nijigīsāno,
-<br>Taṁ jaññā vasalo iti.</p>
-</div>
-<hr>
-<div class="verse">
-<p><span class="parno">132</span><a class="brnum" id="br17"></a>
-Yo cattānaṁ samukkaṁse,<br> Pare ca mavajānāti;
-<br>Nihīno sena mānena,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">133</span><a class="brnum" id="br18"></a>
-Rosako kadariyo ca,<br> Pāpiccho maccharī saṭho;
-<br>Ahiriko anottappī,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">134</span><a class="brnum" id="br19"></a>
-Yo buddhaṁ paribhāsati,<br> Atha vā tassa sāvakaṁ;
-<br>Paribbājaṁ gahaṭṭhaṁ vā,
-<br>Taṁ jaññā vasalo iti.</p>
-
-<p><span class="parno">135</span><a class="brnum" id="br20"></a>
-Yo ve anarahaṁ santo,<br> Arahaṁ paṭijānāti;
-<br>Coro sabrahmake loke,
-<br>Eso kho vasalādhamo;
-<br>Ete kho vasalā vuttā,
-<br>Mayā yete pakāsitā.</p>
-
-<p><span class="parno">136</span><a class="brnum" id="br21"></a>
-Na jaccā vasalo hoti,<br> Na jaccā hoti brāhmaṇo;
-<br>Kammunā vasalo hoti,
-<br>Kammunā hoti brāhmaṇo.</p>
-
-<p><span class="parno">137</span><a class="brnum" id="br22"></a>
-Tadamināpi jānātha,<br> Yathāmedaṁ nidassanaṁ;
-<br>Caṇḍālaputto sopāko,
-<br>Mātango iti vissuto.</p>
-
-<p><span class="parno">138</span><a class="brnum" id="br23"></a>
-So yasaṁ paramaṁ patto,<br> Mātango yaṁ sudullabhaṁ;
-<br>Āgacchuṁ tassupaṭṭhānaṁ,
-<br>Khattiyā brāhmaṇā bahū.</p>
-
-<p><span class="parno">139</span><a class="brnum" id="br24"></a>
-Devayānaṁ abhiruyha,<br> Virajaṁ so mahāpathaṁ;
-<br>Kāmarāgaṁ virājetvā,
-<br>Brahmalokūpago ahu;
-<br>Na naṁ jāti nivāresi,
-<br>Brahmalokūpapattiyā.</p>
-
-<p><span class="parno">140</span><a class="brnum" id="br25"></a>
-Ajjhāyakakule jātā,<br> Brāhmaṇā mantabandhavā;
-<br>Te ca pāpesu kammesu,
-<br>Abhiṇ&shy;hamupadissare.</p>
-
-<p><span class="parno">141</span><a class="brnum" id="br26"></a>
-Diṭṭheva dhamme gārayhā,<br> Samparāye ca duggati;
-<br>Na ne jāti nivāreti,
-<br>Duggatyā garahāya vā.</p>
-
-<p><span class="parno">142</span><a class="brnum" id="br27"></a>
-Na jaccā vasalo hoti,<br> Na jaccā hoti brāhmaṇo;
-<br>Kammunā vasalo hoti,
-<br>Kammunā hoti brāhmaṇo"ti.</p>
-
-</div>
-<hr>
-<p>Evaṁ vutte, aggika&shy;bhāradvājo brāhmaṇo bhagavantaṁ etadavoca:  "abhikkantaṁ, bho gotama … pe … upāsakaṁ maṁ bhavaṁ gotamo dhāretu ajjatagge pāṇupetaṁ saraṇaṁ gatan"ti.</p>
-<p class="endsection">Vasalasuttaṁ sattamaṁ.</p>
-
-</div>
-</section>
-<div id="nextprev"><a id="previous-sutta" href="../snp/snp1.6.html#content"></a><a id="next-sutta" href="../snp/snp1.8.html#content"></a></div>
-</div><!--content-->
-<footer>
-<div id="breadcrumbs">
-<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp1.html">Chapter 1: The Snake</a>1:7 Vasala Sutta: Who is the Outcast?
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp1.html">Chapter 1: The Snake</a>1:7 Vasala Sutta: Who is the Outcast?
 </div>
 	
  	<div class="bottomlinks">
@@ -487,20 +33,47 @@ Na jaccā vasalo hoti,<br> Na jaccā hoti brāhmaṇo;
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
-
+  </footer>
 </div>
-  
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

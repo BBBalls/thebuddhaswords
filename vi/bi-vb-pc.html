@@ -5,10 +5,9 @@
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Vibhanga (Bhikkhuni) - Pācittiyas</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<meta name="theme-color" content="#ffd700">
  	<!-- Loading manifest -->
-   		<link rel="manifest" href="../home/manifest.json">
- 	<!-- Loading third party fonts -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
  	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
  	<!-- Loading main, menu and Apple touch icon stylesheets -->
  		<link rel="stylesheet" href="../css/w3.css">
@@ -18,20 +17,25 @@
 	 		<script src="../js/jquery-1.10.2.min.js"></script>
  			<script src="../js/controlpanel.js"></script>
  		</head>
-<body>
-
- 
- <!-- header -->
+<body> 
+ <!--  <header>-->
  <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 	<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- <div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
- 			<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- </div>
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<div id="searchlinks">
+ 				<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 				<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+ 		</div><!-- End Searchlinks div -->
  
- <!-- Top menu -->
+			 		<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 	</div>
+ </div>
+ 	<!-- Top menu -->
  <div class="w3-main w3-white bwcontainer2">
  		<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
  			<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
@@ -135,7 +139,7 @@
 <h3>Bhikkhuni Vibhanga - Pācittiyas</h3>
 
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><td><a href="../vi/bi-vb-pc1.html#BI-VBheading">1</a></td>
 				<td><a href="../vi/bi-vb-pc1.html#BI-VBheading">Not To Eat Garlic.</a></td>
@@ -199,7 +203,7 @@
 <br>
 <h4>Part Two: The Darkness Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc11.html#BI-VBheading">11</a></td>
@@ -264,7 +268,7 @@
 <br>
 <h4>Part Three: The Naked Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc21.html#BI-VBheading">21</a></td>
@@ -330,7 +334,7 @@
 <br>
 <h4>Part Four: The Sharing Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc31.html#BI-VBheading">31</a></td>
@@ -396,7 +400,7 @@
 <h4>Part Five: The Picture Gallery Chapter</h4>
 
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc41.html#BI-VBheading">41</a></td>
@@ -461,7 +465,7 @@
 				<br>
 				<h4>Part Six: The Monastery Chapter</h4>
 					<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc51.html#BI-VBheading">51</a></td>
@@ -526,7 +530,7 @@
 <br>
 <h4>Part Seven: The Pregnant Woman Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td></td>
 				<td><a href="../vi/bi-vb-pc61.html#BI-VBheading">61</a></td>
@@ -592,7 +596,7 @@
 <h4>Part Eight: The Maiden Chapter</h4>
 
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc71.html#BI-VBheading">71</a></td>
 				<td><a href="../vi/bi-vb-pc71.html#BI-VBheading">The Training Rule On Given Upasampada To A Maiden Less Than 20 Years Old.</a></td>
@@ -662,7 +666,7 @@
 <br>
 <h4>Part Nine: The Sunshade And Leather Footwear Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc84.html#BI-VBheading">84</a></td>
 				<td><a href="../vi/bi-vb-pc84.html#BI-VBheading">The Training Rule On Sunshades And Leather Footwear.</a></td>
@@ -732,7 +736,7 @@
 <br>
 <h4>Part Ten: The Lie Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc97.html#BI-VBheading">97</a></td>
 				<td><a href="../vi/bi-vb-pc97.html#BI-VBheading">The Training Rule On Lying.</a></td>
@@ -787,7 +791,7 @@
 <br>
 <h4>Part Eleven: The Living Plant Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc107.html#BI-VBheading">107</a></td>
 				<td><a href="../vi/bi-vb-pc107.html#BI-VBheading">Not To Destroy Plants.</a></td>
@@ -842,7 +846,7 @@
 <br>
 <h4>Part Twelve: The Food Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc117.html#BI-VBheading">117</a></td>
 				<td><a href="../vi/bi-vb-pc117.html#BI-VBheading">Not To Eat Twice Consecutively At A Food Distribution Place.</a></td>
@@ -897,7 +901,7 @@
 <br>
 <h4>Part Thirteen: The Go-calling Chapter</h4>
 		<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc127.html#BI-VBheading">127</a></td>
 				<td><a href="../vi/bi-vb-pc127.html#BI-VBheading">Not To Visit Houses Just Before Noon.</a></td>
@@ -952,7 +956,7 @@
 <br>
 <h4>Part Fourteen: The Fire Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc137.html#BI-VBheading">137</a></td>
 				<td><a href="../vi/bi-vb-pc137.html#BI-VBheading">Not To Light A Fire, Or Have A Fire Lit.</a></td>
@@ -1007,7 +1011,7 @@
 <br>
 <h4>Part Fifteen: The View Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc147.html#BI-VBheading">147</a></td>
 				<td><a href="../vi/bi-vb-pc147.html#BI-VBheading">Not To Associate With A Bhikkhuni Who Has Been Placed Outside The Community.</a></td>
@@ -1062,7 +1066,7 @@
 <br>
 <h4>Part Sixteen: The In-accordance -with-the-Rule Chapter</h4>
 	<div class="w3-responsive">
-		<table class="w3-striped suttalist">
+		<table class="suttalist">
 				<tr>
 				<td><a href="../vi/bi-vb-pc157.html#BI-VBheading">157</a></td>
 				<td><a href="../vi/bi-vb-pc157.html#BI-VBheading">Not To Contest A Decision Taken After Having Given One's Agreement (Chanda).</a></td>
@@ -1131,20 +1135,47 @@
  		<a href="../home/copyright.html"><span class="w3-bar-item">&copy;&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
- </div>  <!-- End page content -->
- 
+  </footer>
+</div>
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-	<script src="/sw.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

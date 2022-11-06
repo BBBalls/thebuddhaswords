@@ -4,8 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Sutta Nipata 4:12</title>
- 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<!-- Loading third party fonts -->
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
   	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
   	<!-- Loading main and menu stylesheets -->
   	<link rel="stylesheet" href="../css/w3.css">
@@ -13,329 +15,15 @@
   	<link rel="stylesheet" href="../css/menu.css">
 			<script src="../js/jquery-1.10.2.min.js"></script>
 			<script src="../js/controlpanel.js"></script>
-<body>
-
- 	<!--  <header>-->
- 	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- 		<div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
-				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 		</div>
- 	</div>
- 
- <!-- Top menu -->
- <div class="w3-main w3-white bwcontainer2">
- 	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
- 		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
- 			<ul id="css3menu0">
- 				<li class="topfirst" id="home"><a href="../home/index.html" class="w3-hide-small">Home</a></li>
- 				<li class="topmenu" id="dn"><a href="../dn/dn.html" class="w3-hide-small">Digha Nikaya</a></li>
- 				<li class="topmenu" id="mn"><a href="../mn/mn.html" class="w3-hide-small">Majjhima Nikaya</a></li>
- 				<li class="topmenu" id="sn"><a href="../sn/sn.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Samyutta Nikaya</a>
- 					<ul>
- 						<li><a href="../sn/sn01.html" class="w3-hide-small">Vol. 1 ‒ The Book with Verses</a></li>
- 						<li><a href="../sn/sn02.html" class="w3-hide-small">Vol. 2 ‒ The Book of Causation</a></li>
- 						<li><a href="../sn/sn03.html" class="w3-hide-small">Vol. 3 ‒ The Book of the Aggregates</a></li>
- 						<li><a href="../sn/sn04.html" class="w3-hide-small">Vol. 4 ‒ The Book of the Six Sense Bases</a></li>
- 						<li><a href="../sn/sn05.html" class="w3-hide-small">Vol. 5 ‒ The Great Book</a></li>
- 					</ul>
- 				<li class="topmenu" id="an"><a href="../an/an.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Anguttara Nikaya</a>
- 					<ul>
- 						<li><a href="../an/an1.html" class="w3-hide-small">The Ones</a></li>
- 						<li><a href="../an/an2.html" class="w3-hide-small">The Twos</a></li>
- 						<li><a href="../an/an3.html" class="w3-hide-small">The Threes</a></li>
- 						<li><a href="../an/an4.html" class="w3-hide-small">The Fours</a></li>
- 						<li><a href="../an/an5.html" class="w3-hide-small">The Fives</a></li>
- 						<li><a href="../an/an6.html" class="w3-hide-small">The Sixes</a></li>
- 						<li><a href="../an/an7.html" class="w3-hide-small">The Sevens</a></li>
- 						<li><a href="../an/an8.html" class="w3-hide-small">The Eights</a></li>
- 						<li><a href="../an/an9.html" class="w3-hide-small">The Nines</a></li>
- 						<li><a href="../an/an10.html" class="w3-hide-small">The Tens</a></li>
- 						<li><a href="../an/an11.html" class="w3-hide-small">The Elevens</a></li>
- 					</ul>
- 				</li>
- 				<li class="topmenu" id="kn"><a href="../kn/kn.html" class="pressed w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Khuddaka Nikaya</a>
- 					<ul>
- 						<li><a href="../kp/kp.html" class="w3-hide-small">The Khuddakapatha</a></li>
- 						<li><a href="../dhp/dhp.html" class="w3-hide-small">The Dhammapada</a></li>
- 						<li><a href="snp.html" class="pressed w3-hide-small">Sutta Nipata</a></li>
- 						<li><a href="../ud/ud.html" class="w3-hide-small">Udana</a></li>
- 						<li><a href="../it/it.html" class="w3-hide-small">Itivuttaka</a></li>
- 						<li><a href="../tha/tha.html" class="w3-hide-small">The Theragatha</a></li>
- 						<li><a href="../thi/thi.html" class="w3-hide-small">The Therigatha</a></li>
- 					</ul>
- 				</li>
- 				<li class="toplast" id="vi"><a href="../vi/vi.html" class="w3-hide-small"><i class="fa fa-caret-down"></i>&nbsp;Vinaya Pitaka</a>
- 					<ul>
- 						<li><a href="../vi/kd.html" class="w3-hide-small">Khandhaka</a></li>
- 						<li><a href="../vi/bu-vb.html" class="w3-hide-small">Bhikkhu Vibhanga</a></li>
- 						<li><a href="../vi/bu-pt.html" class="w3-hide-small">Bhikkhu Pātimokkha</a></li>
- 						<li><a href="../vi/bi-pt.html" class="w3-hide-small">Bhikkhunī Patimokkha</a></li>
- 						<li><a href="../vi/bi-vb.html" class="w3-hide-small">Bhikkhuni Vibhanga</a></li>
- 						<li><a href="../bmc/bmc.html" class="w3-hide-small">Buddhist Monastic Code</a></li>
- 						
- 					</ul>
- 				</li>
- 			</ul>
- 			</div>
- 		</div> <!--navbar-->
-
-<!-- Sidebar (hidden by default) -->
- <nav class="w3-sidebar w3-bar-block w3-card w3-border w3-top w3-animate-left w3-hide-large" id="mySidebar">
- 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-times fa-2x red-color"></i>&nbsp;&nbsp;&nbsp;Close</a><!-- Hides the sidebar when clicked -->
- 		<div class="w3-bar-block w3-white">
- 			<a href="../home/index.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a>
- 			<a href="../dn/dn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Digha Nikaya</a>
- 			<a href="../mn/mn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Majjhima Nikaya</a>
- 			<a href="../sn/sn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Samyutta Nikaya</a>
- 			<a href="../an/an.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Anguttara Nikaya</a>
- 			<a href="../kn/kn.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Khuddaka Nikaya</a>
- 			<a href="../vi/vi.html#content" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa fa-book"></i>&nbsp;&nbsp;Vinaya Pitaka</a>
- 		</div>
- </nav>
-  
- 
-		<!-- !PAGE CONTENT! -->  <div class="w3-main w3-content w3-padding w3-left-align bwcontainer4">
- 
- <h2>Khuddaka Nikaya - The Minor Texts</h2>
- 
- <div class="w3-bar-white bwnav"><!-- Div for lower Dhp sub-navigation -->
- 	<a href="../kp/kp.html#content" title="Khuddapatha - The Minor Passages" class="w3-bar-item w3-hover-white w3-border-white w3-button">Khuddapatha</a>
- 	<a href="../dhp/dhp.html#content" title="Dhammapada" class="w3-bar-item w3-hover-white w3-border-white w3-button">Dhammapada</a>
- 	<a href="../snp/snp.html#content" title="Sutta Nipata" class="w3-bar-item w3-hover-white w3-border-white w3-button active">Sutta Nipata</a>
- 	<a href="../ud/ud.html#content" title="The Udana" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Udana</a>
- 	<a href="../it/it.html#content" title="The Itivuttaka" class="w3-bar-item w3-hover-white w3-border-white w3-button">The Itivuttaka</a>
- 	<a href="../tha/tha.html#content" title="Theragatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Theragatha</a>
- 	<a href="../thi/thi.html#content" title="Therigatha" class="w3-bar-item w3-hover-white w3-border-white w3-button">Therigatha</a>
- </div><!-- End div for lower Dhp sub-navigation -->
- 
- <h2>Sutta Nipata</h2>
- <div class="w3-bar-white bwnav"><!-- Div for lower Snp sub-navigation -->
- 	<a href="../snp/snp1.html#content" title="1: Chapter of the Snake" class="w3-bar-item w3-hover-white w3-border-white w3-button">1: Chapter of the Snake<br>(verses 1:1 to 1:12)</a>
- 	<a href="../snp/snp2.html#content" title="2: Minor Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">2: Minor Chapter<br>(verses 2:1 to 2:14)</a>
- 	<a href="../snp/snp3.html#content" title="3: Great Chapter" class="w3-bar-item w3-hover-white w3-border-white w3-button">3: Great Chapter<br>(verses 3:1 to 3:12)</a>
- 	<a href="../snp/snp4.html#content" title="4: The Eights" class="w3-bar-item w3-hover-white w3-border-white w3-button active">4: The Eights<br>(verses 4:1 to 4:16)</a>
- 	<a href="../snp/snp5.html#content" title="5: Way to the Beyond" class="w3-bar-item w3-hover-white w3-border-white w3-button">5: Way to the Beyond<br>(verses 5:1 to 5:18)</a>
- </div><!-- End div for lower Snp sub-navigation -->
- 
- <!-- Snp content begins here -->
- 
- <div id="content">
- 
- <h2>Sutta Nipata Chapter 4: The Chapter of the Eights - Aṭṭhakavagga</h2>
-	
-	<h3>4:12 Minor Causes of Contention</h3>	
-	<div id="metarea"> <!-- metarea div -->
-		<ul class="translator"><!-- Translator div -->
-			<li>Translated from the Pali by Laurence Khantipalo Mills<br><a href="../home/copyright.html#sc">(More copyright information)</a></li>
-		</ul>
-	</div><!-- End metarea div -->
-		
-<section class="raw_sutta">
-<div lang="en">
-
-
-<h2>4:12 Minor Causes of Contention</h2>
-<div class="verse">
-<p><span class="speaker">Question</span>
-<br><span class="parno">878</span>Each attached to their own views,
-<br>They dispute, and the experts say,
-<br>“Whoever knows this understands the Dhamma,
-<br>Whoever rejects it is imprefect."</p>
-
-<p id="p879"><span class="parno">879</span>Arguing like this, they disagree, saying
-<br>“My opponent is a fool, and is no expert"
-<br>Which of these doctrines is the truth,
-<br>Since all of them say they are experts?</p>
-
-<p><span class="speaker">Buddha</span>
-<br><span class="parno">880</span>If by not accepting another’s teaching
-<br>One became a fool of debased wisdom
-<br>Then, honestly, all are fools of debased wisdom,
-<br>Since all are attached to views.</p>
-
-<p id="p881"><span class="parno">881</span>But if people are washed by their own views,
-<br>With pure wisdom, experts, thoughtful,
-<br>Then none of them has debased wisdom,
-<br>For their views are perfect.</p>
-
-<p id="p882"><span class="parno">882</span>I don’t say, “This is how it is",
-<br>Like the fools who oppose each other.
-<br>Each of them makes out that their view is the truth,
-<br>So they treat their opponent as a fool.</p>
-
-<p><span class="speaker">Question</span>
-<br><span class="parno">883</span>What some say is the truth,
-<br>Others say is false.
-<br>So they argue, disagreeing;
-<br>Why don’t the ascetics teach one truth?</p>
-
-<p><span class="speaker">Buddha</span>
-<br><span class="parno">884</span>Indeed the truth is one, there’s not another,
-<br>about this the One who Knows
-<br>does not dispute with another,
-<br>but the <i>Samaṇas</i> proclaim their varied “truths"
-<br>and so they speak not in the same way.</p>
-
-<p id="p885"><span class="parno">885</span>Why do they speak such varied truths,
-<br>these so-called experts disputatious — 
-<br>Are there really many and various truths
-<br>Or do they just rehearse their logic?</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><span class="speaker">Buddha</span>
-<br><span class="parno">886</span>Indeed, there are not many and varied truths
-<br>differing from perception of the ever-true in the world;
-<br>but they work upon their views with logic:
-<br>“Truth! Falsehood!" So they speak in dualities.</p>
-
-<p id="p887"><span class="parno">887</span>Based on what is seen, heard,
-<br>On precepts and vows, or what is cognized,
-<br>They look down on others.
-<br>Convinced of their own theories,
-<br>pleased with themselves,
-<br>They say, “My opponent is a fool, no expert."</p>
-
-<p id="p888"><span class="parno">888</span>They consider themselves expert for the same reasons
-<br>That they despise their opponent as a fool.
-<br>Calling themselves experts, they despise the other,
-<br>Yet they speak the very same way.</p>
-
-<p id="p889"><span class="parno">889</span>And since perfected in some extreme view,
-<br>puffed with pride and maddened by conceit,
-<br>he anoints himself as though the master-mind,
-<br>likewise thinking his view’s perfected too.</p>
-
-<p id="p890"><span class="parno">890</span>If their opponent says they are deficient,
-<br>They too are of deficient understanding.
-<br>But if they are wise and knowledgeable,
-<br>Then there are no fools among the ascetics.</p>
-
-<p id="p891"><span class="parno">891</span>“Anyone who teaches a doctrine other than this,
-<br>Has fallen short of purity and perfection."
-<br>This is what followers of other paths say,
-<br>Passionately defending their very different views.</p>
-
-<p id="p892"><span class="parno">892</span>“Here alone is purity," so they say,
-<br>“There is no purity in the teachings of others."
-<br>This is what followers of other paths strongly assert,
-<br>Each entrenched in their own different path.</p>
-
-<p id="p893"><span class="parno">893</span>Strongly asserting their own path,
-<br>What opponent would they take to be a fool?
-<br>They would only bring trouble on themselves
-<br>By calling an opponent a fool of impure teachings.</p>
-
-<p id="p894"><span class="parno">894</span>Convinced of their own theories,
-<br>Comparing others to oneself,
-<br>They get into more disputes with the world.
-<br>But by leaving behind all theories,
-<br>They don’t have any problems with the world.</p>
-</div></div>
-
-<div lang="pi">
-<h2>Cūḷabyūhasutta</h2>
-<div class="verse">
-<p><span class="parno">878</span>"Sakaṁsakaṁdiṭṭhipari&shy;bbasānā,<br> Viggayha nānā kusalā vadanti;
-<br>Yo evaṁ jānāti sa vedi dhammaṁ,
-<br>Idaṁ paṭikkosamakevalī so.</p>
-
-<p><span class="parno">879</span><a class="brnum" id="br2"></a>
-Evampi viggayha vivādayanti,<br> Bālo paro akkusaloti cāhu;
-<br>Sacco nu vādo katamo imesaṁ,
-<br>Sabbeva hīme kusalāvadānā".</p>
-
-<p><span class="parno">880</span><a class="brnum" id="br3"></a>
-"Parassa ce dhammamanānujānaṁ,<br> Bālomako hoti nihīnapañño;
-<br>Sabbeva bālā sunihīnapaññā,
-<br>Sabbevime diṭṭhiparibbasānā.</p>
-
-<p><span class="parno">881</span><a class="brnum" id="br4"></a>
-Sandiṭṭhiyā ceva na vīvadātā,<br> Saṁsuddhapaññā kusalā mutīmā;
-<br>Na tesaṁ koci parihīnapañño,
-<br>Diṭṭhī hi tesampi tathā samattā.</p>
-
-<p><span class="parno">882</span><a class="brnum" id="br5"></a>
-Na vāhametaṁ tathiyanti brūmi,<br> Yamāhu bālā mithu aññamaññaṁ;
-<br>Sakaṁ sakaṁ diṭṭhimakaṁsu saccaṁ,
-<br>Tasmā hi bāloti paraṁ dahanti".</p>
-
-<p><span class="parno">883</span><a class="brnum" id="br6"></a>
-"Yamāhu saccaṁ tathiyanti eke,<br> Tamāhu aññe tucchaṁ musāti;
-<br>Evampi vigayha vivādayanti,
-<br>Kasmā na ekaṁ samaṇā vadanti".</p>
-
-<p><span class="parno">884</span><a class="brnum" id="br7"></a>
-"Ekañhi saccaṁ na dutīyamatthi,<br> Yasmiṁ pajā no vivade pajānaṁ;
-<br>Nānā te saccāni sayaṁ thunanti,
-<br>Tasmā na ekaṁ samaṇā vadanti".</p>
-
-<p><span class="parno">885</span><a class="brnum" id="br8"></a>
-"Kasmā nu saccāni vadanti nānā,<br> Pavādiyāse kusalāvadānā;
-<br>Saccāni sutāni bahūni nānā,
-<br>Udāhu te takkamanussaranti".</p>
-
-</div>
-<hr>
-<div class="verse">
-<p><br><span class="parno">886</span><a class="brnum" id="br9"></a>
-"Na heva saccāni bahūni nānā,<br> Aññatra saññāya niccāni loke;
-<br>Takkañca diṭṭhīsu pakappayitvā,
-<br>Saccaṁ musāti dvayadhammamāhu.</p>
-
-<p><span class="parno">887</span><a class="brnum" id="br10"></a>
-Diṭṭhe sute sīlavate mute vā,<br> Ete ca nissāya vimānadassī;
-<br>Vinicchaye ṭhatvā pahassamāno,
-<br>Bālo paro akkusaloti cāha.</p>
-
-<p><span class="parno">888</span><a class="brnum" id="br11"></a>
-Yeneva bāloti paraṁ dahāti,<br> Tenātumānaṁ kusaloti cāha;
-<br>Sayamattanā so kusalāvadāno,
-<br>Aññaṁ vimāneti tadeva pāva.</p>
-
-<p><span class="parno">889</span><a class="brnum" id="br12"></a>
-Atisāradiṭṭhiyā so samatto,<br> Mānena matto paripuṇṇamānī;
-<br>Sayameva sāmaṁ manasābhisitto,
-<br>Diṭṭhī hi sā tassa tathā samattā.</p>
-
-<p><span class="parno">890</span><a class="brnum" id="br13"></a>
-Parassa ce hi vacasā nihīno,<br> Tumo sahā hoti nihīnapañño;
-<br>Atha ce sayaṁ vedagū hoti dhīro,
-<br>Na koci bālo samaṇesu atthi.</p>
-
-<p><span class="parno">891</span><a class="brnum" id="br14"></a>
-Aññaṁ ito yābhivadanti dhammaṁ,<br> Aparaddhā suddhimakevalī te;
-<br>Evampi titthyā puthuso vadanti,
-<br>Sandiṭṭhirāgena hi tebhirattā.</p>
-
-<p><span class="parno">892</span><a class="brnum" id="br15"></a>
-Idheva suddhiṁ iti vādayanti,<br> Nāññesu dhammesu visuddhimāhu;
-<br>Evampi titthyā puthuso niviṭṭhā,
-<br>Sakāyane tattha daḷhaṁ vadānā.</p>
-
-<p><span class="parno">893</span><a class="brnum" id="br16"></a>
-Sakāyane vāpi daḷhaṁ vadāno,<br> Kamettha bāloti paraṁ daheyya;
-<br>Sayaṁva so medhagamāvaheyya,
-<br>Paraṁ vadaṁ bālamasuddhidhammaṁ.</p>
-
-<p><span class="parno">894</span><a class="brnum" id="br17"></a>
-Vinicchaye ṭhatvā sayaṁ pamāya,<br> Uddhaṁsa lokasmiṁ vivādameti;
-<br>Hitvāna sabbāni vinicchayāni,
-<br>Na medhagaṁ kubbati jantu loke"ti.</p>
-</div>
-<p class="endsection">Cūḷabyūhasuttaṁ dvādasamaṁ.</p>
-
-</div>
-</section>
-<div id="nextprev"><a id="previous-sutta" href="../snp/snp4.11.html#content"></a><a id="next-sutta" href="../snp/snp4.13.html#content"></a></div>
-</div><!--content-->
-<footer>
-<div id="breadcrumbs">
-<a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp4.html">Chapter 4: The Eights</a>4:12 Minor Causes of Contention
+<body> 
+ <!--  <header>-->
+ <div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html">Home</a><a href="../kn/kn.html">Khuddaka Nikāya</a><a href="snp.html">Sutta Nipata</a><a href="snp4.html">Chapter 4: The Eights</a>4:12 Minor Causes of Contention
 </div>
 	
  	<div class="bottomlinks">
@@ -345,20 +33,47 @@ Vinicchaye ṭhatvā sayaṁ pamāya,<br> Uddhaṁsa lokasmiṁ vivādameti;
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
-
+  </footer>
 </div>
-  
+
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

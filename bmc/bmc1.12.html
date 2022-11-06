@@ -5,33 +5,36 @@
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>BMC 1.12</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<meta name="theme-color" content="#ffd700">
  	<!-- Loading manifest -->
-   		<link rel="manifest" href="../home/manifest.json">
- 	<!-- Loading third party fonts -->
- 	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
- 	<!-- Loading main, menu and Apple touch icon stylesheets -->
- 		<link rel="stylesheet" href="../css/w3.css">
- 		<link rel="stylesheet" href="../css/css.css">
- 		<link rel="stylesheet" href="../css/menu.css">
- 		<link rel="apple-touch-icon" href="../images/buddha192.png">
-	 		<script src="../js/jquery-1.10.2.min.js"></script>
- 			<script src="../js/controlpanel.js"></script>
- 		</head>
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
+ 	 	<link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<!-- Loading main and menu stylesheets -->
+ 	<link rel="stylesheet" href="../css/w3.css">
+ 	<link rel="stylesheet" href="../../bw2/css/css.css">
+ 	<link rel="stylesheet" href="../css/menu.css">
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/controlpanel.js"></script>
 <body>
-
 
  	<!--  <header>-->
  	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
- 			<div class="w3-bar bwcontainer">
+ 		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 	</button>
+ 	<span class="box-lbl">Light\Dark</span>
+ <a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 		<div class="w3-bar bwcontainer">
+ 			<div id="searchlinks">
  				<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
  				<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
-				<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
- 			</div>
- 	</div>
+ 		</div><!-- End Searchlinks div -->
  
- <!-- Top menu -->
+			 		<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
+ 	</div>
+ </div>
+ 	<!-- Top menu -->
  <div class="w3-main w3-white bwcontainer2">
  	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
  		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
@@ -107,7 +110,7 @@
  <h2>Vinaya Pitaka - Buddhist Monastic Code</h2>
 
  	<div class="subnav3"> <!-- Div for sub-navigation -->
- 		<a href="../bmc/bmc.html" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile bwsubnav">Intro &amp;<br>Abbreviations</a>
+ 		<a href="../bmc/bmc.html" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile bwsubnav">Intro &<br>Abbreviations</a>
  		<a href="../bmc/bmc1.html" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile w3-yellow">BMC 1<br>&nbsp;</a>
  		<a href="../bmc/bmc2.html" class="w3-bar-item w3-border w3-button w3-hover-yellow w3-mobile bwsubnav">BMC 2<br>&nbsp;</a>
  	</div>	<!-- End div for sub-navigation -->
@@ -119,22 +122,22 @@
 <h2>Buddhist Monastic Code Book 1 - The Pāṭimokkha Rules Translated and Explained</h2>
 
 <div class="w3-bar w3-center">
-<a href="../bmc/bmc1.intro.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Introduction</a></li>
-<a href="../bmc/bmc1.1.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pāṭimokkha</a></li>
-<a href="../bmc/bmc1.2.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Nissaya</a></li>
-<a href="../bmc/bmc1.3.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Disrobing</a></li>
-<a href="../bmc/bmc1.4.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pārājika</a></li>
-<a href="../bmc/bmc1.5.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Saṅghādisesa</a></li>
-<a href="../bmc/bmc1.6.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Aniyatas</a></li>
-<a href="../bmc/bmc1.7.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Nissaggiya Pācittiyas</a></li>
-<a href="../bmc/bmc1.8.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pācittiyas</a></li>
-<a href="../bmc/bmc1.9.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pāṭidesanīyas</a></li>
-<a href="../bmc/bmc1.10.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Sekhiyas</a></li>
-<a href="../bmc/bmc1.11.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Adhikaraṇa-Samathās</a></li>
-<a href="../bmc/bmc1.12.html" class="w3-bar-item w3-border w3-yellow w3-hover-yellow w3-padding-16 w3-mobile">Appendix</a></li>
-<a href="../bmc/bmc1.rule-index.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Index</a></li>
-<a href="../bmc/bmc1.glossary.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Glossary</a></li>
-<a href="../bmc/bmc1.biblio.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Bibliography</a></li>
+<a href="../bmc/bmc1.intro.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Introduction</a>
+<a href="../bmc/bmc1.1.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pāṭimokkha</a>
+<a href="../bmc/bmc1.2.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Nissaya</a>
+<a href="../bmc/bmc1.3.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Disrobing</a>
+<a href="../bmc/bmc1.4.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pārājika</a>
+<a href="../bmc/bmc1.5.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Saṅghādisesa</a>
+<a href="../bmc/bmc1.6.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Aniyatas</a>
+<a href="../bmc/bmc1.7.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Nissaggiya Pācittiyas</a>
+<a href="../bmc/bmc1.8.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pācittiyas</a>
+<a href="../bmc/bmc1.9.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Pāṭidesanīyas</a>
+<a href="../bmc/bmc1.10.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Sekhiyas</a>
+<a href="../bmc/bmc1.11.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Adhikaraṇa-Samathās</a>
+<a href="../bmc/bmc1.12.html" class="w3-bar-item w3-border w3-yellow w3-hover-yellow w3-padding-16 w3-mobile">Appendix</a>
+<a href="../bmc/bmc1.rule-index.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Index</a>
+<a href="../bmc/bmc1.glossary.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Glossary</a>
+<a href="../bmc/bmc1.biblio.html" class="w3-bar-item w3-border w3-pale-yellow w3-hover-yellow w3-padding-16 w3-mobile">Bibliography</a>
 </div>
 
 <p>&nbsp;</p>
@@ -164,9 +167,9 @@
 
 <p>“‘When she said that, I said to her, “I'm not a demon, sister. I'm a bhikkhu waiting for alms.”</p>
 
-<p>“‘"Well then you’re a bhikkhu whose mom is dead and pop is dead. It would be better for you, bhikkhu, that your belly be cut open with a sharp butcher’s knife than that you go prowling around for alms for your belly’s sake like this in the dark gloom of night!”</p>
+<p>“‘&quot;Well then you’re a bhikkhu whose mom is dead and pop is dead. It would be better for you, bhikkhu, that your belly be cut open with a sharp butcher’s knife than that you go prowling around for alms for your belly’s sake like this in the dark gloom of night!”</p>
 
-<p>“‘When I remember this, venerable sir, the thought occurs to me: “There are so many painful things the Blessed One has rid us of, and so many pleasant ones he has provided; so many unskillful things he has rid us of, and so many skillful ones he has provided!"’”</p>
+<p>“‘When I remember this, venerable sir, the thought occurs to me: “There are so many painful things the Blessed One has rid us of, and so many pleasant ones he has provided; so many unskillful things he has rid us of, and so many skillful ones he has provided!&quot;’”</p>
 
 <p>This shows clearly that once the rules were in effect, bhikkhus were saved from the dangers of going for alms in the dark. It further suggests that dawnrise can be no earlier than the point recognized by the Vinayālaṅkāra.</p>
 
@@ -211,7 +214,7 @@
 
 <p>Unfortunately, the Canon provides no detailed explanation of these terms. The Commentary explains Community meals as meals for the entire Community, and the other terms as follows:</p>
 
-<p>“(Having said,) 'Give one, two …ten bhikkhus designated from the Community,’ they wanted to provide a meal for the bhikkhus they got through that designation. Later, having decided on bhikkhus in the same way (i.e., one, two …ten bhikkhus), and having invited them, they wanted to provide a meal for them. Later, they wanted to provide a meal having decided on a lottery. Later, having fixed a date — the waxing or waning moons, the uposatha day, or the day after — they wanted to provide a meal for one, two …ten bhikkhus. This is the extent of the meals that fall under the terms 'designated meals, invitational meals (the Sub-commentary adds an “etc.” here.)’”</p>
+<p>“(Having said,) 'Give one, two…ten bhikkhus designated from the Community,’ they wanted to provide a meal for the bhikkhus they got through that designation. Later, having decided on bhikkhus in the same way (i.e., one, two…ten bhikkhus), and having invited them, they wanted to provide a meal for them. Later, they wanted to provide a meal having decided on a lottery. Later, having fixed a date — the waxing or waning moons, the uposatha day, or the day after — they wanted to provide a meal for one, two…ten bhikkhus. This is the extent of the meals that fall under the terms 'designated meals, invitational meals (the Sub-commentary adds an “etc.” here.)’”</p>
 
 <p>These definitions seem fairly clear: a <i>designated meal</i> is one in which the donors do not specify which bhikkhus are to receive it, but simply ask for <i>x</i> number of bhikkhus from the Community, leaving it up to the meal designator — the Community official responsible for managing these various meals (see <a href="../bmc/bmc2.18.html">BMC2, Chapter&nbsp;18</a>) — to designate who the recipients will be. An <i>invitational meal</i> is one in which the donors decide on the recipients themselves. A <i>lottery meal</i> is one in which the recipients are chosen by drawing lots, while the remaining meals — <i>periodic meals</i> — are given regularly to a rotating roster of <i>x</i> number of bhikkhus every time the specified date comes around.</p>
 
@@ -281,7 +284,7 @@
 <li>for the handkerchief: <b><i>mukha-puñchana-colaṁ</i></b></li>
 <li>for other cloth requisites: <b><i>parikkhāra-colaṁ</i></b></li></ul>
 
-<p>To determine many cloths of the same sort at the same time, use the plural forms: Change <i>imaṁ</i> to <i>imāni; etaṁ</i> to <i>etāni;</i> and the <i> — aṁ</i> ending for the name of the article to <i>-āni.</i> For example, to determine many miscellaneous cloth requisites within reach of the hand, the formula is:</p>
+<p>To determine many cloths of the same sort at the same time, use the plural forms: Change <i>imaṁ</i> to <i>imāni; etaṁ</i> to <i>etāni;</i> and the <i>—aṁ</i> ending for the name of the article to <i>-āni.</i> For example, to determine many miscellaneous cloth requisites within reach of the hand, the formula is:</p>
 
 <p><i>Imāni parikkhāra-colāni adhiṭṭhāmi.</i></p>
 
@@ -348,7 +351,7 @@
 
 <p><i>Imaṁ cīvaraṁ mayhaṁ santakaṁ paribhuñjatha vā vissajjetha vā yathā-paccayaṁ vā karotha.</i></p>
 
-<p>For a bowl, change <i>cīvaraṁ</i> to <i>pattaṁ.</i> If more than one piece of cloth is involved, the formula begins, <i>Imāni cīvarāni mayhaṁ santakāni …</i> If more than one bowl, <i>Ime patte mayhaṁ santake …</i> Changes for articles outside the reach of the hand may be inferred from those for the earlier formulae.</p>
+<p>For a bowl, change <i>cīvaraṁ</i> to <i>pattaṁ.</i> If more than one piece of cloth is involved, the formula begins, <i>Imāni cīvarāni mayhaṁ santakāni…</i> If more than one bowl, <i>Ime patte mayhaṁ santake…</i> Changes for articles outside the reach of the hand may be inferred from those for the earlier formulae.</p>
 
 <h4><a id="app6"></a>6.Pali formulae: Forfeiture.</h4>
 
@@ -438,7 +441,9 @@
 
 <p>Once the offense has been confessed, the robe (robe-cloth) is to be returned to the original owner, using this formula:</p>
 
-<p><i>Imaṁ cīvaraṁ āyasmato dammi,</i></p>
+<p>
+
+<i>Imaṁ cīvaraṁ āyasmato dammi,</i></p>
 
 <p>which means, “I give this robe (robe-cloth) to you.”</p>
 
@@ -462,7 +467,9 @@
 
 <p><i>Imāni me bhante akāla-cīvarāni māsātikkantāni nissaggiyāni. Imānāhaṁ āyasmato nissajjāmi.</i></p>
 
-<p><p>Other changes, as necessary, may be inferred from the formulae for <a href="../bmc/bmc1.7-1.html#np1">Nissaggiya Pācittiya&nbsp;1</a>.</p>
+<p>
+
+<p>Other changes, as necessary, may be inferred from the formulae for <a href="../bmc/bmc1.7-1.html#np1">Nissaggiya Pācittiya&nbsp;1</a>.</p>
 
 <p><b><a href="../bmc/bmc1.7-1.html#np6">Nissaggiya Pācittiya&nbsp;6</a>.</b> For a robe (robe-cloth) requested from an unrelated householder:</p>
 
@@ -494,7 +501,7 @@
 
 <p><b><a href="../bmc/bmc1.7-1.html#np10">Nissaggiya Pācittiya&nbsp;10</a>.</b> For a robe (robe-cloth) received after reminding one’s steward too many times:</p>
 
-<p><i>Idaṁ me bhante cīvaraṁ atireka-tikkhattuṁ codanāya atireka-chakkhattuṁ ṭhānena abhi&shy;nipphāditaṁ nissaggiyaṁ. Imāhaṁ āyasmato nissajjāmi,</i></p>
+<p><i>Idaṁ me bhante cīvaraṁ atireka-tikkhattuṁ codanāya atireka-chakkhattuṁ ṭhānena abhinipphāditaṁ nissaggiyaṁ. Imāhaṁ āyasmato nissajjāmi,</i></p>
 
 <p>which means, “This robe (robe-cloth) of mine, venerable sir, produced after more than three reminders, after more than six standings, is to be forfeited. I forfeit it to you.”</p>
 
@@ -508,13 +515,17 @@
 
 <p>To return the article:</p>
 
-<p><i>Imaṁ āyasmato dammi,</i></p>
+<p>
+
+<i>Imaṁ āyasmato dammi,</i></p>
 
 <p>which means, “I give this to you.”</p>
 
 <p><b><a href="../bmc/bmc1.7-3.html#np21">Nissaggiya Pācittiya&nbsp;21</a>.</b> For an extra bowl kept beyond ten days:</p>
 
-<p><i>Ayaṁ me bhante patto dasāhātikkanto nissaggiyo. Imāhaṁ āyasmato nissajjāmi,</i></p>
+<p>
+
+<i>Ayaṁ me bhante patto dasāhātikkanto nissaggiyo. Imāhaṁ āyasmato nissajjāmi,</i></p>
 
 <p>which means, “This bowl of mine, venerable sir, kept beyond ten days, is to be forfeited. I forfeit it to you.”</p>
 
@@ -620,17 +631,21 @@
 
 <p>If the bhikkhu making confession is junior to the one acknowledging him, the exchange is as follows (taking dukkaṭa offenses as an example):</p>
 
-<p>Confessant: <i>Ahaṁ bhante sambahulā nānā-vatthukāyo dukkaṭāyo āpattiyo āpanno. Tā paṭidesemi.</i>
+<p>
+
+Confessant: <i>Ahaṁ bhante sambahulā nānā-vatthukāyo dukkaṭāyo āpattiyo āpanno. Tā paṭidesemi.</i>
 <br>Acknowledger: <i>Passasi āvuso?</i>
 <br>C: <i>Āma bhante, passāmi.</i>
 <br>A: <i>Āyatim āvuso saṁvareyyāsi.</i>
 <br>C: <i>Sādhu suṭṭhu bhante saṁvarissāmi.</i> (<i>Three times.</i>)</p>
 
-<p>This last sentence means, <i>"Very well, venerable sir, I will be restrained,”</i> and is taken from the Commentary.</p>
+<p>This last sentence means, <i>&quot;Very well, venerable sir, I will be restrained,”</i> and is taken from the Commentary.</p>
 
 <p>If the bhikkhu making confession is senior to the other bhikkhu, the exchange is as follows:</p>
 
-<p>C: <i>Ahaṁ āvuso sambahulā nānā-vatthukāyo dukkaṭāyo āpattiyo āpanno. Tā paṭidesemi.</i>
+<p>
+
+C: <i>Ahaṁ āvuso sambahulā nānā-vatthukāyo dukkaṭāyo āpattiyo āpanno. Tā paṭidesemi.</i>
 <br>A: <i>Passatha bhante?</i>
 <br>C: <i>Āma āvuso, passāmi.</i>
 <br>A: <i>Āyatiṁ bhante saṁvareyyātha.</i>
@@ -664,8 +679,8 @@
 
 <p><i>Suṇātu me bhante saṅgho. Bhikkhū Itthannāmaṁ bhikkhuṁ amūlikāya sīla-vipattiyā anuddaṁsenti. So sati-vepullappatto saṅghaṁ sati-vinayaṁ yācati. Saṅgho Itthannāmassa bhikkhuno sati-vepullappattassa sati-vinayaṁ deti. Yass'āyasmato khamati, Itthannāmassa bhikkhuno sati-vepullappattassa sati-vinayassa dānaṁ, so tuṇh'assa. Yassa nakkhamati, so bhāseyya.</i></p>
 
-<p><i>Dutiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho … Yassa nakkhamati, so bhāseyya.</i>
-<br><i>Tatiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho … Yassa nakkhamati, so bhāseyya</i>.
+<p><i>Dutiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho… Yassa nakkhamati, so bhāseyya.</i>
+<br><i>Tatiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho… Yassa nakkhamati, so bhāseyya</i>.
 <br><i>Dinno saṅghena Itthannāmassa bhikkhuno sati-vepullappattassa sati-vinayo. Khamati saṅghassa, tasmā tuṇhī. Evam-etaṁ dhārayāmi. (Cv.IV.4.10; Cv.IV.14.27)</i></p>
 </div>
 
@@ -673,7 +688,7 @@
 
 <p><i>Venerable sirs, may the Community listen to me. Bhikkhus have charged Bhikkhu (name) groundlessly with a corruption of virtue. He, having reached fullness of mindfulness, asks the Community for a verdict of mindfulness. The Community grants Bhikkhu (name), who has reached fullness of mindfulness, a verdict of mindfulness. He to whom the granting of a verdict of mindfulness to Bhikkhu (name), who has reached fullness of mindfulness, is agreeable should remain silent. He to whom it is not agreeable should speak.</i></p>
 
-<p><i>A second time … A third time I speak about this matter. Venerable sirs, may the Community listen to me … He to whom it is not agreeable should speak.</i></p>
+<p><i>A second time… A third time I speak about this matter. Venerable sirs, may the Community listen to me… He to whom it is not agreeable should speak.</i></p>
 
 <p><i>Bhikkhu (name), who has reached fullness of mindfulness, has been granted a verdict of mindfulness by the Community. This is agreeable to the Community, therefore it is silent. Thus do I hold it.</i></p>
 
@@ -681,9 +696,9 @@
 
 <p><i>Ahaṁ bhante ummattako ahosiṁ citta-vipariyāsakato. Tena me ummattakena citta-vipariyāsakatena bahuṁ assāmaṇakaṁ ajjhāciṇṇaṁ bhāsita-parikkantaṁ. Maṁ bhikkhū ummattakena citta-vipariyāsakatena ajjhāciṇṇena āpattiyā codenti, “Sarat'āyasmā evarūpiṁ āpattiṁ āpajjitāti.” Ty'āhaṁ evaṁ vadāmi, “Ahaṁ kho āvuso ummattako ahosiṁ citta-vipariyāsakato. Tena me ummattakena citta-vipariyāsakatena bahuṁ assāmaṇakaṁ ajjhāciṇṇaṁ bhāsita-parikkantaṁ. Nāhan’taṁ sarāmi. Mūḷhena me etaṁ katanti.” Evam-pi maṁ vuccamānā codent'eva, “Sarat'āyasmā evarūpiṁ āpattiṁ āpajjitāti.” So'haṁ bhante amūḷho saṅghaṁ amūḷha-vinayaṁ yācāmi.</i></p>
 
-<p><i>Ahaṁ bhante ummattako ahosiṁ … So'haṁ amūḷho dutiyam-pi bhante saṅghaṁ amūḷha-vinayaṁ yācāmi.</i></p>
+<p><i>Ahaṁ bhante ummattako ahosiṁ… So'haṁ amūḷho dutiyam-pi bhante saṅghaṁ amūḷha-vinayaṁ yācāmi.</i></p>
 
-<p><i>Ahaṁ bhante ummattako ahosiṁ … So'haṁ bhante amūḷho tatiyam-pi bhante saṅghaṁ amūḷha-vinayaṁ yācāmi.</i></p>
+<p><i>Ahaṁ bhante ummattako ahosiṁ… So'haṁ bhante amūḷho tatiyam-pi bhante saṅghaṁ amūḷha-vinayaṁ yācāmi.</i></p>
 
 <p>This means, <i>Venerable sirs, I have been mad, out of my mind. While I was mad, out of my mind, I committed much and prevaricated about much in a way that was unworthy of a contemplative. Bhikkhus reprimand me with an offense committed while I was mad, out of my mind: “Let the venerable one recall (§) having fallen into an offense of this sort.” I say to them, “Friends, I have been mad, out of my mind. While I was mad, out of my mind, I committed much and prevaricated about much in a way that was unworthy of a contemplative. I don’t recall that. It was done by me through insanity.” But even though I have told them this, they reprimand me as before: “Let the venerable one recall having fallen into an offense of this sort.” I, no longer insane, ask the Community for a verdict of past insanity.</i></p>
 
@@ -695,17 +710,17 @@
 
 <p><i>Suṇātu me bhante saṅgho. Ayaṁ Itthannāmo bhikkhu ummattako ahosi citta-vipariyāsakato, tena ummattakena citta-vipariyāsakatena bahuṁ assāmaṇakaṁ ajjhāciṇṇaṁ bhāsita-parikkantaṁ. Taṁ bhikkhū ummattakena citta-vipariyāsakatena ajjhāciṇṇena āpattiyā codenti, “Sarat'āyasmā evarūpiṁ āpattiṁ āpajjitāti.” So evaṁ vadeti, “Ahaṁ kho āvuso ummattako ahosiṁ citta-vipariyāsakato. Tena me ummattakena citta-vipariyāsakatena bahuṁ assāmaṇakaṁ ajjhāciṇṇaṁ bhāsita-parikkantaṁ. Nāhan’taṁ sarāmi. Mūḷhena me etaṁ katanti.” Evam-pi naṁ vuccamānā codent'eva, “Sarat'āyasmā evarūpiṁ āpattiṁ āpajjitāti.” So amūḷho saṅghaṁ amūḷha-vinayaṁ yācati. Saṅgho Itthannāmassa bhikkhuno amūḷhassa amūḷha-vinayaṁ deti. Yass'āyasmato khamati, Itthannāmassa bhikkhuno amūḷhassa amūḷha-vinayassa dānaṁ, so tuṇh'assa. Yassa nakkhamati, so bhāseyya.</i></p>
 
-<p><i>Dutiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho … Yassa nakkhamati, so bhāseyya.</i></p>
+<p><i>Dutiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho… Yassa nakkhamati, so bhāseyya.</i></p>
 
-<p><i>Tatiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho … Yassa nakkhamati, so bhāseyya.</i></p>
+<p><i>Tatiyam-pi etam-atthaṁ vadāmi. Suṇātu me bhante saṅgho… Yassa nakkhamati, so bhāseyya.</i></p>
 
 <p><i>Dinno saṅghena Itthannāmassa bhikkhuno amūḷhassa amūḷha-vinayo. Khamati saṅghassa, tasmā tuṇhī. Evam-etaṁ dhārayāmi.</i> (Cv.4.5.2; Cv.IV.14.28)</p>
 
 <p>This means, <i>Venerable sirs, may the Community listen to me. This Bhikkhu (name) has been mad, out of his mind. While he was mad, out of his mind, he committed much and prevaricated about much in a way that was unworthy of a contemplative. Bhikkhus reprimand him with an offense committed while he was mad, out of his mind: “Let the venerable one recall having fallen into an offense of this sort.” He says to them, “Friends, I have been mad, out of my mind. While I was mad, out of my mind, I committed much and prevaricated about much in a way that was unworthy of a contemplative. I don’t recall that. It was done by me through insanity.” But even though he has told them this, they reprimand him as before: “Let the venerable one recall having fallen into an offense of this sort.” He, no longer insane, asks the Community for a verdict of past insanity. If the Community is ready, it should grant Bhikkhu (name), who is no longer insane, a verdict of past insanity. This is the motion.</i></p>
 
-<p><i>Venerable sirs, may the Community listen to me. This Bhikkhu (name) has been mad, out of his mind. While he was mad, out of his mind, he committed much and prevaricated about much in a way that was unworthy of a contemplative … He, no longer insane, asks the Community for a verdict of past insanity. The Community grants Bhikkhu (name), who is no longer insane, a verdict of past insanity. He to whom the granting of a verdict of past insanity to Bhikkhu (name), who is no longer insane, is agreeable should remain silent. He to whom it is not agreeable should speak.</i></p>
+<p><i>Venerable sirs, may the Community listen to me. This Bhikkhu (name) has been mad, out of his mind. While he was mad, out of his mind, he committed much and prevaricated about much in a way that was unworthy of a contemplative… He, no longer insane, asks the Community for a verdict of past insanity. The Community grants Bhikkhu (name), who is no longer insane, a verdict of past insanity. He to whom the granting of a verdict of past insanity to Bhikkhu (name), who is no longer insane, is agreeable should remain silent. He to whom it is not agreeable should speak.</i></p>
 
-<p><i>A second time … A third time I speak about this matter. Venerable sirs, may the Community listen to me … He to whom it is not agreeable should speak.</i></p>
+<p><i>A second time… A third time I speak about this matter. Venerable sirs, may the Community listen to me… He to whom it is not agreeable should speak.</i></p>
 
 <p><i>Bhikkhu (name), who is no longer insane, has been granted a verdict of past insanity by the Community. This is agreeable to the Community, therefore it is silent. Thus do I hold it.</i></p>
 
@@ -732,7 +747,7 @@
 <ul class="circ">
 <li><i>Moving the object from its place:</i> Making the object budge without fully moving it from its place: a thullaccaya offense.</li>
 
-<li><i>"Cutting off” a fistful:</i> Making the object budge without fully cutting off a fistful: a thullaccaya offense.</li>
+<li><i>&quot;Cutting off” a fistful:</i> Making the object budge without fully cutting off a fistful: a thullaccaya offense.</li>
 
 <li><i>Sticking a vessel into a pool of liquid or pile of objects and causing some of the pool or pile to enter the vessel:</i></li>
 
@@ -859,15 +874,15 @@
 <p>“These five things not-to-be-given-out should not be given out by a Community, a group, or an individual. Even when they have been given out, they are not (to be considered as) given out. Whoever should give them out: a thullaccaya offense. Which five?</p>
 
 <ol>
-<li>A monastery, the land of a monastery (a site for a monastery). This is the first thing not to be given out …</li>
+<li>A monastery, the land of a monastery (a site for a monastery). This is the first thing not to be given out…</li>
 
-<li>A dwelling, the land of a dwelling (a site for a dwelling). This is the second thing not to be given out …</li>
+<li>A dwelling, the land of a dwelling (a site for a dwelling). This is the second thing not to be given out…</li>
 
-<li>A bed, bench, mattress, pillow. This is the third thing not to be given out …</li>
+<li>A bed, bench, mattress, pillow. This is the third thing not to be given out…</li>
 
-<li>A metal pot, a metal vessel, a metal jarbottle, a metal frying panwok, a knifemachete, an axe, an adze, a hoe, a drillchisel. This is the fourth thing not to be given out …</li>
+<li>A metal pot, a metal vessel, a metal jarbottle, a metal frying panwok, a knifemachete, an axe, an adze, a hoe, a drillchisel. This is the fourth thing not to be given out…</li>
 
-<li>Vines, bamboo, coarse grass, reeds, tiṇa-grass, clay (all of which can be used as building materials), wooden goods, clay goods. This is the fifth thing not to be given out …</li>
+<li>Vines, bamboo, coarse grass, reeds, tiṇa-grass, clay (all of which can be used as building materials), wooden goods, clay goods. This is the fifth thing not to be given out…</li>
 </ol>
 
 <p>“These are the five things not-to-be-given-out that should not be given out by a Community, a group, or an individual. Even when they have been given out, they are not (to be considered as) given out. Whoever should give them out: a thullaccaya offense.” — Cv.VI.15.2</p>
@@ -916,11 +931,11 @@
 
 <p>“If the preceptor wants one to recite [C: memorize passages of Dhamma or Vinaya], one should recite. If he wants to interrogate one [C: on the meaning of the passages], one should answer his interrogation.</p>
 
-<p>“If the place where the preceptor is staying is dirty, the pupil should clean it if he is able to. First taking out the bowl and robes he should lay them to one side. Taking out the sitting cloth and sheet, he should lay them to one side. Having lowered the bed, he should take it out carefully, without scraping it [C: along the floor] or knocking it against the door or doorposts, and then lay it to one side. Having lowered the bench, he should take it out carefully, without scraping it [C: along the floor] or knocking it against the door or doorposts, and then lay it to one side. Taking out the spittoon … the leaning board, he should lay them to one side.</p>
+<p>“If the place where the preceptor is staying is dirty, the pupil should clean it if he is able to. First taking out the bowl and robes he should lay them to one side. Taking out the sitting cloth and sheet, he should lay them to one side. Having lowered the bed, he should take it out carefully, without scraping it [C: along the floor] or knocking it against the door or doorposts, and then lay it to one side. Having lowered the bench, he should take it out carefully, without scraping it [C: along the floor] or knocking it against the door or doorposts, and then lay it to one side. Taking out the spittoon… the leaning board, he should lay them to one side.</p>
 
 <p>“If there are cobwebs in the dwelling, he should remove them, starting first with the ceiling covering-cloth (§) (and working down). He should wipe areas around the window frames and the corners (of the room) (§). If the wall has been treated with ochre and has become moldy (§), he should moisten a rag, wring it out, and wipe it clean. If the floor of the room is treated with blackening (polished), he should moisten a rag, wring it out, and wipe it clean. If the floor is bare ground, he should sprinkle it all over with water before sweeping it, (with the thought,) 'May the dust not fly up and soil the room.' He should look for any rubbish and throw it away to one side.</p>
 
-<p>“Having dried the ground-covering in the sun, he should clean it, shake it out, bring it back in, and arrange it in its proper place. Having dried the supports for the bed in the sun, he should wipe them, bring them back in, and set them in their proper places. Having dried the bed …the bench in the sun, he should clean them, shake them out, lower them, bring them back in carefully without scraping them [along the floor] or knocking them against the door or doorposts, and arrange them in their proper places. Having dried the mattress and pillow …the sitting cloth and sheet in the sun, he should clean them, shake them out, bring them back in, and arrange them in their proper places. Having dried the spittoon in the sun, he should wipe it, bring it back in, and set it in its proper place. Having dried the leaning board in the sun, he should wipe it, bring it back in, and set it in its proper place.</p>
+<p>“Having dried the ground-covering in the sun, he should clean it, shake it out, bring it back in, and arrange it in its proper place. Having dried the supports for the bed in the sun, he should wipe them, bring them back in, and set them in their proper places. Having dried the bed…the bench in the sun, he should clean them, shake them out, lower them, bring them back in carefully without scraping them [along the floor] or knocking them against the door or doorposts, and arrange them in their proper places. Having dried the mattress and pillow…the sitting cloth and sheet in the sun, he should clean them, shake them out, bring them back in, and arrange them in their proper places. Having dried the spittoon in the sun, he should wipe it, bring it back in, and set it in its proper place. Having dried the leaning board in the sun, he should wipe it, bring it back in, and set it in its proper place.</p>
 
 <p>“If dusty winds blow from the east, he should close the eastern windows. If from the west, he should close the western windows. If from the north, he should close the northern windows. If from the south, he should close the southern windows. If the weather is cool, he should open the windows by day and close them at night. If the weather is hot, he should close them by day and open them at night.</p>
 
@@ -953,23 +968,49 @@
  		<a href="../guide/study_guide.html"><span class="w3-bar-item"><i class="fa fa-compass"></i>&nbsp;Study&nbsp;Guide</span></a>
  		<a href="../home/help.html"><span class="w3-bar-item"><i class="fa fa-info"></i>&nbsp;Help</span></a>
  		<a href="../home/crossreference.html"><span class="w3-bar-item"><i class="fa fa-exchange"></i>&nbsp;Links&nbsp;Cross&nbsp;Reference</span></a>
- 		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
+ 		<a href="../home/copyright.html"><span class="w3-bar-item">&copy;&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
  </footer>
- </div>  <!-- End page content -->
- 
+</div>
  <script>
  // Script to open and close sidebar
- function w3_open() {
-   document.getElementById("mySidebar").style.display = "block";
- }
-  
- function w3_close() {
-   document.getElementById("mySidebar").style.display = "none";
- }
+ 	function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+ 	}
+ 		function w3_close() {
+ 		document.getElementById("mySidebar").style.display = "none";
+ 	}
+ </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 			app.setAttribute("light-mode", "dark");
+ 	}
+ </script>
+
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 				if (localStorage.lightMode == "dark") {
+ 					localStorage.lightMode = "light";
+ 					app.setAttribute("light-mode", "light");
+ 				} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 	}
+ 		}
+
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 			} else {
+ 				app.setAttribute("light-mode", "light");
+ 		}
+ 		}, false);
+
  </script>
  <script src="../js/footer.js"></script>
-	<script src="/sw.js"></script>
-		</body>
+ <script src="/sw.js"></script>
+ </body>
  </html>

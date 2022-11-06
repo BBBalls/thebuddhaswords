@@ -4,7 +4,10 @@
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
  	<title>Samyutta Nika 16.1</title>
- 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- Loading manifest -->
+ 		<link rel="manifest" href="../manifest.json">
+ <!-- Loading third party fonts -->
   	<!-- Loading third party fonts -->
   	 <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
   	<!-- Loading main and menu stylesheets -->
@@ -17,15 +20,23 @@
 
  	<!--  <header>-->
  	<div class="w3-header w3-content w3-padding w3-left-align bwcontainer">
- 		<a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
+ 	<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+ 		<span></span>
+ 		<span></span>
+ 			<label class="box-lbl" for="toggle_theme">Light/Dark</label>
+ 	</button>
+ 
+ <a href="../home/index.html" id="bwlogo"><img src="../images/headerlogo.png" alt="The Buddha's Words logo" class="w3-image"></a>
  		<div class="w3-bar bwcontainer">
- 			<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
- 			<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
-				<div class="help"><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></div>
- 		</div>
+ 			<div id="searchlinks">
+ 				<a href="../home/engsearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search English</span></a>
+ 				<a href="../home/palisearch.html"><span class="w3-bar-item"><i class="fa fa-search"></i>&nbsp;Search Pali</span></a>
+ 		</div><!-- End Searchlinks div -->
+ 
+			 		<div class="help"><span><a href="../home/help.html"><img src="../images/help_icon.png" title="Help" alt="Help"></a></span></div>
  	</div>
-
- <!-- Top menu -->
+ </div>
+ 	<!-- Top menu -->
  <div class="w3-main w3-white bwcontainer2">
  	<div class="w3-button w3-padding-8 w3-left w3-hide-large" onclick="w3_open()">☰</div>
  		<div id="navbar" class="w3-hide-small w3-hide-medium bwcontainer3">
@@ -198,7 +209,47 @@
  		<a href="../home/copyright.html"><span class="w3-bar-item">©&nbsp;Copyright</span></a>
  		<a href="../home/contact.html"><span class="w3-bar-item"><i class="fa fa-envelope"></i>&nbsp;Contact</span></a>
  	</div>  <!-- End bottom links -->
- </footer>
+  </footer>
+  
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+ 	document.getElementById("mySidebar").style.display = "block";
+  }
+  
+   function w3_close() {
+ 	document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+ <script>
+ 		var app = document.getElementsByTagName("BODY")[0];
+ 		if (localStorage.lightMode == "dark") {
+ 				app.setAttribute("light-mode", "dark");
+ 		}
+ </script>
+ 
+ <script>
+ 		function toggle_light_mode() {
+ 			var app = document.getElementsByTagName("BODY")[0];
+ 			if (localStorage.lightMode == "dark") {
+ 				localStorage.lightMode = "light";
+ 				app.setAttribute("light-mode", "light");
+ 			} else {
+ 					localStorage.lightMode = "dark";
+ 					app.setAttribute("light-mode", "dark");
+ 			}
+        		}
+ 
+ 		window.addEventListener("storage", function () {
+ 			if (localStorage.lightMode == "dark") {
+ 					app.setAttribute("light-mode", "dark");
+ 			} else {
+ 					app.setAttribute("light-mode", "light");
+ 			}
+ 		}, false);
+ 
+		 </script>
+
  </div>  <!-- End page content -->
 
  <script>
